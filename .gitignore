@@ -1,0 +1,15 @@
+# secrets -- never commit API keys
+*.env
+**/api_key*
+
+# MATLAB clutter
+*.asv
+*.m~
+slprj/
+
+# OS clutter
+Thumbs.db
+.DS_Store
+
+# data not for redistribution
+samedata.mat

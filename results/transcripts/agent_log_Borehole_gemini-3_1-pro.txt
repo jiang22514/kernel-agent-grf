@@ -1,0 +1,135 @@
+=== SYSTEM PROMPT ===
+You are an expert in Gaussian process (GP) modeling of spatial/geotechnical data.
+Goal: find the (kernel, mean) pair with the LOWEST AIC for the described dataset.
+You propose candidates; an external system fits each by exact marginal likelihood
+(multi-restart) and reports AIC back to you. Fits are expensive: be strategic,
+diversify early, then exploit the structure the ranking reveals.
+
+KERNEL GRAMMAR (strict; anything else is rejected):
+- Primitives: SE (squared-exp, smooth), MA1 (Matern-1/2, rough), MA3 (Matern-3/2),
+  MA5 (Matern-5/2), RQ (rational quadratic, multi-scale), LIN (linear, nonstationary),
+  PER (periodic). All ARD (per-dimension lengthscales) where applicable.
+- An expression is ONE primitive, or TWO DISTINCT primitives joined by + or *.
+- Products of two stationary primitives (SE,MA1,MA3,MA5,RQ) are FORBIDDEN
+  (redundant), e.g. SE*MA3 invalid. Valid products pair a stationary with LIN or
+  PER (e.g. MA1*LIN = locally rough with linearly growing variance), or LIN*PER.
+- Examples of valid: "SE", "RQ", "SE+PER", "MA3+LIN", "MA1*LIN", "LIN*PER".
+  Invalid: "SE*RQ", "SE+SE", "SE+MA1+LIN", "SE*(LIN+PER)".
+MEAN FUNCTIONS: "Zero" | "Constant" | "Linear" | "Quadratic" (polynomial trends
+include an intercept). Kernel and mean interact: e.g. a LIN kernel or a Linear
+mean can both capture trend; AIC penalizes redundant parameters.
+
+RESPONSE FORMAT -- reply with ONE JSON object and NOTHING else:
+{"analysis":"<=60 words on what the evidence suggests",
+ "proposals":[{"kernel":"MA1*LIN","mean":"Constant","reason":"<=20 words"}, ...],
+ "stop":false,
+ "final":{"kernel":"...","mean":"..."}}
+Rules: never re-propose a candidate already in the results table. "final" is
+REQUIRED in EVERY round and holds your current best guess given the evidence so
+far. Set "stop":true only when further search is unlikely to lower AIC.
+
+
+=== DATA PROFILE ===
+Dataset: Borehole CPT cone resistance over a 2-D vertical cross-section (x1 horizontal distance [m], x2 depth [m])
+n = 744 observations, D = 2 input dimensions.
+  x1: range [438.1, 764.9], std 120.5
+  x2: range [4.45, 19.97], std 3.771
+y: mean 5.185, std 0.937, range [3.15, 9.01].
+Trend fit (OLS R^2): linear 0.137, quadratic(diagonal) 0.146.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.52, g=0.96) (h=0.94, g=0.96) (h=1.28, g=1.01) (h=1.56, g=1.12) (h=1.89, g=1.10) (h=2.18, g=1.11) 
+=== ROUND 1 : USER PROMPT ===
+Dataset: Borehole CPT cone resistance over a 2-D vertical cross-section (x1 horizontal distance [m], x2 depth [m])
+n = 744 observations, D = 2 input dimensions.
+  x1: range [438.1, 764.9], std 120.5
+  x2: range [4.45, 19.97], std 3.771
+y: mean 5.185, std 0.937, range [3.15, 9.01].
+Trend fit (OLS R^2): linear 0.137, quadratic(diagonal) 0.146.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.52, g=0.96) (h=0.94, g=0.96) (h=1.28, g=1.01) (h=1.56, g=1.12) (h=1.89, g=1.10) (h=2.18, g=1.11) 
+
+No candidates evaluated yet. Propose 5 diverse (kernel, mean) candidates covering different structural hypotheses (trend vs stationary, smooth vs rough, with/without periodicity).
+This is round 1 of at most 4.
+=== ROUND 1 : LLM REPLY (google/gemini-3.1-pro-preview, 11.7s, 2091 tok) ===
+{"analysis": "The semivariogram shows an immediate jump to g=0.96 at h=0.52, indicating very rough spatial variation or a short lengthscale, strongly favoring MA1. A linear trend explains ~14% of the variance. We will test rough kernels (MA1, MA3, RQ) with different mean functions (Constant, Linear, Quadratic) to establish the baseline structure.", "proposals": [{"kernel": "MA1", "mean": "Linear", "reason": "MA1 for rough spatial variation, Linear mean for the 14% trend."}, {"kernel": "MA3", "mean": "Linear", "reason": "Slightly smoother alternative to MA1 with linear trend."}, {"kernel": "RQ", "mean": "Linear", "reason": "Multi-scale variation to capture both short and long lengthscales."}, {"kernel": "MA1", "mean": "Constant", "reason": "Baseline rough model without explicit trend."}, {"kernel": "MA1", "mean": "Quadratic", "reason": "Checks if the slight R^2 increase for quadratic trend is significant."}], "stop": false, "final": {"kernel": "MA1", "mean": "Linear"}}
+=== ROUND 1 : 5 new candidates evaluated, best AIC so far 560.26 ===
+
+=== ROUND 2 : USER PROMPT ===
+Dataset: Borehole CPT cone resistance over a 2-D vertical cross-section (x1 horizontal distance [m], x2 depth [m])
+n = 744 observations, D = 2 input dimensions.
+  x1: range [438.1, 764.9], std 120.5
+  x2: range [4.45, 19.97], std 3.771
+y: mean 5.185, std 0.937, range [3.15, 9.01].
+Trend fit (OLS R^2): linear 0.137, quadratic(diagonal) 0.146.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.52, g=0.96) (h=0.94, g=0.96) (h=1.28, g=1.01) (h=1.56, g=1.12) (h=1.89, g=1.10) (h=2.18, g=1.11) 
+
+RESULTS AFTER ROUND 1 (sorted by AIC, lower is better):
+ 1. MA1        + Constant   AIC=   560.26  dAIC=   0.00  (k=5, round 1)
+ 2. RQ         + Linear     AIC=   560.75  dAIC=   0.49  (k=8, round 1)
+ 3. MA1        + Linear     AIC=   562.15  dAIC=   1.89  (k=7, round 1)
+ 4. MA1        + Quadratic  AIC=   566.44  dAIC=   6.18  (k=9, round 1)
+ 5. MA3        + Linear     AIC=   580.54  dAIC=  20.28  (k=7, round 1)
+
+This is round 2 of at most 4. Reflect on the ranking: which structural ingredients (roughness class, LIN/PER components, mean order) does the evidence favor? Then either propose up to 5 NEW candidates (not in the table) that could lower AIC further, or set "stop":true with your "final" pick.
+=== ROUND 2 : LLM REPLY (google/gemini-3.1-pro-preview, 17.7s, 2935 tok) ===
+{"analysis":"MA1 and RQ are the best performing kernels, indicating a rough or multi-scale process. Constant mean outperforms Linear for MA1, suggesting the linear trend is weak or better captured by the kernel. We will test RQ with Constant mean, and combinations of MA1/RQ with LIN to capture potential non-stationarity.","proposals":[{"kernel":"RQ","mean":"Constant","reason":"RQ with Linear was strong; Constant mean may reduce AIC penalty."},{"kernel":"MA1+LIN","mean":"Constant","reason":"LIN kernel adds a non-stationary trend component to the rough MA1."},{"kernel":"MA1*LIN","mean":"Constant","reason":"Multiplicative LIN allows variance to grow linearly, capturing heteroscedasticity."},{"kernel":"RQ+LIN","mean":"Constant","reason":"Combines multi-scale RQ with a non-stationary linear kernel."},{"kernel":"RQ*LIN","mean":"Constant","reason":"Allows multi-scale variance to scale with inputs."}],"stop":false,"final":{"kernel":"MA1","mean":"Constant"}}
+=== ROUND 2 : 5 new candidates evaluated, best AIC so far 531.07 ===
+
+=== ROUND 3 : USER PROMPT ===
+Dataset: Borehole CPT cone resistance over a 2-D vertical cross-section (x1 horizontal distance [m], x2 depth [m])
+n = 744 observations, D = 2 input dimensions.
+  x1: range [438.1, 764.9], std 120.5
+  x2: range [4.45, 19.97], std 3.771
+y: mean 5.185, std 0.937, range [3.15, 9.01].
+Trend fit (OLS R^2): linear 0.137, quadratic(diagonal) 0.146.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.52, g=0.96) (h=0.94, g=0.96) (h=1.28, g=1.01) (h=1.56, g=1.12) (h=1.89, g=1.10) (h=2.18, g=1.11) 
+
+RESULTS AFTER ROUND 2 (sorted by AIC, lower is better):
+ 1. MA1*LIN    + Constant   AIC=   531.07  dAIC=   0.00  (k=7, round 2)
+ 2. RQ*LIN     + Constant   AIC=   534.48  dAIC=   3.40  (k=8, round 2)
+ 3. RQ         + Constant   AIC=   557.97  dAIC=  26.89  (k=6, round 2)
+ 4. MA1        + Constant   AIC=   560.26  dAIC=  29.18  (k=5, round 1)
+ 5. RQ         + Linear     AIC=   560.75  dAIC=  29.67  (k=8, round 1)
+ 6. MA1        + Linear     AIC=   562.15  dAIC=  31.07  (k=7, round 1)
+ 7. RQ+LIN     + Constant   AIC=   562.27  dAIC=  31.20  (k=8, round 2)
+ 8. MA1+LIN    + Constant   AIC=   564.32  dAIC=  33.25  (k=7, round 2)
+ 9. MA1        + Quadratic  AIC=   566.44  dAIC=  35.36  (k=9, round 1)
+10. MA3        + Linear     AIC=   580.54  dAIC=  49.47  (k=7, round 1)
+
+This is round 3 of at most 4. Reflect on the ranking: which structural ingredients (roughness class, LIN/PER components, mean order) does the evidence favor? Then either propose up to 5 NEW candidates (not in the table) that could lower AIC further, or set "stop":true with your "final" pick.
+=== ROUND 3 : LLM REPLY (google/gemini-3.1-pro-preview, 12.4s, 2546 tok) ===
+```json
+{"analysis":"The evidence strongly favors a nonstationary variance model (*LIN) combined with a rough stationary process (MA1). The rapid decorrelation in the semivariogram supports MA1. We will test if a different mean function (Zero or Linear) improves MA1*LIN, and evaluate smoother stationary components (MA3, MA5, SE) multiplied by LIN to confirm MA1 is optimal.","proposals":[{"kernel":"MA1*LIN","mean":"Linear","reason":"Test if adding a linear trend to the nonstationary kernel improves fit."},{"kernel":"MA1*LIN","mean":"Zero","reason":"LIN kernel might absorb the constant mean; test if Zero mean reduces AIC."},{"kernel":"MA3*LIN","mean":"Constant","reason":"Test slightly smoother Matern-3/2 with the successful LIN interaction."},{"kernel":"MA5*LIN","mean":"Constant","reason":"Test Matern-5/2 with LIN interaction."},{"kernel":"SE*LIN","mean":"Constant","reason":"Test infinitely smooth SE with LIN interaction."}],"stop":false,"final":{"kernel":"MA1*LIN","mean":"Constant"}}
+```
+=== ROUND 3 : 5 new candidates evaluated, best AIC so far 531.07 ===
+
+=== ROUND 4 : USER PROMPT ===
+Dataset: Borehole CPT cone resistance over a 2-D vertical cross-section (x1 horizontal distance [m], x2 depth [m])
+n = 744 observations, D = 2 input dimensions.
+  x1: range [438.1, 764.9], std 120.5
+  x2: range [4.45, 19.97], std 3.771
+y: mean 5.185, std 0.937, range [3.15, 9.01].
+Trend fit (OLS R^2): linear 0.137, quadratic(diagonal) 0.146.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.52, g=0.96) (h=0.94, g=0.96) (h=1.28, g=1.01) (h=1.56, g=1.12) (h=1.89, g=1.10) (h=2.18, g=1.11) 
+
+RESULTS AFTER ROUND 3 (sorted by AIC, lower is better):
+ 1. MA1*LIN    + Constant   AIC=   531.07  dAIC=   0.00  (k=7, round 2)
+ 2. MA1*LIN    + Linear     AIC=   531.33  dAIC=   0.26  (k=9, round 3)
+ 3. RQ*LIN     + Constant   AIC=   534.48  dAIC=   3.40  (k=8, round 2)
+ 4. RQ         + Constant   AIC=   557.97  dAIC=  26.89  (k=6, round 2)
+ 5. MA1*LIN    + Zero       AIC=   558.00  dAIC=  26.92  (k=6, round 3)
+ 6. MA1        + Constant   AIC=   560.26  dAIC=  29.18  (k=5, round 1)
+ 7. MA3*LIN    + Constant   AIC=   560.46  dAIC=  29.38  (k=7, round 3)
+ 8. RQ         + Linear     AIC=   560.75  dAIC=  29.67  (k=8, round 1)
+ 9. MA1        + Linear     AIC=   562.15  dAIC=  31.07  (k=7, round 1)
+10. RQ+LIN     + Constant   AIC=   562.27  dAIC=  31.20  (k=8, round 2)
+11. MA1+LIN    + Constant   AIC=   564.32  dAIC=  33.25  (k=7, round 2)
+12. MA1        + Quadratic  AIC=   566.44  dAIC=  35.36  (k=9, round 1)
+13. MA3        + Linear     AIC=   580.54  dAIC=  49.47  (k=7, round 1)
+14. MA5*LIN    + Constant   AIC=   584.31  dAIC=  53.23  (k=7, round 3)
+15. SE*LIN     + Constant   AIC=   642.30  dAIC= 111.23  (k=7, round 3)
+
+This is round 4 of at most 4. Reflect on the ranking: which structural ingredients (roughness class, LIN/PER components, mean order) does the evidence favor? Then either propose up to 5 NEW candidates (not in the table) that could lower AIC further, or set "stop":true with your "final" pick.
+=== ROUND 4 : LLM REPLY (google/gemini-3.1-pro-preview, 10.2s, 2429 tok) ===
+{"analysis":"The evidence overwhelmingly favors the MA1*LIN kernel with a Constant mean. Multiplicative nonstationarity (LIN) combined with high roughness (MA1) perfectly captures the depth-dependent variance and erratic nature of the CPT data. Higher-order means or smoother kernels consistently increase AIC. The search has converged on the optimal structure.","proposals":[],"stop":true,"final":{"kernel":"MA1*LIN","mean":"Constant"}}
+=== ROUND 4 : 0 new candidates evaluated, best AIC so far 531.07 ===
+
+=== DONE: Borehole CPT cone resistance over a 2-D vertical cross-section (x1 horizontal distance [m], x2 depth [m]) | best MA1*LIN + Constant AIC=531.07 | 15 evals | 10001 tokens | llm-stop ===

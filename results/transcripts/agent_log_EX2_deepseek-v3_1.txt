@@ -1,0 +1,179 @@
+=== SYSTEM PROMPT ===
+You are an expert in Gaussian process (GP) modeling of spatial/geotechnical data.
+Goal: find the (kernel, mean) pair with the LOWEST AIC for the described dataset.
+You propose candidates; an external system fits each by exact marginal likelihood
+(multi-restart) and reports AIC back to you. Fits are expensive: be strategic,
+diversify early, then exploit the structure the ranking reveals.
+
+KERNEL GRAMMAR (strict; anything else is rejected):
+- Primitives: SE (squared-exp, smooth), MA1 (Matern-1/2, rough), MA3 (Matern-3/2),
+  MA5 (Matern-5/2), RQ (rational quadratic, multi-scale), LIN (linear, nonstationary),
+  PER (periodic). All ARD (per-dimension lengthscales) where applicable.
+- An expression is ONE primitive, or TWO DISTINCT primitives joined by + or *.
+- Products of two stationary primitives (SE,MA1,MA3,MA5,RQ) are FORBIDDEN
+  (redundant), e.g. SE*MA3 invalid. Valid products pair a stationary with LIN or
+  PER (e.g. MA1*LIN = locally rough with linearly growing variance), or LIN*PER.
+- Examples of valid: "SE", "RQ", "SE+PER", "MA3+LIN", "MA1*LIN", "LIN*PER".
+  Invalid: "SE*RQ", "SE+SE", "SE+MA1+LIN", "SE*(LIN+PER)".
+MEAN FUNCTIONS: "Zero" | "Constant" | "Linear" | "Quadratic" (polynomial trends
+include an intercept). Kernel and mean interact: e.g. a LIN kernel or a Linear
+mean can both capture trend; AIC penalizes redundant parameters.
+
+RESPONSE FORMAT -- reply with ONE JSON object and NOTHING else:
+{"analysis":"<=60 words on what the evidence suggests",
+ "proposals":[{"kernel":"MA1*LIN","mean":"Constant","reason":"<=20 words"}, ...],
+ "stop":false,
+ "final":{"kernel":"...","mean":"..."}}
+Rules: never re-propose a candidate already in the results table. "final" is
+REQUIRED in EVERY round and holds your current best guess given the evidence so
+far. Set "stop":true only when further search is unlikely to lower AIC.
+
+
+=== DATA PROFILE ===
+Dataset: EX2 (2-D synthetic, unknown generator)
+n = 100 observations, D = 2 input dimensions.
+  x1: range [0.02233, 0.9939], std 0.2829
+  x2: range [0.003018, 0.99], std 0.308
+y: mean 0.5684, std 0.5052, range [-0.1706, 2.004].
+Trend fit (OLS R^2): linear 0.920, quadratic(diagonal) 0.934.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.56, g=0.59) (h=0.97, g=0.79) (h=1.31, g=1.02) (h=1.59, g=0.96) (h=1.87, g=0.99) (h=2.15, g=1.12) 
+=== ROUND 1 : USER PROMPT ===
+Dataset: EX2 (2-D synthetic, unknown generator)
+n = 100 observations, D = 2 input dimensions.
+  x1: range [0.02233, 0.9939], std 0.2829
+  x2: range [0.003018, 0.99], std 0.308
+y: mean 0.5684, std 0.5052, range [-0.1706, 2.004].
+Trend fit (OLS R^2): linear 0.920, quadratic(diagonal) 0.934.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.56, g=0.59) (h=0.97, g=0.79) (h=1.31, g=1.02) (h=1.59, g=0.96) (h=1.87, g=0.99) (h=2.15, g=1.12) 
+
+No candidates evaluated yet. Propose 5 diverse (kernel, mean) candidates covering different structural hypotheses (trend vs stationary, smooth vs rough, with/without periodicity).
+This is round 1 of at most 4.
+=== ROUND 1 : LLM REPLY (deepseek/deepseek-chat-v3.1, 12.4s, 1027 tok) ===
+```json
+{
+  "analysis": "Strong linear trend (R²=0.92) suggests mean function should handle trend. Semivariogram shows correlation up to h≈1.3 then decorrelation, indicating moderate-range stationary component. Need to separate trend from spatial correlation.",
+  "proposals": [
+    {"kernel": "SE", "mean": "Linear", "reason": "Baseline: smooth stationary + linear trend"},
+    {"kernel": "MA3", "mean": "Linear", "reason": "Moderately rough + linear trend"},
+    {"kernel": "SE+LIN", "mean": "Constant", "reason": "Kernel handles both smooth and trend components"},
+    {"kernel": "MA1*LIN", "mean": "Constant", "reason": "Locally rough with linear amplitude variation"},
+    {"kernel": "PER", "mean": "Linear", "reason": "Test for periodic patterns in residuals"}
+  ],
+  "stop": false,
+  "final": {"kernel": "SE", "mean": "Linear"}
+}
+```
+=== ROUND 1 : 5 new candidates evaluated, best AIC so far -152.43 ===
+
+=== ROUND 2 : USER PROMPT ===
+Dataset: EX2 (2-D synthetic, unknown generator)
+n = 100 observations, D = 2 input dimensions.
+  x1: range [0.02233, 0.9939], std 0.2829
+  x2: range [0.003018, 0.99], std 0.308
+y: mean 0.5684, std 0.5052, range [-0.1706, 2.004].
+Trend fit (OLS R^2): linear 0.920, quadratic(diagonal) 0.934.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.56, g=0.59) (h=0.97, g=0.79) (h=1.31, g=1.02) (h=1.59, g=0.96) (h=1.87, g=0.99) (h=2.15, g=1.12) 
+
+RESULTS AFTER ROUND 1 (sorted by AIC, lower is better):
+ 1. SE         + Linear     AIC=  -152.43  dAIC=   0.00  (k=7, round 1)
+ 2. PER        + Linear     AIC=  -151.29  dAIC=   1.14  (k=7, round 1)
+ 3. MA3        + Linear     AIC=  -147.43  dAIC=   5.00  (k=7, round 1)
+ 4. SE+LIN     + Constant   AIC=  -145.19  dAIC=   7.24  (k=7, round 1)
+ 5. MA1*LIN    + Constant   AIC=  -145.00  dAIC=   7.43  (k=7, round 1)
+
+This is round 2 of at most 4. Reflect on the ranking: which structural ingredients (roughness class, LIN/PER components, mean order) does the evidence favor? Then either propose up to 5 NEW candidates (not in the table) that could lower AIC further, or set "stop":true with your "final" pick.
+=== ROUND 2 : LLM REPLY (deepseek/deepseek-chat-v3.1, 11.2s, 1252 tok) ===
+{
+  "analysis": "Linear mean dominates; SE kernel best, suggesting smooth stationary residuals. PER kernel close second hints at possible periodic component. Try adding PER to SE with linear mean, and test simpler constant mean with SE+PER.",
+  "proposals": [
+    {"kernel": "SE+PER", "mean": "Linear", "reason": "Combine best smooth and periodic kernels with linear trend."},
+    {"kernel": "SE+PER", "mean": "Constant", "reason": "Test if periodic component absorbs trend."},
+    {"kernel": "MA5", "mean": "Linear", "reason": "Matern-5/2 smoother than MA3; may fit better than SE."},
+    {"kernel": "RQ", "mean": "Linear", "reason": "Multi-scale smoothness could capture residual structure."},
+    {"kernel": "PER*LIN", "mean": "Constant", "reason": "Product for periodic pattern with amplitude trend."}
+  ],
+  "stop": false,
+  "final": {"kernel": "SE", "mean": "Linear"}
+}
+=== ROUND 2 : 5 new candidates evaluated, best AIC so far -158.98 ===
+
+=== ROUND 3 : USER PROMPT ===
+Dataset: EX2 (2-D synthetic, unknown generator)
+n = 100 observations, D = 2 input dimensions.
+  x1: range [0.02233, 0.9939], std 0.2829
+  x2: range [0.003018, 0.99], std 0.308
+y: mean 0.5684, std 0.5052, range [-0.1706, 2.004].
+Trend fit (OLS R^2): linear 0.920, quadratic(diagonal) 0.934.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.56, g=0.59) (h=0.97, g=0.79) (h=1.31, g=1.02) (h=1.59, g=0.96) (h=1.87, g=0.99) (h=2.15, g=1.12) 
+
+RESULTS AFTER ROUND 2 (sorted by AIC, lower is better):
+ 1. LIN*PER    + Constant   AIC=  -158.98  dAIC=   0.00  (k=7, round 2)
+ 2. SE         + Linear     AIC=  -152.43  dAIC=   6.55  (k=7, round 1)
+ 3. PER        + Linear     AIC=  -151.29  dAIC=   7.69  (k=7, round 1)
+ 4. RQ         + Linear     AIC=  -150.29  dAIC=   8.69  (k=8, round 2)
+ 5. MA5        + Linear     AIC=  -149.41  dAIC=   9.57  (k=7, round 2)
+ 6. MA3        + Linear     AIC=  -147.43  dAIC=  11.55  (k=7, round 1)
+ 7. SE+PER     + Linear     AIC=  -146.42  dAIC=  12.56  (k=10, round 2)
+ 8. SE+LIN     + Constant   AIC=  -145.19  dAIC=  13.79  (k=7, round 1)
+ 9. MA1*LIN    + Constant   AIC=  -145.00  dAIC=  13.98  (k=7, round 1)
+10. SE+PER     + Constant   AIC=  -141.69  dAIC=  17.29  (k=8, round 2)
+
+This is round 3 of at most 4. Reflect on the ranking: which structural ingredients (roughness class, LIN/PER components, mean order) does the evidence favor? Then either propose up to 5 NEW candidates (not in the table) that could lower AIC further, or set "stop":true with your "final" pick.
+=== ROUND 3 : LLM REPLY (deepseek/deepseek-chat-v3.1, 10.6s, 1446 tok) ===
+{
+  "analysis": "LIN*PER+Constant dominates, suggesting strong periodic modulation of a linear trend. Residuals after linear detrend show moderate correlation (semivariogram rises to ~1). Try simpler periodic kernels with constant mean, and explore Matern+PER combinations.",
+  "proposals": [
+    {"kernel": "MA1+PER", "mean": "Constant", "reason": "Rough non-periodic plus periodic, constant mean."},
+    {"kernel": "MA3+PER", "mean": "Constant", "reason": "Smooth Matern plus periodic, constant mean."},
+    {"kernel": "MA5+PER", "mean": "Constant", "reason": "Very smooth Matern plus periodic, constant mean."},
+    {"kernel": "PER", "mean": "Constant", "reason": "Simpler pure periodic, constant mean."},
+    {"kernel": "LIN+PER", "mean": "Constant", "reason": "Additive linear and periodic, constant mean."}
+  ],
+  "stop": false,
+  "final": {"kernel": "LIN*PER", "mean": "Constant"}
+}
+=== ROUND 3 : 5 new candidates evaluated, best AIC so far -158.98 ===
+
+=== ROUND 4 : USER PROMPT ===
+Dataset: EX2 (2-D synthetic, unknown generator)
+n = 100 observations, D = 2 input dimensions.
+  x1: range [0.02233, 0.9939], std 0.2829
+  x2: range [0.003018, 0.99], std 0.308
+y: mean 0.5684, std 0.5052, range [-0.1706, 2.004].
+Trend fit (OLS R^2): linear 0.920, quadratic(diagonal) 0.934.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.56, g=0.59) (h=0.97, g=0.79) (h=1.31, g=1.02) (h=1.59, g=0.96) (h=1.87, g=0.99) (h=2.15, g=1.12) 
+
+RESULTS AFTER ROUND 3 (sorted by AIC, lower is better):
+ 1. LIN*PER    + Constant   AIC=  -158.98  dAIC=   0.00  (k=7, round 2)
+ 2. SE         + Linear     AIC=  -152.43  dAIC=   6.55  (k=7, round 1)
+ 3. PER        + Linear     AIC=  -151.29  dAIC=   7.69  (k=7, round 1)
+ 4. RQ         + Linear     AIC=  -150.29  dAIC=   8.69  (k=8, round 2)
+ 5. MA5        + Linear     AIC=  -149.41  dAIC=   9.57  (k=7, round 2)
+ 6. MA3        + Linear     AIC=  -147.43  dAIC=  11.55  (k=7, round 1)
+ 7. SE+PER     + Linear     AIC=  -146.42  dAIC=  12.56  (k=10, round 2)
+ 8. SE+LIN     + Constant   AIC=  -145.19  dAIC=  13.79  (k=7, round 1)
+ 9. MA1*LIN    + Constant   AIC=  -145.00  dAIC=  13.98  (k=7, round 1)
+10. LIN+PER    + Constant   AIC=  -144.28  dAIC=  14.70  (k=7, round 3)
+11. PER        + Constant   AIC=  -143.58  dAIC=  15.40  (k=5, round 3)
+12. SE+PER     + Constant   AIC=  -141.69  dAIC=  17.29  (k=8, round 2)
+13. MA5+PER    + Constant   AIC=  -140.58  dAIC=  18.40  (k=8, round 3)
+14. MA3+PER    + Constant   AIC=  -138.90  dAIC=  20.08  (k=8, round 3)
+15. MA1+PER    + Constant   AIC=  -137.60  dAIC=  21.38  (k=8, round 3)
+
+This is round 4 of at most 4. Reflect on the ranking: which structural ingredients (roughness class, LIN/PER components, mean order) does the evidence favor? Then either propose up to 5 NEW candidates (not in the table) that could lower AIC further, or set "stop":true with your "final" pick.
+=== ROUND 4 : LLM REPLY (deepseek/deepseek-chat-v3.1, 10.7s, 1628 tok) ===
+{
+  "analysis": "LIN*PER dominates, suggesting strong periodic modulation of a linear trend. Residuals after linear detrending show moderate correlation (semivariogram rises to ~1). Try adding a stationary component to capture residual correlation.",
+  "proposals": [
+    {"kernel": "SE+LIN*PER", "mean": "Constant", "reason": "Add smooth residuals to dominant periodic-linear product."},
+    {"kernel": "MA3+LIN*PER", "mean": "Constant", "reason": "Matern-3/2 residuals with periodic-linear trend."},
+    {"kernel": "RQ+LIN*PER", "mean": "Constant", "reason": "Multi-scale residuals plus periodic-linear structure."},
+    {"kernel": "LIN*PER", "mean": "Zero", "reason": "Test if mean is fully captured by kernel."},
+    {"kernel": "MA1+LIN*PER", "mean": "Constant", "reason": "Rough residuals combined with periodic-linear trend."}
+  ],
+  "stop": false,
+  "final": {"kernel": "LIN*PER", "mean": "Constant"}
+}
+=== ROUND 4 : 1 new candidates evaluated, best AIC so far -160.39 ===
+
+=== DONE: EX2 (2-D synthetic, unknown generator) | best LIN*PER + Zero AIC=-160.39 | 16 evals | 5353 tokens | max-rounds ===

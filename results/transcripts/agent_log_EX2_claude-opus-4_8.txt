@@ -1,0 +1,132 @@
+=== SYSTEM PROMPT ===
+You are an expert in Gaussian process (GP) modeling of spatial/geotechnical data.
+Goal: find the (kernel, mean) pair with the LOWEST AIC for the described dataset.
+You propose candidates; an external system fits each by exact marginal likelihood
+(multi-restart) and reports AIC back to you. Fits are expensive: be strategic,
+diversify early, then exploit the structure the ranking reveals.
+
+KERNEL GRAMMAR (strict; anything else is rejected):
+- Primitives: SE (squared-exp, smooth), MA1 (Matern-1/2, rough), MA3 (Matern-3/2),
+  MA5 (Matern-5/2), RQ (rational quadratic, multi-scale), LIN (linear, nonstationary),
+  PER (periodic). All ARD (per-dimension lengthscales) where applicable.
+- An expression is ONE primitive, or TWO DISTINCT primitives joined by + or *.
+- Products of two stationary primitives (SE,MA1,MA3,MA5,RQ) are FORBIDDEN
+  (redundant), e.g. SE*MA3 invalid. Valid products pair a stationary with LIN or
+  PER (e.g. MA1*LIN = locally rough with linearly growing variance), or LIN*PER.
+- Examples of valid: "SE", "RQ", "SE+PER", "MA3+LIN", "MA1*LIN", "LIN*PER".
+  Invalid: "SE*RQ", "SE+SE", "SE+MA1+LIN", "SE*(LIN+PER)".
+MEAN FUNCTIONS: "Zero" | "Constant" | "Linear" | "Quadratic" (polynomial trends
+include an intercept). Kernel and mean interact: e.g. a LIN kernel or a Linear
+mean can both capture trend; AIC penalizes redundant parameters.
+
+RESPONSE FORMAT -- reply with ONE JSON object and NOTHING else:
+{"analysis":"<=60 words on what the evidence suggests",
+ "proposals":[{"kernel":"MA1*LIN","mean":"Constant","reason":"<=20 words"}, ...],
+ "stop":false,
+ "final":{"kernel":"...","mean":"..."}}
+Rules: never re-propose a candidate already in the results table. "final" is
+REQUIRED in EVERY round and holds your current best guess given the evidence so
+far. Set "stop":true only when further search is unlikely to lower AIC.
+
+
+=== DATA PROFILE ===
+Dataset: EX2 (2-D synthetic, unknown generator)
+n = 100 observations, D = 2 input dimensions.
+  x1: range [0.02233, 0.9939], std 0.2829
+  x2: range [0.003018, 0.99], std 0.308
+y: mean 0.5684, std 0.5052, range [-0.1706, 2.004].
+Trend fit (OLS R^2): linear 0.920, quadratic(diagonal) 0.934.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.56, g=0.59) (h=0.97, g=0.79) (h=1.31, g=1.02) (h=1.59, g=0.96) (h=1.87, g=0.99) (h=2.15, g=1.12) 
+=== ROUND 1 : USER PROMPT ===
+Dataset: EX2 (2-D synthetic, unknown generator)
+n = 100 observations, D = 2 input dimensions.
+  x1: range [0.02233, 0.9939], std 0.2829
+  x2: range [0.003018, 0.99], std 0.308
+y: mean 0.5684, std 0.5052, range [-0.1706, 2.004].
+Trend fit (OLS R^2): linear 0.920, quadratic(diagonal) 0.934.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.56, g=0.59) (h=0.97, g=0.79) (h=1.31, g=1.02) (h=1.59, g=0.96) (h=1.87, g=0.99) (h=2.15, g=1.12) 
+
+No candidates evaluated yet. Propose 5 diverse (kernel, mean) candidates covering different structural hypotheses (trend vs stationary, smooth vs rough, with/without periodicity).
+This is round 1 of at most 4.
+=== ROUND 1 : LLM REPLY (anthropic/claude-opus-4.8, 5.0s, 1537 tok) ===
+{"analysis":"Strong linear trend (R²=0.92). Variogram shows smooth rise to sill ~h=1.3, no clear periodicity. Test trend via Linear mean vs LIN kernel, vary smoothness, include RQ for multiscale.","proposals":[{"kernel":"SE","mean":"Linear","reason":"smooth residual structure plus dominant linear trend"},{"kernel":"MA5","mean":"Linear","reason":"moderately rough alternative with linear trend"},{"kernel":"RQ","mean":"Linear","reason":"multiscale stationary with trend mean"},{"kernel":"LIN+SE","mean":"Constant","reason":"trend via kernel, smooth residual"},{"kernel":"MA3+LIN","mean":"Constant","reason":"rougher residual plus linear kernel trend"}],"stop":false,"final":{"kernel":"SE","mean":"Linear"}}
+=== ROUND 1 : 5 new candidates evaluated, best AIC so far -152.43 ===
+
+=== ROUND 2 : USER PROMPT ===
+Dataset: EX2 (2-D synthetic, unknown generator)
+n = 100 observations, D = 2 input dimensions.
+  x1: range [0.02233, 0.9939], std 0.2829
+  x2: range [0.003018, 0.99], std 0.308
+y: mean 0.5684, std 0.5052, range [-0.1706, 2.004].
+Trend fit (OLS R^2): linear 0.920, quadratic(diagonal) 0.934.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.56, g=0.59) (h=0.97, g=0.79) (h=1.31, g=1.02) (h=1.59, g=0.96) (h=1.87, g=0.99) (h=2.15, g=1.12) 
+
+RESULTS AFTER ROUND 1 (sorted by AIC, lower is better):
+ 1. SE         + Linear     AIC=  -152.43  dAIC=   0.00  (k=7, round 1)
+ 2. RQ         + Linear     AIC=  -150.29  dAIC=   2.14  (k=8, round 1)
+ 3. MA5        + Linear     AIC=  -149.41  dAIC=   3.02  (k=7, round 1)
+ 4. SE+LIN     + Constant   AIC=  -145.19  dAIC=   7.24  (k=7, round 1)
+ 5. MA3+LIN    + Constant   AIC=  -140.06  dAIC=  12.37  (k=7, round 1)
+
+This is round 2 of at most 4. Reflect on the ranking: which structural ingredients (roughness class, LIN/PER components, mean order) does the evidence favor? Then either propose up to 5 NEW candidates (not in the table) that could lower AIC further, or set "stop":true with your "final" pick.
+=== ROUND 2 : LLM REPLY (anthropic/claude-opus-4.8, 5.8s, 1842 tok) ===
+{"analysis":"Strong linear trend (R^2 0.92) best captured by Linear mean + smooth SE. Variogram reaches sill ~1.3, no periodicity. SE smoothness wins over MA/RQ. Try SE+Linear variants and quadratic mean, plus LIN kernel combos.","proposals":[{"kernel":"SE","mean":"Quadratic","reason":"Quadratic OLS slightly better; test richer mean with smooth kernel"},{"kernel":"SE+LIN","mean":"Linear","reason":"Combine smooth residual with explicit trend via both"},{"kernel":"RQ","mean":"Quadratic","reason":"Multi-scale residual with curvature trend"},{"kernel":"MA5","mean":"Quadratic","reason":"Slightly rough with quadratic mean"},{"kernel":"SE*LIN","mean":"Linear","reason":"Variance growth along trend with linear mean"}],"stop":false,"final":{"kernel":"SE","mean":"Linear"}}
+=== ROUND 2 : 5 new candidates evaluated, best AIC so far -156.05 ===
+
+=== ROUND 3 : USER PROMPT ===
+Dataset: EX2 (2-D synthetic, unknown generator)
+n = 100 observations, D = 2 input dimensions.
+  x1: range [0.02233, 0.9939], std 0.2829
+  x2: range [0.003018, 0.99], std 0.308
+y: mean 0.5684, std 0.5052, range [-0.1706, 2.004].
+Trend fit (OLS R^2): linear 0.920, quadratic(diagonal) 0.934.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.56, g=0.59) (h=0.97, g=0.79) (h=1.31, g=1.02) (h=1.59, g=0.96) (h=1.87, g=0.99) (h=2.15, g=1.12) 
+
+RESULTS AFTER ROUND 2 (sorted by AIC, lower is better):
+ 1. SE*LIN     + Linear     AIC=  -156.05  dAIC=   0.00  (k=9, round 2)
+ 2. SE         + Quadratic  AIC=  -152.73  dAIC=   3.32  (k=9, round 2)
+ 3. SE         + Linear     AIC=  -152.43  dAIC=   3.62  (k=7, round 1)
+ 4. RQ         + Linear     AIC=  -150.29  dAIC=   5.76  (k=8, round 1)
+ 5. MA5        + Quadratic  AIC=  -149.65  dAIC=   6.40  (k=9, round 2)
+ 6. MA5        + Linear     AIC=  -149.41  dAIC=   6.64  (k=7, round 1)
+ 7. RQ         + Quadratic  AIC=  -148.81  dAIC=   7.24  (k=10, round 2)
+ 8. SE+LIN     + Linear     AIC=  -148.43  dAIC=   7.62  (k=9, round 2)
+ 9. SE+LIN     + Constant   AIC=  -145.19  dAIC=  10.86  (k=7, round 1)
+10. MA3+LIN    + Constant   AIC=  -140.06  dAIC=  15.99  (k=7, round 1)
+
+This is round 3 of at most 4. Reflect on the ranking: which structural ingredients (roughness class, LIN/PER components, mean order) does the evidence favor? Then either propose up to 5 NEW candidates (not in the table) that could lower AIC further, or set "stop":true with your "final" pick.
+=== ROUND 3 : LLM REPLY (anthropic/claude-opus-4.8, 5.9s, 2023 tok) ===
+{"analysis":"SE smoothness dominates; LIN as multiplicative variance growth (SE*LIN) helps over additive. Linear mean strong (R^2=0.92). Best is SE*LIN+Linear. Try SE*LIN with Constant/Quadratic, and other smooth kernels times LIN.","proposals":[{"kernel":"SE*LIN","mean":"Quadratic","reason":"quad trend may complement multiplicative variance"},{"kernel":"SE*LIN","mean":"Constant","reason":"LIN kernel handles trend, reduce mean params"},{"kernel":"RQ*LIN","mean":"Linear","reason":"multi-scale smooth with growing variance"},{"kernel":"MA5*LIN","mean":"Linear","reason":"slightly rough smooth times linear variance"}],"stop":false,"final":{"kernel":"SE*LIN","mean":"Linear"}}
+=== ROUND 3 : 4 new candidates evaluated, best AIC so far -158.92 ===
+
+=== ROUND 4 : USER PROMPT ===
+Dataset: EX2 (2-D synthetic, unknown generator)
+n = 100 observations, D = 2 input dimensions.
+  x1: range [0.02233, 0.9939], std 0.2829
+  x2: range [0.003018, 0.99], std 0.308
+y: mean 0.5684, std 0.5052, range [-0.1706, 2.004].
+Trend fit (OLS R^2): linear 0.920, quadratic(diagonal) 0.934.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.56, g=0.59) (h=0.97, g=0.79) (h=1.31, g=1.02) (h=1.59, g=0.96) (h=1.87, g=0.99) (h=2.15, g=1.12) 
+
+RESULTS AFTER ROUND 3 (sorted by AIC, lower is better):
+ 1. SE*LIN     + Constant   AIC=  -158.92  dAIC=   0.00  (k=7, round 3)
+ 2. SE*LIN     + Linear     AIC=  -156.05  dAIC=   2.87  (k=9, round 2)
+ 3. MA5*LIN    + Linear     AIC=  -154.68  dAIC=   4.24  (k=9, round 3)
+ 4. RQ*LIN     + Linear     AIC=  -154.05  dAIC=   4.87  (k=10, round 3)
+ 5. SE         + Quadratic  AIC=  -152.73  dAIC=   6.19  (k=9, round 2)
+ 6. SE*LIN     + Quadratic  AIC=  -152.65  dAIC=   6.27  (k=11, round 3)
+ 7. SE         + Linear     AIC=  -152.43  dAIC=   6.49  (k=7, round 1)
+ 8. RQ         + Linear     AIC=  -150.29  dAIC=   8.63  (k=8, round 1)
+ 9. MA5        + Quadratic  AIC=  -149.65  dAIC=   9.27  (k=9, round 2)
+10. MA5        + Linear     AIC=  -149.41  dAIC=   9.51  (k=7, round 1)
+11. RQ         + Quadratic  AIC=  -148.81  dAIC=  10.11  (k=10, round 2)
+12. SE+LIN     + Linear     AIC=  -148.43  dAIC=  10.49  (k=9, round 2)
+13. SE+LIN     + Constant   AIC=  -145.19  dAIC=  13.73  (k=7, round 1)
+14. MA3+LIN    + Constant   AIC=  -140.06  dAIC=  18.86  (k=7, round 1)
+
+This is round 4 of at most 4. Reflect on the ranking: which structural ingredients (roughness class, LIN/PER components, mean order) does the evidence favor? Then either propose up to 5 NEW candidates (not in the table) that could lower AIC further, or set "stop":true with your "final" pick.
+=== ROUND 4 : LLM REPLY (anthropic/claude-opus-4.8, 5.2s, 2160 tok) ===
+{"analysis":"SE*LIN with Constant mean dominates: smooth kernel, linear-variance growth, no redundant trend. Adding Linear/Quadratic mean hurts (redundant with LIN). MA5*LIN+Constant untested and could rival SE*LIN+Constant.","proposals":[{"kernel":"MA5*LIN","mean":"Constant","reason":"smooth-ish rough with linear variance, no redundant mean"},{"kernel":"RQ*LIN","mean":"Constant","reason":"multi-scale variant of winner, no redundant trend"},{"kernel":"MA3*LIN","mean":"Constant","reason":"test roughness sensitivity around best structure"}],"stop":false,"final":{"kernel":"SE*LIN","mean":"Constant"}}
+=== ROUND 4 : 3 new candidates evaluated, best AIC so far -158.92 ===
+
+=== DONE: EX2 (2-D synthetic, unknown generator) | best SE*LIN + Constant AIC=-158.92 | 17 evals | 7562 tokens | max-rounds ===
