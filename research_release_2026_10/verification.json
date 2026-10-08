@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "issues": [],
+  "files_checked": 151,
+  "candidate_visits_verified": 2897,
+  "experiments": [
+    {
+      "dataset": "structured_panel",
+      "runs": 80,
+      "groups": [
+        {
+          "stage": "A",
+          "model": "anthropic/claude-fable-5.1",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 4,
+          "visits": 100,
+          "cost_usd": 1.2841399999999998
+        },
+        {
+          "stage": "A",
+          "model": "deepseek/deepseek-v4-pro-0813",
+          "method": "structured",
+          "n": 5,
+          "completed": 0,
+          "champion": 0,
+          "near": 0,
+          "visits": 40,
+          "cost_usd": 0.33740348388
+        },
+        {
+          "stage": "A",
+          "model": "google/gemini-3.1-pro-preview",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 3,
+          "visits": 100,
+          "cost_usd": 0.46999399999999997
+        },
+        {
+          "stage": "A",
+          "model": "google/gemini-3.8-flash",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 4,
+          "visits": 100,
+          "cost_usd": 0.21449474999999998
+        },
+        {
+          "stage": "A",
+          "model": "moonshotai/kimi-k3",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 3,
+          "visits": 100,
+          "cost_usd": 0.7754734990000001
+        },
+        {
+          "stage": "A",
+          "model": "openai/gpt-4o-mini",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 1,
+          "visits": 97,
+          "cost_usd": 0.007598700000000001
+        },
+        {
+          "stage": "A",
+          "model": "openai/gpt-5.5",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 3,
+          "visits": 100,
+          "cost_usd": 1.06362
+        },
+        {
+          "stage": "A",
+          "model": "openai/gpt-6-astra",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 4,
+          "visits": 100,
+          "cost_usd": 0.9878125
+        },
+        {
+          "stage": "A",
+          "model": "qwen/qwen3.8-max-0902",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 3,
+          "visits": 100,
+          "cost_usd": 0.237502
+        },
+        {
+          "stage": "A",
+          "model": "x-ai/grok-4.7",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 3,
+          "visits": 100,
+          "cost_usd": 0.60292
+        },
+        {
+          "stage": "B",
+          "model": "anthropic/claude-fable-5.1",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 3,
+          "visits": 100,
+          "cost_usd": 1.2128700000000001
+        },
+        {
+          "stage": "B",
+          "model": "openai/gpt-6-astra",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 3,
+          "near": 4,
+          "visits": 100,
+          "cost_usd": 0.9722895
+        },
+        {
+          "stage": "C",
+          "model": "anthropic/claude-fable-5.1",
+          "method": "budget_complete",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 4,
+          "visits": 100,
+          "cost_usd": 0.8717900000000001
+        },
+        {
+          "stage": "C",
+          "model": "anthropic/claude-fable-5.1",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 3,
+          "visits": 100,
+          "cost_usd": 1.00892
+        },
+        {
+          "stage": "C",
+          "model": "openai/gpt-6-astra",
+          "method": "budget_complete",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 2,
+          "visits": 100,
+          "cost_usd": 0.58035
+        },
+        {
+          "stage": "C",
+          "model": "openai/gpt-6-astra",
+          "method": "structured",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 3,
+          "visits": 100,
+          "cost_usd": 0.7965
+        }
+      ],
+      "cost_usd": 11.42367843288,
+      "billing_unknown": 0
+    },
+    {
+      "dataset": "development",
+      "runs": 50,
+      "groups": [
+        {
+          "stage": "confirmation",
+          "model": "anthropic/claude-fable-5.1",
+          "method": "control",
+          "n": 5,
+          "completed": 5,
+          "champion": 2,
+          "near": 4,
+          "visits": 100,
+          "cost_usd": 1.23833
+        },
+        {
+          "stage": "confirmation",
+          "model": "anthropic/claude-fable-5.1",
+          "method": "strategy",
+          "n": 5,
+          "completed": 5,
+          "champion": 2,
+          "near": 5,
+          "visits": 100,
+          "cost_usd": 1.7899999999999998
+        },
+        {
+          "stage": "confirmation",
+          "model": "openai/gpt-6-astra",
+          "method": "control",
+          "n": 5,
+          "completed": 5,
+          "champion": 2,
+          "near": 4,
+          "visits": 100,
+          "cost_usd": 0.8905585
+        },
+        {
+          "stage": "confirmation",
+          "model": "openai/gpt-6-astra",
+          "method": "strategy",
+          "n": 5,
+          "completed": 5,
+          "champion": 3,
+          "near": 4,
+          "visits": 100,
+          "cost_usd": 1.204211
+        },
+        {
+          "stage": "screen",
+          "model": "anthropic/claude-fable-5.1",
+          "method": "control",
+          "n": 5,
+          "completed": 5,
+          "champion": 1,
+          "near": 3,
+          "visits": 100,
+          "cost_usd": 1.19125
+        },
+        {
+          "stage": "screen",
+          "model": "anthropic/claude-fable-5.1",
+          "method": "enriched",
+          "n": 5,
+          "completed": 5,
+          "champion": 3,
+          "near": 5,
+          "visits": 100,
+          "cost_usd": 2.34414
+        },
+        {
+          "stage": "screen",
+          "model": "anthropic/claude-fable-5.1",
+          "method": "strategy",
+          "n": 5,
+          "completed": 5,
+          "champion": 3,
+          "near": 5,
+          "visits": 100,
+          "cost_usd": 1.7971
+        },
+        {
+          "stage": "screen",
+          "model": "openai/gpt-6-astra",
+          "method": "control",
+          "n": 5,
+          "completed": 5,
+          "champion": 2,
+          "near": 4,
+          "visits": 100,
+          "cost_usd": 0.97675
+        },
+        {
+          "stage": "screen",
+          "model": "openai/gpt-6-astra",
+          "method": "enriched",
+          "n": 5,
+          "completed": 5,
+          "champion": 3,
+          "near": 4,
+          "visits": 100,
+          "cost_usd": 1.6345875
+        },
+        {
+          "stage": "screen",
+          "model": "openai/gpt-6-astra",
+          "method": "strategy",
+          "n": 5,
+          "completed": 5,
+          "champion": 4,
+          "near": 5,
+          "visits": 100,
+          "cost_usd": 1.2772124999999999
+        }
+      ],
+      "cost_usd": 14.3441395,
+      "billing_unknown": 0
+    },
+    {
+      "dataset": "holdout",
+      "runs": 18,
+      "groups": [
+        {
+          "stage": "holdout",
+          "model": "anthropic/claude-fable-5.1",
+          "method": "strategy",
+          "n": 6,
+          "completed": 6,
+          "champion": 5,
+          "near": 6,
+          "visits": 120,
+          "cost_usd": 2.00472
+        },
+        {
+          "stage": "holdout",
+          "model": "openai/gpt-6-astra",
+          "method": "control",
+          "n": 6,
+          "completed": 6,
+          "champion": 5,
+          "near": 6,
+          "visits": 120,
+          "cost_usd": 1.1598825
+        },
+        {
+          "stage": "holdout",
+          "model": "openai/gpt-6-astra",
+          "method": "strategy",
+          "n": 6,
+          "completed": 6,
+          "champion": 4,
+          "near": 4,
+          "visits": 120,
+          "cost_usd": 1.55355
+        }
+      ],
+      "cost_usd": 4.7181525,
+      "billing_unknown": 0
+    }
+  ],
+  "CPT_raw_observations_released": false,
+  "provider_content_released": false,
+  "API_calls": 0,
+  "GP_fits": 0
+}

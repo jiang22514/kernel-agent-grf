@@ -1,0 +1,283 @@
+{
+  "status": "PASS",
+  "protocol": "b67_union_lin_offset_v2",
+  "theta": 4.14,
+  "champion": {
+    "ki": 54,
+    "mi": 3,
+    "expr": "(MA1*LIN)+PER",
+    "mean_id": 3,
+    "aic": 508.6899663049753
+  },
+  "scope": "Two new champion packs plus three unchanged original baseline packs; no baseline resampling",
+  "results": [
+    {
+      "kind": "union",
+      "expr": "(MA1*LIN)+PER",
+      "theta": 4.14,
+      "event_threshold": 0.1,
+      "n_samples": 500,
+      "P": 1,
+      "mc_se": 0,
+      "wilson": [
+        0.9923756594190852,
+        1.0000000000000002
+      ],
+      "k_of_N": [
+        500,
+        500
+      ],
+      "wp_med": 0.12715104166665836,
+      "wp_iqr": 0.012427083333332048,
+      "wp_quantile_probabilities": [
+        0.05,
+        0.25,
+        0.5,
+        0.75,
+        0.95
+      ],
+      "wp_quantiles": [
+        0.11358333333332646,
+        0.12121354166665897,
+        0.12715104166665836,
+        0.13364062499999102,
+        0.14117187499999018
+      ],
+      "expected_wp_pack": 0.1277617277973166,
+      "expected_wp_direct_reference": 0.1277617277973165,
+      "exp_gap": -0.0004320194639916286,
+      "exp_mc_se": 0.0003804956949125293,
+      "wp_note": "Wilson interval covers Monte Carlo uncertainty conditional on fixed model, parameters, and grid.",
+      "paired_delta": {},
+      "jitter_used": [],
+      "jitter_var_rel_max": [],
+      "sampler_timing": {
+        "t_samples_s": 5.524591,
+        "t_setup_s": 0.9335179,
+        "total_elapsed_s": 6.4649986
+      },
+      "union_axis_sizes": [
+        205,
+        654
+      ],
+      "union_nodes": 134070
+    },
+    {
+      "kind": "union",
+      "expr": "(MA1*LIN)+PER",
+      "theta": 4.14,
+      "event_threshold": 0.1,
+      "n_samples": 500,
+      "P": 1,
+      "mc_se": 0,
+      "wilson": [
+        0.9923756594190852,
+        1.0000000000000002
+      ],
+      "k_of_N": [
+        500,
+        500
+      ],
+      "wp_med": 0.12814843750000168,
+      "wp_iqr": 0.010614583333333455,
+      "wp_quantile_probabilities": [
+        0.05,
+        0.25,
+        0.5,
+        0.75,
+        0.95
+      ],
+      "wp_quantiles": [
+        0.11581250000000154,
+        0.12298437500000162,
+        0.12814843750000168,
+        0.13359895833333507,
+        0.14200000000000185
+      ],
+      "expected_wp_pack": 0.12783595445800386,
+      "expected_wp_direct_reference": 0.12783595445800386,
+      "exp_gap": 0.0005522434586644476,
+      "exp_mc_se": 0.00035428091590153436,
+      "wp_note": "Wilson interval covers Monte Carlo uncertainty conditional on fixed model, parameters, and grid.",
+      "paired_delta": {
+        "med": 0.000277343750010664,
+        "maxabs": 0.010291666666676164,
+        "rms": 0.003247228569269005,
+        "note": "Same realization, finer minus nested coarser quadrature; descriptive, no convergence gate."
+      },
+      "jitter_used": [],
+      "jitter_var_rel_max": [],
+      "sampler_timing": {
+        "t_samples_s": 13.256757,
+        "t_setup_s": 3.1625257,
+        "total_elapsed_s": 16.4198708
+      },
+      "union_axis_sizes": [
+        405,
+        774
+      ],
+      "union_nodes": 313470
+    },
+    {
+      "kind": "union",
+      "expr": "SE",
+      "theta": 4.14,
+      "event_threshold": 0.1,
+      "n_samples": 500,
+      "P": 0.828,
+      "mc_se": 0.0168769665520792,
+      "wilson": [
+        0.7924525522015603,
+        0.8585458803773596
+      ],
+      "k_of_N": [
+        414,
+        500
+      ],
+      "wp_med": 0.10692708333332716,
+      "wp_iqr": 0.011369791666665435,
+      "wp_quantile_probabilities": [
+        0.05,
+        0.25,
+        0.5,
+        0.75,
+        0.95
+      ],
+      "wp_quantiles": [
+        0.09497395833332806,
+        0.10194791666666106,
+        0.10692708333332716,
+        0.1133177083333265,
+        0.1220156249999922
+      ],
+      "expected_wp_pack": 0.10833927279676095,
+      "expected_wp_direct_reference": 0.10833927279676073,
+      "exp_gap": -0.0006778352967672513,
+      "exp_mc_se": 0.00037855180582314067,
+      "wp_note": "Wilson interval covers Monte Carlo uncertainty conditional on fixed model, parameters, and grid.",
+      "paired_delta": {},
+      "jitter_used": [],
+      "jitter_var_rel_max": [],
+      "sampler_timing": {
+        "t_samples_s": 2.6857015,
+        "t_setup_s": 0.4645234,
+        "total_elapsed_s": 3.1510189
+      },
+      "union_axis_sizes": [
+        205,
+        654
+      ],
+      "union_nodes": 134070
+    },
+    {
+      "kind": "union",
+      "expr": "SE",
+      "theta": 4.14,
+      "event_threshold": 0.1,
+      "n_samples": 500,
+      "P": 0.824,
+      "mc_se": 0.017030795636141023,
+      "wilson": [
+        0.788185828409527,
+        0.8548735988940402
+      ],
+      "k_of_N": [
+        412,
+        500
+      ],
+      "wp_med": 0.10873958333333472,
+      "wp_iqr": 0.012933593750000152,
+      "wp_quantile_probabilities": [
+        0.05,
+        0.25,
+        0.5,
+        0.75,
+        0.95
+      ],
+      "wp_quantiles": [
+        0.09475520833333456,
+        0.102557291666668,
+        0.10873958333333472,
+        0.11549088541666815,
+        0.12479557291666822
+      ],
+      "expected_wp_pack": 0.10831753077511602,
+      "expected_wp_direct_reference": 0.10831753077511441,
+      "exp_gap": 0.0008495994332187173,
+      "exp_mc_se": 0.00041596573759628827,
+      "wp_note": "Wilson interval covers Monte Carlo uncertainty conditional on fixed model, parameters, and grid.",
+      "paired_delta": {
+        "med": -2.9947916659306406e-05,
+        "maxabs": 0.0016484375000072604,
+        "rms": 0.0005354707611898283,
+        "note": "Same realization, finer minus nested coarser quadrature; descriptive, no convergence gate."
+      },
+      "jitter_used": [],
+      "jitter_var_rel_max": [],
+      "sampler_timing": {
+        "t_samples_s": 6.9029015,
+        "t_setup_s": 1.6518021,
+        "total_elapsed_s": 8.5550996
+      },
+      "union_axis_sizes": [
+        405,
+        774
+      ],
+      "union_nodes": 313470
+    },
+    {
+      "kind": "dense",
+      "expr": "RQ",
+      "theta": 4.14,
+      "event_threshold": 0.1,
+      "n_samples": 500,
+      "P": 1,
+      "mc_se": 0,
+      "wilson": [
+        0.9923756594190852,
+        1.0000000000000002
+      ],
+      "k_of_N": [
+        500,
+        500
+      ],
+      "wp_med": 0.16113541666665468,
+      "wp_iqr": 0.01648437499999822,
+      "wp_quantile_probabilities": [
+        0.05,
+        0.25,
+        0.5,
+        0.75,
+        0.95
+      ],
+      "wp_quantiles": [
+        0.14145312499999013,
+        0.15252604166665562,
+        0.16113541666665468,
+        0.16901041666665384,
+        0.17965624999998603
+      ],
+      "expected_wp_pack": 0.16128077364217275,
+      "expected_wp_direct_reference": 0.16128077364217275,
+      "exp_gap": -0.00026069030885139677,
+      "exp_mc_se": 0.0005279873071310847,
+      "wp_note": "Wilson interval covers Monte Carlo uncertainty conditional on fixed model, parameters, and grid.",
+      "paired_delta": {
+        "med": 0.0007031249999855382,
+        "maxabs": 0.04103124999998814,
+        "rms": 0.011487855925599848,
+        "note": "Same realization, finer minus nested coarser quadrature; descriptive, no convergence gate."
+      },
+      "jitter_used": 1e-10,
+      "jitter_var_rel_max": 6.619833410429959e-09,
+      "sampler_timing": {
+        "t_total": 63.7907648,
+        "t_sample": 2.6741764,
+        "t_kernel": 39.5634332,
+        "t_chol": 18.7179589
+      },
+      "union_axis_sizes": [],
+      "union_nodes": []
+    }
+  ]
+}

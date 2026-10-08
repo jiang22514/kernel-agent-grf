@@ -1,82 +1,33 @@
-# kernel-agent-grf
+# Kernel-agent geotechnical random fields
 
-**Kernel Agent for Geotechnical Random Fields** — a closed-loop LLM agent for
-compositional kernel discovery.
+Code and reproducibility materials for **Compositional covariance discovery for geotechnical random fields: LLM-guided search and exact conditional simulation**.
 
-Code, results, and complete LLM transcripts accompanying the paper:
+## Current research release — 8 October 2026
 
-> *A closed-loop LLM agent for compositional kernel discovery and fast simulation of geotechnical random fields*
+Start with [research_release_2026_10](research_release_2026_10/README.md). This release contains the corrected linear covariance with a fitted horizontal offset, a 376-candidate kernel–mean library, structured LLM search, and exact conditional simulation on a coordinate-union grid.
 
-The framework replaces the conventional fixed kernel library of Gaussian-process
-random field modeling with a bounded compositional grammar (7 primitives, sum and
-product operators, 156 kernel/mean candidates), and uses a closed-loop LLM agent --
-Perceive, Plan, Act, Reflect -- to discover the best composite structure at a
-fraction of the exhaustive cost. Two architectural firewalls (grammar validation
-and exact-likelihood AIC arbitration) guarantee that LLM errors can waste search
-budget but never corrupt the final selection. A sum-of-Kronecker extension of the
-grid inducing-point engine keeps every discovered composite kernel on the fast
-simulation path.
+The two scientific components are:
 
-## Requirements
+- **Data-guided covariance discovery:** an LLM proposes explicit kernel–mean candidates and receives their numerical likelihood/AIC evaluations. Structured search uses four batches of five; a competing-structure variant uses five batches of four. Both use the same 20-candidate budget.
+- **Faithful conditional random fields:** the selected covariance is expanded into separable terms, sampled independently on the observation–query coordinate union, and conditioned jointly through a Matheron update. It preserves the fitted covariance without inducing-point interpolation or a shared eigenbasis across covariance terms.
 
-- MATLAB (tested on R2023b+; no special toolboxes required)
-- [GPML toolbox v4.2](http://gaussianprocess.org/gpml/code/matlab/doc/) --
-  download separately and add to the MATLAB path (`addpath(genpath(...))`).
-- For agent scripts only: an [OpenRouter](https://openrouter.ai) API key in the
-  `OPENROUTER_API_KEY` environment variable. Everything except the live agent
-  runs (enumeration, simulation, figures) works without any API key.
+On six new synthetic cases generated after fixing the search procedures, Astra structured search and Fable 5.1 with the competing-structure variant each recovered five library optima and reached within two AIC units in all six cases, evaluating 20 of 376 candidates. Uniform random selection has a mean near-optimal probability of 15.60%. Astra with the variant reached four of six; the results support evaluating each model–procedure combination rather than assuming a universally better prompt.
 
-All scripts assume the repository folders are on the MATLAB path:
+For the 744-observation CPT case, the best composite improves AIC by 49.8 over the best single kernel. A matched same-model benchmark generated 500 fields at 24,321 locations in 6.47 seconds versus 44.35 seconds for dense conditional simulation, including preparation (6.85×). Mean weak-zone proportions were 10.77%, 16.10% and 12.73% for SE, RQ and the selected composite. The model-selection advantage does not imply superior probabilistic prediction: those comparisons are reported separately.
 
-```matlab
-addpath(genpath('path/to/this/repo'));
-addpath(genpath('path/to/gpml-matlab-v4.2'));
+## Reproduce without new model calls
+
+```text
+cd research_release_2026_10
+python -B tools/verify_release.py
 ```
 
-## Repository layout
+The standard-library verifier checks the released file hashes, candidate-access records, outcomes and costs. No API key or GP refitting is required. The release README gives optional synthetic-data regeneration, numerical fitting and explicitly enabled live-API instructions.
 
-| Folder | Contents |
-|---|---|
-| `selection/` | Compositional grammar, composite-kernel GP fitting and AIC/BIC evaluation (exact marginal likelihood), exhaustive ground-truth enumeration, held-out validation |
-| `agent/` | Closed-loop LLM agent: data profiling (Perceive), proposal parsing with grammar validation, the agent loop, the multi-model study driver, and figure generation |
-| `simulation/` | Sum-of-Kronecker simulation engine: structure routing, separable-term expansion (incl. PER/RQ realizations), Matheron posterior sampler, validation tests, borehole simulation figures |
-| `diagnostics/` | One-off probes used during development (SKI accuracy vs. grid density, mean-function pipeline checks) |
-| `results/` | Saved `.mat` results of every experiment in the paper |
-| `results/transcripts/` | Complete verbatim LLM transcripts of all 40 agent runs (8 LLMs x 5 cases): prompts, proposals, per-proposal reasons, per-round analyses |
-| `results/figures/` | Paper figures produced by the scripts |
+Included are synthetic observations and generators, prompt templates, model settings, candidate catalogues, sanitized search records, numerical code, fitted-model results and CPT aggregate outcomes. **Original CPT coordinates and observations are not public; they may be requested from the authors.** CPT reruns require access to those observations. Keys, private provider transcripts and posterior field arrays are excluded from the current release.
 
-## Key entry points
+## Earlier versions
 
-| Script | What it does | Paper section |
-|---|---|---|
-| `selection/enumerate_grammar_aic.m` | Exhaustive 156-candidate ground truth, synthetic cases | 4.3 |
-| `selection/enumerate_borehole_fulln.m` | Exhaustive ground truth, borehole at full n=744 | 5.2 |
-| `selection/holdout_borehole.m` | Held-out predictive validation (10 splits, RMSE/NLPD) | 5.2 |
-| `agent/run_agent_study.m` | Full closed-loop agent study (8 LLMs x 5 cases) | 4.4, 5.3 |
-| `agent/make_agent_figures.m` | Convergence and open-loop-vs-closed-loop figures | 4.4 |
-| `simulation/test_grid_sim_terms.m` | Validates the K>=2 sampler against the exact GP posterior | 2.3.3 |
-| `simulation/test_reform.m` | Validates PER/RQ simulation-stage realizations | 2.3.3 |
-| `simulation/make_borehole_sim_figures.m` | Three-model borehole field + variogram figures | 5.4 |
+The root-level `selection/`, `agent/`, `simulation/`, `diagnostics/` and `results/` directories are retained as historical material for the earlier submission. They use earlier kernel definitions and experiments and should not be mixed with the current release. The [earlier README](README_EAAI_legacy.md) documents that version. Use the self-contained release directory for the current paper.
 
-Test scripts (`test_*.m`) are self-contained checks; each prints a PASS/FAIL verdict.
-
-## Reproducibility
-
-- The arbitration layer (data, GP fitting, AIC, exhaustive ground truth) is fully
-  deterministic under the fixed seeds baked into the scripts.
-- The LLM layer is queried at temperature 0.01 -- near-deterministic but, as with
-  all commercial LLM APIs, not bit-reproducible. The complete transcripts in
-  `results/transcripts/` document the exact runs reported in the paper, and all
-  saved `.mat` results allow every table and figure to be regenerated without
-  re-querying any LLM.
-
-## Data
-
-The synthetic cases (EX1-EX4) are generated inside the scripts with fixed seeds.
-The Wuhan CPT borehole dataset (`samedata.mat`) is not redistributed in this
-repository; it is available from the corresponding author on reasonable request.
-
-## License
-
-MIT (see `LICENSE`). The GPML toolbox is distributed separately under its own
-(FreeBSD-style) license.
+Code is available under the existing [MIT license](LICENSE); third-party GPML is obtained separately under its own license. See the current release for dependency details.

@@ -1,0 +1,4237 @@
+{
+  "runs": [
+    {
+      "run_id": "holdout__H01__astra__control",
+      "stage": "holdout",
+      "case": "H01",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "control",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.198895,
+      "charged_or_reserved_usd": 0.198895,
+      "api_requests": 4,
+      "billing_unknown": false,
+      "elapsed_seconds": 58.84990119934082,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        6.64515445402489,
+        6.64515445402489,
+        6.64515445402489,
+        6.64515445402489,
+        6.492267677280182,
+        5.660251699441488,
+        5.660251699441488,
+        5.660251699441488,
+        5.660251699441488,
+        0.5572845446749852,
+        0.5572845446749852,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -20.141177020504216,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 31.27109185861815,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -19.557052049078976,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": -19.125816052114544,
+          "k": 6,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -20.294063797248924,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": -21.126079775087618,
+          "k": 5,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -18.14111943152571,
+          "k": 8,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -13.981230872628771,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -18.34718582716482,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -26.22904692985412,
+          "k": 10,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": -19.484079292304415,
+          "k": 8,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -26.786331474529106,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -16.313976142821076,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": -15.137410064115073,
+          "k": 8,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -14.663895688759482,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -12.766631735060287,
+          "k": 12,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -21.288356598813948,
+          "k": 13,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -13.886760213031465,
+          "k": 9,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -19.52949318862909,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(SE*PER)+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -10.885359036861985,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        }
+      ],
+      "best": {
+        "kernel": "SE+PER",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": -26.786331474529106,
+        "k": 12,
+        "ok": true,
+        "round": 3
+      },
+      "source_sha256": "5957d16eabae3b53ce88c89cd1a5b6ae7fdaa5acb8eb891b618410e8017bf591"
+    },
+    {
+      "run_id": "holdout__H01__astra__strategy",
+      "stage": "holdout",
+      "case": "H01",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.26990000000000003,
+      "charged_or_reserved_usd": 0.26990000000000003,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 68.09423422813416,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        6.64515445402489,
+        6.64515445402489,
+        6.64515445402489,
+        0.5572845446749852,
+        0.5572845446749852,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -20.141177020504216,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 31.27109185861815,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -18.14111943152571,
+          "k": 8,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -26.22904692985412,
+          "k": 10,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -16.313976142821076,
+          "k": 11,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -26.786331474529106,
+          "k": 12,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -20.294063797248924,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -18.34718582716482,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -13.981230872628771,
+          "k": 7,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -12.734835646859295,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -14.663895688759482,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": -19.484079292304415,
+          "k": 8,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -19.595746768646364,
+          "k": 11,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -19.557052049078976,
+          "k": 9,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "SE+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -18.610765598114085,
+          "k": 11,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -13.511296526457642,
+          "k": 13,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": -21.126079775087618,
+          "k": 5,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": -17.40403897568268,
+          "k": 7,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -13.872036368829328,
+          "k": 7,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -16.693300229150083,
+          "k": 12,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "SE+PER",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": -26.786331474529106,
+        "k": 12,
+        "ok": true,
+        "round": 2
+      },
+      "source_sha256": "86eb8daea2e81ad3b0207481dcba85c242d8d2c0958bfabf2a46cc4801a74326"
+    },
+    {
+      "run_id": "holdout__H01__fable51__strategy",
+      "stage": "holdout",
+      "case": "H01",
+      "model": "anthropic/claude-fable-5.1",
+      "model_label": "fable51",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.35731999999999997,
+      "charged_or_reserved_usd": 0.35731999999999997,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 61.06460189819336,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        7.22927942545013,
+        7.22927942545013,
+        7.22927942545013,
+        7.22927942545013,
+        5.660251699441488,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -19.557052049078976,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": -9.304884810927149,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -18.14111943152571,
+          "k": 8,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": -19.484079292304415,
+          "k": 8,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": -21.126079775087618,
+          "k": 5,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -26.786331474529106,
+          "k": 12,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": -17.40403897568268,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -16.364462270417278,
+          "k": 11,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -19.595746768646364,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -26.22904692985412,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -21.288356598813948,
+          "k": 13,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -12.766631735060287,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -13.886760213031465,
+          "k": 9,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "LIN+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -7.886649811767484,
+          "k": 12,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -22.784462390236854,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -13.557049951757449,
+          "k": 12,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -11.809235778005103,
+          "k": 12,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -12.94567408455265,
+          "k": 15,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": -14.663895688759482,
+          "k": 12,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "SE+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": -17.70034445137071,
+          "k": 13,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "SE+PER",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": -26.786331474529106,
+        "k": 12,
+        "ok": true,
+        "round": 2
+      },
+      "source_sha256": "42ce10bc2ccfc3dde8757850ec1169cf50d5fff4c8d5989f3560ec7ff3d9bb86"
+    },
+    {
+      "run_id": "holdout__H02__astra__control",
+      "stage": "holdout",
+      "case": "H02",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "control",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.1885575,
+      "charged_or_reserved_usd": 0.1885575,
+      "api_requests": 4,
+      "billing_unknown": false,
+      "elapsed_seconds": 47.882479190826416,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        4.985088441771865,
+        3.8504498381285543,
+        3.8504498381285543,
+        3.8504498381285543,
+        3.6007588706875993,
+        3.6007588706875993,
+        3.6007588706875993,
+        3.0837876535946407,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.8601228172850597,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 155.23561068925451,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 154.1009720856112,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 161.12317448725895,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 158.83952273167017,
+          "k": 8,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.85128111817025,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 155.24724031293607,
+          "k": 6,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 157.340141603338,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.3343099010773,
+          "k": 5,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.1106450647677,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 154.8791237712025,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.8258116186648,
+          "k": 7,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.5156460144933,
+          "k": 7,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.2836723156243,
+          "k": 5,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 150.25052224748265,
+          "k": 8,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 154.2674954253643,
+          "k": 7,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.13500616840074,
+          "k": 8,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.007459143803,
+          "k": 8,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 153.54754921296347,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(SE*PER)+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.2299286882967,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 155.0699602722324,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        }
+      ],
+      "best": {
+        "kernel": "MA3+PER",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 150.25052224748265,
+        "k": 8,
+        "ok": true,
+        "round": 3
+      },
+      "source_sha256": "a826fa4a7041477cb5f6e444bb7fbd6feae819e10fdb3f0f403ac5f9a1885dfa"
+    },
+    {
+      "run_id": "holdout__H02__astra__strategy",
+      "stage": "holdout",
+      "case": "H02",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 2.7439496398122287,
+      "hit": false,
+      "near_optimal": false,
+      "cost_usd": 0.25525,
+      "charged_or_reserved_usd": 0.25525,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 75.00938630104065,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        4.985088441771865,
+        3.0331500681416514,
+        3.0331500681416514,
+        3.0331500681416514,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.884483920918086,
+        2.7439496398122287,
+        2.7439496398122287
+      ],
+      "visited": [
+        {
+          "kernel": "MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 155.23561068925451,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.2836723156243,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 155.24724031293607,
+          "k": 6,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.85128111817025,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.13500616840074,
+          "k": 8,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA1+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 154.75273151963825,
+          "k": 8,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA5*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.5156460144933,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 154.29775430442328,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 159.52438543188214,
+          "k": 9,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 157.9893986888297,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 154.0829450955892,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(MA1*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 157.2789008751015,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 156.06036057973853,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 156.81281194815642,
+          "k": 7,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA5*PER)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 156.68730882132812,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA1*PER)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 159.89370498172502,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 156.0100967192523,
+          "k": 7,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "MA5*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 157.25178157987423,
+          "k": 9,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 152.99447188729488,
+          "k": 9,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "RQ*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 155.11073435130177,
+          "k": 8,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "RQ+PER",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 152.99447188729488,
+        "k": 9,
+        "ok": true,
+        "round": 5
+      },
+      "source_sha256": "527d674317d3a5bd3e96be24b106c4196059d731986b818e2fe32c8054e741c4"
+    },
+    {
+      "run_id": "holdout__H02__fable51__strategy",
+      "stage": "holdout",
+      "case": "H02",
+      "model": "anthropic/claude-fable-5.1",
+      "model_label": "fable51",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.31418,
+      "charged_or_reserved_usd": 0.31418,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 57.88909673690796,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        3.8504498381285543,
+        3.0837876535946407,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.8601228172850597,
+        2.7569368963203544,
+        2.7569368963203544,
+        2.7569368963203544,
+        2.7569368963203544,
+        2.7439496398122287,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 154.1009720856112,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.3343099010773,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.1106450647677,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 161.58352440288087,
+          "k": 10,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.85128111817025,
+          "k": 5,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.8258116186648,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.2836723156243,
+          "k": 5,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 156.87814565513486,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 155.23561068925451,
+          "k": 5,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.5156460144933,
+          "k": 7,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 154.8791237712025,
+          "k": 7,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 155.24724031293607,
+          "k": 6,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.007459143803,
+          "k": 8,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.13500616840074,
+          "k": 8,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 179.82204016527257,
+          "k": 4,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 217.28124988670595,
+          "k": 5,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 152.99447188729488,
+          "k": 9,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 150.25052224748265,
+          "k": 8,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "SE+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 157.637197826423,
+          "k": 8,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 156.0181703726272,
+          "k": 7,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "MA3+PER",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 150.25052224748265,
+        "k": 8,
+        "ok": true,
+        "round": 5
+      },
+      "source_sha256": "234bc7f7fc55b361d5bc3476d1101cf1e011c5d9f5906b3f9184aa849038e167"
+    },
+    {
+      "run_id": "holdout__H03__astra__control",
+      "stage": "holdout",
+      "case": "H03",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "control",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.1975075,
+      "charged_or_reserved_usd": 0.1975075,
+      "api_requests": 4,
+      "billing_unknown": false,
+      "elapsed_seconds": 53.81392192840576,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        91.86392466519902,
+        51.88530046176757,
+        51.88530046176757,
+        51.88530046176757,
+        51.88530046176757,
+        51.88530046176757,
+        51.88530046176757,
+        51.88530046176757,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 131.53374512771825,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 91.5551209242868,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 128.7858942940909,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 99.14731814929058,
+          "k": 6,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 92.56128221527734,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 91.76629683375273,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 93.5551407471998,
+          "k": 8,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 99.3568891957394,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 39.669820462519226,
+          "k": 10,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 94.06200608031992,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 43.15234748873215,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 41.66993394577085,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 45.901251761176894,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 82.83969399994848,
+          "k": 9,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 42.9859266082334,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 40.567783964362036,
+          "k": 8,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 51.08392532589349,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA1+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 75.36023001501326,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 44.0421782578311,
+          "k": 12,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 45.669828591480126,
+          "k": 13,
+          "ok": true,
+          "round": 4
+        }
+      ],
+      "best": {
+        "kernel": "SE+PER",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 39.669820462519226,
+        "k": 10,
+        "ok": true,
+        "round": 2
+      },
+      "source_sha256": "e72f5902f8d8dd7dfeb09c4083d9528cbed36d3df319399be31d26cf4e04e959"
+    },
+    {
+      "run_id": "holdout__H03__astra__strategy",
+      "stage": "holdout",
+      "case": "H03",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.263325,
+      "charged_or_reserved_usd": 0.263325,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 71.63036847114563,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        91.86392466519902,
+        51.88530046176757,
+        51.88530046176757,
+        51.88530046176757,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 131.53374512771825,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 91.5551209242868,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 92.56128221527734,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 107.65005588612541,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 39.669820462519226,
+          "k": 10,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 82.83969399994848,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 91.76629683375273,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 82.29139266173905,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 43.15234748873215,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 51.08392532589349,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 41.66993394577085,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 44.0421782578311,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 40.567783964362036,
+          "k": 8,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 42.9859266082334,
+          "k": 12,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 44.97107315617123,
+          "k": 13,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 45.901251761176894,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 42.56786593973547,
+          "k": 9,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 42.48078812530579,
+          "k": 10,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 44.54582718330556,
+          "k": 10,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 45.67108693934722,
+          "k": 13,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "SE+PER",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 39.669820462519226,
+        "k": 10,
+        "ok": true,
+        "round": 2
+      },
+      "source_sha256": "f1d223b494b3a948e1f652fb8e65a5542deabd4bc668f7cf3e75f2072a5fbf0a"
+    },
+    {
+      "run_id": "holdout__H03__fable51__strategy",
+      "stage": "holdout",
+      "case": "H03",
+      "model": "anthropic/claude-fable-5.1",
+      "model_label": "fable51",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.34260999999999997,
+      "charged_or_reserved_usd": 0.34260999999999997,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 64.67938947677612,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        51.88530046176757,
+        51.88530046176757,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 91.5551209242868,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 106.03363043556789,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 39.669820462519226,
+          "k": 10,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 232.0610741564755,
+          "k": 4,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 92.56128221527734,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 82.83969399994848,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 43.15234748873215,
+          "k": 12,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 51.08392532589349,
+          "k": 10,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 41.66993394577085,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 45.901251761176894,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 40.567783964362036,
+          "k": 8,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 45.67108693934722,
+          "k": 13,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 42.9859266082334,
+          "k": 12,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 42.56786593973547,
+          "k": 9,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "LIN+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 85.0622461820941,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(SE*PER)+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 49.90125756393846,
+          "k": 12,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "SE+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 97.18307956867318,
+          "k": 11,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "MA1+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 75.36023001501326,
+          "k": 10,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 45.669828591480126,
+          "k": 13,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(SE*PER)+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 88.84000488434697,
+          "k": 12,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "SE+PER",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 39.669820462519226,
+        "k": 10,
+        "ok": true,
+        "round": 1
+      },
+      "source_sha256": "d3ca87e4145d23771c6a9354753daf30cdd3efce8fcb37d2d5a23081eb9e4405"
+    },
+    {
+      "run_id": "holdout__H04__astra__control",
+      "stage": "holdout",
+      "case": "H04",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "control",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.19792,
+      "charged_or_reserved_usd": 0.19792,
+      "api_requests": 4,
+      "billing_unknown": false,
+      "elapsed_seconds": 53.24906611442566,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        25.90525427508598,
+        18.9717275032462,
+        18.9717275032462,
+        18.9717275032462,
+        11.49737504628996,
+        4.818509655700751,
+        4.818509655700751,
+        4.818509655700751,
+        4.818509655700751,
+        4.818509655700751,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 98.09648908017314,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 91.16296230833336,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 99.91205068704721,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 94.85912800222209,
+          "k": 10,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 83.68860985137712,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 77.00974446078791,
+          "k": 11,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 82.29570974536892,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 86.06004823575975,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA3+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 103.17054503622063,
+          "k": 8,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 79.58035933462122,
+          "k": 10,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 72.19123480508716,
+          "k": 14,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 78.0263148156919,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 81.5871436320034,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(MA3*LIN)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 82.89678915529294,
+          "k": 14,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 93.72075325987629,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 76.59383278963594,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 78.64074053706946,
+          "k": 15,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 85.95622051109208,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 88.91809956357557,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA3*PER)+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 97.78967478280941,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        }
+      ],
+      "best": {
+        "kernel": "(MA3*LIN)+PER",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 72.19123480508716,
+        "k": 14,
+        "ok": true,
+        "round": 3
+      },
+      "source_sha256": "5b5c48cf6497b99f481d24857cebbbb11a5530af8d183073ba58ce5ec5727087"
+    },
+    {
+      "run_id": "holdout__H04__astra__strategy",
+      "stage": "holdout",
+      "case": "H04",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.2450875,
+      "charged_or_reserved_usd": 0.2450875,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 56.29260563850403,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        24.20763092665328,
+        24.20763092665328,
+        21.259685801259508,
+        11.925916172270433,
+        4.818509655700751,
+        4.818509655700751,
+        4.818509655700751,
+        4.818509655700751,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 96.39886573174044,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 99.91205068704721,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 93.45092060634667,
+          "k": 11,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 84.1171509773576,
+          "k": 11,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 77.00974446078791,
+          "k": 11,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 91.67893709037506,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 85.95622051109208,
+          "k": 14,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "(SE*PER)+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 99.45092629651165,
+          "k": 14,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 72.19123480508716,
+          "k": 14,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 82.29570974536892,
+          "k": 9,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(SE*LIN)+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 90.22446443200826,
+          "k": 14,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(MA3*LIN)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 82.44921217635886,
+          "k": 14,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 78.40835179995997,
+          "k": 12,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA1*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 81.67429486170613,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 76.59383278963594,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(LIN*PER)+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 88.99681168516452,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 79.58035933462122,
+          "k": 10,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 81.51622644009325,
+          "k": 12,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 78.64074053706946,
+          "k": 15,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 91.57180612433694,
+          "k": 12,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "(MA3*LIN)+PER",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 72.19123480508716,
+        "k": 14,
+        "ok": true,
+        "round": 3
+      },
+      "source_sha256": "86d53a7a069568073a2b0b0fb8f794455755ff0d5072cd0558250eb554273ae2"
+    },
+    {
+      "run_id": "holdout__H04__fable51__strategy",
+      "stage": "holdout",
+      "case": "H04",
+      "model": "anthropic/claude-fable-5.1",
+      "model_label": "fable51",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.36724,
+      "charged_or_reserved_usd": 0.36724,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 69.03510212898254,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        24.20763092665328,
+        24.20763092665328,
+        22.773354067558785,
+        22.66789319713493,
+        11.925916172270433,
+        11.925916172270433,
+        11.925916172270433,
+        11.925916172270433,
+        9.39590882691624,
+        4.818509655700751,
+        4.818509655700751,
+        4.818509655700751,
+        4.818509655700751,
+        4.818509655700751,
+        4.818509655700751,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 96.39886573174044,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 97.70251338614429,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 94.96458887264595,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 94.85912800222209,
+          "k": 10,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 84.1171509773576,
+          "k": 11,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 101.41094881341911,
+          "k": 6,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 86.95295776921824,
+          "k": 8,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 91.16296230833336,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 81.5871436320034,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 77.00974446078791,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 86.94111473480484,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 93.45092060634667,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA1*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 88.07243786239269,
+          "k": 11,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 78.0263148156919,
+          "k": 11,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 82.29570974536892,
+          "k": 9,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 72.19123480508716,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 76.59383278963594,
+          "k": 14,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 78.40835179995997,
+          "k": 12,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(MA3*LIN)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 82.89678915529294,
+          "k": 14,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(MA3*LIN)+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 82.68313751532605,
+          "k": 14,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "(MA3*LIN)+PER",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 72.19123480508716,
+        "k": 14,
+        "ok": true,
+        "round": 4
+      },
+      "source_sha256": "5da0bdc30de2131ad9d084e8a17f42de0167c5f310646c8029e3ae8356feac6b"
+    },
+    {
+      "run_id": "holdout__H05__astra__control",
+      "stage": "holdout",
+      "case": "H05",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "control",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.19062,
+      "charged_or_reserved_usd": 0.19062,
+      "api_requests": 4,
+      "billing_unknown": false,
+      "elapsed_seconds": 55.298837423324585,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        19.751095149746845,
+        6.888378119681192,
+        6.888378119681192,
+        6.888378119681192,
+        6.888378119681192,
+        6.38137933846761,
+        6.38137933846761,
+        6.38137933846761,
+        6.38137933846761,
+        6.38137933846761,
+        6.38137933846761,
+        6.38137933846761,
+        6.38137933846761,
+        0.8998049636587098,
+        0.8998049636587098,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 128.27671010127983,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 115.41399307121418,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 128.58171162016833,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 115.65742728221758,
+          "k": 8,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 186.29384580845226,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 114.9069942900006,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 117.414122876938,
+          "k": 6,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 119.04047155871493,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 118.5429475198838,
+          "k": 8,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "(RQ*LIN)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 116.44592118505216,
+          "k": 11,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 116.90700995452741,
+          "k": 8,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 117.53092281927289,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 117.10201234709277,
+          "k": 7,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 109.4254199151917,
+          "k": 7,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 120.90699839142556,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 108.52561495153299,
+          "k": 9,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA5*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 120.01063948007996,
+          "k": 7,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "RQ*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 111.42590074243896,
+          "k": 8,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 116.6198735489092,
+          "k": 11,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 110.07401347460384,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        }
+      ],
+      "best": {
+        "kernel": "SE*PER",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 108.52561495153299,
+        "k": 9,
+        "ok": true,
+        "round": 4
+      },
+      "source_sha256": "b1008977a91059f8f9e2f4fc207c3765b3d28ba8052da951007a7bda07a2ca69"
+    },
+    {
+      "run_id": "holdout__H05__astra__strategy",
+      "stage": "holdout",
+      "case": "H05",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 2.000131133047205,
+      "hit": false,
+      "near_optimal": false,
+      "cost_usd": 0.26639999999999997,
+      "charged_or_reserved_usd": 0.26639999999999997,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 77.27567315101624,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        19.751095149746845,
+        8.888507925405008,
+        8.888507925405008,
+        5.744072158560641,
+        5.744072158560641,
+        5.744072158560641,
+        5.744072158560641,
+        5.744072158560641,
+        5.744072158560641,
+        5.744072158560641,
+        5.744072158560641,
+        2.9002857909059685,
+        2.000131133047205,
+        2.000131133047205,
+        2.000131133047205,
+        2.000131133047205,
+        2.000131133047205,
+        2.000131133047205,
+        2.000131133047205,
+        2.000131133047205
+      ],
+      "visited": [
+        {
+          "kernel": "MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 128.27671010127983,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 117.414122876938,
+          "k": 6,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 186.29384580845226,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 114.26968711009363,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 115.65742728221758,
+          "k": 8,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 118.85139789067364,
+          "k": 5,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 114.79640452921922,
+          "k": 10,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 120.7953833682067,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 116.4515785681524,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 116.42619811839961,
+          "k": 9,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 120.33339699901595,
+          "k": 7,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "RQ*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 111.42590074243896,
+          "k": 8,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "RQ*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 110.52574608458019,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(RQ*PER)+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 116.16556711439159,
+          "k": 11,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA3*PER)+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 121.60072311115118,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA3*LIN)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 116.79184148144395,
+          "k": 11,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "RQ*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 114.48986241367624,
+          "k": 12,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 117.53092281927289,
+          "k": 10,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(LIN*PER)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 116.22194454743158,
+          "k": 11,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(RQ*PER)+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 124.04290071562872,
+          "k": 13,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "RQ*PER",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 110.52574608458019,
+        "k": 10,
+        "ok": true,
+        "round": 4
+      },
+      "source_sha256": "2beb0de0d3801d7ed7d3392228f7e5563a3344f5bbcefa5f2cc6cae8e8366892"
+    },
+    {
+      "run_id": "holdout__H05__fable51__strategy",
+      "stage": "holdout",
+      "case": "H05",
+      "model": "anthropic/claude-fable-5.1",
+      "model_label": "fable51",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.29474,
+      "charged_or_reserved_usd": 0.29474,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 48.53302454948425,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        6.888378119681192,
+        6.888378119681192,
+        6.888378119681192,
+        6.888378119681192,
+        6.888378119681192,
+        6.888378119681192,
+        6.38137933846761,
+        6.38137933846761,
+        4.6898442641697216,
+        4.6898442641697216,
+        4.6898442641697216,
+        4.6898442641697216,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 115.41399307121418,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 128.27671010127983,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 186.29384580845226,
+          "k": 5,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 119.04047155871493,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 117.48828719111708,
+          "k": 5,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 117.414122876938,
+          "k": 6,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 114.9069942900006,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 175.2674521323566,
+          "k": 4,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 113.21545921570271,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 118.8355602964684,
+          "k": 9,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 120.90699839142556,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 118.49344593213846,
+          "k": 7,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 108.52561495153299,
+          "k": 9,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 118.5429475198838,
+          "k": 8,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 113.63699000150245,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 115.21326718026171,
+          "k": 11,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 109.4254199151917,
+          "k": 7,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "MA5*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 113.26508369102521,
+          "k": 9,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "RQ*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 110.52574608458019,
+          "k": 10,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(SE*PER)+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 117.65491771428901,
+          "k": 12,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "SE*PER",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 108.52561495153299,
+        "k": 9,
+        "ok": true,
+        "round": 4
+      },
+      "source_sha256": "08d512126dae3e0a25c6d2bc6231524ae6a281e4a8c1e74addd6270e1afb5396"
+    },
+    {
+      "run_id": "holdout__H06__astra__control",
+      "stage": "holdout",
+      "case": "H06",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "control",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 1.9409909272580421,
+      "hit": false,
+      "near_optimal": true,
+      "cost_usd": 0.1863825,
+      "charged_or_reserved_usd": 0.1863825,
+      "api_requests": 4,
+      "billing_unknown": false,
+      "elapsed_seconds": 51.406760931015015,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        9.879479872935747,
+        8.543635784905405,
+        5.587048367885188,
+        5.587048367885188,
+        5.587048367885188,
+        5.587048367885188,
+        5.587048367885188,
+        5.587048367885188,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421
+      ],
+      "visited": [
+        {
+          "kernel": "MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 54.63423385684558,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 53.29838976881524,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 50.341802351795025,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 60.44471514868883,
+          "k": 6,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA1*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 58.54668173500136,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 51.69077053830293,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 51.82646957799858,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 52.342104677276296,
+          "k": 10,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 46.69574491116788,
+          "k": 11,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 47.22329136741973,
+          "k": 12,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 47.07801912696567,
+          "k": 9,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 46.82934015912801,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 49.253743744247686,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 48.83769416756442,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 48.935854629385005,
+          "k": 14,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 47.107700071776264,
+          "k": 9,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 47.51276463823902,
+          "k": 11,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 48.69593193436316,
+          "k": 12,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(SE*LIN)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 52.44697797532035,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA1*LIN)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 50.080469331519,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        }
+      ],
+      "best": {
+        "kernel": "SE*LIN",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 46.69574491116788,
+        "k": 11,
+        "ok": true,
+        "round": 2
+      },
+      "source_sha256": "2d0c9952126659a1bd1b23e1611f05f195b35636e3eab9d85b03ac0d21e09dd8"
+    },
+    {
+      "run_id": "holdout__H06__astra__strategy",
+      "stage": "holdout",
+      "case": "H06",
+      "model": "openai/gpt-6-astra",
+      "model_label": "astra",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 0.0,
+      "hit": true,
+      "near_optimal": true,
+      "cost_usd": 0.2535875,
+      "charged_or_reserved_usd": 0.2535875,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 66.18184924125671,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        6.936016554393092,
+        6.936016554393092,
+        4.4989897603378495,
+        2.323265143055835,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        0.05345747100648168,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visited": [
+        {
+          "kernel": "SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 51.69077053830293,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 64.65786718226082,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 49.253743744247686,
+          "k": 10,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 47.07801912696567,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 46.69574491116788,
+          "k": 11,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 47.22329136741973,
+          "k": 12,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 48.2489408192219,
+          "k": 12,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 52.37856838799104,
+          "k": 9,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 47.51276463823902,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 54.41033073388803,
+          "k": 12,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 48.935854629385005,
+          "k": 14,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 47.44643603242082,
+          "k": 7,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 53.36024948722044,
+          "k": 8,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 49.4149713524437,
+          "k": 7,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 48.69593193436316,
+          "k": 12,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 44.80821145491632,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 44.754753983909836,
+          "k": 12,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 46.02295151783477,
+          "k": 10,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 49.86093607485657,
+          "k": 15,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 46.354703584425465,
+          "k": 14,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "(MA3*LIN)+PER",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 44.754753983909836,
+        "k": 12,
+        "ok": true,
+        "round": 5
+      },
+      "source_sha256": "5239b38e2cb3c610a8f25faf0c896b30db77ca9d172e4396ef639f48023164d0"
+    },
+    {
+      "run_id": "holdout__H06__fable51__strategy",
+      "stage": "holdout",
+      "case": "H06",
+      "model": "anthropic/claude-fable-5.1",
+      "model_label": "fable51",
+      "method": "strategy",
+      "reasoning_effort": "medium",
+      "state": "complete",
+      "n_evals": 20,
+      "regret": 1.046290754351645,
+      "hit": false,
+      "near_optimal": true,
+      "cost_usd": 0.32863,
+      "charged_or_reserved_usd": 0.32863,
+      "api_requests": 5,
+      "billing_unknown": false,
+      "elapsed_seconds": 58.08995175361633,
+      "plan_sha256": "e190add3f2c7508aa4834e757e5370647f08c11534ecde2ed6b42ae76b82f935",
+      "selection_sha256": "155a6adfbf709c79fdf9498b73a81f2befa37431b31d257b0f5c9b06ca23b99e",
+      "regret_trajectory": [
+        5.587048367885188,
+        5.587048367885188,
+        5.587048367885188,
+        2.691682048510984,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.9409909272580421,
+        1.1799484163834677,
+        1.1799484163834677,
+        1.046290754351645,
+        1.046290754351645,
+        1.046290754351645,
+        1.046290754351645,
+        1.046290754351645,
+        1.046290754351645,
+        1.046290754351645
+      ],
+      "visited": [
+        {
+          "kernel": "SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 50.341802351795025,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 53.29838976881524,
+          "k": 9,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 53.67174058499904,
+          "k": 8,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 47.44643603242082,
+          "k": 7,
+          "ok": true,
+          "round": 1
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 46.69574491116788,
+          "k": 11,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 58.55524409149382,
+          "k": 5,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 60.77748955803645,
+          "k": 8,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 47.733617140684345,
+          "k": 7,
+          "ok": true,
+          "round": 2
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 47.07801912696567,
+          "k": 9,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 46.82934015912801,
+          "k": 11,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 49.401378501747644,
+          "k": 8,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 45.934702400293304,
+          "k": 10,
+          "ok": true,
+          "round": 3
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 48.935854629385005,
+          "k": 14,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 45.80104473826148,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(SE*LIN)+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 50.659564734429296,
+          "k": 10,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 48.2489408192219,
+          "k": 12,
+          "ok": true,
+          "round": 4
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 46.02295151783477,
+          "k": 10,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 48.83769416756442,
+          "k": 11,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 54.55513220726209,
+          "k": 9,
+          "ok": true,
+          "round": 5
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 48.265977864508045,
+          "k": 10,
+          "ok": true,
+          "round": 5
+        }
+      ],
+      "best": {
+        "kernel": "(MA5*LIN)+PER",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 45.80104473826148,
+        "k": 10,
+        "ok": true,
+        "round": 4
+      },
+      "source_sha256": "0ce8841d1ff69b0a67926c5d1b0785507d991a81e72c9bfb023ca8ded70f21ec"
+    }
+  ],
+  "count": 18,
+  "provider_content_included": false,
+  "observations_or_profiles_included": false
+}

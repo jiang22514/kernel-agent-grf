@@ -1,0 +1,1400 @@
+{
+  "schema_version": "lin_offset_v2",
+  "kernel_definition": "lin_first_coordinate_offset_v2",
+  "stage_order": [
+    "A",
+    "C",
+    "B"
+  ],
+  "stage_sizes": {
+    "A": 50,
+    "C": 20,
+    "B": 10
+  },
+  "runs": [
+    {
+      "run_id": "A__EX1__astra__structured__r1",
+      "stage": "A",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX1__gpt55__structured__r1",
+      "stage": "A",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gpt55",
+      "model": "openai/gpt-5.5",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX1__fable51__structured__r1",
+      "stage": "A",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX1__gemini31pro__structured__r1",
+      "stage": "A",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gemini31pro",
+      "model": "google/gemini-3.1-pro-preview",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX1__deepseek4pro__structured__r1",
+      "stage": "A",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "deepseek4pro",
+      "model": "deepseek/deepseek-v4-pro-0813",
+      "model_tier": "flagship",
+      "reasoning_effort": "high"
+    },
+    {
+      "run_id": "A__EX1__qwen38max__structured__r1",
+      "stage": "A",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "qwen38max",
+      "model": "qwen/qwen3.8-max-0902",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX1__kimi3__structured__r1",
+      "stage": "A",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "kimi3",
+      "model": "moonshotai/kimi-k3",
+      "model_tier": "flagship",
+      "reasoning_effort": "high"
+    },
+    {
+      "run_id": "A__EX1__grok47__structured__r1",
+      "stage": "A",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "grok47",
+      "model": "x-ai/grok-4.7",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX1__gpt4omini__structured__r1",
+      "stage": "A",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gpt4omini",
+      "model": "openai/gpt-4o-mini",
+      "model_tier": "economy",
+      "reasoning_effort": null
+    },
+    {
+      "run_id": "A__EX1__gemini38flash__structured__r1",
+      "stage": "A",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gemini38flash",
+      "model": "google/gemini-3.8-flash",
+      "model_tier": "economy",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX2__gpt55__structured__r1",
+      "stage": "A",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gpt55",
+      "model": "openai/gpt-5.5",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX2__fable51__structured__r1",
+      "stage": "A",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX2__gemini31pro__structured__r1",
+      "stage": "A",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gemini31pro",
+      "model": "google/gemini-3.1-pro-preview",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX2__deepseek4pro__structured__r1",
+      "stage": "A",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "deepseek4pro",
+      "model": "deepseek/deepseek-v4-pro-0813",
+      "model_tier": "flagship",
+      "reasoning_effort": "high"
+    },
+    {
+      "run_id": "A__EX2__qwen38max__structured__r1",
+      "stage": "A",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "qwen38max",
+      "model": "qwen/qwen3.8-max-0902",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX2__kimi3__structured__r1",
+      "stage": "A",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "kimi3",
+      "model": "moonshotai/kimi-k3",
+      "model_tier": "flagship",
+      "reasoning_effort": "high"
+    },
+    {
+      "run_id": "A__EX2__grok47__structured__r1",
+      "stage": "A",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "grok47",
+      "model": "x-ai/grok-4.7",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX2__gpt4omini__structured__r1",
+      "stage": "A",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gpt4omini",
+      "model": "openai/gpt-4o-mini",
+      "model_tier": "economy",
+      "reasoning_effort": null
+    },
+    {
+      "run_id": "A__EX2__gemini38flash__structured__r1",
+      "stage": "A",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gemini38flash",
+      "model": "google/gemini-3.8-flash",
+      "model_tier": "economy",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX2__astra__structured__r1",
+      "stage": "A",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX3__fable51__structured__r1",
+      "stage": "A",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX3__gemini31pro__structured__r1",
+      "stage": "A",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gemini31pro",
+      "model": "google/gemini-3.1-pro-preview",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX3__deepseek4pro__structured__r1",
+      "stage": "A",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "deepseek4pro",
+      "model": "deepseek/deepseek-v4-pro-0813",
+      "model_tier": "flagship",
+      "reasoning_effort": "high"
+    },
+    {
+      "run_id": "A__EX3__qwen38max__structured__r1",
+      "stage": "A",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "qwen38max",
+      "model": "qwen/qwen3.8-max-0902",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX3__kimi3__structured__r1",
+      "stage": "A",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "kimi3",
+      "model": "moonshotai/kimi-k3",
+      "model_tier": "flagship",
+      "reasoning_effort": "high"
+    },
+    {
+      "run_id": "A__EX3__grok47__structured__r1",
+      "stage": "A",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "grok47",
+      "model": "x-ai/grok-4.7",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX3__gpt4omini__structured__r1",
+      "stage": "A",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gpt4omini",
+      "model": "openai/gpt-4o-mini",
+      "model_tier": "economy",
+      "reasoning_effort": null
+    },
+    {
+      "run_id": "A__EX3__gemini38flash__structured__r1",
+      "stage": "A",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gemini38flash",
+      "model": "google/gemini-3.8-flash",
+      "model_tier": "economy",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX3__astra__structured__r1",
+      "stage": "A",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX3__gpt55__structured__r1",
+      "stage": "A",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gpt55",
+      "model": "openai/gpt-5.5",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX4__gemini31pro__structured__r1",
+      "stage": "A",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gemini31pro",
+      "model": "google/gemini-3.1-pro-preview",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX4__deepseek4pro__structured__r1",
+      "stage": "A",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "deepseek4pro",
+      "model": "deepseek/deepseek-v4-pro-0813",
+      "model_tier": "flagship",
+      "reasoning_effort": "high"
+    },
+    {
+      "run_id": "A__EX4__qwen38max__structured__r1",
+      "stage": "A",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "qwen38max",
+      "model": "qwen/qwen3.8-max-0902",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX4__kimi3__structured__r1",
+      "stage": "A",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "kimi3",
+      "model": "moonshotai/kimi-k3",
+      "model_tier": "flagship",
+      "reasoning_effort": "high"
+    },
+    {
+      "run_id": "A__EX4__grok47__structured__r1",
+      "stage": "A",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "grok47",
+      "model": "x-ai/grok-4.7",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX4__gpt4omini__structured__r1",
+      "stage": "A",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gpt4omini",
+      "model": "openai/gpt-4o-mini",
+      "model_tier": "economy",
+      "reasoning_effort": null
+    },
+    {
+      "run_id": "A__EX4__gemini38flash__structured__r1",
+      "stage": "A",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gemini38flash",
+      "model": "google/gemini-3.8-flash",
+      "model_tier": "economy",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX4__astra__structured__r1",
+      "stage": "A",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX4__gpt55__structured__r1",
+      "stage": "A",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gpt55",
+      "model": "openai/gpt-5.5",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__EX4__fable51__structured__r1",
+      "stage": "A",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__Borehole__deepseek4pro__structured__r1",
+      "stage": "A",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "deepseek4pro",
+      "model": "deepseek/deepseek-v4-pro-0813",
+      "model_tier": "flagship",
+      "reasoning_effort": "high"
+    },
+    {
+      "run_id": "A__Borehole__qwen38max__structured__r1",
+      "stage": "A",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "qwen38max",
+      "model": "qwen/qwen3.8-max-0902",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__Borehole__kimi3__structured__r1",
+      "stage": "A",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "kimi3",
+      "model": "moonshotai/kimi-k3",
+      "model_tier": "flagship",
+      "reasoning_effort": "high"
+    },
+    {
+      "run_id": "A__Borehole__grok47__structured__r1",
+      "stage": "A",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "grok47",
+      "model": "x-ai/grok-4.7",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__Borehole__gpt4omini__structured__r1",
+      "stage": "A",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gpt4omini",
+      "model": "openai/gpt-4o-mini",
+      "model_tier": "economy",
+      "reasoning_effort": null
+    },
+    {
+      "run_id": "A__Borehole__gemini38flash__structured__r1",
+      "stage": "A",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gemini38flash",
+      "model": "google/gemini-3.8-flash",
+      "model_tier": "economy",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__Borehole__astra__structured__r1",
+      "stage": "A",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__Borehole__gpt55__structured__r1",
+      "stage": "A",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gpt55",
+      "model": "openai/gpt-5.5",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__Borehole__fable51__structured__r1",
+      "stage": "A",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "A__Borehole__gemini31pro__structured__r1",
+      "stage": "A",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [],
+      "model_slug": "gemini31pro",
+      "model": "google/gemini-3.1-pro-preview",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX1__astra__budget_complete__r1",
+      "stage": "C",
+      "case": "EX1",
+      "method": "budget_complete",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "RQ",
+          "mean_id": 3
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2
+        },
+        {
+          "kernel": "SE+MA1",
+          "mean_id": 3
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 2
+        },
+        {
+          "kernel": "(MA1*PER)+MA5",
+          "mean_id": 3
+        }
+      ],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX1__astra__structured__r1",
+      "stage": "C",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "RQ",
+          "mean_id": 3
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2
+        },
+        {
+          "kernel": "SE+MA1",
+          "mean_id": 3
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 2
+        },
+        {
+          "kernel": "(MA1*PER)+MA5",
+          "mean_id": 3
+        }
+      ],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX1__fable51__budget_complete__r1",
+      "stage": "C",
+      "case": "EX1",
+      "method": "budget_complete",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "RQ",
+          "mean_id": 3
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2
+        },
+        {
+          "kernel": "SE+MA1",
+          "mean_id": 3
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 2
+        },
+        {
+          "kernel": "(MA1*PER)+MA5",
+          "mean_id": 3
+        }
+      ],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX1__fable51__structured__r1",
+      "stage": "C",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "RQ",
+          "mean_id": 3
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2
+        },
+        {
+          "kernel": "SE+MA1",
+          "mean_id": 3
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 2
+        },
+        {
+          "kernel": "(MA1*PER)+MA5",
+          "mean_id": 3
+        }
+      ],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX2__fable51__structured__r1",
+      "stage": "C",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "PER",
+          "mean_id": 3
+        },
+        {
+          "kernel": "LIN",
+          "mean_id": 4
+        },
+        {
+          "kernel": "LIN+PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(MA1*LIN)+MA3",
+          "mean_id": 3
+        }
+      ],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX2__fable51__budget_complete__r1",
+      "stage": "C",
+      "case": "EX2",
+      "method": "budget_complete",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "PER",
+          "mean_id": 3
+        },
+        {
+          "kernel": "LIN",
+          "mean_id": 4
+        },
+        {
+          "kernel": "LIN+PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(MA1*LIN)+MA3",
+          "mean_id": 3
+        }
+      ],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX2__astra__structured__r1",
+      "stage": "C",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "PER",
+          "mean_id": 3
+        },
+        {
+          "kernel": "LIN",
+          "mean_id": 4
+        },
+        {
+          "kernel": "LIN+PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(MA1*LIN)+MA3",
+          "mean_id": 3
+        }
+      ],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX2__astra__budget_complete__r1",
+      "stage": "C",
+      "case": "EX2",
+      "method": "budget_complete",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "PER",
+          "mean_id": 3
+        },
+        {
+          "kernel": "LIN",
+          "mean_id": 4
+        },
+        {
+          "kernel": "LIN+PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(MA1*LIN)+MA3",
+          "mean_id": 3
+        }
+      ],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX3__astra__budget_complete__r1",
+      "stage": "C",
+      "case": "EX3",
+      "method": "budget_complete",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "SE",
+          "mean_id": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2
+        },
+        {
+          "kernel": "MA3+LIN",
+          "mean_id": 3
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 2
+        },
+        {
+          "kernel": "(LIN*PER)+MA5",
+          "mean_id": 2
+        }
+      ],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX3__astra__structured__r1",
+      "stage": "C",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "SE",
+          "mean_id": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2
+        },
+        {
+          "kernel": "MA3+LIN",
+          "mean_id": 3
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 2
+        },
+        {
+          "kernel": "(LIN*PER)+MA5",
+          "mean_id": 2
+        }
+      ],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX3__fable51__budget_complete__r1",
+      "stage": "C",
+      "case": "EX3",
+      "method": "budget_complete",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "SE",
+          "mean_id": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2
+        },
+        {
+          "kernel": "MA3+LIN",
+          "mean_id": 3
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 2
+        },
+        {
+          "kernel": "(LIN*PER)+MA5",
+          "mean_id": 2
+        }
+      ],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX3__fable51__structured__r1",
+      "stage": "C",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "SE",
+          "mean_id": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2
+        },
+        {
+          "kernel": "MA3+LIN",
+          "mean_id": 3
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 2
+        },
+        {
+          "kernel": "(LIN*PER)+MA5",
+          "mean_id": 2
+        }
+      ],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX4__fable51__structured__r1",
+      "stage": "C",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "LIN",
+          "mean_id": 3
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 3
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 4
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 1
+        }
+      ],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX4__fable51__budget_complete__r1",
+      "stage": "C",
+      "case": "EX4",
+      "method": "budget_complete",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "LIN",
+          "mean_id": 3
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 3
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 4
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 1
+        }
+      ],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX4__astra__structured__r1",
+      "stage": "C",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "LIN",
+          "mean_id": 3
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 3
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 4
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 1
+        }
+      ],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__EX4__astra__budget_complete__r1",
+      "stage": "C",
+      "case": "EX4",
+      "method": "budget_complete",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "LIN",
+          "mean_id": 3
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 3
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 4
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 1
+        }
+      ],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__Borehole__astra__budget_complete__r1",
+      "stage": "C",
+      "case": "Borehole",
+      "method": "budget_complete",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "MA5",
+          "mean_id": 4
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 1
+        },
+        {
+          "kernel": "MA1+MA5",
+          "mean_id": 2
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(SE*LIN)+MA3",
+          "mean_id": 2
+        }
+      ],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__Borehole__astra__structured__r1",
+      "stage": "C",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "MA5",
+          "mean_id": 4
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 1
+        },
+        {
+          "kernel": "MA1+MA5",
+          "mean_id": 2
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(SE*LIN)+MA3",
+          "mean_id": 2
+        }
+      ],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__Borehole__fable51__budget_complete__r1",
+      "stage": "C",
+      "case": "Borehole",
+      "method": "budget_complete",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "MA5",
+          "mean_id": 4
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 1
+        },
+        {
+          "kernel": "MA1+MA5",
+          "mean_id": 2
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(SE*LIN)+MA3",
+          "mean_id": 2
+        }
+      ],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "C__Borehole__fable51__structured__r1",
+      "stage": "C",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 1,
+      "initial_pairs": [
+        {
+          "kernel": "MA5",
+          "mean_id": 4
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 1
+        },
+        {
+          "kernel": "MA1+MA5",
+          "mean_id": 2
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(SE*LIN)+MA3",
+          "mean_id": 2
+        }
+      ],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "B__EX1__astra__structured__r2",
+      "stage": "B",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 2,
+      "initial_pairs": [],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "B__EX1__fable51__structured__r2",
+      "stage": "B",
+      "case": "EX1",
+      "method": "structured",
+      "replicate": 2,
+      "initial_pairs": [],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "B__EX2__fable51__structured__r2",
+      "stage": "B",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 2,
+      "initial_pairs": [],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "B__EX2__astra__structured__r2",
+      "stage": "B",
+      "case": "EX2",
+      "method": "structured",
+      "replicate": 2,
+      "initial_pairs": [],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "B__EX3__astra__structured__r2",
+      "stage": "B",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 2,
+      "initial_pairs": [],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "B__EX3__fable51__structured__r2",
+      "stage": "B",
+      "case": "EX3",
+      "method": "structured",
+      "replicate": 2,
+      "initial_pairs": [],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "B__EX4__fable51__structured__r2",
+      "stage": "B",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 2,
+      "initial_pairs": [],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "B__EX4__astra__structured__r2",
+      "stage": "B",
+      "case": "EX4",
+      "method": "structured",
+      "replicate": 2,
+      "initial_pairs": [],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "B__Borehole__astra__structured__r2",
+      "stage": "B",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 2,
+      "initial_pairs": [],
+      "model_slug": "astra",
+      "model": "openai/gpt-6-astra",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    },
+    {
+      "run_id": "B__Borehole__fable51__structured__r2",
+      "stage": "B",
+      "case": "Borehole",
+      "method": "structured",
+      "replicate": 2,
+      "initial_pairs": [],
+      "model_slug": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "model_tier": "flagship",
+      "reasoning_effort": "medium"
+    }
+  ],
+  "candidate_cap": 20,
+  "max_requests": 330,
+  "max_workers": 1,
+  "max_output_tokens_per_request": 8192
+}

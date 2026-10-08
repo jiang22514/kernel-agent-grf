@@ -1,0 +1,2072 @@
+[
+  {
+    "run_id": "screen__EX3__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06358,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.41777205467224,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04976,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.328447580337524,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08708,
+    "billing_unknown": false,
+    "elapsed_seconds": 18.192503690719604,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08644,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.073468446731567,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07315,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.753761768341064,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09551,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.769477128982544,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06014,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.701525449752808,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09948,
+    "billing_unknown": false,
+    "elapsed_seconds": 18.370072603225708,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04791,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.422723293304443,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07861,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.381223440170288,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.11047,
+    "billing_unknown": false,
+    "elapsed_seconds": 19.460597038269043,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0756,
+    "billing_unknown": false,
+    "elapsed_seconds": 23.43924641609192,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06423,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.719619274139404,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08215,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.533711910247803,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.11621,
+    "billing_unknown": false,
+    "elapsed_seconds": 25.340412139892578,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08746,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.726080179214478,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09785,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.723727464675903,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08392,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.582258939743042,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.10251,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.81137466430664,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0487,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.645222187042236,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05716,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.149896144866943,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04735,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.697611093521118,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05985,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.799530506134033,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05732,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.357192993164062,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06195,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.05414628982544,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06958,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.897132873535156,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05009,
+    "billing_unknown": false,
+    "elapsed_seconds": 7.662427186965942,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08483,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.41901135444641,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05539,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.686887502670288,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0578,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.933541059494019,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0851,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.118704557418823,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06139,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.469329357147217,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04909,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.277078866958618,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09251,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.237086534500122,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06484,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.688058137893677,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09053,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.24009346961975,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.073,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.537803173065186,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09932,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.20487356185913,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08058,
+    "billing_unknown": false,
+    "elapsed_seconds": 20.825417280197144,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09723,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.276599168777466,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0941,
+    "billing_unknown": false,
+    "elapsed_seconds": 18.744027137756348,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.10763,
+    "billing_unknown": false,
+    "elapsed_seconds": 18.381871223449707,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0504425,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.67738127708435,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0374925,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.726641654968262,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0588675,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.862693309783936,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0455675,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.217224836349487,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.060505,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.545541286468506,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05203,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.780765056610107,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07333,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.011670112609863,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05583,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.744139194488525,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07563,
+    "billing_unknown": false,
+    "elapsed_seconds": 18.429930925369263,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05998,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.691370248794556,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0417425,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.516964673995972,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0521675,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.526257276535034,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0600425,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.830841064453125,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0482425,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.53243637084961,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06218,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.739684820175171,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0550425,
+    "billing_unknown": false,
+    "elapsed_seconds": 19.432514667510986,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06718,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.108795404434204,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__Borehole__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0557925,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.341284990310669,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0694425,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.83814024925232,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.040855,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.698430299758911,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.042005,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.23080825805664,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.044355,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.891390323638916,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.044355,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.780034303665161,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0531675,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.964792251586914,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0515925,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.796649694442749,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05168,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.795981645584106,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.053305,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.178769826889038,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX2__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0550925,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.746928691864014,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0568425,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.629407405853271,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06743,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.379887342453003,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0397675,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.41830325126648,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.067355,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.019474983215332,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.049205,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.269545316696167,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0766675,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.40532398223877,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05128,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.457303047180176,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.056155,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.977259159088135,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0732425,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.901564598083496,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0394175,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.049261331558228,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.066005,
+    "billing_unknown": false,
+    "elapsed_seconds": 21.010972023010254,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.046055,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.45689582824707,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0851,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.058270692825317,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04733,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.300387859344482,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08623,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.166560888290405,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0604175,
+    "billing_unknown": false,
+    "elapsed_seconds": 22.297911643981934,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.12949,
+    "billing_unknown": false,
+    "elapsed_seconds": 23.10035800933838,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04978,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.363263368606567,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0552,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.48191785812378,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.1219,
+    "billing_unknown": false,
+    "elapsed_seconds": 27.395711183547974,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07073,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.083288431167603,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06127,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.350609302520752,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08954,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.393444299697876,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04763,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.873584032058716,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07514,
+    "billing_unknown": false,
+    "elapsed_seconds": 20.726860523223877,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0496,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.585934400558472,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05703,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.766088008880615,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07845,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.70740818977356,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05876,
+    "billing_unknown": false,
+    "elapsed_seconds": 8.765385150909424,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06071,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.213928699493408,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09096,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.816319227218628,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09019,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.863282203674316,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__fable51__strategy",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08059,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.719951629638672,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06612,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.361315727233887,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0503,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.295945644378662,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09282,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.530694961547852,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05715,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.57323431968689,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09814,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.00787878036499,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06103,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.495805501937866,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09872,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.12150549888611,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06333,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.677878618240356,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0381925,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.293256521224976,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX4__fable51__enriched",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09918,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.629226207733154,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0521425,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.902400970458984,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0377925,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.95633316040039,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05588,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.58880639076233,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0438925,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.880491018295288,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0506175,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.336022138595581,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0539425,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.339625120162964,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.064805,
+    "billing_unknown": false,
+    "elapsed_seconds": 20.38597011566162,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0497425,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.099998235702515,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06673,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.022095918655396,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06218,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.713411331176758,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06918,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.101336002349854,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.03798,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.065746545791626,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0742925,
+    "billing_unknown": false,
+    "elapsed_seconds": 18.989220142364502,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04558,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.110865354537964,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX1__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08868,
+    "billing_unknown": false,
+    "elapsed_seconds": 23.6532301902771,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0504425,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.399086952209473,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0584425,
+    "billing_unknown": false,
+    "elapsed_seconds": 19.616085529327393,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.03653,
+    "billing_unknown": false,
+    "elapsed_seconds": 8.485121250152588,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0502675,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.920601606369019,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0509675,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.415888786315918,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0595175,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.95011019706726,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.052255,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.823727369308472,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0621675,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.036288738250732,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0607175,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.323807954788208,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.068855,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.56515908241272,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__strategy",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0585425,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.447120189666748,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "screen__EX3__astra__enriched",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07313,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.564752101898193,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.019498,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.780472993850708,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.016716,
+    "billing_unknown": false,
+    "elapsed_seconds": 8.963728904724121,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.050855,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.43527364730835,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0458925,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.004242181777954,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0535175,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.092683553695679,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0580175,
+    "billing_unknown": false,
+    "elapsed_seconds": 22.60369086265564,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0601425,
+    "billing_unknown": false,
+    "elapsed_seconds": 18.831449031829834,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05608,
+    "billing_unknown": false,
+    "elapsed_seconds": 18.639620542526245,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0797425,
+    "billing_unknown": false,
+    "elapsed_seconds": 26.03793430328369,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.048,
+    "billing_unknown": false,
+    "elapsed_seconds": 8.109560251235962,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05649,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.337607860565186,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.049,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.868347406387329,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0696,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.127522706985474,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05585,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.596566200256348,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08032,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.73295259475708,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07989,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.839881420135498,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06932,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.327206134796143,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07091,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.734067440032959,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04943,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.044256210327148,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04758,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.970794916152954,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08671,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.98550057411194,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07333,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.12736701965332,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07659,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.29408049583435,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09671,
+    "billing_unknown": false,
+    "elapsed_seconds": 23.787638187408447,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06082,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.848220586776733,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0812,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.869033336639404,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04721,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.416429996490479,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06722,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.147880792617798,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08102,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.746747732162476,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09285,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.68628239631653,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04951,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.43071460723877,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.10054,
+    "billing_unknown": false,
+    "elapsed_seconds": 27.69033455848694,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05577,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.028961658477783,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07074,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.931458473205566,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06467,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.748731851577759,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX3__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09936,
+    "billing_unknown": false,
+    "elapsed_seconds": 21.856203317642212,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.022596,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.228549480438232,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.017664,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.156058311462402,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04388,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.726319313049316,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0434175,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.274646520614624,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0504925,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.670966148376465,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0500425,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.603946924209595,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.061755,
+    "billing_unknown": false,
+    "elapsed_seconds": 25.97567105293274,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0545925,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.608583211898804,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX2__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05548,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.184221744537354,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.018939,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.158265352249146,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.019371,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.61446762084961,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0455425,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.59329891204834,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04673,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.5052649974823,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06353,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.91592311859131,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.057705,
+    "billing_unknown": false,
+    "elapsed_seconds": 19.894142627716064,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.068205,
+    "billing_unknown": false,
+    "elapsed_seconds": 22.15830945968628,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0581175,
+    "billing_unknown": false,
+    "elapsed_seconds": 19.90813136100769,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0658175,
+    "billing_unknown": false,
+    "elapsed_seconds": 20.32865571975708,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.016567,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.761714935302734,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0501925,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.933825969696045,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.017849,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.593695163726807,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0492175,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.221852779388428,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0513425,
+    "billing_unknown": false,
+    "elapsed_seconds": 18.50351572036743,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05198,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.401598453521729,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.049705,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.211995601654053,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0635425,
+    "billing_unknown": false,
+    "elapsed_seconds": 20.575247764587402,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX1__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0513425,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.042562484741211,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.017375,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.193715810775757,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.019657,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.040107011795044,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04693,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.181610107421875,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0526425,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.686837434768677,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0508425,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.47859787940979,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.054055,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.535461187362671,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0528425,
+    "billing_unknown": false,
+    "elapsed_seconds": 16.681797742843628,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__astra__selected",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.057505,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.145120859146118,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__astra__control",
+    "model": "openai/gpt-6-astra",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0568425,
+    "billing_unknown": false,
+    "elapsed_seconds": 14.745510578155518,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.04944,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.84461236000061,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05497,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.988500118255615,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05024,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.115440845489502,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05862,
+    "billing_unknown": false,
+    "elapsed_seconds": 8.856514930725098,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0648,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.563463926315308,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06162,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.287559747695923,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0729,
+    "billing_unknown": false,
+    "elapsed_seconds": 15.03281307220459,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0494,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.221537351608276,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.05769,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.615401029586792,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07803,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.608056545257568,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06692,
+    "billing_unknown": false,
+    "elapsed_seconds": 12.434244155883789,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__Borehole__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.09052,
+    "billing_unknown": false,
+    "elapsed_seconds": 18.555817365646362,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.08477,
+    "billing_unknown": false,
+    "elapsed_seconds": 17.47911047935486,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.0508,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.477944135665894,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__fable51__selected",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06398,
+    "billing_unknown": false,
+    "elapsed_seconds": 11.91469669342041,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.07093,
+    "billing_unknown": false,
+    "elapsed_seconds": 13.49543571472168,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06135,
+    "billing_unknown": false,
+    "elapsed_seconds": 10.484399795532227,
+    "finish_reason": "stop"
+  },
+  {
+    "run_id": "confirmation__EX4__fable51__control",
+    "model": "anthropic/claude-fable-5.1",
+    "state": "returned",
+    "charged_or_reserved_usd": 0.06071,
+    "billing_unknown": false,
+    "elapsed_seconds": 9.992468357086182,
+    "finish_reason": "stop"
+  }
+]

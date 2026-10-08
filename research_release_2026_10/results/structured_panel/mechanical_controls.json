@@ -1,0 +1,947 @@
+{
+  "status": "COMPLETE",
+  "schema_version": "lin_offset_v2",
+  "kernel_definition": "lin_first_coordinate_offset_v2",
+  "case_order": [
+    "EX1",
+    "EX2",
+    "EX3",
+    "EX4",
+    "Borehole"
+  ],
+  "repetitions": 2000,
+  "seed_base": 2026092900,
+  "budgets": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "numpy_version": "2.3.5",
+  "initial_pairs_by_case": {
+    "EX1": [
+      {
+        "kernel": "RQ",
+        "mean_id": 3
+      },
+      {
+        "kernel": "MA1",
+        "mean_id": 2
+      },
+      {
+        "kernel": "SE+MA1",
+        "mean_id": 3
+      },
+      {
+        "kernel": "MA5*LIN",
+        "mean_id": 2
+      },
+      {
+        "kernel": "(MA1*PER)+MA5",
+        "mean_id": 3
+      }
+    ],
+    "EX2": [
+      {
+        "kernel": "PER",
+        "mean_id": 3
+      },
+      {
+        "kernel": "LIN",
+        "mean_id": 4
+      },
+      {
+        "kernel": "LIN+PER",
+        "mean_id": 4
+      },
+      {
+        "kernel": "MA3*PER",
+        "mean_id": 4
+      },
+      {
+        "kernel": "(MA1*LIN)+MA3",
+        "mean_id": 3
+      }
+    ],
+    "EX3": [
+      {
+        "kernel": "SE",
+        "mean_id": 1
+      },
+      {
+        "kernel": "MA1",
+        "mean_id": 2
+      },
+      {
+        "kernel": "MA3+LIN",
+        "mean_id": 3
+      },
+      {
+        "kernel": "RQ*LIN",
+        "mean_id": 2
+      },
+      {
+        "kernel": "(LIN*PER)+MA5",
+        "mean_id": 2
+      }
+    ],
+    "EX4": [
+      {
+        "kernel": "LIN",
+        "mean_id": 3
+      },
+      {
+        "kernel": "PER",
+        "mean_id": 3
+      },
+      {
+        "kernel": "SE+LIN",
+        "mean_id": 4
+      },
+      {
+        "kernel": "MA1*PER",
+        "mean_id": 4
+      },
+      {
+        "kernel": "(RQ*PER)+SE",
+        "mean_id": 1
+      }
+    ],
+    "Borehole": [
+      {
+        "kernel": "MA5",
+        "mean_id": 4
+      },
+      {
+        "kernel": "RQ",
+        "mean_id": 1
+      },
+      {
+        "kernel": "MA1+MA5",
+        "mean_id": 2
+      },
+      {
+        "kernel": "MA1*PER",
+        "mean_id": 4
+      },
+      {
+        "kernel": "(SE*LIN)+MA3",
+        "mean_id": 2
+      }
+    ]
+  },
+  "paid_calls": 0,
+  "new_GP_fits": 0,
+  "cases": [
+    {
+      "case": "EX1",
+      "library_size": 376,
+      "library_optimum_aic": -189.6524819280287,
+      "champion_count_tolerance_1e_minus_9": 1,
+      "near_optimal_count_delta_aic_le_2": 5,
+      "uniform_random_20_exact": {
+        "champion_probability": 0.05319148936170215,
+        "near_optimal_probability": 0.24027486432184775,
+        "formula": "1 - C(N-M,20) / C(N,20); N=376; M=number of qualifying pairs"
+      },
+      "uniform_random_budget_exact": {
+        "5": {
+          "champion_probability": 0.013297872340425565,
+          "near_optimal_probability": 0.0650822693572598
+        },
+        "10": {
+          "champion_probability": 0.02659574468085102,
+          "near_optimal_probability": 0.12673100196485765
+        },
+        "15": {
+          "champion_probability": 0.039893617021276584,
+          "near_optimal_probability": 0.18508388240955986
+        },
+        "20": {
+          "champion_probability": 0.05319148936170215,
+          "near_optimal_probability": 0.24027486432184775
+        }
+      },
+      "initial_best_aic": -185.01813796867856,
+      "initial_regret": 4.634343959350133,
+      "fixed_start_then_uniform_random_15_exact": {
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "additional_random_accesses": 15,
+        "remaining_population": 371,
+        "champion_probability": 0.040431266846361225,
+        "near_optimal_probability": 0.1873882473532147,
+        "budget_near_optimal_probabilities": {
+          "5": 0.0,
+          "10": 0.06594027537077018,
+          "15": 0.12835526498123095,
+          "20": 0.1873882473532147
+        },
+        "formula": "1 if initial5 contains a qualifying pair; otherwise 1-C(371-M,b-5)/C(371,b-5)"
+      },
+      "fixed_start_random_budget_exact": {
+        "5": {
+          "champion_probability": 0.0,
+          "near_optimal_probability": 0.0
+        },
+        "10": {
+          "champion_probability": 0.013477088948787075,
+          "near_optimal_probability": 0.06594027537077018
+        },
+        "15": {
+          "champion_probability": 0.02695417789757415,
+          "near_optimal_probability": 0.12835526498123095
+        },
+        "20": {
+          "champion_probability": 0.040431266846361225,
+          "near_optimal_probability": 0.1873882473532147
+        }
+      },
+      "fixed_initial_pairs": [
+        {
+          "kernel": "RQ",
+          "mean_id": 3
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2
+        },
+        {
+          "kernel": "SE+MA1",
+          "mean_id": 3
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 2
+        },
+        {
+          "kernel": "(MA1*PER)+MA5",
+          "mean_id": 3
+        }
+      ],
+      "random_initial_mechanical_2000": {
+        "runs": 2000,
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "seed": 2026092900,
+        "champion_hits": 148,
+        "champion_rate": 0.074,
+        "near_optimal_hits": 821,
+        "near_optimal_rate": 0.4105,
+        "median_regret": 2.39985474744023,
+        "regret_quartiles": [
+          0.7314770688981298,
+          2.39985474744023,
+          3.1362140301018826
+        ],
+        "quantile_method": "NumPy default linear (Hyndman-Fan type7)",
+        "budget_near_optimal_rates": {
+          "5": 0.066,
+          "10": 0.155,
+          "15": 0.278,
+          "20": 0.4105
+        },
+        "budget_champion_rates": {
+          "5": 0.0125,
+          "10": 0.029,
+          "15": 0.0485,
+          "20": 0.074
+        },
+        "budget_regret_medians": {
+          "5": 7.118796772856285,
+          "10": 4.570793575131631,
+          "15": 3.001350852809992,
+          "20": 2.39985474744023
+        },
+        "trajectory_file": "EX1__random_initial_mechanical_2000__trajectories.npz",
+        "trajectory_sha256": "3053ce1f39fd8b8bd79d041ab6db780a999ea268d9e99c59b31659cb4a189bca"
+      },
+      "fixed_start_mechanical_2000": {
+        "runs": 2000,
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "seed": 2026092900,
+        "champion_hits": 48,
+        "champion_rate": 0.024,
+        "near_optimal_hits": 851,
+        "near_optimal_rate": 0.4255,
+        "median_regret": 2.39985474744023,
+        "regret_quartiles": [
+          0.7314770688981298,
+          2.39985474744023,
+          2.490314332302802
+        ],
+        "quantile_method": "NumPy default linear (Hyndman-Fan type7)",
+        "budget_near_optimal_rates": {
+          "5": 0.0,
+          "10": 0.1245,
+          "15": 0.2775,
+          "20": 0.4255
+        },
+        "budget_champion_rates": {
+          "5": 0.0,
+          "10": 0.005,
+          "15": 0.0125,
+          "20": 0.024
+        },
+        "budget_regret_medians": {
+          "5": 4.634343959350133,
+          "10": 2.6834723870885,
+          "15": 2.490314332302802,
+          "20": 2.39985474744023
+        },
+        "trajectory_file": "EX1__fixed_start_mechanical_2000__trajectories.npz",
+        "trajectory_sha256": "e447ed787e7ffe16b77edb9bc946d65beeb94bd264a70efc68034140c7341f98"
+      }
+    },
+    {
+      "case": "EX2",
+      "library_size": 376,
+      "library_optimum_aic": -161.54707047605058,
+      "champion_count_tolerance_1e_minus_9": 1,
+      "near_optimal_count_delta_aic_le_2": 8,
+      "uniform_random_20_exact": {
+        "champion_probability": 0.05319148936170215,
+        "near_optimal_probability": 0.35693468851660237,
+        "formula": "1 - C(N-M,20) / C(N,20); N=376; M=number of qualifying pairs"
+      },
+      "uniform_random_budget_exact": {
+        "5": {
+          "champion_probability": 0.013297872340425565,
+          "near_optimal_probability": 0.1024746373937706
+        },
+        "10": {
+          "champion_probability": 0.02659574468085102,
+          "near_optimal_probability": 0.19564050286256984
+        },
+        "15": {
+          "champion_probability": 0.039893617021276584,
+          "near_optimal_probability": 0.28023202299382566
+        },
+        "20": {
+          "champion_probability": 0.05319148936170215,
+          "near_optimal_probability": 0.35693468851660237
+        }
+      },
+      "initial_best_aic": -151.36030865785148,
+      "initial_regret": 10.186761818199102,
+      "fixed_start_then_uniform_random_15_exact": {
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "additional_random_accesses": 15,
+        "remaining_population": 371,
+        "champion_probability": 0.040431266846361225,
+        "near_optimal_probability": 0.2835129364856409,
+        "budget_near_optimal_probabilities": {
+          "5": 0.0,
+          "10": 0.10380304485019198,
+          "15": 0.19805277154941237,
+          "20": 0.2835129364856409
+        },
+        "formula": "1 if initial5 contains a qualifying pair; otherwise 1-C(371-M,b-5)/C(371,b-5)"
+      },
+      "fixed_start_random_budget_exact": {
+        "5": {
+          "champion_probability": 0.0,
+          "near_optimal_probability": 0.0
+        },
+        "10": {
+          "champion_probability": 0.013477088948787075,
+          "near_optimal_probability": 0.10380304485019198
+        },
+        "15": {
+          "champion_probability": 0.02695417789757415,
+          "near_optimal_probability": 0.19805277154941237
+        },
+        "20": {
+          "champion_probability": 0.040431266846361225,
+          "near_optimal_probability": 0.2835129364856409
+        }
+      },
+      "fixed_initial_pairs": [
+        {
+          "kernel": "PER",
+          "mean_id": 3
+        },
+        {
+          "kernel": "LIN",
+          "mean_id": 4
+        },
+        {
+          "kernel": "LIN+PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(MA1*LIN)+MA3",
+          "mean_id": 3
+        }
+      ],
+      "random_initial_mechanical_2000": {
+        "runs": 2000,
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "seed": 2026092901,
+        "champion_hits": 232,
+        "champion_rate": 0.116,
+        "near_optimal_hits": 1112,
+        "near_optimal_rate": 0.556,
+        "median_regret": 1.4825106959112873,
+        "regret_quartiles": [
+          0.6020721349893563,
+          1.4825106959112873,
+          2.6373485841192235
+        ],
+        "quantile_method": "NumPy default linear (Hyndman-Fan type7)",
+        "budget_near_optimal_rates": {
+          "5": 0.098,
+          "10": 0.2255,
+          "15": 0.3925,
+          "20": 0.556
+        },
+        "budget_champion_rates": {
+          "5": 0.015,
+          "10": 0.037,
+          "15": 0.0705,
+          "20": 0.116
+        },
+        "budget_regret_medians": {
+          "5": 7.259897430323804,
+          "10": 4.401932495597038,
+          "15": 2.464866734884822,
+          "20": 1.4825106959112873
+        },
+        "trajectory_file": "EX2__random_initial_mechanical_2000__trajectories.npz",
+        "trajectory_sha256": "4e6360dc901cfc1dcf79a962666176e4eda2f508158f98983e0cabaf6577cf6c"
+      },
+      "fixed_start_mechanical_2000": {
+        "runs": 2000,
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "seed": 2026092901,
+        "champion_hits": 124,
+        "champion_rate": 0.062,
+        "near_optimal_hits": 740,
+        "near_optimal_rate": 0.37,
+        "median_regret": 2.6334164023476774,
+        "regret_quartiles": [
+          1.1462723430612414,
+          2.6334164023476774,
+          5.034851284585841
+        ],
+        "quantile_method": "NumPy default linear (Hyndman-Fan type7)",
+        "budget_near_optimal_rates": {
+          "5": 0.0,
+          "10": 0.136,
+          "15": 0.2345,
+          "20": 0.37
+        },
+        "budget_champion_rates": {
+          "5": 0.0,
+          "10": 0.0045,
+          "15": 0.0245,
+          "20": 0.062
+        },
+        "budget_regret_medians": {
+          "5": 10.186761818199102,
+          "10": 8.464867123518928,
+          "15": 4.906326272864575,
+          "20": 2.6334164023476774
+        },
+        "trajectory_file": "EX2__fixed_start_mechanical_2000__trajectories.npz",
+        "trajectory_sha256": "6581de89431e404c8c095cb6585fa2afad48baab62847e31b248d43e88f85fa9"
+      }
+    },
+    {
+      "case": "EX3",
+      "library_size": 376,
+      "library_optimum_aic": -173.99431357608225,
+      "champion_count_tolerance_1e_minus_9": 1,
+      "near_optimal_count_delta_aic_le_2": 1,
+      "uniform_random_20_exact": {
+        "champion_probability": 0.05319148936170215,
+        "near_optimal_probability": 0.05319148936170215,
+        "formula": "1 - C(N-M,20) / C(N,20); N=376; M=number of qualifying pairs"
+      },
+      "uniform_random_budget_exact": {
+        "5": {
+          "champion_probability": 0.013297872340425565,
+          "near_optimal_probability": 0.013297872340425565
+        },
+        "10": {
+          "champion_probability": 0.02659574468085102,
+          "near_optimal_probability": 0.02659574468085102
+        },
+        "15": {
+          "champion_probability": 0.039893617021276584,
+          "near_optimal_probability": 0.039893617021276584
+        },
+        "20": {
+          "champion_probability": 0.05319148936170215,
+          "near_optimal_probability": 0.05319148936170215
+        }
+      },
+      "initial_best_aic": -162.26219201019723,
+      "initial_regret": 11.732121565885024,
+      "fixed_start_then_uniform_random_15_exact": {
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "additional_random_accesses": 15,
+        "remaining_population": 371,
+        "champion_probability": 0.040431266846361225,
+        "near_optimal_probability": 0.040431266846361225,
+        "budget_near_optimal_probabilities": {
+          "5": 0.0,
+          "10": 0.013477088948787075,
+          "15": 0.02695417789757415,
+          "20": 0.040431266846361225
+        },
+        "formula": "1 if initial5 contains a qualifying pair; otherwise 1-C(371-M,b-5)/C(371,b-5)"
+      },
+      "fixed_start_random_budget_exact": {
+        "5": {
+          "champion_probability": 0.0,
+          "near_optimal_probability": 0.0
+        },
+        "10": {
+          "champion_probability": 0.013477088948787075,
+          "near_optimal_probability": 0.013477088948787075
+        },
+        "15": {
+          "champion_probability": 0.02695417789757415,
+          "near_optimal_probability": 0.02695417789757415
+        },
+        "20": {
+          "champion_probability": 0.040431266846361225,
+          "near_optimal_probability": 0.040431266846361225
+        }
+      },
+      "fixed_initial_pairs": [
+        {
+          "kernel": "SE",
+          "mean_id": 1
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2
+        },
+        {
+          "kernel": "MA3+LIN",
+          "mean_id": 3
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 2
+        },
+        {
+          "kernel": "(LIN*PER)+MA5",
+          "mean_id": 2
+        }
+      ],
+      "random_initial_mechanical_2000": {
+        "runs": 2000,
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "seed": 2026092902,
+        "champion_hits": 333,
+        "champion_rate": 0.1665,
+        "near_optimal_hits": 333,
+        "near_optimal_rate": 0.1665,
+        "median_regret": 5.399538965797376,
+        "regret_quartiles": [
+          3.395892833496987,
+          5.399538965797376,
+          6.943553946277746
+        ],
+        "quantile_method": "NumPy default linear (Hyndman-Fan type7)",
+        "budget_near_optimal_rates": {
+          "5": 0.013,
+          "10": 0.0455,
+          "15": 0.105,
+          "20": 0.1665
+        },
+        "budget_champion_rates": {
+          "5": 0.013,
+          "10": 0.0455,
+          "15": 0.105,
+          "20": 0.1665
+        },
+        "budget_regret_medians": {
+          "5": 9.885031053871188,
+          "10": 7.127896239449626,
+          "15": 5.732154171105179,
+          "20": 5.399538965797376
+        },
+        "trajectory_file": "EX3__random_initial_mechanical_2000__trajectories.npz",
+        "trajectory_sha256": "df5b69cce18e356acec845d0ab3d34cf9111c07410e1df5d5e871c2924b5a66c"
+      },
+      "fixed_start_mechanical_2000": {
+        "runs": 2000,
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "seed": 2026092902,
+        "champion_hits": 301,
+        "champion_rate": 0.1505,
+        "near_optimal_hits": 301,
+        "near_optimal_rate": 0.1505,
+        "median_regret": 5.7321116854373315,
+        "regret_quartiles": [
+          4.619672801385576,
+          5.7321116854373315,
+          6.00940388407659
+        ],
+        "quantile_method": "NumPy default linear (Hyndman-Fan type7)",
+        "budget_near_optimal_rates": {
+          "5": 0.0,
+          "10": 0.006,
+          "15": 0.0595,
+          "20": 0.1505
+        },
+        "budget_champion_rates": {
+          "5": 0.0,
+          "10": 0.006,
+          "15": 0.0595,
+          "20": 0.1505
+        },
+        "budget_regret_medians": {
+          "5": 11.732121565885024,
+          "10": 10.095710471001638,
+          "15": 5.736986478554769,
+          "20": 5.7321116854373315
+        },
+        "trajectory_file": "EX3__fixed_start_mechanical_2000__trajectories.npz",
+        "trajectory_sha256": "30813dfe7b4c666626a68338bb9bf9724a908fa309183fd79a00543c5751a971"
+      }
+    },
+    {
+      "case": "EX4",
+      "library_size": 376,
+      "library_optimum_aic": -153.53977555653086,
+      "champion_count_tolerance_1e_minus_9": 1,
+      "near_optimal_count_delta_aic_le_2": 1,
+      "uniform_random_20_exact": {
+        "champion_probability": 0.05319148936170215,
+        "near_optimal_probability": 0.05319148936170215,
+        "formula": "1 - C(N-M,20) / C(N,20); N=376; M=number of qualifying pairs"
+      },
+      "uniform_random_budget_exact": {
+        "5": {
+          "champion_probability": 0.013297872340425565,
+          "near_optimal_probability": 0.013297872340425565
+        },
+        "10": {
+          "champion_probability": 0.02659574468085102,
+          "near_optimal_probability": 0.02659574468085102
+        },
+        "15": {
+          "champion_probability": 0.039893617021276584,
+          "near_optimal_probability": 0.039893617021276584
+        },
+        "20": {
+          "champion_probability": 0.05319148936170215,
+          "near_optimal_probability": 0.05319148936170215
+        }
+      },
+      "initial_best_aic": -135.46912863795197,
+      "initial_regret": 18.070646918578888,
+      "fixed_start_then_uniform_random_15_exact": {
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "additional_random_accesses": 15,
+        "remaining_population": 371,
+        "champion_probability": 0.040431266846361225,
+        "near_optimal_probability": 0.040431266846361225,
+        "budget_near_optimal_probabilities": {
+          "5": 0.0,
+          "10": 0.013477088948787075,
+          "15": 0.02695417789757415,
+          "20": 0.040431266846361225
+        },
+        "formula": "1 if initial5 contains a qualifying pair; otherwise 1-C(371-M,b-5)/C(371,b-5)"
+      },
+      "fixed_start_random_budget_exact": {
+        "5": {
+          "champion_probability": 0.0,
+          "near_optimal_probability": 0.0
+        },
+        "10": {
+          "champion_probability": 0.013477088948787075,
+          "near_optimal_probability": 0.013477088948787075
+        },
+        "15": {
+          "champion_probability": 0.02695417789757415,
+          "near_optimal_probability": 0.02695417789757415
+        },
+        "20": {
+          "champion_probability": 0.040431266846361225,
+          "near_optimal_probability": 0.040431266846361225
+        }
+      },
+      "fixed_initial_pairs": [
+        {
+          "kernel": "LIN",
+          "mean_id": 3
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 3
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 4
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 1
+        }
+      ],
+      "random_initial_mechanical_2000": {
+        "runs": 2000,
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "seed": 2026092903,
+        "champion_hits": 237,
+        "champion_rate": 0.1185,
+        "near_optimal_hits": 237,
+        "near_optimal_rate": 0.1185,
+        "median_regret": 4.964907613373384,
+        "regret_quartiles": [
+          2.901136396523043,
+          4.964907613373384,
+          9.531253725727368
+        ],
+        "quantile_method": "NumPy default linear (Hyndman-Fan type7)",
+        "budget_near_optimal_rates": {
+          "5": 0.0125,
+          "10": 0.032,
+          "15": 0.068,
+          "20": 0.1185
+        },
+        "budget_champion_rates": {
+          "5": 0.0125,
+          "10": 0.032,
+          "15": 0.068,
+          "20": 0.1185
+        },
+        "budget_regret_medians": {
+          "5": 15.196513914212176,
+          "10": 10.16896494063036,
+          "15": 6.588739329136786,
+          "20": 4.964907613373384
+        },
+        "trajectory_file": "EX4__random_initial_mechanical_2000__trajectories.npz",
+        "trajectory_sha256": "7435fbb3861e074189d660a8b9529cf160b2b20c9e74e254ce8395b0ffce83a3"
+      },
+      "fixed_start_mechanical_2000": {
+        "runs": 2000,
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "seed": 2026092903,
+        "champion_hits": 84,
+        "champion_rate": 0.042,
+        "near_optimal_hits": 84,
+        "near_optimal_rate": 0.042,
+        "median_regret": 6.3124146203956,
+        "regret_quartiles": [
+          3.963758451325077,
+          6.3124146203956,
+          9.549276992764447
+        ],
+        "quantile_method": "NumPy default linear (Hyndman-Fan type7)",
+        "budget_near_optimal_rates": {
+          "5": 0.0,
+          "10": 0.003,
+          "15": 0.0155,
+          "20": 0.042
+        },
+        "budget_champion_rates": {
+          "5": 0.0,
+          "10": 0.003,
+          "15": 0.0155,
+          "20": 0.042
+        },
+        "budget_regret_medians": {
+          "5": 18.070646918578888,
+          "10": 12.06587955043048,
+          "15": 8.915241325972318,
+          "20": 6.3124146203956
+        },
+        "trajectory_file": "EX4__fixed_start_mechanical_2000__trajectories.npz",
+        "trajectory_sha256": "a17a889eba61db4a4eb08b9f9ce3f4068892dce742e6607f29ab4af9d6631717"
+      }
+    },
+    {
+      "case": "Borehole",
+      "library_size": 376,
+      "library_optimum_aic": 508.6899663049753,
+      "champion_count_tolerance_1e_minus_9": 1,
+      "near_optimal_count_delta_aic_le_2": 2,
+      "uniform_random_20_exact": {
+        "champion_probability": 0.05319148936170215,
+        "near_optimal_probability": 0.10368794326241138,
+        "formula": "1 - C(N-M,20) / C(N,20); N=376; M=number of qualifying pairs"
+      },
+      "uniform_random_budget_exact": {
+        "5": {
+          "champion_probability": 0.013297872340425565,
+          "near_optimal_probability": 0.026453900709219824
+        },
+        "10": {
+          "champion_probability": 0.02659574468085102,
+          "near_optimal_probability": 0.05255319148936166
+        },
+        "15": {
+          "champion_probability": 0.039893617021276584,
+          "near_optimal_probability": 0.07829787234042551
+        },
+        "20": {
+          "champion_probability": 0.05319148936170215,
+          "near_optimal_probability": 0.10368794326241138
+        }
+      },
+      "initial_best_aic": 536.5308804109773,
+      "initial_regret": 27.840914106001946,
+      "fixed_start_then_uniform_random_15_exact": {
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "additional_random_accesses": 15,
+        "remaining_population": 371,
+        "champion_probability": 0.040431266846361225,
+        "near_optimal_probability": 0.07933270197421138,
+        "budget_near_optimal_probabilities": {
+          "5": 0.0,
+          "10": 0.02680847963866828,
+          "15": 0.05325271363007211,
+          "20": 0.07933270197421138
+        },
+        "formula": "1 if initial5 contains a qualifying pair; otherwise 1-C(371-M,b-5)/C(371,b-5)"
+      },
+      "fixed_start_random_budget_exact": {
+        "5": {
+          "champion_probability": 0.0,
+          "near_optimal_probability": 0.0
+        },
+        "10": {
+          "champion_probability": 0.013477088948787075,
+          "near_optimal_probability": 0.02680847963866828
+        },
+        "15": {
+          "champion_probability": 0.02695417789757415,
+          "near_optimal_probability": 0.05325271363007211
+        },
+        "20": {
+          "champion_probability": 0.040431266846361225,
+          "near_optimal_probability": 0.07933270197421138
+        }
+      },
+      "fixed_initial_pairs": [
+        {
+          "kernel": "MA5",
+          "mean_id": 4
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 1
+        },
+        {
+          "kernel": "MA1+MA5",
+          "mean_id": 2
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 4
+        },
+        {
+          "kernel": "(SE*LIN)+MA3",
+          "mean_id": 2
+        }
+      ],
+      "random_initial_mechanical_2000": {
+        "runs": 2000,
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "seed": 2026092904,
+        "champion_hits": 232,
+        "champion_rate": 0.116,
+        "near_optimal_hits": 430,
+        "near_optimal_rate": 0.215,
+        "median_regret": 10.522006967748894,
+        "regret_quartiles": [
+          3.7278843454387243,
+          10.522006967748894,
+          21.9718014908467
+        ],
+        "quantile_method": "NumPy default linear (Hyndman-Fan type7)",
+        "budget_near_optimal_rates": {
+          "5": 0.024,
+          "10": 0.061,
+          "15": 0.1315,
+          "20": 0.215
+        },
+        "budget_champion_rates": {
+          "5": 0.0095,
+          "10": 0.0275,
+          "15": 0.0635,
+          "20": 0.116
+        },
+        "budget_regret_medians": {
+          "5": 27.45652947846952,
+          "10": 23.096248630707123,
+          "15": 19.526719310529188,
+          "20": 10.522006967748894
+        },
+        "trajectory_file": "Borehole__random_initial_mechanical_2000__trajectories.npz",
+        "trajectory_sha256": "cebefc4c4ee52ba58402082ee9914e0564157818b0628b9b1216c1179cedfb8e"
+      },
+      "fixed_start_mechanical_2000": {
+        "runs": 2000,
+        "candidate_accesses": 20,
+        "initial_accesses": 5,
+        "seed": 2026092904,
+        "champion_hits": 102,
+        "champion_rate": 0.051,
+        "near_optimal_hits": 308,
+        "near_optimal_rate": 0.154,
+        "median_regret": 10.522006967748894,
+        "regret_quartiles": [
+          9.50901582716915,
+          10.522006967748894,
+          21.9718014908467
+        ],
+        "quantile_method": "NumPy default linear (Hyndman-Fan type7)",
+        "budget_near_optimal_rates": {
+          "5": 0.0,
+          "10": 0.016,
+          "15": 0.0695,
+          "20": 0.154
+        },
+        "budget_champion_rates": {
+          "5": 0.0,
+          "10": 0.0075,
+          "15": 0.025,
+          "20": 0.051
+        },
+        "budget_regret_medians": {
+          "5": 27.840914106001946,
+          "10": 26.83615773068277,
+          "15": 21.26768822486838,
+          "20": 10.522006967748894
+        },
+        "trajectory_file": "Borehole__fixed_start_mechanical_2000__trajectories.npz",
+        "trajectory_sha256": "756b768bc42abc0b15d1e9d820912fb199395215e04ffcaf412ee6ab63e70c7f"
+      }
+    }
+  ],
+  "neighbor_definition": "Unmodified kernel-agent-grf/structured_agent/core.py:neighbor",
+  "algorithm": "Random5 or frozen C initial5; then3 batches of3 random unvisited neighbors of two best visited pairs plus2 random unvisited non-neighbors; identical archived fallback and tie ordering",
+  "information_boundary": "Only selected candidate scores reach policy. Full-library optimum and masks used solely after simulation for outcome scoring and exact analytic references.",
+  "trajectory_schema": "Each NPZ stores all2000x20 candidate indices, one-based kernel/mean IDs, observed AIC, cumulative best per access and at budgets5/10/15/20. Within-batch order is proposal order; adaptation occurs only between batches.",
+  "evidence_scope": "Five development cases; repeated searches are optimizer randomizations, not independent new datasets."
+}

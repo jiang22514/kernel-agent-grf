@@ -1,0 +1,1772 @@
+[
+  {
+    "run_id": "A__EX1__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0384425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0471425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0554425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0580925,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.03022,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.032935,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.043525,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.0978,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05008,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05775,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.08528,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06099,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.014176,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.021702,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.02497,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.017118,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.0098273928,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.0227424342,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.03548738,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.011816,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.011216,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.0270243,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.03648402,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.05834052,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.08126892,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.033828,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.023524,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.030686,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.039716,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00037455,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00032115,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.0003813,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00039765,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.00789075,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.007419,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.010113,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.01878975,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.030745,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.06436,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.049385,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.097515,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.0503,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05607,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05792,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.07992,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.013412,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.021282,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.025438,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.018416,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.02020887,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.0361148,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.010728,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.01204,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.014262,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.012146,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.0275292,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.035185966,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.037496463,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.02139102,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.024192,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.0003819,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00043485,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.0003282,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00035115,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.0053115,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.00613125,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.00911625,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.02397,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.039505,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.043105,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.05278,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.058205,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.04936,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.09547,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.08229,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05941,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.016334,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.0391,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.091146,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.01745,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.0105261,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.02827704,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.0361516,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.010638,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.010608,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.012282,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.011664,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.01684878,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.07002138,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.05398653,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.06129708,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.021016,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.024356,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.026982,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.049986,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.0004104,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.0003108,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.00648375,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.010008,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.01029075,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.02147025,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.03923,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0490175,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0519925,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.06678,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.030635,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.04855,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.033315,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.08034,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.016452,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.017062,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.018948,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.01929,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.01532887488,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.0311172,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.0284328,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.01207,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.010816,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.011466,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.014052,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.0396656,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.0346816,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.0172578,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.0322848,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.016718,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.021614,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.032208,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.048146,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00038685,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00043395,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00037395,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00040845,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.00621675,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.00556275,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.01127325,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.02255325,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0404675,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0468925,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0590425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.051055,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.03084,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.032525,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.06974,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.03471,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.0511,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.07676,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06125,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX4__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.08362,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.0274556,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__deepseek4pro__structured__r1",
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "charged_or_reserved_usd": 0.035733392,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.011668,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.01086,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.010836,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.01197,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.0379496,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.021524,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00039075,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00030825,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00032295,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.0003477,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.00625125,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.0069,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.007782,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gemini38flash__structured__r1",
+    "model": "google/gemini-3.8-flash",
+    "charged_or_reserved_usd": 0.01096125,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0401925,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0460675,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.05118,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.05318,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.03032,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.032435,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.065415,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gpt55__structured__r1",
+    "model": "openai/gpt-5.5",
+    "charged_or_reserved_usd": 0.12831,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05094,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.012096,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.017084,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.024462,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__gemini31pro__structured__r1",
+    "model": "google/gemini-3.1-pro-preview",
+    "charged_or_reserved_usd": 0.024056,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0264425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0423675,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.03783,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.051905,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.04688,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0593925,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.04869,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06042,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06132,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05354,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.07689,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX1__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05911,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05551,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.07676,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06321,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.04941,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05695,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.0434,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.03705,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.0379,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.048205,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0509425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0665925,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.031655,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0369425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX2__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.04738,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.032355,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0365175,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.044755,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.04703,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.05448,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.05503,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05437,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06638,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05781,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05608,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.08251,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX3__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.0916,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.07694,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06006,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.07763,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05207,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.04087,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.04367,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0516425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0520925,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0501675,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.03093,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.035055,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__EX4__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0403425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0372175,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.047405,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__astra__budget_complete__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.053155,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0496425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.05793,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__astra__structured__r1",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0545675,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05124,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.04105,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__fable51__budget_complete__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06919,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05547,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.0602,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "C__Borehole__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06341,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX1__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0395425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX1__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0469675,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX1__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0525675,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX1__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0555425,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX1__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.04883,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX1__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05521,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX1__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.08468,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX1__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06084,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX2__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.04915,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX2__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05554,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX2__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05911,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX2__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06899,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX2__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.041805,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX2__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0481175,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX2__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.049455,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX2__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.05623,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX3__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.03848,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX3__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.048305,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX3__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.06223,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX3__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.058405,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX3__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05026,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX3__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.08967,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX3__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.07287,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX3__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06109,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX4__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.0499,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX4__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05667,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX4__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06107,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX4__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06267,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX4__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0407175,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX4__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0463175,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX4__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.05213,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__EX4__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0565925,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__Borehole__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.021607,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__Borehole__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05129,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__Borehole__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05604,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__Borehole__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05841,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__Borehole__fable51__structured__r2",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.06058,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.017198,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX1__qwen38max__structured__r1",
+    "model": "qwen/qwen3.8-max-0902",
+    "charged_or_reserved_usd": 0.009166,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.032654,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.025636,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX2__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.036516,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00045915,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__EX3__gpt4omini__structured__r1",
+    "model": "openai/gpt-4o-mini",
+    "charged_or_reserved_usd": 0.00047475,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.034892,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.02341976,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__kimi3__structured__r1",
+    "model": "moonshotai/kimi-k3",
+    "charged_or_reserved_usd": 0.02844816,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.015988,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.030902,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__grok47__structured__r1",
+    "model": "x-ai/grok-4.7",
+    "charged_or_reserved_usd": 0.046728,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05731,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05925,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "A__Borehole__fable51__structured__r1",
+    "model": "anthropic/claude-fable-5.1",
+    "charged_or_reserved_usd": 0.05907,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__Borehole__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0459175,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__Borehole__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0527925,
+    "billing_unknown": false
+  },
+  {
+    "run_id": "B__Borehole__astra__structured__r2",
+    "model": "openai/gpt-6-astra",
+    "charged_or_reserved_usd": 0.0585675,
+    "billing_unknown": false
+  }
+]

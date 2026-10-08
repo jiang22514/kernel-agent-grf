@@ -1,0 +1,62 @@
+{
+  "overall_framework_b7.pdf": [
+    "make_workflow_figures.py",
+    "conceptual diagram; no field observations"
+  ],
+  "grid_conditioning_union_b7.pdf": [
+    "make_workflow_figures.py",
+    "conceptual diagram; no field observations"
+  ],
+  "synthetic_prediction_b7.pdf": [
+    "draw_synthetic_v2.py + synthetic_style.py",
+    "results/synthetic_prediction/EX*_display.mat; compact public numerical source"
+  ],
+  "independent_synthetic_test_data.pdf": [
+    "plot_dataset_overview.py",
+    "data/holdout/H01..H06.mat; original script also expects the source-data manifest"
+  ],
+  "cpt_observations_b7.pdf": [
+    "make_cpt_observations.py",
+    "private CPT observations: request from authors"
+  ],
+  "heldout_probability_calibration_brier.pdf": [
+    "draw_probability_v2.py",
+    "private pointwise holdout predictions and aggregate calibration tables"
+  ],
+  "main_model_fields.pdf": [
+    "draw_fields_v2.py + field_style.py",
+    "private conditional mean/SD/realization packs; not included"
+  ],
+  "borehole_variogram_corrected.pdf": [
+    "draw_variogram_v2.py + variogram_style.py",
+    "private CPT observations and projected covariance diagnostic source"
+  ],
+  "main_model_weak_area.pdf": [
+    "draw_fields_v2.py + field_style.py",
+    "saved per-realization weak-area summaries; aggregate public summary provided"
+  ],
+  "same_field_grid_sensitivity.pdf": [
+    "draw_fields_v2.py + field_style.py",
+    "paired-grid per-realization summaries; no raw field arrays released"
+  ],
+  "b66_density_actual_grid.pdf": [
+    "redraw_b66_density.py",
+    "archived grid-resolution timing summaries; original source-map contracts in script"
+  ],
+  "flagship_repeat_stability.pdf": [
+    "draw_agent_v2.py",
+    "results/structured_panel/search_visits.json and design.json; safe public projection"
+  ],
+  "free_baseline_budgets_b7.pdf": [
+    "draw_baselines_v2.py",
+    "saved uniform-random/greedy budget summaries"
+  ],
+  "flagship_first_panel.pdf": [
+    "draw_agent_v2.py",
+    "results/structured_panel/search_visits.json and design.json; safe public projection"
+  ],
+  "flagship_same_start_v2.pdf": [
+    "draw_agent_v2.py",
+    "stage C in results/structured_panel/; same-initial-candidate experiment"
+  ]
+}
