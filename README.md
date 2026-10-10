@@ -1,6 +1,6 @@
 # Kernel-agent geotechnical random fields
 
-Code and reproducibility materials for **Compositional covariance discovery for geotechnical random fields: LLM-guided search and exact conditional simulation**.
+Code and reproducibility materials for **An LLM agent framework for composite covariance discovery and exact conditional simulation of geotechnical random fields**.
 
 ## Current research release — 8 October 2026
 
