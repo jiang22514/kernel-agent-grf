@@ -1,0 +1,14 @@
+{
+  "case_rows": 18,
+  "numeric_csv_values": 144,
+  "csv_all_fields_exact": true,
+  "summary_all_values_exact": true,
+  "input_sha256": {
+    "score_tables.json": "c423cccb52f4e2a0158c6befb077e520b6f8a5c50847ba04b589fee20128b0bb",
+    "candidate_accesses.json": "c818d9f97de379f6553cc2c69952d6e5adfab721304b2d73c69838db1b9513d4"
+  },
+  "byte_identical_reference_outputs": {
+    "continuation_case_results.csv": true,
+    "continuation_summary.json": true
+  }
+}

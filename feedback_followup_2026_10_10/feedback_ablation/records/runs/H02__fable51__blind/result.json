@@ -1,0 +1,286 @@
+{
+  "run_id": "H02__fable51__blind",
+  "case": "H02",
+  "model_label": "fable51",
+  "model": "anthropic/claude-fable-5.1",
+  "method": "strategy",
+  "arm": "blind",
+  "batch_size": 4,
+  "total_rounds": 5,
+  "reasoning_effort": "medium",
+  "plan_sha256": "004d6feeb3dab63d85d8206fa9308e54510ce79547b22472eb6eb77767becc82",
+  "state": "complete",
+  "visited": [
+    {
+      "kernel": "SE",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 154.1009720856112,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 153.3343099010773,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 153.1106450647677,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 161.58352440288087,
+      "k": 10,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA5",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 153.2836723156243,
+      "k": 5,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 153.007459143803,
+      "k": 8,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA1",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 155.23561068925451,
+      "k": 5,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 189.1342997125116,
+      "k": 4,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 153.85128111817025,
+      "k": 5,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA5*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 153.5156460144933,
+      "k": 7,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 154.8791237712025,
+      "k": 7,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 155.24724031293607,
+      "k": 6,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 159.85561200550566,
+      "k": 9,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(SE*PER)+MA3",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 153.2299286882967,
+      "k": 10,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "RQ*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 155.11073435130177,
+      "k": 8,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(SE*LIN)+PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 155.28517265803742,
+      "k": 10,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 177.56610622191985,
+      "k": 6,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 156.87814565513486,
+      "k": 9,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 160.98112082313824,
+      "k": 11,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "MA3*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 153.8258116186648,
+      "k": 7,
+      "ok": true,
+      "round": 5
+    }
+  ],
+  "common_start_sha256": "e01bb8e3b33ebf8fa4fd582ff6187d1be346d10ecd28fafc2a12675bb1af5e88",
+  "rounds": [
+    {
+      "round": 1,
+      "source": "shared_archived_score_free_first_decision",
+      "new_evals": 4,
+      "new_cost_usd": 0
+    },
+    {
+      "round": 2,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "No scores visible. Competing explanations: smooth stationary (SE), rougher Matern, periodic modulation (SE*PER), multiscale RQ. Variogram bump near h~1.3 hints at periodic structure; weak trend. Round 2 tests roughness contrast (MA5, MA1) at constant mean, a periodic-plus-noise-floor structure (SE+PER), and whether zero vs constant mean matters for SE. Unresolved: periodic vs stationary, mean choice.",
+      "summary_note": null,
+      "cost_usd": 0.05439,
+      "replayed_locally": false
+    },
+    {
+      "round": 3,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "Scores withheld. Competing explanations remain: smooth stationary (SE/MA5), periodic modulation (SE*PER, SE+PER), multiscale RQ with quadratic mean. Variogram hole effect near h~1.3 still suggests periodic or amplitude-varying structure. Round 3 tests PER alone, periodic with Matern roughness, LIN-modulated SE (nonstationary amplitude), and a mean check (RQ constant vs quadratic). Unresolved: whether periodicity or mean trend explains the bump.",
+      "summary_note": null,
+      "cost_usd": 0.05803,
+      "replayed_locally": false
+    },
+    {
+      "round": 4,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "Scores withheld. Alive structures: smooth stationary SE/MA5, periodic-modulated SE*PER / SE+PER, LIN-modulated SE, multiscale RQ. Variogram hole near h~1.3 still points to periodic or amplitude-varying structure. Round 4: check quadratic mean under SE, add rough residual to SE*PER, test RQ*PER multiscale periodic, and combine amplitude modulation with periodicity. Unresolved: whether mean or periodic covariance explains the bump; final round reserved for mean checks on leading composite.",
+      "summary_note": null,
+      "cost_usd": 0.07595,
+      "replayed_locally": false
+    },
+    {
+      "round": 5,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "Scores withheld. Competing explanations: periodic-modulated smooth covariance (SE*PER, RQ*PER), amplitude-varying SE*LIN, and smooth stationary SE/MA5 with constant or quadratic mean. Mean alternatives for SE*PER were never checked, and SE*LIN only had Constant. Final round: test SE*PER with Zero and Linear means, SE*LIN with Quadratic, and MA3-based periodic alternative with Constant to cover roughness.",
+      "summary_note": null,
+      "cost_usd": 0.05972,
+      "replayed_locally": false
+    }
+  ],
+  "n_evals": 20,
+  "best": {
+    "kernel": "SE+PER",
+    "mean_id": 2,
+    "mean": "Constant",
+    "aic": 153.007459143803,
+    "k": 8,
+    "ok": true,
+    "round": 2
+  },
+  "regret": 2.7569368963203544,
+  "hit": false,
+  "near_optimal": false,
+  "regret_trajectory": [
+    3.8504498381285543,
+    3.0837876535946407,
+    2.8601228172850597,
+    2.8601228172850597,
+    2.8601228172850597,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544,
+    2.7569368963203544
+  ],
+  "full_20": true,
+  "success_champion": false,
+  "success_near": false,
+  "api_requests": 4,
+  "known_cost_usd": 0.24809,
+  "charged_or_reserved_usd": 0.24809,
+  "billing_unknown_requests": 0
+}

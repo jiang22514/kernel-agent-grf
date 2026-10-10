@@ -1,0 +1,241 @@
+{
+  "status": "PASS",
+  "all_24_complete": true,
+  "verified_runs": 24,
+  "verified_new_requests": 84,
+  "known_cost_usd": 5.35221,
+  "prior_cost_usd": 48.150482539020004,
+  "project_cost_usd": 53.50269253902,
+  "model_arm_summary": [
+    {
+      "model_label": "astra",
+      "arm": "feedback",
+      "planned_cases": 6,
+      "completed_cases": 6,
+      "champion_count": 4,
+      "near_count": 6,
+      "full20_completed": 6,
+      "mean_regret_completed": 0.3595390241984357,
+      "median_regret_completed": 0.0,
+      "known_cost_usd": 0.9655525,
+      "requests": 18
+    },
+    {
+      "model_label": "astra",
+      "arm": "blind",
+      "planned_cases": 6,
+      "completed_cases": 6,
+      "champion_count": 0,
+      "near_count": 2,
+      "full20_completed": 6,
+      "mean_regret_completed": 7.959528239833219,
+      "median_regret_completed": 2.8955803612354174,
+      "known_cost_usd": 0.9143275,
+      "requests": 18
+    },
+    {
+      "model_label": "fable51",
+      "arm": "feedback",
+      "planned_cases": 6,
+      "completed_cases": 6,
+      "champion_count": 5,
+      "near_count": 6,
+      "full20_completed": 6,
+      "mean_regret_completed": 0.19665806939724462,
+      "median_regret_completed": 0.0,
+      "known_cost_usd": 1.90415,
+      "requests": 24
+    },
+    {
+      "model_label": "fable51",
+      "arm": "blind",
+      "planned_cases": 6,
+      "completed_cases": 6,
+      "champion_count": 1,
+      "near_count": 3,
+      "full20_completed": 6,
+      "mean_regret_completed": 2.679415690396558,
+      "median_regret_completed": 2.3489639117891983,
+      "known_cost_usd": 1.56818,
+      "requests": 24
+    }
+  ],
+  "paired_summary": [
+    {
+      "model_label": "astra",
+      "planned_pairs": 6,
+      "complete_pairs": 6,
+      "feedback_lower_regret": 5,
+      "ties": 1,
+      "feedback_higher_regret": 0,
+      "mean_paired_regret_difference": -7.599989215634783,
+      "median_paired_regret_difference": -2.095605560977603
+    },
+    {
+      "model_label": "fable51",
+      "planned_pairs": 6,
+      "complete_pairs": 6,
+      "feedback_lower_regret": 5,
+      "ties": 1,
+      "feedback_higher_regret": 0,
+      "mean_paired_regret_difference": -2.482757620999313,
+      "median_paired_regret_difference": -1.828370929989532
+    }
+  ],
+  "paired_cases": [
+    {
+      "model_label": "astra",
+      "case": "H01",
+      "pair_complete": true,
+      "feedback_gap": 0.5572845446749852,
+      "blind_gap": 0.5572845446749852,
+      "regret_feedback_minus_blind": 0.0,
+      "gap_reduction": 0.0,
+      "first_gap": 6.492267677280182,
+      "feedback_cost_usd": 0.15999,
+      "blind_cost_usd": 0.146565
+    },
+    {
+      "model_label": "astra",
+      "case": "H02",
+      "pair_complete": true,
+      "feedback_gap": 0.0,
+      "blind_gap": 3.0331500681416514,
+      "regret_feedback_minus_blind": -3.0331500681416514,
+      "gap_reduction": 3.0331500681416514,
+      "first_gap": 3.6007588706875993,
+      "feedback_cost_usd": 0.1624025,
+      "blind_cost_usd": 0.1485775
+    },
+    {
+      "model_label": "astra",
+      "case": "H03",
+      "pair_complete": true,
+      "feedback_gap": 0.0,
+      "blind_gap": 35.69040955249403,
+      "regret_feedback_minus_blind": -35.69040955249403,
+      "gap_reduction": 35.69040955249403,
+      "first_gap": 51.88530046176757,
+      "feedback_cost_usd": 0.15904000000000001,
+      "blind_cost_usd": 0.14976499999999998
+    },
+    {
+      "model_label": "astra",
+      "case": "H04",
+      "pair_complete": true,
+      "feedback_gap": 0.0,
+      "blind_gap": 4.818509655700751,
+      "regret_feedback_minus_blind": -4.818509655700751,
+      "gap_reduction": 4.818509655700751,
+      "first_gap": 11.49737504628996,
+      "feedback_cost_usd": 0.167865,
+      "blind_cost_usd": 0.1568025
+    },
+    {
+      "model_label": "astra",
+      "case": "H05",
+      "pair_complete": true,
+      "feedback_gap": 0.0,
+      "blind_gap": 0.8998049636587098,
+      "regret_feedback_minus_blind": -0.8998049636587098,
+      "gap_reduction": 0.8998049636587098,
+      "first_gap": 6.888378119681192,
+      "feedback_cost_usd": 0.160115,
+      "blind_cost_usd": 0.16159
+    },
+    {
+      "model_label": "astra",
+      "case": "H06",
+      "pair_complete": true,
+      "feedback_gap": 1.5999496005156288,
+      "blind_gap": 2.7580106543291834,
+      "regret_feedback_minus_blind": -1.1580610538135545,
+      "gap_reduction": 1.1580610538135545,
+      "first_gap": 5.587048367885188,
+      "feedback_cost_usd": 0.15614,
+      "blind_cost_usd": 0.1510275
+    },
+    {
+      "model_label": "fable51",
+      "case": "H01",
+      "pair_complete": true,
+      "feedback_gap": 0.0,
+      "blind_gap": 5.660251699441488,
+      "regret_feedback_minus_blind": -5.660251699441488,
+      "gap_reduction": 5.660251699441488,
+      "first_gap": 7.22927942545013,
+      "feedback_cost_usd": 0.35601,
+      "blind_cost_usd": 0.2742
+    },
+    {
+      "model_label": "fable51",
+      "case": "H02",
+      "pair_complete": true,
+      "feedback_gap": 0.0,
+      "blind_gap": 2.7569368963203544,
+      "regret_feedback_minus_blind": -2.7569368963203544,
+      "gap_reduction": 2.7569368963203544,
+      "first_gap": 2.8601228172850597,
+      "feedback_cost_usd": 0.30346,
+      "blind_cost_usd": 0.24809
+    },
+    {
+      "model_label": "fable51",
+      "case": "H03",
+      "pair_complete": true,
+      "feedback_gap": 0.0,
+      "blind_gap": 0.0,
+      "regret_feedback_minus_blind": 0.0,
+      "gap_reduction": 0.0,
+      "first_gap": 0.0,
+      "feedback_cost_usd": 0.35397,
+      "blind_cost_usd": 0.26673
+    },
+    {
+      "model_label": "fable51",
+      "case": "H04",
+      "pair_complete": true,
+      "feedback_gap": 0.0,
+      "blind_gap": 4.818509655700751,
+      "regret_feedback_minus_blind": -4.818509655700751,
+      "gap_reduction": 4.818509655700751,
+      "first_gap": 22.66789319713493,
+      "feedback_cost_usd": 0.31423,
+      "blind_cost_usd": 0.2886
+    },
+    {
+      "model_label": "fable51",
+      "case": "H05",
+      "pair_complete": true,
+      "feedback_gap": 0.0,
+      "blind_gap": 0.8998049636587098,
+      "regret_feedback_minus_blind": -0.8998049636587098,
+      "gap_reduction": 0.8998049636587098,
+      "first_gap": 6.888378119681192,
+      "feedback_cost_usd": 0.29035,
+      "blind_cost_usd": 0.23792
+    },
+    {
+      "model_label": "fable51",
+      "case": "H06",
+      "pair_complete": true,
+      "feedback_gap": 1.1799484163834677,
+      "blind_gap": 1.9409909272580421,
+      "regret_feedback_minus_blind": -0.7610425108745744,
+      "gap_reduction": 0.7610425108745744,
+      "first_gap": 2.691682048510984,
+      "feedback_cost_usd": 0.28613,
+      "blind_cost_usd": 0.25264
+    }
+  ],
+  "returned_models": {
+    "openai/gpt-6-astra": 36,
+    "anthropic/claude-fable-5.1": 48
+  },
+  "providers": {
+    "OpenAI": 36,
+    "Anthropic": 48
+  },
+  "http_calls": 0,
+  "note": "Six reused test cases analyzed separately per model; not 12 independent datasets or a new blind test."
+}

@@ -1,0 +1,120 @@
+Dataset: H01
+n = 96 observations, D = 2 input dimensions.
+  x1: range [0.8995, 170.8], std 52.69
+  x2: range [0.574, 17.92], std 4.866
+y: mean 3.698, std 0.7993, range [2.02, 5.582].
+Trend fit (OLS R^2): linear 0.342, quadratic(diagonal) 0.483.
+Semivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.58, g=0.45) (h=0.98, g=0.91) (h=1.30, g=1.31) (h=1.60, g=1.24) (h=1.88, g=1.17) (h=2.17, g=1.12) 
+
+UNRANKED KERNEL CATALOG:
+1: SE
+2: MA1
+3: MA3
+4: MA5
+5: RQ
+6: LIN
+7: PER
+8: SE+MA1
+9: SE+MA3
+10: SE+MA5
+11: SE+RQ
+12: SE+LIN
+13: SE*LIN
+14: SE+PER
+15: SE*PER
+16: MA1+MA3
+17: MA1+MA5
+18: MA1+RQ
+19: MA1+LIN
+20: MA1*LIN
+21: MA1+PER
+22: MA1*PER
+23: MA3+MA5
+24: MA3+RQ
+25: MA3+LIN
+26: MA3*LIN
+27: MA3+PER
+28: MA3*PER
+29: MA5+RQ
+30: MA5+LIN
+31: MA5*LIN
+32: MA5+PER
+33: MA5*PER
+34: RQ+LIN
+35: RQ*LIN
+36: RQ+PER
+37: RQ*PER
+38: LIN+PER
+39: LIN*PER
+40: (SE*LIN)+MA1
+41: (SE*LIN)+MA3
+42: (SE*LIN)+MA5
+43: (SE*LIN)+RQ
+44: (SE*LIN)+PER
+45: (SE*PER)+MA1
+46: (SE*PER)+MA3
+47: (SE*PER)+MA5
+48: (SE*PER)+RQ
+49: (SE*PER)+LIN
+50: (MA1*LIN)+SE
+51: (MA1*LIN)+MA3
+52: (MA1*LIN)+MA5
+53: (MA1*LIN)+RQ
+54: (MA1*LIN)+PER
+55: (MA1*PER)+SE
+56: (MA1*PER)+MA3
+57: (MA1*PER)+MA5
+58: (MA1*PER)+RQ
+59: (MA1*PER)+LIN
+60: (MA3*LIN)+SE
+61: (MA3*LIN)+MA1
+62: (MA3*LIN)+MA5
+63: (MA3*LIN)+RQ
+64: (MA3*LIN)+PER
+65: (MA3*PER)+SE
+66: (MA3*PER)+MA1
+67: (MA3*PER)+MA5
+68: (MA3*PER)+RQ
+69: (MA3*PER)+LIN
+70: (MA5*LIN)+SE
+71: (MA5*LIN)+MA1
+72: (MA5*LIN)+MA3
+73: (MA5*LIN)+RQ
+74: (MA5*LIN)+PER
+75: (MA5*PER)+SE
+76: (MA5*PER)+MA1
+77: (MA5*PER)+MA3
+78: (MA5*PER)+RQ
+79: (MA5*PER)+LIN
+80: (RQ*LIN)+SE
+81: (RQ*LIN)+MA1
+82: (RQ*LIN)+MA3
+83: (RQ*LIN)+MA5
+84: (RQ*LIN)+PER
+85: (RQ*PER)+SE
+86: (RQ*PER)+MA1
+87: (RQ*PER)+MA3
+88: (RQ*PER)+MA5
+89: (RQ*PER)+LIN
+90: (LIN*PER)+SE
+91: (LIN*PER)+MA1
+92: (LIN*PER)+MA3
+93: (LIN*PER)+MA5
+94: (LIN*PER)+RQ
+
+ROUND 2/5. Evaluated 4/20.
+EVALUATED RESULTS:
+K1/M4 SE Quadratic: AIC=-19.557052, delta=0.000000, k=9, fit=OK
+K14/M2 SE+PER Constant: AIC=-19.484079, delta=0.072973, k=8, fit=OK
+K5/M3 RQ Linear: AIC=-18.141119, delta=1.415933, k=8, fit=OK
+K3/M2 MA3 Constant: AIC=-9.304885, delta=10.252167, k=5, fit=OK
+
+LEGAL ONE-CHANGE NEIGHBORS (no scores):
+Neighbors of K1/M4: K1/M1, K1/M2, K1/M3, K2/M4, K3/M4, K4/M4, K5/M4, K6/M4, K7/M4, K8/M4, K9/M4, K10/M4, K11/M4, K12/M4, K13/M4, K14/M4, K15/M4
+Neighbors of K14/M2: K1/M2, K7/M2, K8/M2, K9/M2, K10/M2, K11/M2, K12/M2, K14/M1, K14/M3, K14/M4, K21/M2, K27/M2, K32/M2, K36/M2, K38/M2
+Neighbors of K5/M3: K1/M3, K2/M3, K3/M3, K4/M3, K5/M1, K5/M2, K5/M4, K6/M3, K7/M3, K11/M3, K18/M3, K24/M3, K29/M3, K34/M3, K35/M3, K36/M3, K37/M3
+
+Your previous short decision summary:
+Round 1: no results yet. Data show moderate quadratic trend (R^2 0.48), semivariogram rising above 1 (hole effect / possible periodic or nonstationary amplitude). Contrast smooth stationary (SE) vs rough (MA3) vs scale-mixing (RQ) vs periodic, and quadratic vs zero/constant means. Unresolved: whether trend belongs in mean or covariance, and whether oscillation is real.
+
+Return six ordered distinct unvisited proposals: four primary and two reserves. Only the first four valid unvisited pairs are evaluated.

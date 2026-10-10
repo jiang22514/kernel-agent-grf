@@ -1,0 +1,39 @@
+{
+  "reused_initial_call": true,
+  "new_experiment_cost_usd": 0,
+  "request": {
+    "model": "openai/gpt-6-astra",
+    "max_tokens": 8192,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "provider": {
+      "require_parameters": true
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You select a covariance and mean function for a Gaussian process.\nObjective: minimize AIC with at most 20 UNIQUE candidate evaluations. A numerical\nevaluator supplies the AIC only for candidates you request. You have four rounds,\nwith five evaluations per round. Unobserved scores and the optimum are unknown.\n\nThe catalog lists ALL 94 legal kernels without scores or ranking. For each,\nchoose mean 1=Zero, 2=Constant, 3=Linear, or 4=Quadratic. Nonzero means include an\nintercept; Quadratic has coordinate-wise squares and no interaction terms.\nSE, MA1, MA3, MA5 and RQ are products of ONE-DIMENSIONAL factors across coordinate\ndirections, with separate direction length scales. They are not radial ARD\nMatern/RQ kernels. MA1/MA3/MA5 have smoothness 1/2, 3/2, 5/2. RQ permits multiple\nscales. LIN uses a fitted offset c in its first coordinate factor:\nk_LIN(x,x_prime)=(x1-c)*(x1_prime-c)/L1^2 plus the sum of\nxd*xd_prime/Ld^2 over other coordinates. The numerical GP fitter estimates\nthis one additional parameter; the agent does not choose its value.\nLIN modulates covariance amplitude; it is not a deterministic linear mean. PER is a product of periodic\ndirection factors, with a shared standardized period and embedding length.\nSums superpose independent components; products modulate them. Exclusion of\nstationary-stationary products is a library restriction, not an identity.\n\nSEARCH RULES:\n1. First round: cover contrasting covariance and mean hypotheses. The trend and\n   semivariogram profile is a clue, not a proof excluding any kernel family.\n2. Later rounds: use about three slots for controlled changes around promising\n   evaluated models, and two slots to explore a different plausible structure.\n   The supplied neighborhood IDs are legal alternatives differing by one mean,\n   primitive, or added/deleted component. They contain NO unseen scores.\n3. A poor A+B fit does NOT show that B is unhelpful in every combination. Compare\n   components while holding the other structure and mean fixed where possible.\n   Similarly, changing kernel and mean together cannot isolate either effect.\n4. Avoid duplicate evaluated pairs. Complete all four batches; do not stop early.\n5. Return five PRIMARY distinct pairs plus two reserve pairs. The evaluator uses\n   the first five legal unvisited pairs in your ordered list; reserves only fill\n   invalid or duplicate primary entries. Every evaluated pair consumes budget.\n6. Give a brief decision summary, not a long derivation. The summary from your\n   previous round will be provided along with ALL evaluated scores.\n\nReturn ONE JSON object and no other text:\n{\"summary\":\"<=80 words: supported patterns, unresolved comparison, next test\",\n \"proposals\":[{\"kernel_id\":1,\"mean_id\":2,\"reason\":\"<=16 words\"}, ...]}\nExactly seven ordered proposal objects are requested. Kernel IDs are catalog\nindices, not performance ranks. You cannot request the optimum or all scores.\n"
+      },
+      {
+        "role": "user",
+        "content": "Dataset: H04\nn = 96 observations, D = 2 input dimensions.\n  x1: range [507.2, 672.8], std 57.97\n  x2: range [0.4206, 17.65], std 5.217\ny: mean 4.119, std 0.9433, range [2.459, 7.211].\nTrend fit (OLS R^2): linear 0.334, quadratic(diagonal) 0.546.\nSemivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.61, g=0.60) (h=0.99, g=0.97) (h=1.29, g=0.91) (h=1.58, g=1.07) (h=1.86, g=1.07) (h=2.16, g=1.09) \n\nUNRANKED KERNEL CATALOG:\n1: SE\n2: MA1\n3: MA3\n4: MA5\n5: RQ\n6: LIN\n7: PER\n8: SE+MA1\n9: SE+MA3\n10: SE+MA5\n11: SE+RQ\n12: SE+LIN\n13: SE*LIN\n14: SE+PER\n15: SE*PER\n16: MA1+MA3\n17: MA1+MA5\n18: MA1+RQ\n19: MA1+LIN\n20: MA1*LIN\n21: MA1+PER\n22: MA1*PER\n23: MA3+MA5\n24: MA3+RQ\n25: MA3+LIN\n26: MA3*LIN\n27: MA3+PER\n28: MA3*PER\n29: MA5+RQ\n30: MA5+LIN\n31: MA5*LIN\n32: MA5+PER\n33: MA5*PER\n34: RQ+LIN\n35: RQ*LIN\n36: RQ+PER\n37: RQ*PER\n38: LIN+PER\n39: LIN*PER\n40: (SE*LIN)+MA1\n41: (SE*LIN)+MA3\n42: (SE*LIN)+MA5\n43: (SE*LIN)+RQ\n44: (SE*LIN)+PER\n45: (SE*PER)+MA1\n46: (SE*PER)+MA3\n47: (SE*PER)+MA5\n48: (SE*PER)+RQ\n49: (SE*PER)+LIN\n50: (MA1*LIN)+SE\n51: (MA1*LIN)+MA3\n52: (MA1*LIN)+MA5\n53: (MA1*LIN)+RQ\n54: (MA1*LIN)+PER\n55: (MA1*PER)+SE\n56: (MA1*PER)+MA3\n57: (MA1*PER)+MA5\n58: (MA1*PER)+RQ\n59: (MA1*PER)+LIN\n60: (MA3*LIN)+SE\n61: (MA3*LIN)+MA1\n62: (MA3*LIN)+MA5\n63: (MA3*LIN)+RQ\n64: (MA3*LIN)+PER\n65: (MA3*PER)+SE\n66: (MA3*PER)+MA1\n67: (MA3*PER)+MA5\n68: (MA3*PER)+RQ\n69: (MA3*PER)+LIN\n70: (MA5*LIN)+SE\n71: (MA5*LIN)+MA1\n72: (MA5*LIN)+MA3\n73: (MA5*LIN)+RQ\n74: (MA5*LIN)+PER\n75: (MA5*PER)+SE\n76: (MA5*PER)+MA1\n77: (MA5*PER)+MA3\n78: (MA5*PER)+RQ\n79: (MA5*PER)+LIN\n80: (RQ*LIN)+SE\n81: (RQ*LIN)+MA1\n82: (RQ*LIN)+MA3\n83: (RQ*LIN)+MA5\n84: (RQ*LIN)+PER\n85: (RQ*PER)+SE\n86: (RQ*PER)+MA1\n87: (RQ*PER)+MA3\n88: (RQ*PER)+MA5\n89: (RQ*PER)+LIN\n90: (LIN*PER)+SE\n91: (LIN*PER)+MA1\n92: (LIN*PER)+MA3\n93: (LIN*PER)+MA5\n94: (LIN*PER)+RQ\n\nROUND 1/4. Evaluated 0/20.\nEVALUATED RESULTS:\nNone yet.\n\nLEGAL ONE-CHANGE NEIGHBORS (no scores):\nNo evaluated anchors yet.\n\nYour previous short decision summary:\nNone.\n\nReturn seven ordered distinct unvisited proposals: five primary and two reserves. Only the first five valid unvisited pairs are evaluated."
+      }
+    ]
+  },
+  "response": {
+    "model": "openai/gpt-6-astra",
+    "provider": "OpenAI",
+    "finish_reason": "stop",
+    "message": {
+      "role": "assistant",
+      "content": "{\"summary\":\"Quadratic trends explain appreciable variation, while residual dependence appears short-range; neither establishes the covariance family. Start with a controlled constant-versus-quadratic mean comparison, compare rough and multiscale covariances under the quadratic mean, and test amplitude modulation separately. Periodicity remains unresolved rather than excluded.\",\"proposals\":[{\"kernel_id\":3,\"mean_id\":2,\"reason\":\"Establish a moderately smooth covariance baseline with an estimated intercept.\"},{\"kernel_id\":3,\"mean_id\":4,\"reason\":\"Isolate quadratic mean benefits while holding covariance fixed.\"},{\"kernel_id\":2,\"mean_id\":4,\"reason\":\"Compare rough versus moderately smooth residual covariance under the same quadratic mean.\"},{\"kernel_id\":5,\"mean_id\":4,\"reason\":\"Test multiple residual length scales with the quadratic mean held fixed.\"},{\"kernel_id\":26,\"mean_id\":2,\"reason\":\"Test input-dependent covariance amplitude against the constant-mean MA3 baseline.\"},{\"kernel_id\":7,\"mean_id\":4,\"reason\":\"Explore periodic residual structure despite inconclusive semivariogram evidence.\"},{\"kernel_id\":3,\"mean_id\":3,\"reason\":\"Separate linear trend benefits from the additional quadratic mean terms.\"}]}"
+    },
+    "usage": {
+      "prompt_tokens": 1757,
+      "completion_tokens": 363,
+      "total_tokens": 2120,
+      "cost": 0.040105
+    }
+  }
+}

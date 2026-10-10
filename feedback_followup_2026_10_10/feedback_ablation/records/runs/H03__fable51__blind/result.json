@@ -1,0 +1,286 @@
+{
+  "run_id": "H03__fable51__blind",
+  "case": "H03",
+  "model_label": "fable51",
+  "model": "anthropic/claude-fable-5.1",
+  "method": "strategy",
+  "arm": "blind",
+  "batch_size": 4,
+  "total_rounds": 5,
+  "reasoning_effort": "medium",
+  "plan_sha256": "004d6feeb3dab63d85d8206fa9308e54510ce79547b22472eb6eb77767becc82",
+  "state": "complete",
+  "visited": [
+    {
+      "kernel": "SE",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 91.5551209242868,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 106.03363043556789,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 39.669820462519226,
+      "k": 10,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "LIN",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 232.0610741564755,
+      "k": 4,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 91.76629683375273,
+      "k": 9,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 93.5551407471998,
+      "k": 8,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 82.83969399994848,
+      "k": 9,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE+LIN",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 100.21950197428674,
+      "k": 7,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA3+PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 51.08392532589349,
+      "k": 10,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA5",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 99.3568891957394,
+      "k": 7,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 168.12748086496376,
+      "k": 6,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 105.29836335337043,
+      "k": 9,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 43.15234748873215,
+      "k": 12,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "RQ+PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 41.66993394577085,
+      "k": 11,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA1",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 131.53374512771825,
+      "k": 7,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA3+LIN",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 114.42874793534025,
+      "k": 7,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 86.2932713806764,
+      "k": 11,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 40.567783964362036,
+      "k": 8,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "(SE*PER)+LIN",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 90.92958012787645,
+      "k": 9,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "MA3+LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 112.0336310208487,
+      "k": 10,
+      "ok": true,
+      "round": 5
+    }
+  ],
+  "common_start_sha256": "572113d71d33d0391382e864a669c96638fb5726ecc2ebc58b2ad99c5cf78a3c",
+  "rounds": [
+    {
+      "round": 1,
+      "source": "shared_archived_score_free_first_decision",
+      "new_evals": 4,
+      "new_cost_usd": 0
+    },
+    {
+      "round": 2,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "Scores withheld. Competing explanations: smooth SE vs rough Matern residual over a linear/quadratic mean; oscillatory residual (hole-effect variogram) via PER; trend carried by LIN covariance rather than mean. Round 2 tests quadratic mean on SE, RQ multiscale alternative, modulated SE*PER vs additive SE+PER, and SE+LIN with zero mean to pit covariance-trend against mean-trend.",
+      "summary_note": null,
+      "cost_usd": 0.07284,
+      "replayed_locally": false
+    },
+    {
+      "round": 3,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "Scores withheld. Competing explanations remain: smooth SE vs rough Matern residual over linear/quadratic mean; periodic hole-effect residual (SE+PER, SE*PER); trend via LIN covariance vs mean. Round 3 tests rough MA3+PER with linear mean, MA5 as intermediate smoothness, SE*LIN modulated amplitude with zero mean, and MA3 with quadratic mean to check mean dependence across kernels.",
+      "summary_note": null,
+      "cost_usd": 0.05695,
+      "replayed_locally": false
+    },
+    {
+      "round": 4,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "Scores withheld. Competing explanations: smooth SE vs Matern residual over linear/quadratic mean; periodic hole-effect residual (variogram peak ~1 then dip) via SE+PER/SE*PER/MA3+PER; trend via LIN covariance vs mean. Untested: MA1 rough, RQ mixed scales with periodic, periodic kernel with quadratic/constant mean, LIN mean-free composite with Matern. Round 4 probes these gaps.",
+      "summary_note": null,
+      "cost_usd": 0.058,
+      "replayed_locally": false
+    },
+    {
+      "round": 5,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "Competing explanations: smooth SE (or Matern) residual over linear/quadratic mean; hole-effect periodic residual (SE+PER, SE*PER, MA3+PER); trend as LIN covariance vs mean. Scores withheld. Final slots check means of periodic kernels (constant, quadratic), a periodic+LIN composite, and MA3+LIN with linear mean to settle trend-handling.",
+      "summary_note": null,
+      "cost_usd": 0.07894,
+      "replayed_locally": false
+    }
+  ],
+  "n_evals": 20,
+  "best": {
+    "kernel": "SE+PER",
+    "mean_id": 3,
+    "mean": "Linear",
+    "aic": 39.669820462519226,
+    "k": 10,
+    "ok": true,
+    "round": 1
+  },
+  "regret": 0.0,
+  "hit": true,
+  "near_optimal": true,
+  "regret_trajectory": [
+    51.88530046176757,
+    51.88530046176757,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "full_20": true,
+  "success_champion": true,
+  "success_near": true,
+  "api_requests": 4,
+  "known_cost_usd": 0.26673,
+  "charged_or_reserved_usd": 0.26673,
+  "billing_unknown_requests": 0
+}

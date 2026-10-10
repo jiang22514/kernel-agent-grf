@@ -1,0 +1,276 @@
+{
+  "run_id": "H04__astra__feedback",
+  "case": "H04",
+  "model_label": "astra",
+  "model": "openai/gpt-6-astra",
+  "method": "control",
+  "arm": "feedback",
+  "batch_size": 5,
+  "total_rounds": 4,
+  "reasoning_effort": "medium",
+  "plan_sha256": "004d6feeb3dab63d85d8206fa9308e54510ce79547b22472eb6eb77767becc82",
+  "state": "complete",
+  "visited": [
+    {
+      "kernel": "MA3",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 98.09648908017314,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 91.16296230833336,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA1",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 99.91205068704721,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 94.85912800222209,
+      "k": 10,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA3*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 83.68860985137712,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA3*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 77.00974446078791,
+      "k": 11,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA3*LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 82.29570974536892,
+      "k": 9,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA5*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 86.06004823575975,
+      "k": 7,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "(MA3*LIN)+MA1",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 89.51680790070293,
+      "k": 10,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "(MA3*LIN)+PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 79.58035933462122,
+      "k": 10,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "(MA3*LIN)+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 72.19123480508716,
+      "k": 14,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA5*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 78.0263148156919,
+      "k": 11,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "(MA3*LIN)+PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 78.40835179995997,
+      "k": 12,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "(MA3*LIN)+SE",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 82.44921217635886,
+      "k": 14,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA3*PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 93.72075325987629,
+      "k": 11,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "(MA5*LIN)+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 76.59383278963594,
+      "k": 14,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(RQ*LIN)+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 78.64074053706946,
+      "k": 15,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA3+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 91.57180612433694,
+      "k": 12,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(LIN*PER)+MA3",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 88.99681168516452,
+      "k": 14,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(MA3*PER)+LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 97.78967478280941,
+      "k": 14,
+      "ok": true,
+      "round": 4
+    }
+  ],
+  "common_start_sha256": "9763514b1210ae7d9bac2c4273f0a8374adc46913450e15d69511c00948a3a59",
+  "rounds": [
+    {
+      "round": 1,
+      "source": "shared_archived_score_free_first_decision",
+      "new_evals": 5,
+      "new_cost_usd": 0
+    },
+    {
+      "round": 2,
+      "source": "fresh_continuation",
+      "new_evals": 5,
+      "rejected": [],
+      "summary": "MA3*LIN with a constant mean leads accessed models. Quadratic means improve stationary MA3, but their benefit under amplitude modulation remains unresolved. MA1 and RQ trail MA3 under the same quadratic mean. Test linear and quadratic means for MA3*LIN and change its smoothness at fixed mean; explore an independent rough residual component and a periodic component without removing amplitude modulation.",
+      "summary_note": null,
+      "cost_usd": 0.0520675,
+      "replayed_locally": false
+    },
+    {
+      "round": 3,
+      "source": "fresh_continuation",
+      "new_evals": 5,
+      "rejected": [],
+      "summary": "MA3*LIN with a quadratic mean leads accessed models (AIC 77.01); quadratic improves its constant and linear alternatives. Adding PER helps MA3*LIN under a constant mean, but its benefit with quadratic detrending remains unresolved. Test periodic augmentation across means and smoother amplitude modulation with quadratic detrending. Explore an independent smooth component and periodic rather than linear covariance modulation.",
+      "summary_note": null,
+      "cost_usd": 0.0577675,
+      "replayed_locally": false
+    },
+    {
+      "round": 4,
+      "source": "fresh_continuation",
+      "new_evals": 5,
+      "rejected": [],
+      "summary": "(MA3*LIN)+PER with quadratic mean leads accessed models at AIC 72.19; adding PER improves MA3*LIN by 4.82. Quadratic beats constant and linear means for this structure. Independent SE augmentation and MA3*PER perform worse, but do not exclude other periodic combinations. Final tests vary the modulated component, remove LIN modulation, and explore alternative allocations of periodicity and nonstationarity while holding the quadratic mean fixed.",
+      "summary_note": null,
+      "cost_usd": 0.05803,
+      "replayed_locally": false
+    }
+  ],
+  "n_evals": 20,
+  "best": {
+    "kernel": "(MA3*LIN)+PER",
+    "mean_id": 4,
+    "mean": "Quadratic",
+    "aic": 72.19123480508716,
+    "k": 14,
+    "ok": true,
+    "round": 3
+  },
+  "regret": 0.0,
+  "hit": true,
+  "near_optimal": true,
+  "regret_trajectory": [
+    25.90525427508598,
+    18.9717275032462,
+    18.9717275032462,
+    18.9717275032462,
+    11.49737504628996,
+    4.818509655700751,
+    4.818509655700751,
+    4.818509655700751,
+    4.818509655700751,
+    4.818509655700751,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "full_20": true,
+  "success_champion": true,
+  "success_near": true,
+  "api_requests": 3,
+  "known_cost_usd": 0.167865,
+  "charged_or_reserved_usd": 0.167865,
+  "billing_unknown_requests": 0
+}

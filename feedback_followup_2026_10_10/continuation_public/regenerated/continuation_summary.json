@@ -1,0 +1,41 @@
+{
+  "astra_control": {
+    "cases": 6,
+    "first_near": 0,
+    "final_near": 6,
+    "first_champion": 0,
+    "final_champion": 5,
+    "first_gap": 14.325188090598616,
+    "final_gap": 0.32349848787634033,
+    "gap_reduction": 14.001689602722275,
+    "random_near_probability": 0.12231159471406634,
+    "random_champion_probability": 0.040431266846361225,
+    "random_expected_final_gap": 5.240227837161961
+  },
+  "astra_strategy": {
+    "cases": 6,
+    "first_near": 1,
+    "final_near": 4,
+    "first_champion": 0,
+    "final_champion": 4,
+    "first_gap": 12.57816475807852,
+    "final_gap": 0.7906801288099056,
+    "gap_reduction": 11.787484629268613,
+    "random_near_probability": 0.2819091977854133,
+    "random_champion_probability": 0.043010752688172005,
+    "random_expected_final_gap": 4.131086607752808
+  },
+  "fable51_strategy": {
+    "cases": 6,
+    "first_near": 1,
+    "final_near": 6,
+    "first_champion": 1,
+    "final_champion": 5,
+    "first_gap": 7.056225934677049,
+    "final_gap": 0.17438179239194085,
+    "gap_reduction": 6.881844142285108,
+    "random_near_probability": 0.2819091977854133,
+    "random_champion_probability": 0.20250896057347667,
+    "random_expected_final_gap": 4.29172814854959
+  }
+}

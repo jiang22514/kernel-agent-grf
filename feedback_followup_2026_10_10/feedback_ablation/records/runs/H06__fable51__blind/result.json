@@ -1,0 +1,286 @@
+{
+  "run_id": "H06__fable51__blind",
+  "case": "H06",
+  "model_label": "fable51",
+  "model": "anthropic/claude-fable-5.1",
+  "method": "strategy",
+  "arm": "blind",
+  "batch_size": 4,
+  "total_rounds": 5,
+  "reasoning_effort": "medium",
+  "plan_sha256": "004d6feeb3dab63d85d8206fa9308e54510ce79547b22472eb6eb77767becc82",
+  "state": "complete",
+  "visited": [
+    {
+      "kernel": "SE",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 50.341802351795025,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 53.29838976881524,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 53.67174058499904,
+      "k": 8,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 47.44643603242082,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA5",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 51.82646957799858,
+      "k": 9,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE+LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 56.34180320281078,
+      "k": 12,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 46.69574491116788,
+      "k": 11,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 47.22329136741973,
+      "k": 12,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 51.69077053830293,
+      "k": 7,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 52.342104677276296,
+      "k": 10,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "(SE*LIN)+MA3",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 52.2619122229064,
+      "k": 14,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 54.63423385684558,
+      "k": 7,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA1",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 61.871841616107304,
+      "k": 9,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA3*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 47.51276463823902,
+      "k": 11,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 48.83769416756442,
+      "k": 11,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 58.55524409149382,
+      "k": 5,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 47.07801912696567,
+      "k": 9,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "MA5",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 52.87618903091567,
+      "k": 7,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "MA3*LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 47.79812430699761,
+      "k": 9,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 60.71493479805133,
+      "k": 5,
+      "ok": true,
+      "round": 5
+    }
+  ],
+  "common_start_sha256": "4c08fb5a51064d6ac7d2dcc082598c39c0ae3db33c7cb66e5e630d7315512e68",
+  "rounds": [
+    {
+      "round": 1,
+      "source": "shared_archived_score_free_first_decision",
+      "new_evals": 4,
+      "new_cost_usd": 0
+    },
+    {
+      "round": 2,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "No scores visible. Round 1 contrasted SE vs MA3 under quadratic mean, RQ under linear mean, and SE*LIN constant. Remaining questions: roughness (MA5 vs SE/MA3), whether LIN as additive component replaces the quadratic mean, periodic structure in residuals, and mean choice for SE*LIN. Round 2 tests MA5 quadratic, SE+LIN quadratic, SE*LIN quadratic, and SE+PER quadratic.",
+      "summary_note": null,
+      "cost_usd": 0.05623,
+      "replayed_locally": false
+    },
+    {
+      "round": 3,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "No scores visible. Tested SE/MA3/MA5 quadratic, RQ linear, SE+LIN and SE*LIN (constant, quadratic), SE+PER quadratic. Unresolved: whether quadratic mean is needed versus linear mean for smooth kernels, whether RQ beats SE under quadratic mean, rougher MA1 alternative, and composite extensions of SE*LIN with Matern residuals. Round 3 tests SE linear, RQ quadratic, (SE*LIN)+MA3 quadratic, MA3 linear.",
+      "summary_note": null,
+      "cost_usd": 0.05761,
+      "replayed_locally": false
+    },
+    {
+      "round": 4,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "No scores visible. Smooth kernels (SE, MA3, MA5, RQ) tested under quadratic/linear means; SE*LIN and SE+LIN composites and SE+PER checked. Unresolved: rougher MA1 alternative, Matern-based nonstationary amplitude (MA3*LIN), periodic modulation (SE*PER), and whether constant mean suffices for SE now that quadratic/linear were compared. Round 4 probes these competing structures before final mean resolution.",
+      "summary_note": null,
+      "cost_usd": 0.05918,
+      "replayed_locally": false
+    },
+    {
+      "round": 5,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "No scores visible. Smooth stationary kernels (SE, MA3, MA5, RQ) with quadratic/linear means compete against nonstationary-amplitude SE*LIN/MA3*LIN and SE*PER/SE+PER. Quadratic trend (R^2 0.71) suggests mean matters; SE has all three means checked, but SE*LIN and MA3*LIN lack a linear-mean test, MA5 lacks linear, MA3 lacks constant. Final round resolves mean choice for the leading composite structures and smooth Matern alternatives.",
+      "summary_note": null,
+      "cost_usd": 0.07962,
+      "replayed_locally": false
+    }
+  ],
+  "n_evals": 20,
+  "best": {
+    "kernel": "SE*LIN",
+    "mean_id": 4,
+    "mean": "Quadratic",
+    "aic": 46.69574491116788,
+    "k": 11,
+    "ok": true,
+    "round": 2
+  },
+  "regret": 1.9409909272580421,
+  "hit": false,
+  "near_optimal": true,
+  "regret_trajectory": [
+    5.587048367885188,
+    5.587048367885188,
+    5.587048367885188,
+    2.691682048510984,
+    2.691682048510984,
+    2.691682048510984,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421
+  ],
+  "full_20": true,
+  "success_champion": false,
+  "success_near": true,
+  "api_requests": 4,
+  "known_cost_usd": 0.25264,
+  "charged_or_reserved_usd": 0.25264,
+  "billing_unknown_requests": 0
+}

@@ -1,0 +1,39 @@
+{
+  "reused_initial_call": true,
+  "new_experiment_cost_usd": 0,
+  "request": {
+    "model": "anthropic/claude-fable-5.1",
+    "max_tokens": 8192,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "provider": {
+      "require_parameters": true
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You choose a Gaussian-process covariance and mean to minimize AIC. You control\n20 UNIQUE candidate evaluations in five rounds of four evaluations. The\nnumerical evaluator fits parameters and reveals AIC only for requested pairs.\nUse the full search budget. The unknown optimum is never supplied.\n\nThe unranked catalogue contains all 94 legal kernels. A candidate is one kernel\nand one mean: 1=Zero, 2=Constant, 3=Linear, 4=Quadratic. Nonzero means have an\nintercept; Quadratic includes coordinate-wise squares without cross terms.\nSE, MA1, MA3, MA5, and RQ are products of one-dimensional factors, with separate\ndirection length scales, not radial ARD Matern/RQ. MA1/MA3/MA5 have smoothness\n1/2, 3/2, 5/2. RQ mixes spatial scales. LIN is\n(x1-c)*(x1_prime-c)/L1^2 + sum_{d>1}(xd*xd_prime/Ld^2), with fitted first-axis\noffset c. It models varying covariance amplitude, not a deterministic trend.\nPER is a product of direction-periodic factors with one shared standardized\nperiod. Sums superpose independent components; products modulate components.\nThe catalogue's exclusions are search-space restrictions, not equivalences.\n\nSEARCH APPROACH\n* Start with four informative, contrasting hypotheses supported by the data.\n  Spatial summaries are clues: a flat pooled variogram or weak one-dimensional\n  spectrum does not rule out directional or interacting periodic structure.\n  Strong OLS trend does not uniquely determine the GP mean or covariance.\n* Keep several competing structures alive. Track up to three distinct kernel\n  expressions, not three means of the same expression. Close observed AICs\n  (for example, within 10 units) warrant follow-up rather than hard elimination.\n  A second-best simple model may yield the best composite extension.\n* Use feedback for informative comparisons: hold the mean fixed while changing\n  a primitive or composition, and hold the kernel fixed while changing means.\n  When two component choices remain plausible, compare matching extensions of\n  both. Adding a component can change which roughness or modulation is useful;\n  a component's poor standalone or pairwise result does not exclude synergy.\n* Balance refinement with a credible alternative. Do not spend every later\n  slot on descendants of the current first-ranked kernel. Revisit an untested\n  structural explanation when its ingredients have not had a fair comparison.\n  The supplied neighbors are suggestions, not a restriction on the catalogue.\n* Before the final round, examine whether a promising kernel's mean has really\n  been checked. Use the final four slots to resolve the most consequential\n  remaining structure/mean comparisons. Mean alternatives each cost one full\n  evaluation; no choice has a known score until requested.\n* Allocate the four slots yourself based on observed evidence; avoid rigid\n  family quotas. Give four primary distinct unvisited pairs plus two reserves.\n  Only the first four valid unvisited pairs are evaluated. No invisible scoring,\n  automatic mean optimization, or extra candidate evaluations are available.\n\nReturn one JSON object only:\n{\"summary\":\"<=80 words: competing explanations, evidence, unresolved test\",\n \"proposals\":[{\"kernel_id\":1,\"mean_id\":2,\"reason\":\"<=16 words\"}, ...]}\nReturn six ordered proposal objects. IDs are catalogue indices, not rankings.\nGive brief decision reasons; a long derivation is unnecessary.\n"
+      },
+      {
+        "role": "user",
+        "content": "Dataset: H01\nn = 96 observations, D = 2 input dimensions.\n  x1: range [0.8995, 170.8], std 52.69\n  x2: range [0.574, 17.92], std 4.866\ny: mean 3.698, std 0.7993, range [2.02, 5.582].\nTrend fit (OLS R^2): linear 0.342, quadratic(diagonal) 0.483.\nSemivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.58, g=0.45) (h=0.98, g=0.91) (h=1.30, g=1.31) (h=1.60, g=1.24) (h=1.88, g=1.17) (h=2.17, g=1.12) \n\nUNRANKED KERNEL CATALOG:\n1: SE\n2: MA1\n3: MA3\n4: MA5\n5: RQ\n6: LIN\n7: PER\n8: SE+MA1\n9: SE+MA3\n10: SE+MA5\n11: SE+RQ\n12: SE+LIN\n13: SE*LIN\n14: SE+PER\n15: SE*PER\n16: MA1+MA3\n17: MA1+MA5\n18: MA1+RQ\n19: MA1+LIN\n20: MA1*LIN\n21: MA1+PER\n22: MA1*PER\n23: MA3+MA5\n24: MA3+RQ\n25: MA3+LIN\n26: MA3*LIN\n27: MA3+PER\n28: MA3*PER\n29: MA5+RQ\n30: MA5+LIN\n31: MA5*LIN\n32: MA5+PER\n33: MA5*PER\n34: RQ+LIN\n35: RQ*LIN\n36: RQ+PER\n37: RQ*PER\n38: LIN+PER\n39: LIN*PER\n40: (SE*LIN)+MA1\n41: (SE*LIN)+MA3\n42: (SE*LIN)+MA5\n43: (SE*LIN)+RQ\n44: (SE*LIN)+PER\n45: (SE*PER)+MA1\n46: (SE*PER)+MA3\n47: (SE*PER)+MA5\n48: (SE*PER)+RQ\n49: (SE*PER)+LIN\n50: (MA1*LIN)+SE\n51: (MA1*LIN)+MA3\n52: (MA1*LIN)+MA5\n53: (MA1*LIN)+RQ\n54: (MA1*LIN)+PER\n55: (MA1*PER)+SE\n56: (MA1*PER)+MA3\n57: (MA1*PER)+MA5\n58: (MA1*PER)+RQ\n59: (MA1*PER)+LIN\n60: (MA3*LIN)+SE\n61: (MA3*LIN)+MA1\n62: (MA3*LIN)+MA5\n63: (MA3*LIN)+RQ\n64: (MA3*LIN)+PER\n65: (MA3*PER)+SE\n66: (MA3*PER)+MA1\n67: (MA3*PER)+MA5\n68: (MA3*PER)+RQ\n69: (MA3*PER)+LIN\n70: (MA5*LIN)+SE\n71: (MA5*LIN)+MA1\n72: (MA5*LIN)+MA3\n73: (MA5*LIN)+RQ\n74: (MA5*LIN)+PER\n75: (MA5*PER)+SE\n76: (MA5*PER)+MA1\n77: (MA5*PER)+MA3\n78: (MA5*PER)+RQ\n79: (MA5*PER)+LIN\n80: (RQ*LIN)+SE\n81: (RQ*LIN)+MA1\n82: (RQ*LIN)+MA3\n83: (RQ*LIN)+MA5\n84: (RQ*LIN)+PER\n85: (RQ*PER)+SE\n86: (RQ*PER)+MA1\n87: (RQ*PER)+MA3\n88: (RQ*PER)+MA5\n89: (RQ*PER)+LIN\n90: (LIN*PER)+SE\n91: (LIN*PER)+MA1\n92: (LIN*PER)+MA3\n93: (LIN*PER)+MA5\n94: (LIN*PER)+RQ\n\nROUND 1/5. Evaluated 0/20.\nEVALUATED RESULTS:\nNone yet.\n\nLEGAL ONE-CHANGE NEIGHBORS (no scores):\nNo evaluated anchors yet.\n\nYour previous short decision summary:\nNone.\n\nReturn six ordered distinct unvisited proposals: four primary and two reserves. Only the first four valid unvisited pairs are evaluated."
+      }
+    ]
+  },
+  "response": {
+    "model": "anthropic/claude-fable-5.1",
+    "provider": "Anthropic",
+    "finish_reason": "stop",
+    "message": {
+      "role": "assistant",
+      "content": "{\"summary\":\"Round 1: no results yet. Data show moderate quadratic trend (R^2 0.48), semivariogram rising above 1 (hole effect / possible periodic or nonstationary amplitude). Contrast smooth stationary (SE) vs rough (MA3) vs scale-mixing (RQ) vs periodic, and quadratic vs zero/constant means. Unresolved: whether trend belongs in mean or covariance, and whether oscillation is real.\",\"proposals\":[{\"kernel_id\":1,\"mean_id\":4,\"reason\":\"Smooth baseline with quadratic mean matching OLS evidence\"},{\"kernel_id\":3,\"mean_id\":2,\"reason\":\"Rougher Matern with constant mean; trend absorbed by covariance\"},{\"kernel_id\":5,\"mean_id\":3,\"reason\":\"Scale-mixing RQ with linear mean, alternative smoothness/trend split\"},{\"kernel_id\":14,\"mean_id\":2,\"reason\":\"Test periodic component suggested by variogram overshoot\"},{\"kernel_id\":12,\"mean_id\":2,\"reason\":\"Reserve: varying amplitude via LIN instead of mean trend\"},{\"kernel_id\":4,\"mean_id\":4,\"reason\":\"Reserve: MA5 roughness comparison under quadratic mean\"}]}"
+    },
+    "usage": {
+      "prompt_tokens": 2812,
+      "completion_tokens": 450,
+      "total_tokens": 3262,
+      "cost": 0.05062
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# Actual prompts used in the reported independent tests
+
+The two system files are exact copies of the frozen structured and competing-structure system prompts. The two round-2 examples are actual user messages from H01, a public synthetic case: Astra structured and Fable competing-structure search. They show the full catalogue, data summary, observed scores, unscored neighbors and previous short decision summary as sent. No unvisited scores or private CPT observations are included. The manuscript table is an abbreviated description of this interface rather than a verbatim copy of the full messages.

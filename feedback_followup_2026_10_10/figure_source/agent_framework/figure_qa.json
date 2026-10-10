@@ -1,0 +1,35 @@
+{
+  "dimensions_mm": [
+    183.0,
+    145.0
+  ],
+  "layout_text_checks": "PASS",
+  "text_overlap": "PASS",
+  "minimum_requested_font_pt": 9.0,
+  "data_generation": "none",
+  "figure_type": "conceptual workflow; not a quantitative evidence panel",
+  "pdf_min_font_pt": 9.0,
+  "pdf_dimensions_mm": [
+    183.00000559488933,
+    144.99999949137367
+  ],
+  "pdf_fonts": [
+    "ELUGPM+ArialMT",
+    "ELUGPM+Arial-BoldMT"
+  ],
+  "pdf_selectable_text": true,
+  "svg_text_nodes": 36,
+  "png_pixels": [
+    4322,
+    3425
+  ],
+  "png_dpi": [
+    599.9988,
+    599.9988
+  ],
+  "hashes": {
+    "overall_framework_b7.pdf": "19e1017077e7b99cfabb6b9427e51db47c07e7869cb6e2a6b1513605d5bc4b48",
+    "overall_framework_b7.svg": "1b73d9ff5fcd2756b3e2dcc383fe482f2162e5970da14f8ad9fa41ede4996ba5",
+    "overall_framework_b7.png": "34bb96237129ddca101aea4f1d5e452929ab5990be9ed2649edc09bc7d3c0da9"
+  }
+}

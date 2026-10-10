@@ -1,0 +1,286 @@
+{
+  "run_id": "H05__fable51__blind",
+  "case": "H05",
+  "model_label": "fable51",
+  "model": "anthropic/claude-fable-5.1",
+  "method": "strategy",
+  "arm": "blind",
+  "batch_size": 4,
+  "total_rounds": 5,
+  "reasoning_effort": "medium",
+  "plan_sha256": "004d6feeb3dab63d85d8206fa9308e54510ce79547b22472eb6eb77767becc82",
+  "state": "complete",
+  "visited": [
+    {
+      "kernel": "SE",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 115.41399307121418,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA1",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 128.27671010127983,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 186.29384580845226,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 119.04047155871493,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 117.414122876938,
+      "k": 6,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 118.85139789067364,
+      "k": 5,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 109.4254199151917,
+      "k": 7,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE+LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 120.47645972227059,
+      "k": 8,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 114.9069942900006,
+      "k": 7,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 118.5429475198838,
+      "k": 8,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA3*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 120.33339699901595,
+      "k": 7,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 175.2674521323566,
+      "k": 4,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA5",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 117.48828719111708,
+      "k": 5,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "PER",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 195.35679505734453,
+      "k": 4,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(SE*PER)+MA3",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 115.21842375616029,
+      "k": 10,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA3*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 114.26968711009363,
+      "k": 7,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 118.32857865908218,
+      "k": 7,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 163.96479141276353,
+      "k": 4,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 200.68260615800494,
+      "k": 5,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "RQ*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 111.42590074243896,
+      "k": 8,
+      "ok": true,
+      "round": 5
+    }
+  ],
+  "common_start_sha256": "662cc926c47d189a5c71420e3c6a73e049b9a371786454b7cc20704e3afb8195",
+  "rounds": [
+    {
+      "round": 1,
+      "source": "shared_archived_score_free_first_decision",
+      "new_evals": 4,
+      "new_cost_usd": 0
+    },
+    {
+      "round": 2,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "No scores visible. Round 1 covered SE, MA1, PER, SE*LIN with constant mean. Flat variogram suggests nugget-dominated or directional/periodic structure; weak trend. Round 2 contrasts: RQ (multi-scale), MA3 (intermediate roughness), SE*PER (modulated periodicity) and SE+LIN (heteroscedastic/trend-like amplitude), all constant mean to isolate covariance effects. Unresolved: mean choice for best kernel and whether periodicity adds beyond smooth components.",
+      "summary_note": null,
+      "cost_usd": 0.05591,
+      "replayed_locally": false
+    },
+    {
+      "round": 3,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "No scores visible. Rounds 1-2 covered smooth, rough, periodic, multiscale, and LIN-modulated kernels under constant mean. Flat variogram still ambiguous between nugget-dominated noise, directional periodicity, or amplitude modulation. Round 3: test mean alternatives on simple kernels (SE/Zero, SE/Linear), sum-of-periodic structures (SE+PER), and rough-plus-periodic (MA3*PER). Unresolved: whether mean choice shifts preferred covariance; whether PER composites beat plain smooth kernels.",
+      "summary_note": null,
+      "cost_usd": 0.05894,
+      "replayed_locally": false
+    },
+    {
+      "round": 4,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "No scores visible. Tested so far: SE, MA1, MA3, RQ, PER, SE*LIN, SE+LIN, SE*PER, SE+PER, MA3*PER under constant mean, plus SE with zero/linear means. Flat variogram suggests nugget-dominated noise with possible weak periodic or amplitude-modulated structure. Round 4: test MA5 roughness, PER with alternative means, periodic-plus-rough composite, and LIN-modulated Matern. Unresolved: whether PER composites truly beat plain smooth kernels and whether mean choice matters for PER.",
+      "summary_note": null,
+      "cost_usd": 0.06179,
+      "replayed_locally": false
+    },
+    {
+      "round": 5,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "Scores withheld. Tested: SE, MA1, MA3, MA5, RQ, PER, SE*LIN, SE+LIN, SE*PER, SE+PER, MA3*PER, MA3*LIN, (SE*PER)+MA3 under constant mean; SE zero/linear; PER zero. Flat variogram suggests near-nugget noise, possibly weak periodic or modulated structure. Final round: check untested mean alternatives for the strongest simple families (PER linear, MA3 zero), plus unvisited structures LIN alone and RQ*PER.",
+      "summary_note": null,
+      "cost_usd": 0.06128,
+      "replayed_locally": false
+    }
+  ],
+  "n_evals": 20,
+  "best": {
+    "kernel": "SE*PER",
+    "mean_id": 2,
+    "mean": "Constant",
+    "aic": 109.4254199151917,
+    "k": 7,
+    "ok": true,
+    "round": 2
+  },
+  "regret": 0.8998049636587098,
+  "hit": false,
+  "near_optimal": true,
+  "regret_trajectory": [
+    6.888378119681192,
+    6.888378119681192,
+    6.888378119681192,
+    6.888378119681192,
+    6.888378119681192,
+    6.888378119681192,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.8998049636587098
+  ],
+  "full_20": true,
+  "success_champion": false,
+  "success_near": true,
+  "api_requests": 4,
+  "known_cost_usd": 0.23792,
+  "charged_or_reserved_usd": 0.23792,
+  "billing_unknown_requests": 0
+}

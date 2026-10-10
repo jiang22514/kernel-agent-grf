@@ -1,0 +1,286 @@
+{
+  "run_id": "H04__fable51__feedback",
+  "case": "H04",
+  "model_label": "fable51",
+  "model": "anthropic/claude-fable-5.1",
+  "method": "strategy",
+  "arm": "feedback",
+  "batch_size": 4,
+  "total_rounds": 5,
+  "reasoning_effort": "medium",
+  "plan_sha256": "004d6feeb3dab63d85d8206fa9308e54510ce79547b22472eb6eb77767becc82",
+  "state": "complete",
+  "visited": [
+    {
+      "kernel": "SE",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 96.39886573174044,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 97.70251338614429,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 94.96458887264595,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 94.85912800222209,
+      "k": 10,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 84.1171509773576,
+      "k": 11,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 101.41094881341911,
+      "k": 6,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "RQ*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 86.95295776921824,
+      "k": 8,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 96.98002472414066,
+      "k": 12,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "RQ*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 81.5871436320034,
+      "k": 12,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA5*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 78.0263148156919,
+      "k": 11,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 91.67893709037506,
+      "k": 9,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA3*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 77.00974446078791,
+      "k": 11,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA1*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 88.07243786239269,
+      "k": 11,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(MA3*LIN)+MA1",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 82.89678915529294,
+      "k": 14,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(MA3*LIN)+SE",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 82.44921217635886,
+      "k": 14,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA3+LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 97.16296381893045,
+      "k": 12,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA3*LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 82.29570974536892,
+      "k": 9,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "MA5*LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 84.03604095212876,
+      "k": 9,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "MA3*PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 93.72075325987629,
+      "k": 11,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "(MA3*LIN)+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 72.19123480508716,
+      "k": 14,
+      "ok": true,
+      "round": 5
+    }
+  ],
+  "common_start_sha256": "abd85c2823ad66da9669dcd5e1956db974ced0d68cc24137bd9f291bc7cde720",
+  "rounds": [
+    {
+      "round": 1,
+      "source": "shared_archived_score_free_first_decision",
+      "new_evals": 4,
+      "new_cost_usd": 0
+    },
+    {
+      "round": 2,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "All four within ~3 AIC: RQ/Quadratic (94.86) and SE*LIN/Constant (94.96) lead; SE/Quadratic and MA3/Linear trail. Unresolved: does trend belong in mean (quadratic) or in covariance (LIN amplitude / RQ multiscale)? Also roughness at matched mean and periodic alternative untested. Round 2 holds mean fixed while swapping structure and vice versa, plus composite RQ*LIN.",
+      "summary_note": null,
+      "cost_usd": 0.07169,
+      "replayed_locally": false
+    },
+    {
+      "round": 3,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE*LIN/Quadratic leads (84.1); RQ*LIN/Constant close (87.0) with fewer params, suggesting RQ*LIN/Quadratic may win. Quadratic mean clearly helps over constant for RQ and SE*LIN; PER sum did not help. Unresolved: roughness of the LIN-modulated factor (SE vs RQ vs Matern) under quadratic mean, and whether linear mean suffices for SE*LIN.",
+      "summary_note": null,
+      "cost_usd": 0.07431,
+      "replayed_locally": false
+    },
+    {
+      "round": 4,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "Product LIN-modulation with quadratic mean dominates; roughness trend favors rougher stationary factor (MA3 77.0 < MA5 78.0 < RQ 81.6 < SE 84.1). Unresolved: whether MA1 continues the trend, whether an additive rough/smooth component helps MA3*LIN, and whether a sum MA3+LIN rivals the product. Mean check for MA3*LIN deferred to final round.",
+      "summary_note": null,
+      "cost_usd": 0.07771,
+      "replayed_locally": false
+    },
+    {
+      "round": 5,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "Product LIN-modulated Matern with quadratic mean leads (MA3*LIN 77.0, MA5*LIN 78.0); additive smooth/rough extras and sum MA3+LIN hurt. Remaining: mean check for the top two product kernels (quadratic vs linear), and a credible alternative modulation (PER instead of LIN) plus a periodic addition to the leader.",
+      "summary_note": null,
+      "cost_usd": 0.09052,
+      "replayed_locally": false
+    }
+  ],
+  "n_evals": 20,
+  "best": {
+    "kernel": "(MA3*LIN)+PER",
+    "mean_id": 4,
+    "mean": "Quadratic",
+    "aic": 72.19123480508716,
+    "k": 14,
+    "ok": true,
+    "round": 5
+  },
+  "regret": 0.0,
+  "hit": true,
+  "near_optimal": true,
+  "regret_trajectory": [
+    24.20763092665328,
+    24.20763092665328,
+    22.773354067558785,
+    22.66789319713493,
+    11.925916172270433,
+    11.925916172270433,
+    11.925916172270433,
+    11.925916172270433,
+    9.39590882691624,
+    5.835080010604742,
+    5.835080010604742,
+    4.818509655700751,
+    4.818509655700751,
+    4.818509655700751,
+    4.818509655700751,
+    4.818509655700751,
+    4.818509655700751,
+    4.818509655700751,
+    4.818509655700751,
+    0.0
+  ],
+  "full_20": true,
+  "success_champion": true,
+  "success_near": true,
+  "api_requests": 4,
+  "known_cost_usd": 0.31423,
+  "charged_or_reserved_usd": 0.31423,
+  "billing_unknown_requests": 0
+}

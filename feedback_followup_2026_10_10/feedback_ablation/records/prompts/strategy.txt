@@ -1,0 +1,59 @@
+You choose a Gaussian-process covariance and mean to minimize AIC. You control
+20 UNIQUE candidate evaluations in five rounds of four evaluations. The
+numerical evaluator scores only requested pairs; score visibility is specified below.
+Use the full search budget. The unknown optimum is never supplied.
+
+The unranked catalogue contains all 94 legal kernels. A candidate is one kernel
+and one mean: 1=Zero, 2=Constant, 3=Linear, 4=Quadratic. Nonzero means have an
+intercept; Quadratic includes coordinate-wise squares without cross terms.
+SE, MA1, MA3, MA5, and RQ are products of one-dimensional factors, with separate
+direction length scales, not radial ARD Matern/RQ. MA1/MA3/MA5 have smoothness
+1/2, 3/2, 5/2. RQ mixes spatial scales. LIN is
+(x1-c)*(x1_prime-c)/L1^2 + sum_{d>1}(xd*xd_prime/Ld^2), with fitted first-axis
+offset c. It models varying covariance amplitude, not a deterministic trend.
+PER is a product of direction-periodic factors with one shared standardized
+period. Sums superpose independent components; products modulate components.
+The catalogue's exclusions are search-space restrictions, not equivalences.
+
+SEARCH APPROACH
+* Start with four informative, contrasting hypotheses supported by the data.
+  Spatial summaries are clues: a flat pooled variogram or weak one-dimensional
+  spectrum does not rule out directional or interacting periodic structure.
+  Strong OLS trend does not uniquely determine the GP mean or covariance.
+* Keep several competing structures alive. Track up to three distinct kernel
+  expressions, not three means of the same expression. Close observed AICs
+  (for example, within 10 units) warrant follow-up rather than hard elimination.
+  A second-best simple model may yield the best composite extension.
+* Use feedback for informative comparisons: hold the mean fixed while changing
+  a primitive or composition, and hold the kernel fixed while changing means.
+  When two component choices remain plausible, compare matching extensions of
+  both. Adding a component can change which roughness or modulation is useful;
+  a component's poor standalone or pairwise result does not exclude synergy.
+* Balance refinement with a credible alternative. Do not spend every later
+  slot on descendants of the current first-ranked kernel. Revisit an untested
+  structural explanation when its ingredients have not had a fair comparison.
+* Before the final round, examine whether a promising kernel's mean has really
+  been checked. Use the final four slots to resolve the most consequential
+  remaining structure/mean comparisons. Mean alternatives each cost one full
+  evaluation; no choice has a known score until requested.
+* Allocate the four slots yourself based on observed evidence; avoid rigid
+  family quotas. Give four primary distinct unvisited pairs plus two reserves.
+  Only the first four valid unvisited pairs are evaluated. No invisible scoring,
+  automatic mean optimization, or extra candidate evaluations are available.
+
+Return one JSON object only:
+{"summary":"<=80 words: competing explanations, evidence, unresolved test",
+ "proposals":[{"kernel_id":1,"mean_id":2,"reason":"<=16 words"}, ...]}
+Return six ordered proposal objects. IDs are catalogue indices, not rankings.
+Give brief decision reasons; a long derivation is unnecessary.
+
+
+NUMERICAL-FEEDBACK ABLATION (applies equally to both arms):
+History is listed in candidate-visit order, never in score order. No automatically
+chosen neighborhood or best-candidate recommendation is supplied. If numerical
+scores are provided, use them to revise your comparisons. If scores are withheld,
+rely on the data profile, the candidate identities, and your own modeling hypotheses.
+Do not infer performance from history order or invent numerical scores. Your short
+summary is carried forward only within this continuation. Do not present
+guessed scores as numerical observations.
+The locally scored best accessed candidate is selected after the search ends.

@@ -1,0 +1,2345 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {
+      "case": "H01",
+      "model": "astra",
+      "procedure": "control",
+      "source_provenance": {
+        "run_sha256": "5957d16eabae3b53ce88c89cd1a5b6ae7fdaa5acb8eb891b618410e8017bf591"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 3,
+          "aic": -20.141177020504216
+        },
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 3,
+          "aic": 31.27109185861815
+        },
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 4,
+          "aic": -19.557052049078976
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 2,
+          "aic": -19.125816052114544
+        },
+        {
+          "round": 1,
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "aic": -20.294063797248924
+        },
+        {
+          "round": 2,
+          "kernel": "SE",
+          "mean_id": 2,
+          "aic": -21.126079775087618
+        },
+        {
+          "round": 2,
+          "kernel": "RQ",
+          "mean_id": 3,
+          "aic": -18.14111943152571
+        },
+        {
+          "round": 2,
+          "kernel": "MA5",
+          "mean_id": 3,
+          "aic": -13.981230872628771
+        },
+        {
+          "round": 2,
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "aic": -18.34718582716482
+        },
+        {
+          "round": 2,
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "aic": -26.22904692985412
+        },
+        {
+          "round": 3,
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "aic": -19.484079292304415
+        },
+        {
+          "round": 3,
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "aic": -26.786331474529106
+        },
+        {
+          "round": 3,
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "aic": -16.313976142821076
+        },
+        {
+          "round": 3,
+          "kernel": "SE+LIN",
+          "mean_id": 2,
+          "aic": -15.137410064115073
+        },
+        {
+          "round": 3,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "aic": -14.663895688759482
+        },
+        {
+          "round": 4,
+          "kernel": "MA5+PER",
+          "mean_id": 4,
+          "aic": -12.766631735060287
+        },
+        {
+          "round": 4,
+          "kernel": "RQ+PER",
+          "mean_id": 4,
+          "aic": -21.288356598813948
+        },
+        {
+          "round": 4,
+          "kernel": "PER",
+          "mean_id": 4,
+          "aic": -13.886760213031465
+        },
+        {
+          "round": 4,
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 4,
+          "aic": -19.52949318862909
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*PER)+MA5",
+          "mean_id": 4,
+          "aic": -10.885359036861985
+        }
+      ]
+    },
+    {
+      "case": "H02",
+      "model": "astra",
+      "procedure": "control",
+      "source_provenance": {
+        "run_sha256": "a826fa4a7041477cb5f6e444bb7fbd6feae819e10fdb3f0f403ac5f9a1885dfa"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 2,
+          "aic": 155.23561068925451
+        },
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 2,
+          "aic": 154.1009720856112
+        },
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 4,
+          "aic": 161.12317448725895
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 3,
+          "aic": 158.83952273167017
+        },
+        {
+          "round": 1,
+          "kernel": "PER",
+          "mean_id": 2,
+          "aic": 153.85128111817025
+        },
+        {
+          "round": 2,
+          "kernel": "RQ",
+          "mean_id": 2,
+          "aic": 155.24724031293607
+        },
+        {
+          "round": 2,
+          "kernel": "PER",
+          "mean_id": 3,
+          "aic": 157.340141603338
+        },
+        {
+          "round": 2,
+          "kernel": "MA3",
+          "mean_id": 2,
+          "aic": 153.3343099010773
+        },
+        {
+          "round": 2,
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "aic": 153.1106450647677
+        },
+        {
+          "round": 2,
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "aic": 154.8791237712025
+        },
+        {
+          "round": 3,
+          "kernel": "MA3*PER",
+          "mean_id": 2,
+          "aic": 153.8258116186648
+        },
+        {
+          "round": 3,
+          "kernel": "MA5*PER",
+          "mean_id": 2,
+          "aic": 153.5156460144933
+        },
+        {
+          "round": 3,
+          "kernel": "MA5",
+          "mean_id": 2,
+          "aic": 153.2836723156243
+        },
+        {
+          "round": 3,
+          "kernel": "MA3+PER",
+          "mean_id": 2,
+          "aic": 150.25052224748265
+        },
+        {
+          "round": 3,
+          "kernel": "MA3*LIN",
+          "mean_id": 2,
+          "aic": 154.2674954253643
+        },
+        {
+          "round": 4,
+          "kernel": "MA5+PER",
+          "mean_id": 2,
+          "aic": 153.13500616840074
+        },
+        {
+          "round": 4,
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "aic": 153.007459143803
+        },
+        {
+          "round": 4,
+          "kernel": "MA3+PER",
+          "mean_id": 3,
+          "aic": 153.54754921296347
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*PER)+MA3",
+          "mean_id": 2,
+          "aic": 153.2299286882967
+        },
+        {
+          "round": 4,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "aic": 155.0699602722324
+        }
+      ]
+    },
+    {
+      "case": "H03",
+      "model": "astra",
+      "procedure": "control",
+      "source_provenance": {
+        "run_sha256": "e72f5902f8d8dd7dfeb09c4083d9528cbed36d3df319399be31d26cf4e04e959"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 3,
+          "aic": 131.53374512771825
+        },
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 3,
+          "aic": 91.5551209242868
+        },
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 4,
+          "aic": 128.7858942940909
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 2,
+          "aic": 99.14731814929058
+        },
+        {
+          "round": 1,
+          "kernel": "PER",
+          "mean_id": 3,
+          "aic": 92.56128221527734
+        },
+        {
+          "round": 2,
+          "kernel": "SE",
+          "mean_id": 4,
+          "aic": 91.76629683375273
+        },
+        {
+          "round": 2,
+          "kernel": "RQ",
+          "mean_id": 3,
+          "aic": 93.5551407471998
+        },
+        {
+          "round": 2,
+          "kernel": "MA5",
+          "mean_id": 3,
+          "aic": 99.3568891957394
+        },
+        {
+          "round": 2,
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "aic": 39.669820462519226
+        },
+        {
+          "round": 2,
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "aic": 94.06200608031992
+        },
+        {
+          "round": 3,
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "aic": 43.15234748873215
+        },
+        {
+          "round": 3,
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "aic": 41.66993394577085
+        },
+        {
+          "round": 3,
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "aic": 45.901251761176894
+        },
+        {
+          "round": 3,
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "aic": 82.83969399994848
+        },
+        {
+          "round": 3,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "aic": 42.9859266082334
+        },
+        {
+          "round": 4,
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "aic": 40.567783964362036
+        },
+        {
+          "round": 4,
+          "kernel": "MA3+PER",
+          "mean_id": 3,
+          "aic": 51.08392532589349
+        },
+        {
+          "round": 4,
+          "kernel": "MA1+PER",
+          "mean_id": 3,
+          "aic": 75.36023001501326
+        },
+        {
+          "round": 4,
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 3,
+          "aic": 44.0421782578311
+        },
+        {
+          "round": 4,
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 3,
+          "aic": 45.669828591480126
+        }
+      ]
+    },
+    {
+      "case": "H04",
+      "model": "astra",
+      "procedure": "control",
+      "source_provenance": {
+        "run_sha256": "5b5c48cf6497b99f481d24857cebbbb11a5530af8d183073ba58ce5ec5727087"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "MA3",
+          "mean_id": 2,
+          "aic": 98.09648908017314
+        },
+        {
+          "round": 1,
+          "kernel": "MA3",
+          "mean_id": 4,
+          "aic": 91.16296230833336
+        },
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 4,
+          "aic": 99.91205068704721
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 4,
+          "aic": 94.85912800222209
+        },
+        {
+          "round": 1,
+          "kernel": "MA3*LIN",
+          "mean_id": 2,
+          "aic": 83.68860985137712
+        },
+        {
+          "round": 2,
+          "kernel": "MA3*LIN",
+          "mean_id": 4,
+          "aic": 77.00974446078791
+        },
+        {
+          "round": 2,
+          "kernel": "MA3*LIN",
+          "mean_id": 3,
+          "aic": 82.29570974536892
+        },
+        {
+          "round": 2,
+          "kernel": "MA5*LIN",
+          "mean_id": 2,
+          "aic": 86.06004823575975
+        },
+        {
+          "round": 2,
+          "kernel": "MA3+LIN",
+          "mean_id": 2,
+          "aic": 103.17054503622063
+        },
+        {
+          "round": 2,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "aic": 79.58035933462122
+        },
+        {
+          "round": 3,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 4,
+          "aic": 72.19123480508716
+        },
+        {
+          "round": 3,
+          "kernel": "MA5*LIN",
+          "mean_id": 4,
+          "aic": 78.0263148156919
+        },
+        {
+          "round": 3,
+          "kernel": "RQ*LIN",
+          "mean_id": 4,
+          "aic": 81.5871436320034
+        },
+        {
+          "round": 3,
+          "kernel": "(MA3*LIN)+MA1",
+          "mean_id": 4,
+          "aic": 82.89678915529294
+        },
+        {
+          "round": 3,
+          "kernel": "MA3*PER",
+          "mean_id": 4,
+          "aic": 93.72075325987629
+        },
+        {
+          "round": 4,
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 4,
+          "aic": 76.59383278963594
+        },
+        {
+          "round": 4,
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 4,
+          "aic": 78.64074053706946
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "aic": 85.95622051109208
+        },
+        {
+          "round": 4,
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 4,
+          "aic": 88.91809956357557
+        },
+        {
+          "round": 4,
+          "kernel": "(MA3*PER)+LIN",
+          "mean_id": 4,
+          "aic": 97.78967478280941
+        }
+      ]
+    },
+    {
+      "case": "H05",
+      "model": "astra",
+      "procedure": "control",
+      "source_provenance": {
+        "run_sha256": "b1008977a91059f8f9e2f4fc207c3765b3d28ba8052da951007a7bda07a2ca69"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 2,
+          "aic": 128.27671010127983
+        },
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 2,
+          "aic": 115.41399307121418
+        },
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 3,
+          "aic": 128.58171162016833
+        },
+        {
+          "round": 1,
+          "kernel": "RQ*LIN",
+          "mean_id": 2,
+          "aic": 115.65742728221758
+        },
+        {
+          "round": 1,
+          "kernel": "PER",
+          "mean_id": 2,
+          "aic": 186.29384580845226
+        },
+        {
+          "round": 2,
+          "kernel": "SE",
+          "mean_id": 3,
+          "aic": 114.9069942900006
+        },
+        {
+          "round": 2,
+          "kernel": "RQ",
+          "mean_id": 2,
+          "aic": 117.414122876938
+        },
+        {
+          "round": 2,
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "aic": 119.04047155871493
+        },
+        {
+          "round": 2,
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "aic": 118.5429475198838
+        },
+        {
+          "round": 2,
+          "kernel": "(RQ*LIN)+SE",
+          "mean_id": 2,
+          "aic": 116.44592118505216
+        },
+        {
+          "round": 3,
+          "kernel": "RQ",
+          "mean_id": 3,
+          "aic": 116.90700995452741
+        },
+        {
+          "round": 3,
+          "kernel": "RQ*LIN",
+          "mean_id": 3,
+          "aic": 117.53092281927289
+        },
+        {
+          "round": 3,
+          "kernel": "MA5",
+          "mean_id": 3,
+          "aic": 117.10201234709277
+        },
+        {
+          "round": 3,
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "aic": 109.4254199151917
+        },
+        {
+          "round": 3,
+          "kernel": "SE+LIN",
+          "mean_id": 3,
+          "aic": 120.90699839142556
+        },
+        {
+          "round": 4,
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "aic": 108.52561495153299
+        },
+        {
+          "round": 4,
+          "kernel": "MA5*PER",
+          "mean_id": 2,
+          "aic": 120.01063948007996
+        },
+        {
+          "round": 4,
+          "kernel": "RQ*PER",
+          "mean_id": 2,
+          "aic": 111.42590074243896
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 2,
+          "aic": 116.6198735489092
+        },
+        {
+          "round": 4,
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 2,
+          "aic": 110.07401347460384
+        }
+      ]
+    },
+    {
+      "case": "H06",
+      "model": "astra",
+      "procedure": "control",
+      "source_provenance": {
+        "run_sha256": "2d0c9952126659a1bd1b23e1611f05f195b35636e3eab9d85b03ac0d21e09dd8"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "MA3",
+          "mean_id": 3,
+          "aic": 54.63423385684558
+        },
+        {
+          "round": 1,
+          "kernel": "MA3",
+          "mean_id": 4,
+          "aic": 53.29838976881524
+        },
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 4,
+          "aic": 50.341802351795025
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 2,
+          "aic": 60.44471514868883
+        },
+        {
+          "round": 1,
+          "kernel": "MA1*LIN",
+          "mean_id": 3,
+          "aic": 58.54668173500136
+        },
+        {
+          "round": 2,
+          "kernel": "SE",
+          "mean_id": 3,
+          "aic": 51.69077053830293
+        },
+        {
+          "round": 2,
+          "kernel": "MA5",
+          "mean_id": 4,
+          "aic": 51.82646957799858
+        },
+        {
+          "round": 2,
+          "kernel": "RQ",
+          "mean_id": 4,
+          "aic": 52.342104677276296
+        },
+        {
+          "round": 2,
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "aic": 46.69574491116788
+        },
+        {
+          "round": 2,
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "aic": 47.22329136741973
+        },
+        {
+          "round": 3,
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "aic": 47.07801912696567
+        },
+        {
+          "round": 3,
+          "kernel": "MA5*LIN",
+          "mean_id": 4,
+          "aic": 46.82934015912801
+        },
+        {
+          "round": 3,
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "aic": 49.253743744247686
+        },
+        {
+          "round": 3,
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "aic": 48.83769416756442
+        },
+        {
+          "round": 3,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "aic": 48.935854629385005
+        },
+        {
+          "round": 4,
+          "kernel": "MA5*LIN",
+          "mean_id": 3,
+          "aic": 47.107700071776264
+        },
+        {
+          "round": 4,
+          "kernel": "MA3*LIN",
+          "mean_id": 4,
+          "aic": 47.51276463823902
+        },
+        {
+          "round": 4,
+          "kernel": "RQ*LIN",
+          "mean_id": 4,
+          "aic": 48.69593193436316
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*LIN)+MA1",
+          "mean_id": 4,
+          "aic": 52.44697797532035
+        },
+        {
+          "round": 4,
+          "kernel": "(MA1*LIN)+SE",
+          "mean_id": 4,
+          "aic": 50.080469331519
+        }
+      ]
+    },
+    {
+      "case": "H01",
+      "model": "astra",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "86eb8daea2e81ad3b0207481dcba85c242d8d2c0958bfabf2a46cc4801a74326"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 3,
+          "aic": -20.141177020504216
+        },
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 3,
+          "aic": 31.27109185861815
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 3,
+          "aic": -18.14111943152571
+        },
+        {
+          "round": 1,
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "aic": -26.22904692985412
+        },
+        {
+          "round": 2,
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "aic": -16.313976142821076
+        },
+        {
+          "round": 2,
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "aic": -26.786331474529106
+        },
+        {
+          "round": 2,
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "aic": -20.294063797248924
+        },
+        {
+          "round": 2,
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "aic": -18.34718582716482
+        },
+        {
+          "round": 3,
+          "kernel": "MA5",
+          "mean_id": 3,
+          "aic": -13.981230872628771
+        },
+        {
+          "round": 3,
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "aic": -12.734835646859295
+        },
+        {
+          "round": 3,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "aic": -14.663895688759482
+        },
+        {
+          "round": 3,
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "aic": -19.484079292304415
+        },
+        {
+          "round": 4,
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "aic": -19.595746768646364
+        },
+        {
+          "round": 4,
+          "kernel": "SE",
+          "mean_id": 4,
+          "aic": -19.557052049078976
+        },
+        {
+          "round": 4,
+          "kernel": "SE+RQ",
+          "mean_id": 3,
+          "aic": -18.610765598114085
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 3,
+          "aic": -13.511296526457642
+        },
+        {
+          "round": 5,
+          "kernel": "SE",
+          "mean_id": 2,
+          "aic": -21.126079775087618
+        },
+        {
+          "round": 5,
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "aic": -17.40403897568268
+        },
+        {
+          "round": 5,
+          "kernel": "PER",
+          "mean_id": 3,
+          "aic": -13.872036368829328
+        },
+        {
+          "round": 5,
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 3,
+          "aic": -16.693300229150083
+        }
+      ]
+    },
+    {
+      "case": "H02",
+      "model": "astra",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "527d674317d3a5bd3e96be24b106c4196059d731986b818e2fe32c8054e741c4"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 2,
+          "aic": 155.23561068925451
+        },
+        {
+          "round": 1,
+          "kernel": "MA5",
+          "mean_id": 2,
+          "aic": 153.2836723156243
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 2,
+          "aic": 155.24724031293607
+        },
+        {
+          "round": 1,
+          "kernel": "PER",
+          "mean_id": 2,
+          "aic": 153.85128111817025
+        },
+        {
+          "round": 2,
+          "kernel": "MA5+PER",
+          "mean_id": 2,
+          "aic": 153.13500616840074
+        },
+        {
+          "round": 2,
+          "kernel": "MA1+PER",
+          "mean_id": 2,
+          "aic": 154.75273151963825
+        },
+        {
+          "round": 2,
+          "kernel": "MA5*PER",
+          "mean_id": 2,
+          "aic": 153.5156460144933
+        },
+        {
+          "round": 2,
+          "kernel": "MA5*LIN",
+          "mean_id": 2,
+          "aic": 154.29775430442328
+        },
+        {
+          "round": 3,
+          "kernel": "MA5",
+          "mean_id": 4,
+          "aic": 159.52438543188214
+        },
+        {
+          "round": 3,
+          "kernel": "MA5+PER",
+          "mean_id": 4,
+          "aic": 157.9893986888297
+        },
+        {
+          "round": 3,
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 2,
+          "aic": 154.0829450955892
+        },
+        {
+          "round": 3,
+          "kernel": "(MA1*LIN)+PER",
+          "mean_id": 2,
+          "aic": 157.2789008751015
+        },
+        {
+          "round": 4,
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "aic": 156.06036057973853
+        },
+        {
+          "round": 4,
+          "kernel": "MA5",
+          "mean_id": 3,
+          "aic": 156.81281194815642
+        },
+        {
+          "round": 4,
+          "kernel": "(MA5*PER)+SE",
+          "mean_id": 2,
+          "aic": 156.68730882132812
+        },
+        {
+          "round": 4,
+          "kernel": "(MA1*PER)+SE",
+          "mean_id": 2,
+          "aic": 159.89370498172502
+        },
+        {
+          "round": 5,
+          "kernel": "MA5+PER",
+          "mean_id": 1,
+          "aic": 156.0100967192523
+        },
+        {
+          "round": 5,
+          "kernel": "MA5*PER",
+          "mean_id": 3,
+          "aic": 157.25178157987423
+        },
+        {
+          "round": 5,
+          "kernel": "RQ+PER",
+          "mean_id": 2,
+          "aic": 152.99447188729488
+        },
+        {
+          "round": 5,
+          "kernel": "RQ*PER",
+          "mean_id": 2,
+          "aic": 155.11073435130177
+        }
+      ]
+    },
+    {
+      "case": "H03",
+      "model": "astra",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "f1d223b494b3a948e1f652fb8e65a5542deabd4bc668f7cf3e75f2072a5fbf0a"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 3,
+          "aic": 131.53374512771825
+        },
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 3,
+          "aic": 91.5551209242868
+        },
+        {
+          "round": 1,
+          "kernel": "PER",
+          "mean_id": 3,
+          "aic": 92.56128221527734
+        },
+        {
+          "round": 1,
+          "kernel": "MA3*LIN",
+          "mean_id": 3,
+          "aic": 107.65005588612541
+        },
+        {
+          "round": 2,
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "aic": 39.669820462519226
+        },
+        {
+          "round": 2,
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "aic": 82.83969399994848
+        },
+        {
+          "round": 2,
+          "kernel": "SE",
+          "mean_id": 4,
+          "aic": 91.76629683375273
+        },
+        {
+          "round": 2,
+          "kernel": "PER",
+          "mean_id": 4,
+          "aic": 82.29139266173905
+        },
+        {
+          "round": 3,
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "aic": 43.15234748873215
+        },
+        {
+          "round": 3,
+          "kernel": "MA3+PER",
+          "mean_id": 3,
+          "aic": 51.08392532589349
+        },
+        {
+          "round": 3,
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "aic": 41.66993394577085
+        },
+        {
+          "round": 3,
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 3,
+          "aic": 44.0421782578311
+        },
+        {
+          "round": 4,
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "aic": 40.567783964362036
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "aic": 42.9859266082334
+        },
+        {
+          "round": 4,
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 3,
+          "aic": 44.97107315617123
+        },
+        {
+          "round": 4,
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "aic": 45.901251761176894
+        },
+        {
+          "round": 5,
+          "kernel": "RQ+PER",
+          "mean_id": 2,
+          "aic": 42.56786593973547
+        },
+        {
+          "round": 5,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 2,
+          "aic": 42.48078812530579
+        },
+        {
+          "round": 5,
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 2,
+          "aic": 44.54582718330556
+        },
+        {
+          "round": 5,
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 3,
+          "aic": 45.67108693934722
+        }
+      ]
+    },
+    {
+      "case": "H04",
+      "model": "astra",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "86d53a7a069568073a2b0b0fb8f794455755ff0d5072cd0558250eb554273ae2"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 4,
+          "aic": 96.39886573174044
+        },
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 4,
+          "aic": 99.91205068704721
+        },
+        {
+          "round": 1,
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "aic": 93.45092060634667
+        },
+        {
+          "round": 1,
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "aic": 84.1171509773576
+        },
+        {
+          "round": 2,
+          "kernel": "MA3*LIN",
+          "mean_id": 4,
+          "aic": 77.00974446078791
+        },
+        {
+          "round": 2,
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "aic": 91.67893709037506
+        },
+        {
+          "round": 2,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "aic": 85.95622051109208
+        },
+        {
+          "round": 2,
+          "kernel": "(SE*PER)+LIN",
+          "mean_id": 4,
+          "aic": 99.45092629651165
+        },
+        {
+          "round": 3,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 4,
+          "aic": 72.19123480508716
+        },
+        {
+          "round": 3,
+          "kernel": "MA3*LIN",
+          "mean_id": 3,
+          "aic": 82.29570974536892
+        },
+        {
+          "round": 3,
+          "kernel": "(SE*LIN)+MA3",
+          "mean_id": 4,
+          "aic": 90.22446443200826
+        },
+        {
+          "round": 3,
+          "kernel": "(MA3*LIN)+SE",
+          "mean_id": 4,
+          "aic": 82.44921217635886
+        },
+        {
+          "round": 4,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 3,
+          "aic": 78.40835179995997
+        },
+        {
+          "round": 4,
+          "kernel": "(MA1*LIN)+PER",
+          "mean_id": 4,
+          "aic": 81.67429486170613
+        },
+        {
+          "round": 4,
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 4,
+          "aic": 76.59383278963594
+        },
+        {
+          "round": 4,
+          "kernel": "(LIN*PER)+MA3",
+          "mean_id": 4,
+          "aic": 88.99681168516452
+        },
+        {
+          "round": 5,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "aic": 79.58035933462122
+        },
+        {
+          "round": 5,
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 3,
+          "aic": 81.51622644009325
+        },
+        {
+          "round": 5,
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 4,
+          "aic": 78.64074053706946
+        },
+        {
+          "round": 5,
+          "kernel": "MA3+PER",
+          "mean_id": 4,
+          "aic": 91.57180612433694
+        }
+      ]
+    },
+    {
+      "case": "H05",
+      "model": "astra",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "2beb0de0d3801d7ed7d3392228f7e5563a3344f5bbcefa5f2cc6cae8e8366892"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 2,
+          "aic": 128.27671010127983
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 2,
+          "aic": 117.414122876938
+        },
+        {
+          "round": 1,
+          "kernel": "PER",
+          "mean_id": 2,
+          "aic": 186.29384580845226
+        },
+        {
+          "round": 1,
+          "kernel": "MA3*LIN",
+          "mean_id": 2,
+          "aic": 114.26968711009363
+        },
+        {
+          "round": 2,
+          "kernel": "RQ*LIN",
+          "mean_id": 2,
+          "aic": 115.65742728221758
+        },
+        {
+          "round": 2,
+          "kernel": "MA3",
+          "mean_id": 2,
+          "aic": 118.85139789067364
+        },
+        {
+          "round": 2,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "aic": 114.79640452921922
+        },
+        {
+          "round": 2,
+          "kernel": "RQ+PER",
+          "mean_id": 2,
+          "aic": 120.7953833682067
+        },
+        {
+          "round": 3,
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 2,
+          "aic": 116.4515785681524
+        },
+        {
+          "round": 3,
+          "kernel": "MA3*LIN",
+          "mean_id": 3,
+          "aic": 116.42619811839961
+        },
+        {
+          "round": 3,
+          "kernel": "MA3*PER",
+          "mean_id": 2,
+          "aic": 120.33339699901595
+        },
+        {
+          "round": 3,
+          "kernel": "RQ*PER",
+          "mean_id": 2,
+          "aic": 111.42590074243896
+        },
+        {
+          "round": 4,
+          "kernel": "RQ*PER",
+          "mean_id": 3,
+          "aic": 110.52574608458019
+        },
+        {
+          "round": 4,
+          "kernel": "(RQ*PER)+LIN",
+          "mean_id": 2,
+          "aic": 116.16556711439159
+        },
+        {
+          "round": 4,
+          "kernel": "(MA3*PER)+LIN",
+          "mean_id": 2,
+          "aic": 121.60072311115118
+        },
+        {
+          "round": 4,
+          "kernel": "(MA3*LIN)+RQ",
+          "mean_id": 2,
+          "aic": 116.79184148144395
+        },
+        {
+          "round": 5,
+          "kernel": "RQ*PER",
+          "mean_id": 4,
+          "aic": 114.48986241367624
+        },
+        {
+          "round": 5,
+          "kernel": "RQ*LIN",
+          "mean_id": 3,
+          "aic": 117.53092281927289
+        },
+        {
+          "round": 5,
+          "kernel": "(LIN*PER)+RQ",
+          "mean_id": 2,
+          "aic": 116.22194454743158
+        },
+        {
+          "round": 5,
+          "kernel": "(RQ*PER)+MA3",
+          "mean_id": 3,
+          "aic": 124.04290071562872
+        }
+      ]
+    },
+    {
+      "case": "H06",
+      "model": "astra",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "5239b38e2cb3c610a8f25faf0c896b30db77ca9d172e4396ef639f48023164d0"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 3,
+          "aic": 51.69077053830293
+        },
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 3,
+          "aic": 64.65786718226082
+        },
+        {
+          "round": 1,
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "aic": 49.253743744247686
+        },
+        {
+          "round": 1,
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "aic": 47.07801912696567
+        },
+        {
+          "round": 2,
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "aic": 46.69574491116788
+        },
+        {
+          "round": 2,
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "aic": 47.22329136741973
+        },
+        {
+          "round": 2,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "aic": 48.2489408192219
+        },
+        {
+          "round": 2,
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "aic": 52.37856838799104
+        },
+        {
+          "round": 3,
+          "kernel": "MA3*LIN",
+          "mean_id": 4,
+          "aic": 47.51276463823902
+        },
+        {
+          "round": 3,
+          "kernel": "MA3+PER",
+          "mean_id": 4,
+          "aic": 54.41033073388803
+        },
+        {
+          "round": 3,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "aic": 48.935854629385005
+        },
+        {
+          "round": 3,
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "aic": 47.44643603242082
+        },
+        {
+          "round": 4,
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "aic": 53.36024948722044
+        },
+        {
+          "round": 4,
+          "kernel": "MA3*LIN",
+          "mean_id": 2,
+          "aic": 49.4149713524437
+        },
+        {
+          "round": 4,
+          "kernel": "RQ*LIN",
+          "mean_id": 4,
+          "aic": 48.69593193436316
+        },
+        {
+          "round": 4,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 4,
+          "aic": 44.80821145491632
+        },
+        {
+          "round": 5,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 3,
+          "aic": 44.754753983909836
+        },
+        {
+          "round": 5,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "aic": 46.02295151783477
+        },
+        {
+          "round": 5,
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 4,
+          "aic": 49.86093607485657
+        },
+        {
+          "round": 5,
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 4,
+          "aic": 46.354703584425465
+        }
+      ]
+    },
+    {
+      "case": "H01",
+      "model": "fable51",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "42ce10bc2ccfc3dde8757850ec1169cf50d5fff4c8d5989f3560ec7ff3d9bb86"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 4,
+          "aic": -19.557052049078976
+        },
+        {
+          "round": 1,
+          "kernel": "MA3",
+          "mean_id": 2,
+          "aic": -9.304884810927149
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 3,
+          "aic": -18.14111943152571
+        },
+        {
+          "round": 1,
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "aic": -19.484079292304415
+        },
+        {
+          "round": 2,
+          "kernel": "SE",
+          "mean_id": 2,
+          "aic": -21.126079775087618
+        },
+        {
+          "round": 2,
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "aic": -26.786331474529106
+        },
+        {
+          "round": 2,
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "aic": -17.40403897568268
+        },
+        {
+          "round": 2,
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "aic": -16.364462270417278
+        },
+        {
+          "round": 3,
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "aic": -19.595746768646364
+        },
+        {
+          "round": 3,
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "aic": -26.22904692985412
+        },
+        {
+          "round": 3,
+          "kernel": "RQ+PER",
+          "mean_id": 4,
+          "aic": -21.288356598813948
+        },
+        {
+          "round": 3,
+          "kernel": "MA5+PER",
+          "mean_id": 4,
+          "aic": -12.766631735060287
+        },
+        {
+          "round": 4,
+          "kernel": "PER",
+          "mean_id": 4,
+          "aic": -13.886760213031465
+        },
+        {
+          "round": 4,
+          "kernel": "LIN+PER",
+          "mean_id": 4,
+          "aic": -7.886649811767484
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "aic": -22.784462390236854
+        },
+        {
+          "round": 4,
+          "kernel": "SE+LIN",
+          "mean_id": 4,
+          "aic": -13.557049951757449
+        },
+        {
+          "round": 5,
+          "kernel": "MA3+PER",
+          "mean_id": 4,
+          "aic": -11.809235778005103
+        },
+        {
+          "round": 5,
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 4,
+          "aic": -12.94567408455265
+        },
+        {
+          "round": 5,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "aic": -14.663895688759482
+        },
+        {
+          "round": 5,
+          "kernel": "SE+RQ",
+          "mean_id": 4,
+          "aic": -17.70034445137071
+        }
+      ]
+    },
+    {
+      "case": "H02",
+      "model": "fable51",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "234bc7f7fc55b361d5bc3476d1101cf1e011c5d9f5906b3f9184aa849038e167"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 2,
+          "aic": 154.1009720856112
+        },
+        {
+          "round": 1,
+          "kernel": "MA3",
+          "mean_id": 2,
+          "aic": 153.3343099010773
+        },
+        {
+          "round": 1,
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "aic": 153.1106450647677
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 4,
+          "aic": 161.58352440288087
+        },
+        {
+          "round": 2,
+          "kernel": "PER",
+          "mean_id": 2,
+          "aic": 153.85128111817025
+        },
+        {
+          "round": 2,
+          "kernel": "MA3*PER",
+          "mean_id": 2,
+          "aic": 153.8258116186648
+        },
+        {
+          "round": 2,
+          "kernel": "MA5",
+          "mean_id": 2,
+          "aic": 153.2836723156243
+        },
+        {
+          "round": 2,
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "aic": 156.87814565513486
+        },
+        {
+          "round": 3,
+          "kernel": "MA1",
+          "mean_id": 2,
+          "aic": 155.23561068925451
+        },
+        {
+          "round": 3,
+          "kernel": "MA5*PER",
+          "mean_id": 2,
+          "aic": 153.5156460144933
+        },
+        {
+          "round": 3,
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "aic": 154.8791237712025
+        },
+        {
+          "round": 3,
+          "kernel": "RQ",
+          "mean_id": 2,
+          "aic": 155.24724031293607
+        },
+        {
+          "round": 4,
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "aic": 153.007459143803
+        },
+        {
+          "round": 4,
+          "kernel": "MA5+PER",
+          "mean_id": 2,
+          "aic": 153.13500616840074
+        },
+        {
+          "round": 4,
+          "kernel": "MA5",
+          "mean_id": 1,
+          "aic": 179.82204016527257
+        },
+        {
+          "round": 4,
+          "kernel": "LIN",
+          "mean_id": 2,
+          "aic": 217.28124988670595
+        },
+        {
+          "round": 5,
+          "kernel": "RQ+PER",
+          "mean_id": 2,
+          "aic": 152.99447188729488
+        },
+        {
+          "round": 5,
+          "kernel": "MA3+PER",
+          "mean_id": 2,
+          "aic": 150.25052224748265
+        },
+        {
+          "round": 5,
+          "kernel": "SE+MA5",
+          "mean_id": 2,
+          "aic": 157.637197826423
+        },
+        {
+          "round": 5,
+          "kernel": "SE+PER",
+          "mean_id": 1,
+          "aic": 156.0181703726272
+        }
+      ]
+    },
+    {
+      "case": "H03",
+      "model": "fable51",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "d3ca87e4145d23771c6a9354753daf30cdd3efce8fcb37d2d5a23081eb9e4405"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 3,
+          "aic": 91.5551209242868
+        },
+        {
+          "round": 1,
+          "kernel": "MA3",
+          "mean_id": 3,
+          "aic": 106.03363043556789
+        },
+        {
+          "round": 1,
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "aic": 39.669820462519226
+        },
+        {
+          "round": 1,
+          "kernel": "LIN",
+          "mean_id": 1,
+          "aic": 232.0610741564755
+        },
+        {
+          "round": 2,
+          "kernel": "PER",
+          "mean_id": 3,
+          "aic": 92.56128221527734
+        },
+        {
+          "round": 2,
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "aic": 82.83969399994848
+        },
+        {
+          "round": 2,
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "aic": 43.15234748873215
+        },
+        {
+          "round": 2,
+          "kernel": "MA3+PER",
+          "mean_id": 3,
+          "aic": 51.08392532589349
+        },
+        {
+          "round": 3,
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "aic": 41.66993394577085
+        },
+        {
+          "round": 3,
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "aic": 45.901251761176894
+        },
+        {
+          "round": 3,
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "aic": 40.567783964362036
+        },
+        {
+          "round": 3,
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 3,
+          "aic": 45.67108693934722
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "aic": 42.9859266082334
+        },
+        {
+          "round": 4,
+          "kernel": "RQ+PER",
+          "mean_id": 2,
+          "aic": 42.56786593973547
+        },
+        {
+          "round": 4,
+          "kernel": "LIN+PER",
+          "mean_id": 3,
+          "aic": 85.0622461820941
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*PER)+MA5",
+          "mean_id": 3,
+          "aic": 49.90125756393846
+        },
+        {
+          "round": 5,
+          "kernel": "SE+RQ",
+          "mean_id": 3,
+          "aic": 97.18307956867318
+        },
+        {
+          "round": 5,
+          "kernel": "MA1+PER",
+          "mean_id": 3,
+          "aic": 75.36023001501326
+        },
+        {
+          "round": 5,
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 3,
+          "aic": 45.669828591480126
+        },
+        {
+          "round": 5,
+          "kernel": "(SE*PER)+LIN",
+          "mean_id": 3,
+          "aic": 88.84000488434697
+        }
+      ]
+    },
+    {
+      "case": "H04",
+      "model": "fable51",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "5da0bdc30de2131ad9d084e8a17f42de0167c5f310646c8029e3ae8356feac6b"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 4,
+          "aic": 96.39886573174044
+        },
+        {
+          "round": 1,
+          "kernel": "MA3",
+          "mean_id": 3,
+          "aic": 97.70251338614429
+        },
+        {
+          "round": 1,
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "aic": 94.96458887264595
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 4,
+          "aic": 94.85912800222209
+        },
+        {
+          "round": 2,
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "aic": 84.1171509773576
+        },
+        {
+          "round": 2,
+          "kernel": "RQ",
+          "mean_id": 2,
+          "aic": 101.41094881341911
+        },
+        {
+          "round": 2,
+          "kernel": "RQ*LIN",
+          "mean_id": 2,
+          "aic": 86.95295776921824
+        },
+        {
+          "round": 2,
+          "kernel": "MA3",
+          "mean_id": 4,
+          "aic": 91.16296230833336
+        },
+        {
+          "round": 3,
+          "kernel": "RQ*LIN",
+          "mean_id": 4,
+          "aic": 81.5871436320034
+        },
+        {
+          "round": 3,
+          "kernel": "MA3*LIN",
+          "mean_id": 4,
+          "aic": 77.00974446078791
+        },
+        {
+          "round": 3,
+          "kernel": "RQ*LIN",
+          "mean_id": 3,
+          "aic": 86.94111473480484
+        },
+        {
+          "round": 3,
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "aic": 93.45092060634667
+        },
+        {
+          "round": 4,
+          "kernel": "MA1*LIN",
+          "mean_id": 4,
+          "aic": 88.07243786239269
+        },
+        {
+          "round": 4,
+          "kernel": "MA5*LIN",
+          "mean_id": 4,
+          "aic": 78.0263148156919
+        },
+        {
+          "round": 4,
+          "kernel": "MA3*LIN",
+          "mean_id": 3,
+          "aic": 82.29570974536892
+        },
+        {
+          "round": 4,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 4,
+          "aic": 72.19123480508716
+        },
+        {
+          "round": 5,
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 4,
+          "aic": 76.59383278963594
+        },
+        {
+          "round": 5,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 3,
+          "aic": 78.40835179995997
+        },
+        {
+          "round": 5,
+          "kernel": "(MA3*LIN)+MA1",
+          "mean_id": 4,
+          "aic": 82.89678915529294
+        },
+        {
+          "round": 5,
+          "kernel": "(MA3*LIN)+MA5",
+          "mean_id": 4,
+          "aic": 82.68313751532605
+        }
+      ]
+    },
+    {
+      "case": "H05",
+      "model": "fable51",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "08d512126dae3e0a25c6d2bc6231524ae6a281e4a8c1e74addd6270e1afb5396"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 2,
+          "aic": 115.41399307121418
+        },
+        {
+          "round": 1,
+          "kernel": "MA1",
+          "mean_id": 2,
+          "aic": 128.27671010127983
+        },
+        {
+          "round": 1,
+          "kernel": "PER",
+          "mean_id": 2,
+          "aic": 186.29384580845226
+        },
+        {
+          "round": 1,
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "aic": 119.04047155871493
+        },
+        {
+          "round": 2,
+          "kernel": "MA5",
+          "mean_id": 2,
+          "aic": 117.48828719111708
+        },
+        {
+          "round": 2,
+          "kernel": "RQ",
+          "mean_id": 2,
+          "aic": 117.414122876938
+        },
+        {
+          "round": 2,
+          "kernel": "SE",
+          "mean_id": 3,
+          "aic": 114.9069942900006
+        },
+        {
+          "round": 2,
+          "kernel": "SE",
+          "mean_id": 1,
+          "aic": 175.2674521323566
+        },
+        {
+          "round": 3,
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "aic": 113.21545921570271
+        },
+        {
+          "round": 3,
+          "kernel": "SE",
+          "mean_id": 4,
+          "aic": 118.8355602964684
+        },
+        {
+          "round": 3,
+          "kernel": "SE+LIN",
+          "mean_id": 3,
+          "aic": 120.90699839142556
+        },
+        {
+          "round": 3,
+          "kernel": "MA3",
+          "mean_id": 3,
+          "aic": 118.49344593213846
+        },
+        {
+          "round": 4,
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "aic": 108.52561495153299
+        },
+        {
+          "round": 4,
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "aic": 118.5429475198838
+        },
+        {
+          "round": 4,
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "aic": 113.63699000150245
+        },
+        {
+          "round": 4,
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "aic": 115.21326718026171
+        },
+        {
+          "round": 5,
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "aic": 109.4254199151917
+        },
+        {
+          "round": 5,
+          "kernel": "MA5*PER",
+          "mean_id": 3,
+          "aic": 113.26508369102521
+        },
+        {
+          "round": 5,
+          "kernel": "RQ*PER",
+          "mean_id": 3,
+          "aic": 110.52574608458019
+        },
+        {
+          "round": 5,
+          "kernel": "(SE*PER)+MA5",
+          "mean_id": 3,
+          "aic": 117.65491771428901
+        }
+      ]
+    },
+    {
+      "case": "H06",
+      "model": "fable51",
+      "procedure": "strategy",
+      "source_provenance": {
+        "run_sha256": "0ce8841d1ff69b0a67926c5d1b0785507d991a81e72c9bfb023ca8ded70f21ec"
+      },
+      "visited": [
+        {
+          "round": 1,
+          "kernel": "SE",
+          "mean_id": 4,
+          "aic": 50.341802351795025
+        },
+        {
+          "round": 1,
+          "kernel": "MA3",
+          "mean_id": 4,
+          "aic": 53.29838976881524
+        },
+        {
+          "round": 1,
+          "kernel": "RQ",
+          "mean_id": 3,
+          "aic": 53.67174058499904
+        },
+        {
+          "round": 1,
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "aic": 47.44643603242082
+        },
+        {
+          "round": 2,
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "aic": 46.69574491116788
+        },
+        {
+          "round": 2,
+          "kernel": "SE",
+          "mean_id": 2,
+          "aic": 58.55524409149382
+        },
+        {
+          "round": 2,
+          "kernel": "SE+LIN",
+          "mean_id": 2,
+          "aic": 60.77748955803645
+        },
+        {
+          "round": 2,
+          "kernel": "MA5*LIN",
+          "mean_id": 2,
+          "aic": 47.733617140684345
+        },
+        {
+          "round": 3,
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "aic": 47.07801912696567
+        },
+        {
+          "round": 3,
+          "kernel": "MA5*LIN",
+          "mean_id": 4,
+          "aic": 46.82934015912801
+        },
+        {
+          "round": 3,
+          "kernel": "RQ*LIN",
+          "mean_id": 2,
+          "aic": 49.401378501747644
+        },
+        {
+          "round": 3,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 2,
+          "aic": 45.934702400293304
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "aic": 48.935854629385005
+        },
+        {
+          "round": 4,
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 2,
+          "aic": 45.80104473826148
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*LIN)+MA5",
+          "mean_id": 2,
+          "aic": 50.659564734429296
+        },
+        {
+          "round": 4,
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "aic": 48.2489408192219
+        },
+        {
+          "round": 5,
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "aic": 46.02295151783477
+        },
+        {
+          "round": 5,
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "aic": 48.83769416756442
+        },
+        {
+          "round": 5,
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 1,
+          "aic": 54.55513220726209
+        },
+        {
+          "round": 5,
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 2,
+          "aic": 48.265977864508045
+        }
+      ]
+    }
+  ]
+}

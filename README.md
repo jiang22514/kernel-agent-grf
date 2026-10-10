@@ -15,6 +15,10 @@ On six new synthetic cases generated after fixing the search procedures, Astra s
 
 For the 744-observation CPT case, the best composite improves AIC by 49.8 over the best single kernel. A matched same-model benchmark generated 500 fields at 24,321 locations in 6.47 seconds versus 44.35 seconds for dense conditional simulation, including preparation (6.85×). Mean weak-zone proportions were 10.77%, 16.10% and 12.73% for SE, RQ and the selected composite. The model-selection advantage does not imply superior probabilistic prediction: those comparisons are reported separately.
 
+## Numerical-feedback follow-up — 10 October 2026
+
+The [prompt and feedback supplement](feedback_followup_2026_10_10/README.md) provides the expanded agent-loop figure, full prompt examples, and a paired score-masking study on all six synthetic cases. With the same first batch and a total of 20 candidate accesses, feedback produced 6/6 near-optimal outcomes for both Astra and Fable, compared with 2/6 and 3/6 when scores were hidden from the language model. Each model improved in five cases and tied in one. The supplement includes all 24 continuation outcomes, 84 visible request/response records, fixed score tables, plotting data and an offline replay script; it preserves the original independent-test results separately.
+
 ## Reproduce without new model calls
 
 ```text

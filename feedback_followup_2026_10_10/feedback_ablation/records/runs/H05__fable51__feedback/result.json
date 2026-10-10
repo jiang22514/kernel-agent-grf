@@ -1,0 +1,286 @@
+{
+  "run_id": "H05__fable51__feedback",
+  "case": "H05",
+  "model_label": "fable51",
+  "model": "anthropic/claude-fable-5.1",
+  "method": "strategy",
+  "arm": "feedback",
+  "batch_size": 4,
+  "total_rounds": 5,
+  "reasoning_effort": "medium",
+  "plan_sha256": "004d6feeb3dab63d85d8206fa9308e54510ce79547b22472eb6eb77767becc82",
+  "state": "complete",
+  "visited": [
+    {
+      "kernel": "SE",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 115.41399307121418,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA1",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 128.27671010127983,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 186.29384580845226,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 119.04047155871493,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA5",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 117.48828719111708,
+      "k": 5,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 117.414122876938,
+      "k": 6,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 109.4254199151917,
+      "k": 7,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 175.2674521323566,
+      "k": 4,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 108.52561495153299,
+      "k": 9,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 118.5429475198838,
+      "k": 8,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA5*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 120.01063948007996,
+      "k": 7,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "RQ*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 111.42590074243896,
+      "k": 8,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "(SE*PER)+RQ",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 116.6198735489092,
+      "k": 11,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(SE*PER)+MA1",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 115.42541991804393,
+      "k": 10,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 112.48972891887882,
+      "k": 11,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "RQ*PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 110.52574608458019,
+      "k": 10,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(SE*PER)+LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 114.16268767051946,
+      "k": 10,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "MA3*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 120.33339699901595,
+      "k": 7,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "(SE*PER)+LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 114.52563403252157,
+      "k": 12,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "(SE*PER)+MA3",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 115.21842375616029,
+      "k": 10,
+      "ok": true,
+      "round": 5
+    }
+  ],
+  "common_start_sha256": "662cc926c47d189a5c71420e3c6a73e049b9a371786454b7cc20704e3afb8195",
+  "rounds": [
+    {
+      "round": 1,
+      "source": "shared_archived_score_free_first_decision",
+      "new_evals": 4,
+      "new_cost_usd": 0
+    },
+    {
+      "round": 2,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE/Constant leads (115.4); SE*LIN close (119.0, extra params). MA1 rough worse, PER alone poor. Competing: smooth SE-type vs intermediate smoothness (MA3/MA5/RQ), and whether a periodic modulation on SE helps. Round 2: test MA5, RQ, SE*PER, and SE with Zero mean to check mean choice.",
+      "summary_note": null,
+      "cost_usd": 0.05411,
+      "replayed_locally": false
+    },
+    {
+      "round": 3,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE*PER/Constant leads (109.4) over SE (115.4), MA5/RQ (~117.5), SE*LIN (119.0); Zero mean is clearly bad (175). Unresolved: whether periodic modulation is better additive or multiplicative, whether smoother/rougher base (MA5, RQ) under PER helps, and whether a Linear mean improves the leading kernel.",
+      "summary_note": null,
+      "cost_usd": 0.07034,
+      "replayed_locally": false
+    },
+    {
+      "round": 4,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE*PER leads (Linear 108.5, Constant 109.4); RQ*PER close (111.4); SE alone 115.4. Multiplicative periodic modulation beats additive (SE+PER 118.5) and MA5 base (120). Unresolved: whether an additive residual component (MA1/RQ) on SE*PER helps, whether Quadratic mean improves the leader, and whether RQ*PER with Linear mean rivals it.",
+      "summary_note": null,
+      "cost_usd": 0.07617,
+      "replayed_locally": false
+    },
+    {
+      "round": 5,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE*PER leads (Linear 108.5, Constant 109.4); RQ*PER trails (110.5–111.4). Additive MA1/RQ residuals and Quadratic mean did not help. Remaining consequential tests: amplitude modulation via additive LIN on SE*PER (both means), rougher MA3*PER base as a distinct alternative, and an MA3 residual component.",
+      "summary_note": null,
+      "cost_usd": 0.08973,
+      "replayed_locally": false
+    }
+  ],
+  "n_evals": 20,
+  "best": {
+    "kernel": "SE*PER",
+    "mean_id": 3,
+    "mean": "Linear",
+    "aic": 108.52561495153299,
+    "k": 9,
+    "ok": true,
+    "round": 3
+  },
+  "regret": 0.0,
+  "hit": true,
+  "near_optimal": true,
+  "regret_trajectory": [
+    6.888378119681192,
+    6.888378119681192,
+    6.888378119681192,
+    6.888378119681192,
+    6.888378119681192,
+    6.888378119681192,
+    0.8998049636587098,
+    0.8998049636587098,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "full_20": true,
+  "success_champion": true,
+  "success_near": true,
+  "api_requests": 4,
+  "known_cost_usd": 0.29035,
+  "charged_or_reserved_usd": 0.29035,
+  "billing_unknown_requests": 0
+}

@@ -1,0 +1,276 @@
+{
+  "run_id": "H03__astra__feedback",
+  "case": "H03",
+  "model_label": "astra",
+  "model": "openai/gpt-6-astra",
+  "method": "control",
+  "arm": "feedback",
+  "batch_size": 5,
+  "total_rounds": 4,
+  "reasoning_effort": "medium",
+  "plan_sha256": "004d6feeb3dab63d85d8206fa9308e54510ce79547b22472eb6eb77767becc82",
+  "state": "complete",
+  "visited": [
+    {
+      "kernel": "MA1",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 131.53374512771825,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 91.5551209242868,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA1",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 128.7858942940909,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 99.14731814929058,
+      "k": 6,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 92.56128221527734,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 91.76629683375273,
+      "k": 9,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 97.14725794570822,
+      "k": 5,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 93.5551407471998,
+      "k": 8,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 39.669820462519226,
+      "k": 10,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 82.83969399994848,
+      "k": 9,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 40.567783964362036,
+      "k": 8,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 43.15234748873215,
+      "k": 12,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA5+PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 45.901251761176894,
+      "k": 10,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "(SE*LIN)+PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 42.9859266082334,
+      "k": 12,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "(SE*PER)+LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 88.84000488434697,
+      "k": 12,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "RQ+PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 41.66993394577085,
+      "k": 11,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA3+PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 51.08392532589349,
+      "k": 10,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 51.63432921280858,
+      "k": 7,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(LIN*PER)+SE",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 44.0421782578311,
+      "k": 12,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(SE*PER)+MA1",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 79.36037583690415,
+      "k": 12,
+      "ok": true,
+      "round": 4
+    }
+  ],
+  "common_start_sha256": "da8f8746fdc8809a1c367b3084dceb58ff8162432f663c22163ad0c2daedc91d",
+  "rounds": [
+    {
+      "round": 1,
+      "source": "shared_archived_score_free_first_decision",
+      "new_evals": 5,
+      "new_cost_usd": 0
+    },
+    {
+      "round": 2,
+      "source": "fresh_continuation",
+      "new_evals": 5,
+      "rejected": [],
+      "summary": "SE with a linear mean substantially outperforms MA1; PER with the same mean is within 1.01 AIC. Quadratic improves MA1 modestly but remains untested with SE. RQ's constant-mean result cannot isolate covariance effects. Next, compare SE means and RQ at a fixed linear mean, then explore additive versus multiplicative smooth-periodic structure.",
+      "summary_note": null,
+      "cost_usd": 0.04413,
+      "replayed_locally": false
+    },
+    {
+      "round": 3,
+      "source": "fresh_continuation",
+      "new_evals": 5,
+      "rejected": [],
+      "summary": "SE+PER with a linear mean leads accessed candidates, improving AIC by 51.89 over SE and 43.17 over SE*PER. Quadratic adds no benefit to SE alone; its effect with SE+PER remains unresolved. Test additive-model mean robustness and component smoothness, then explore amplitude-modulated smooth covariance and a locally periodic component with additive LIN.",
+      "summary_note": null,
+      "cost_usd": 0.0492175,
+      "replayed_locally": false
+    },
+    {
+      "round": 4,
+      "source": "fresh_continuation",
+      "new_evals": 5,
+      "rejected": [],
+      "summary": "SE+PER remains best with a linear mean (AIC 39.67), narrowly ahead of constant (40.57). Quadratic means, MA5 substitution, and smooth-component amplitude modulation did not improve it. Test RQ and MA3 substitutions and a zero mean as controlled comparisons. Explore periodic amplitude modulation and locally periodic covariance with an independent rough component; poor standalone MA1 does not exclude the latter.",
+      "summary_note": null,
+      "cost_usd": 0.0656925,
+      "replayed_locally": false
+    }
+  ],
+  "n_evals": 20,
+  "best": {
+    "kernel": "SE+PER",
+    "mean_id": 3,
+    "mean": "Linear",
+    "aic": 39.669820462519226,
+    "k": 10,
+    "ok": true,
+    "round": 2
+  },
+  "regret": 0.0,
+  "hit": true,
+  "near_optimal": true,
+  "regret_trajectory": [
+    91.86392466519902,
+    51.88530046176757,
+    51.88530046176757,
+    51.88530046176757,
+    51.88530046176757,
+    51.88530046176757,
+    51.88530046176757,
+    51.88530046176757,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "full_20": true,
+  "success_champion": true,
+  "success_near": true,
+  "api_requests": 3,
+  "known_cost_usd": 0.15904000000000001,
+  "charged_or_reserved_usd": 0.15904000000000001,
+  "billing_unknown_requests": 0
+}

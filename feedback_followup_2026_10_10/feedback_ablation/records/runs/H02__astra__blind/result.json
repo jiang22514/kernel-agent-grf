@@ -1,0 +1,276 @@
+{
+  "run_id": "H02__astra__blind",
+  "case": "H02",
+  "model_label": "astra",
+  "model": "openai/gpt-6-astra",
+  "method": "control",
+  "arm": "blind",
+  "batch_size": 5,
+  "total_rounds": 4,
+  "reasoning_effort": "medium",
+  "plan_sha256": "004d6feeb3dab63d85d8206fa9308e54510ce79547b22472eb6eb77767becc82",
+  "state": "complete",
+  "visited": [
+    {
+      "kernel": "MA1",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 155.23561068925451,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 154.1009720856112,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA1",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 161.12317448725895,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 158.83952273167017,
+      "k": 8,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 153.85128111817025,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA1",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 158.2912437462028,
+      "k": 7,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 155.24724031293607,
+      "k": 6,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 153.3343099010773,
+      "k": 5,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA1+PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 154.75273151963825,
+      "k": 8,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA1*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 156.11510820047556,
+      "k": 7,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA5",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 153.2836723156243,
+      "k": 5,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 157.52586262303635,
+      "k": 7,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA1*LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 158.87189311646648,
+      "k": 9,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA1*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 156.3437077053144,
+      "k": 7,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE+MA1",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 159.17040500648034,
+      "k": 8,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 159.85561200550566,
+      "k": 9,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 161.58352440288087,
+      "k": 10,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 156.8445418414293,
+      "k": 7,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA1+RQ",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 160.8136700788039,
+      "k": 9,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(MA1*PER)+SE",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 159.89370498172502,
+      "k": 10,
+      "ok": true,
+      "round": 4
+    }
+  ],
+  "common_start_sha256": "8670a799492919c286c0c25da4b35ef03ecccb806a6c6f2b5a421676fcb2b8c6",
+  "rounds": [
+    {
+      "round": 1,
+      "source": "shared_archived_score_free_first_decision",
+      "new_evals": 5,
+      "new_cost_usd": 0
+    },
+    {
+      "round": 2,
+      "source": "fresh_continuation",
+      "new_evals": 5,
+      "rejected": [],
+      "summary": "All initial fits succeeded, but withheld scores leave relative performance unresolved. Short-range covariance and modest means remain profile-based hypotheses, not established winners. Test MA1 with a linear mean, RQ with a constant mean, and intermediate Matérn smoothness to isolate mean and covariance effects. Explore additive periodicity and location-dependent covariance amplitude without assuming the standalone periodic fit establishes their usefulness.",
+      "summary_note": null,
+      "cost_usd": 0.0446925,
+      "replayed_locally": false
+    },
+    {
+      "round": 3,
+      "source": "fresh_continuation",
+      "new_evals": 5,
+      "rejected": [],
+      "summary": "Successful fits establish feasibility, not relative AIC performance; scores remain withheld. Rapid residual decorrelation still motivates short-range covariance, while modest trend evidence leaves mean complexity unresolved. Continue controlled smoothness and mean comparisons, including whether amplitude modulation persists with a linear mean. Explore periodic modulation and a smooth-plus-rough covariance without treating previous additive periodicity as decisive.",
+      "summary_note": null,
+      "cost_usd": 0.0500425,
+      "replayed_locally": false
+    },
+    {
+      "round": 4,
+      "source": "fresh_continuation",
+      "new_evals": 5,
+      "rejected": [],
+      "summary": "All evaluated fits are feasible, but withheld scores prevent performance comparisons. Rapid decorrelation favors testing short-range models without excluding periodic or nonstationary alternatives. Final controlled tests extend quadratic means to SE and RQ and a linear mean to MA3. Structural exploration tests rough-plus-multiscale covariance and adds a smooth component to periodic-modulated rough covariance, retaining constant means for comparison.",
+      "summary_note": null,
+      "cost_usd": 0.0538425,
+      "replayed_locally": false
+    }
+  ],
+  "n_evals": 20,
+  "best": {
+    "kernel": "MA5",
+    "mean_id": 2,
+    "mean": "Constant",
+    "aic": 153.2836723156243,
+    "k": 5,
+    "ok": true,
+    "round": 3
+  },
+  "regret": 3.0331500681416514,
+  "hit": false,
+  "near_optimal": false,
+  "regret_trajectory": [
+    4.985088441771865,
+    3.8504498381285543,
+    3.8504498381285543,
+    3.8504498381285543,
+    3.6007588706875993,
+    3.6007588706875993,
+    3.6007588706875993,
+    3.0837876535946407,
+    3.0837876535946407,
+    3.0837876535946407,
+    3.0331500681416514,
+    3.0331500681416514,
+    3.0331500681416514,
+    3.0331500681416514,
+    3.0331500681416514,
+    3.0331500681416514,
+    3.0331500681416514,
+    3.0331500681416514,
+    3.0331500681416514,
+    3.0331500681416514
+  ],
+  "full_20": true,
+  "success_champion": false,
+  "success_near": false,
+  "api_requests": 3,
+  "known_cost_usd": 0.1485775,
+  "charged_or_reserved_usd": 0.1485775,
+  "billing_unknown_requests": 0
+}

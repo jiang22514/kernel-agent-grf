@@ -1,0 +1,286 @@
+{
+  "run_id": "H01__fable51__feedback",
+  "case": "H01",
+  "model_label": "fable51",
+  "model": "anthropic/claude-fable-5.1",
+  "method": "strategy",
+  "arm": "feedback",
+  "batch_size": 4,
+  "total_rounds": 5,
+  "reasoning_effort": "medium",
+  "plan_sha256": "004d6feeb3dab63d85d8206fa9308e54510ce79547b22472eb6eb77767becc82",
+  "state": "complete",
+  "visited": [
+    {
+      "kernel": "SE",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -19.557052049078976,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": -9.304884810927149,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": -18.14111943152571,
+      "k": 8,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": -19.484079292304415,
+      "k": 8,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -26.786331474529106,
+      "k": 12,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": -21.126079775087618,
+      "k": 5,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": -17.40403897568268,
+      "k": 7,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE+LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": -15.137410064115073,
+      "k": 8,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE+PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": -26.22904692985412,
+      "k": 10,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "RQ+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -21.288356598813948,
+      "k": 13,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA5+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -12.766631735060287,
+      "k": 12,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -13.886760213031465,
+      "k": 9,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -19.595746768646364,
+      "k": 11,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(SE*PER)+RQ",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -12.94567408455265,
+      "k": 15,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "SE+RQ",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -17.70034445137071,
+      "k": 13,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(SE*LIN)+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -22.784462390236854,
+      "k": 14,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(SE*PER)+MA5",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -10.885359036861985,
+      "k": 14,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "SE+MA3",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -14.78210403955012,
+      "k": 12,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "MA3+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": -11.809235778005103,
+      "k": 12,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "RQ+PER",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": -16.313976142821076,
+      "k": 11,
+      "ok": true,
+      "round": 5
+    }
+  ],
+  "common_start_sha256": "a223380db246ff03166213c497122f5bae40d567ca31b75c5ca3eef768b24c54",
+  "rounds": [
+    {
+      "round": 1,
+      "source": "shared_archived_score_free_first_decision",
+      "new_evals": 4,
+      "new_cost_usd": 0
+    },
+    {
+      "round": 2,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE/Quadratic (-19.6), SE+PER/Constant (-19.5) and RQ/Linear (-18.1) are nearly tied; MA3/Constant clearly worse, so smooth covariance preferred. Competing explanations: trend in mean (quadratic) vs periodic/hole-effect component vs amplitude variation (LIN). Unresolved: does periodic structure add on top of a quadratic mean; is SE's advantage purely from the mean; does modulation (SE*PER) or covariance trend (SE+LIN) explain the variogram hole.",
+      "summary_note": null,
+      "cost_usd": 0.07414,
+      "replayed_locally": false
+    },
+    {
+      "round": 3,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE+PER/Quadratic (-26.8) leads clearly; periodic component plus quadratic mean synergize (quadratic hurt plain SE, helped SE+PER). SE*PER and SE+LIN with constant mean trail. Unresolved: whether linear mean suffices for SE+PER, whether RQ or MA5 replaces SE better in the additive periodic structure, and whether SE is needed at all beside PER with quadratic mean.",
+      "summary_note": null,
+      "cost_usd": 0.07673,
+      "replayed_locally": false
+    },
+    {
+      "round": 4,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE+PER/Quadratic (-26.8) leads; linear mean close (-26.2). RQ, MA5 substitutions for SE in additive periodic structure were worse; PER alone and SE alone trail. Unresolved: does multiplicative SE*PER benefit from quadratic mean like SE+PER did; can a composite (SE*PER)+RQ or (SE*LIN)+PER beat it; does a non-periodic second smooth component (SE+RQ) match PER's gain.",
+      "summary_note": null,
+      "cost_usd": 0.10334,
+      "replayed_locally": false
+    },
+    {
+      "round": 5,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE+PER/Quadratic (-26.8) leads, Linear mean close (-26.2); Constant much worse. RQ and MA5 substitutions, SE*PER, and composites with RQ or SE*LIN trail. Final round: test whether a smooth additive component rescues SE*PER ((SE*PER)+MA5), whether a non-periodic rough second component (SE+MA3) matches PER's gain, MA3 roughness with PER, and RQ+PER under a linear mean.",
+      "summary_note": null,
+      "cost_usd": 0.1018,
+      "replayed_locally": false
+    }
+  ],
+  "n_evals": 20,
+  "best": {
+    "kernel": "SE+PER",
+    "mean_id": 4,
+    "mean": "Quadratic",
+    "aic": -26.786331474529106,
+    "k": 12,
+    "ok": true,
+    "round": 2
+  },
+  "regret": 0.0,
+  "hit": true,
+  "near_optimal": true,
+  "regret_trajectory": [
+    7.22927942545013,
+    7.22927942545013,
+    7.22927942545013,
+    7.22927942545013,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "full_20": true,
+  "success_champion": true,
+  "success_near": true,
+  "api_requests": 4,
+  "known_cost_usd": 0.35601,
+  "charged_or_reserved_usd": 0.35601,
+  "billing_unknown_requests": 0
+}

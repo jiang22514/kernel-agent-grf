@@ -1,0 +1,286 @@
+{
+  "run_id": "H06__fable51__feedback",
+  "case": "H06",
+  "model_label": "fable51",
+  "model": "anthropic/claude-fable-5.1",
+  "method": "strategy",
+  "arm": "feedback",
+  "batch_size": 4,
+  "total_rounds": 5,
+  "reasoning_effort": "medium",
+  "plan_sha256": "004d6feeb3dab63d85d8206fa9308e54510ce79547b22472eb6eb77767becc82",
+  "state": "complete",
+  "visited": [
+    {
+      "kernel": "SE",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 50.341802351795025,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 53.29838976881524,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 53.67174058499904,
+      "k": 8,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 47.44643603242082,
+      "k": 7,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 47.07801912696567,
+      "k": 9,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE+LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 60.77748955803645,
+      "k": 8,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "RQ*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 49.401378501747644,
+      "k": 8,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 51.69077053830293,
+      "k": 7,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 46.69574491116788,
+      "k": 11,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA5*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 47.733617140684345,
+      "k": 7,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "(SE*LIN)+MA3",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 50.82404353028869,
+      "k": 10,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "SE*LIN",
+      "mean_id": 1,
+      "mean": "Zero",
+      "aic": 98.80779957006314,
+      "k": 6,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA5*LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 47.107700071776264,
+      "k": 9,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA3*LIN",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 49.4149713524437,
+      "k": 7,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "RQ*LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 49.06894244050571,
+      "k": 10,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "SE*PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 59.42055123810138,
+      "k": 7,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "MA5*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 46.82934015912801,
+      "k": 11,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "MA3*LIN",
+      "mean_id": 3,
+      "mean": "Linear",
+      "aic": 47.79812430699761,
+      "k": 9,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "(SE*LIN)+RQ",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 52.348775166419045,
+      "k": 11,
+      "ok": true,
+      "round": 5
+    },
+    {
+      "kernel": "(SE*LIN)+PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 45.934702400293304,
+      "k": 10,
+      "ok": true,
+      "round": 5
+    }
+  ],
+  "common_start_sha256": "4c08fb5a51064d6ac7d2dcc082598c39c0ae3db33c7cb66e5e630d7315512e68",
+  "rounds": [
+    {
+      "round": 1,
+      "source": "shared_archived_score_free_first_decision",
+      "new_evals": 4,
+      "new_cost_usd": 0
+    },
+    {
+      "round": 2,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE*LIN with constant mean leads (47.4) over SE/quadratic (50.3); rougher MA3 and RQ/linear worse. Hypotheses: LIN-modulated amplitude vs. mean-trend handling; smooth vs. medium roughness within modulation. Now check SE*LIN mean sensitivity, sum vs product with LIN, and whether RQ or SE with lesser means compete.",
+      "summary_note": null,
+      "cost_usd": 0.06713,
+      "replayed_locally": false
+    },
+    {
+      "round": 3,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE*LIN leads (Linear 47.1, Constant 47.4); RQ*LIN 49.4 close; SE alone needs quadratic mean (50.3); SE+LIN far worse, so multiplicative amplitude modulation is the key structure. Unresolved: full mean sensitivity of SE*LIN (zero, quadratic), roughness within LIN modulation (MA5 vs SE), and whether adding a short-scale component to SE*LIN helps.",
+      "summary_note": null,
+      "cost_usd": 0.07457,
+      "replayed_locally": false
+    },
+    {
+      "round": 4,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE*LIN family leads (Quadratic 46.7, Linear 47.1, Constant 47.4); MA5*LIN Constant 47.7 and RQ*LIN 49.4 close; additive SE+LIN and (SE*LIN)+MA3 worse; zero mean ruled out. Unresolved: roughness within LIN modulation (MA5/MA3/RQ) under richer means, and whether a periodic modulation (SE*PER) offers a credible alternative structure.",
+      "summary_note": null,
+      "cost_usd": 0.07632,
+      "replayed_locally": false
+    },
+    {
+      "round": 5,
+      "source": "fresh_continuation",
+      "new_evals": 4,
+      "rejected": [],
+      "summary": "SE*LIN leads (Quadratic 46.7, Linear 47.1, Constant 47.4); MA5*LIN Linear 47.1 essentially tied, Constant 47.7. RQ*LIN, MA3*LIN ~49. Additive SE+LIN, SE*PER, (SE*LIN)+MA3 clearly worse; zero mean ruled out. Unresolved: MA5*LIN under Quadratic mean, MA3*LIN under Linear, and whether a periodic or RQ component added to the LIN-modulated structure improves over SE*LIN.",
+      "summary_note": null,
+      "cost_usd": 0.06811,
+      "replayed_locally": false
+    }
+  ],
+  "n_evals": 20,
+  "best": {
+    "kernel": "(SE*LIN)+PER",
+    "mean_id": 2,
+    "mean": "Constant",
+    "aic": 45.934702400293304,
+    "k": 10,
+    "ok": true,
+    "round": 5
+  },
+  "regret": 1.1799484163834677,
+  "hit": false,
+  "near_optimal": true,
+  "regret_trajectory": [
+    5.587048367885188,
+    5.587048367885188,
+    5.587048367885188,
+    2.691682048510984,
+    2.323265143055835,
+    2.323265143055835,
+    2.323265143055835,
+    2.323265143055835,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.9409909272580421,
+    1.1799484163834677
+  ],
+  "full_20": true,
+  "success_champion": false,
+  "success_near": true,
+  "api_requests": 4,
+  "known_cost_usd": 0.28613,
+  "charged_or_reserved_usd": 0.28613,
+  "billing_unknown_requests": 0
+}

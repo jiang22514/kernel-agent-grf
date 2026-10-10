@@ -1,0 +1,584 @@
+{
+  "H01__astra": {
+    "source_run_id": "holdout__H01__astra__control",
+    "first_round": [
+      {
+        "kernel": "SE",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": -20.141177020504216,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA1",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 31.27109185861815,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": -19.557052049078976,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "RQ",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": -19.125816052114544,
+        "k": 6,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE*PER",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": -20.294063797248924,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "Trend fits motivate comparing linear and quadratic means, while residual decorrelation suggests testing both smooth and rough covariance. Neither periodicity nor multiple scales are established or excluded. Start with controlled smoothness and mean comparisons, plus multiscale and periodic alternatives; subsequent rounds will refine the strongest evaluated structures.",
+    "first_request_sha256": "c7fa33473da224c55df9afe3d53d76812fe54240c81bc61abe5d73bd1ddf4b4a",
+    "first_input_had_no_scores": true
+  },
+  "H01__fable51": {
+    "source_run_id": "holdout__H01__fable51__strategy",
+    "first_round": [
+      {
+        "kernel": "SE",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": -19.557052049078976,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA3",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": -9.304884810927149,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "RQ",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": -18.14111943152571,
+        "k": 8,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE+PER",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": -19.484079292304415,
+        "k": 8,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "Round 1: no results yet. Data show moderate quadratic trend (R^2 0.48), semivariogram rising above 1 (hole effect / possible periodic or nonstationary amplitude). Contrast smooth stationary (SE) vs rough (MA3) vs scale-mixing (RQ) vs periodic, and quadratic vs zero/constant means. Unresolved: whether trend belongs in mean or covariance, and whether oscillation is real.",
+    "first_request_sha256": "c1d293eccb437ab1f8d00430295ed670b5190920788e6a81276f2079186a2987",
+    "first_input_had_no_scores": true
+  },
+  "H02__astra": {
+    "source_run_id": "holdout__H02__astra__control",
+    "first_round": [
+      {
+        "kernel": "MA1",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 155.23561068925451,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 154.1009720856112,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA1",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 161.12317448725895,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "RQ",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 158.83952273167017,
+        "k": 8,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "PER",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 153.85128111817025,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "Weak OLS trends and rapid residual decorrelation suggest testing short-range covariance with modest means, but do not exclude smooth, multiscale, or periodic structure. Start with contrasting covariance families and a controlled constant-versus-quadratic mean comparison for MA1. RQ with a linear mean provides another trend hypothesis; subsequent rounds will isolate effects around promising fits.",
+    "first_request_sha256": "012f2a4020ec3cebdc0f10a0c6010b620f35c2e6a89c82dab58ca5ccf219ce30",
+    "first_input_had_no_scores": true
+  },
+  "H02__fable51": {
+    "source_run_id": "holdout__H02__fable51__strategy",
+    "first_round": [
+      {
+        "kernel": "SE",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 154.1009720856112,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA3",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 153.3343099010773,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE*PER",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 153.1106450647677,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "RQ",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 161.58352440288087,
+        "k": 10,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "No evaluations yet. Data: weak trend (R^2 0.08–0.15), variogram shows short-range correlation then decorrelated with a mild bump near h~1.3 (possible periodic/directional). Start with contrasting hypotheses: smooth stationary (SE), rough stationary (MA3), periodic modulation (SE*PER), and heavy-tailed multiscale (RQ), with constant mean baseline and one quadratic-mean check.",
+    "first_request_sha256": "7102e9fac701a694dac9cca82cb080cad3c84474ef424db4ad018ef9162262ef",
+    "first_input_had_no_scores": true
+  },
+  "H03__astra": {
+    "source_run_id": "holdout__H03__astra__control",
+    "first_round": [
+      {
+        "kernel": "MA1",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 131.53374512771825,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 91.5551209242868,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA1",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 128.7858942940909,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "RQ",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 99.14731814929058,
+        "k": 6,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "PER",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 92.56128221527734,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "The trend supports testing linear and quadratic means, while rapid residual decorrelation motivates rough and short-scale covariance hypotheses. Neither periodicity nor multiple scales are excluded. Start with a controlled smoothness comparison and a controlled mean comparison, plus multiscale and periodic alternatives; subsequent rounds will isolate whichever changes improve AIC.",
+    "first_request_sha256": "02e9e4aef6fa7bcb8e5ee337c0c1c1f70da32263843f193bcfdd1696df1d2f5a",
+    "first_input_had_no_scores": true
+  },
+  "H03__fable51": {
+    "source_run_id": "holdout__H03__fable51__strategy",
+    "first_round": [
+      {
+        "kernel": "SE",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 91.5551209242868,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA3",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 106.03363043556789,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE+PER",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 39.669820462519226,
+        "k": 10,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "LIN",
+        "mean_id": 1,
+        "mean": "Zero",
+        "aic": 232.0610741564755,
+        "k": 4,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "Round 1: strong linear/quadratic trend (R^2 0.49/0.55); detrended variogram shows short-range correlation (g=0.82 at h=0.57) then hole effect (g>1 at mid lags) hinting at periodic or oscillatory residual. Contrast: smooth SE with linear mean, rough MA3 with linear mean, SE+PER for oscillation, LIN kernel with zero mean as trend-in-covariance alternative. Unresolved: mean vs covariance trend, periodicity.",
+    "first_request_sha256": "ac76df2c80b7490e360b12b8f163fee5efcf92c01ef9dfed4ef20a07a8ee5680",
+    "first_input_had_no_scores": true
+  },
+  "H04__astra": {
+    "source_run_id": "holdout__H04__astra__control",
+    "first_round": [
+      {
+        "kernel": "MA3",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 98.09648908017314,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA3",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 91.16296230833336,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA1",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 99.91205068704721,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "RQ",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 94.85912800222209,
+        "k": 10,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA3*LIN",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 83.68860985137712,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "Quadratic trends explain appreciable variation, while residual dependence appears short-range; neither establishes the covariance family. Start with a controlled constant-versus-quadratic mean comparison, compare rough and multiscale covariances under the quadratic mean, and test amplitude modulation separately. Periodicity remains unresolved rather than excluded.",
+    "first_request_sha256": "9fd4fcbea7f351b080fedbb9ad75ecb6acd2d2047971ce63bd02bcd229bd34f4",
+    "first_input_had_no_scores": true
+  },
+  "H04__fable51": {
+    "source_run_id": "holdout__H04__fable51__strategy",
+    "first_round": [
+      {
+        "kernel": "SE",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 96.39886573174044,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA3",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 97.70251338614429,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE*LIN",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 94.96458887264595,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "RQ",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 94.85912800222209,
+        "k": 10,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "Round 1: quadratic trend explains 55% variance; residuals decorrelate within ~1 std-scaled unit. Competing explanations: smooth stationary covariance with quadratic mean, rougher Matern with linear mean, nonstationary amplitude via LIN product, or periodic structure. Testing SE vs MA3 vs SE*LIN vs RQ with contrasting means to separate mean-vs-covariance accounting of trend.",
+    "first_request_sha256": "dfd954d3ef598336765ac7549cefc612b59485f2ec4c815278984abf12a3d332",
+    "first_input_had_no_scores": true
+  },
+  "H05__astra": {
+    "source_run_id": "holdout__H05__astra__control",
+    "first_round": [
+      {
+        "kernel": "MA1",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 128.27671010127983,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 115.41399307121418,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA1",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 128.58171162016833,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "RQ*LIN",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 115.65742728221758,
+        "k": 8,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "PER",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 186.29384580845226,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "Weak OLS trends favor an intercept baseline, while rapid residual decorrelation suggests short-scale variation without excluding periodicity or nonstationarity. Compare rough and smooth stationary kernels, isolate a linear-mean change, and explore amplitude modulation and periodic structure. Subsequent tests will refine whichever hypotheses receive AIC support.",
+    "first_request_sha256": "b142f55432467bb225b7a8aaa07c3d0b8cb4f990adbf0dbdf4d8fa7473b5e877",
+    "first_input_had_no_scores": true
+  },
+  "H05__fable51": {
+    "source_run_id": "holdout__H05__fable51__strategy",
+    "first_round": [
+      {
+        "kernel": "SE",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 115.41399307121418,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA1",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 128.27671010127983,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "PER",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 186.29384580845226,
+        "k": 5,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE*LIN",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 119.04047155871493,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "Weak trend (R^2 0.05), flat variogram suggests near-nugget or short-range/directional structure, possibly periodic. Round 1 contrasts: smooth SE with constant mean, rough MA1, periodic PER, and LIN amplitude modulation with SE. Unresolved: whether any spatial correlation exists beyond noise and whether periodicity or heteroscedastic amplitude explains residuals.",
+    "first_request_sha256": "d3073b327cb62c66d192f0482c0b6b8f9414dda8efac59389f57bf64e1f658a4",
+    "first_input_had_no_scores": true
+  },
+  "H06__astra": {
+    "source_run_id": "holdout__H06__astra__control",
+    "first_round": [
+      {
+        "kernel": "MA3",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 54.63423385684558,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA3",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 53.29838976881524,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 50.341802351795025,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "RQ",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 60.44471514868883,
+        "k": 6,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA1*LIN",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 58.54668173500136,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "Trend fits suggest testing linear versus quadratic means, while residual decorrelation supports short-range covariance without identifying smoothness. Start with a controlled MA3 mean comparison and SE smoothness comparison. Explore multiscale RQ with a constant mean and LIN-modulated rough covariance; periodic structure remains unresolved rather than excluded.",
+    "first_request_sha256": "3ae81dae22e0f4aeba8b7e63afe5df126ea5b3c993d7478421e961ca3ab1e29e",
+    "first_input_had_no_scores": true
+  },
+  "H06__fable51": {
+    "source_run_id": "holdout__H06__fable51__strategy",
+    "first_round": [
+      {
+        "kernel": "SE",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 50.341802351795025,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "MA3",
+        "mean_id": 4,
+        "mean": "Quadratic",
+        "aic": 53.29838976881524,
+        "k": 9,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "RQ",
+        "mean_id": 3,
+        "mean": "Linear",
+        "aic": 53.67174058499904,
+        "k": 8,
+        "ok": true,
+        "round": 1
+      },
+      {
+        "kernel": "SE*LIN",
+        "mean_id": 2,
+        "mean": "Constant",
+        "aic": 47.44643603242082,
+        "k": 7,
+        "ok": true,
+        "round": 1
+      }
+    ],
+    "summary": "Round 1: no scores yet. Data show strong trend (quadratic R^2 0.71) and short-range correlation in detrended residuals (variogram saturates ~h=1.3). Contrast smooth vs rough stationary kernels under quadratic mean, a linear-mean variant, and a LIN-modulated amplitude hypothesis. Unresolved: mean vs covariance handling of trend; roughness.",
+    "first_request_sha256": "fc37228248942dfaf03a9ef0124a327b1ea87356f44c94d8f7353984e11feaf8",
+    "first_input_had_no_scores": true
+  }
+}
