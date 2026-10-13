@@ -1,0 +1,3117 @@
+{
+  "schema": "delft_public_search_assets_v1",
+  "kernel_definition": "lin_first_coordinate_offset_v2",
+  "kernels": [
+    "SE",
+    "MA1",
+    "MA3",
+    "MA5",
+    "RQ",
+    "LIN",
+    "PER",
+    "SE+MA1",
+    "SE+MA3",
+    "SE+MA5",
+    "SE+RQ",
+    "SE+LIN",
+    "SE*LIN",
+    "SE+PER",
+    "SE*PER",
+    "MA1+MA3",
+    "MA1+MA5",
+    "MA1+RQ",
+    "MA1+LIN",
+    "MA1*LIN",
+    "MA1+PER",
+    "MA1*PER",
+    "MA3+MA5",
+    "MA3+RQ",
+    "MA3+LIN",
+    "MA3*LIN",
+    "MA3+PER",
+    "MA3*PER",
+    "MA5+RQ",
+    "MA5+LIN",
+    "MA5*LIN",
+    "MA5+PER",
+    "MA5*PER",
+    "RQ+LIN",
+    "RQ*LIN",
+    "RQ+PER",
+    "RQ*PER",
+    "LIN+PER",
+    "LIN*PER",
+    "(SE*LIN)+MA1",
+    "(SE*LIN)+MA3",
+    "(SE*LIN)+MA5",
+    "(SE*LIN)+RQ",
+    "(SE*LIN)+PER",
+    "(SE*PER)+MA1",
+    "(SE*PER)+MA3",
+    "(SE*PER)+MA5",
+    "(SE*PER)+RQ",
+    "(SE*PER)+LIN",
+    "(MA1*LIN)+SE",
+    "(MA1*LIN)+MA3",
+    "(MA1*LIN)+MA5",
+    "(MA1*LIN)+RQ",
+    "(MA1*LIN)+PER",
+    "(MA1*PER)+SE",
+    "(MA1*PER)+MA3",
+    "(MA1*PER)+MA5",
+    "(MA1*PER)+RQ",
+    "(MA1*PER)+LIN",
+    "(MA3*LIN)+SE",
+    "(MA3*LIN)+MA1",
+    "(MA3*LIN)+MA5",
+    "(MA3*LIN)+RQ",
+    "(MA3*LIN)+PER",
+    "(MA3*PER)+SE",
+    "(MA3*PER)+MA1",
+    "(MA3*PER)+MA5",
+    "(MA3*PER)+RQ",
+    "(MA3*PER)+LIN",
+    "(MA5*LIN)+SE",
+    "(MA5*LIN)+MA1",
+    "(MA5*LIN)+MA3",
+    "(MA5*LIN)+RQ",
+    "(MA5*LIN)+PER",
+    "(MA5*PER)+SE",
+    "(MA5*PER)+MA1",
+    "(MA5*PER)+MA3",
+    "(MA5*PER)+RQ",
+    "(MA5*PER)+LIN",
+    "(RQ*LIN)+SE",
+    "(RQ*LIN)+MA1",
+    "(RQ*LIN)+MA3",
+    "(RQ*LIN)+MA5",
+    "(RQ*LIN)+PER",
+    "(RQ*PER)+SE",
+    "(RQ*PER)+MA1",
+    "(RQ*PER)+MA3",
+    "(RQ*PER)+MA5",
+    "(RQ*PER)+LIN",
+    "(LIN*PER)+SE",
+    "(LIN*PER)+MA1",
+    "(LIN*PER)+MA3",
+    "(LIN*PER)+MA5",
+    "(LIN*PER)+RQ"
+  ],
+  "cases": {
+    "main_12": {
+      "profile": "Dataset: main_12\nResponse modeled: log(qc / 1 MPa) (natural logarithm).\nn = 696 observations, D = 2 input dimensions.\n  x1: range [0, 49.99], std 14.57\n  x2: range [-12, -0.6], std 3.351\ny: mean -1.178, std 0.5935, range [-2.303, 1.022].\nTrend fit (OLS R^2): linear 0.001, quadratic(diagonal) 0.732.\nSemivariogram of linearly-detrended residuals (std-scaled coords, normalized; g->1 means decorrelated): (h=0.57, g=0.48) (h=0.96, g=0.74) (h=1.27, g=0.94) (h=1.54, g=1.14) (h=1.82, g=1.26) (h=2.12, g=1.27) ",
+      "rows": [
+        {
+          "kernel": "SE",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 184.9696284442715,
+          "k": 4,
+          "ok": true
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 186.47515644720386,
+          "k": 5,
+          "ok": true
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 186.14834828385813,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 149.89561323808653,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 146.633846450016,
+          "k": 4,
+          "ok": true
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 136.662769614843,
+          "k": 5,
+          "ok": true
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 138.53619343097398,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 104.22707117732307,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 164.501406566892,
+          "k": 4,
+          "ok": true
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 158.83594463946122,
+          "k": 5,
+          "ok": true
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 159.58205321949447,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 128.78457033376503,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 181.63869122657638,
+          "k": 4,
+          "ok": true
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 175.01438822469447,
+          "k": 5,
+          "ok": true
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 175.4045997104554,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 138.00656242712637,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 141.5678414710991,
+          "k": 5,
+          "ok": true
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 141.68691530368176,
+          "k": 6,
+          "ok": true
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 143.80200199691592,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 104.78171360614215,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 1264.414313239099,
+          "k": 4,
+          "ok": true
+        },
+        {
+          "kernel": "LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 1257.8390014095935,
+          "k": 5,
+          "ok": true
+        },
+        {
+          "kernel": "LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 1261.4804048168667,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 349.0450494015479,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 261.35578439042024,
+          "k": 4,
+          "ok": true
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 257.300818517414,
+          "k": 5,
+          "ok": true
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 208.63690166941262,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 160.71972450109638,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA1",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 91.04200975445883,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 92.88389749514613,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 92.52910558829262,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 80.11122541286977,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 91.79361138335798,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 93.7019754582393,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 93.19941100714595,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 79.15632758094694,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 91.75278542223214,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 93.44148040990547,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 93.6550008227448,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "SE+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 79.16528199878826,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "SE+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 88.94052033211528,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "SE+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 90.66710550800326,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "SE+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 90.61660925846127,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "SE+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 80.96702977627433,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 190.96963279238366,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 191.7468234956409,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 192.15151595838267,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "SE+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 155.90515430050596,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 185.78635033684793,
+          "k": 6,
+          "ok": true
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 181.37053195628198,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 184.54047730376794,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "SE*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 163.73227533064562,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 95.94789951259543,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 97.86280116520766,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 97.28635153285586,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "SE+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 80.40485461294645,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 143.64545513101666,
+          "k": 6,
+          "ok": true
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 135.69060707153926,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 135.84797909453584,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "SE*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 100.91004075529202,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 86.63400592269045,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 88.48239882029839,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 89.4609749981455,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 76.58366652809673,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 89.65367996825535,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 91.45318257476652,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 91.97086111283056,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 77.87490346913,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 93.04212194681622,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 94.88399025650597,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 94.52919412409278,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 78.53300223281803,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 144.8464035807881,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 142.6627698990352,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 144.53619349145208,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 110.22707161224173,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "MA1*LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 149.96468995210125,
+          "k": 6,
+          "ok": true
+        },
+        {
+          "kernel": "MA1*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 140.1539182634807,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA1*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 141.98600948530498,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA1*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 106.80021287387888,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 132.92785398646583,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 130.87053164511133,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 105.84597206179672,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "MA1+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 77.71119961511044,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 118.87485637524992,
+          "k": 6,
+          "ok": true
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 109.0691244125776,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 110.85861672763133,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA1*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 73.22470506869831,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 89.7596018800059,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 91.49430946339226,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 92.0473940611596,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 76.3058511541044,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 87.05265049580362,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 88.81982795423619,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 89.86285238898154,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 78.09888559931801,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 166.4559850870553,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 164.71024059095475,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 165.58210553751053,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 134.78472292419258,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 165.97364856005697,
+          "k": 6,
+          "ok": true
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 159.26584467306225,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 161.1465525299493,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA3*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 130.64397513603296,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 150.98493923872616,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 89.47174517422377,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 90.52286461062488,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "MA3+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 77.92078250015038,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 127.97399495561297,
+          "k": 6,
+          "ok": true
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 116.53800984263239,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 117.50773058286154,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA3*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 81.51946569682093,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 88.94341637059051,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 90.81683164310925,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 91.35835961741213,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 79.36937545747764,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 182.36052727302183,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 180.71808416274848,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 181.4045999286634,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 144.0065636021718,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 182.0125965253875,
+          "k": 6,
+          "ok": true
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 173.7922523374989,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 176.09378331653,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA5*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 140.18574417198909,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 155.55691990190724,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 94.45869988670722,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 95.20321327573777,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "MA5+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 78.4301709241854,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "MA5*PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 138.66624283079102,
+          "k": 6,
+          "ok": true
+        },
+        {
+          "kernel": "MA5*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 127.78268375305993,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "MA5*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 128.73630445189679,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "MA5*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 88.52368175911067,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "RQ+LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 147.56785177119343,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "RQ+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 147.5683773043338,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "RQ+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 149.80217951432837,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "RQ+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 110.78234894151319,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 145.44854589019565,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 145.58589636088038,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 147.6527591695326,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "RQ*LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 108.40566422178858,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 130.7409393588664,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 132.73437664684388,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 125.75416156019105,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "RQ+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 80.55625986000325,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "RQ*PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 125.91274247375475,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "RQ*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 122.54005613061315,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "RQ*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 124.2274193912964,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "RQ*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 81.68544660603015,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "LIN+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 220.42602983248105,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "LIN+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 217.99301964472306,
+          "k": 8,
+          "ok": true
+        },
+        {
+          "kernel": "LIN+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 214.66451716299719,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "LIN+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 166.74020323360833,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "LIN*PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 235.70387211093657,
+          "k": 6,
+          "ok": true
+        },
+        {
+          "kernel": "LIN*PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 224.551907276806,
+          "k": 7,
+          "ok": true
+        },
+        {
+          "kernel": "LIN*PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 212.45138833573708,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "LIN*PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 157.18309942302506,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA1",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 90.20088470310657,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 88.72368104054385,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 91.19061577160005,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 94.95373687709275,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 90.44669766071752,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 89.20904239731681,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 91.303960606391,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 75.39499746136653,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 90.77426721470954,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 89.60601514099596,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 91.65866512028629,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 75.20782542171719,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 88.48248213791226,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 86.7911860777092,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 89.64348607208626,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 93.41906171312644,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 179.47549143207482,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 153.27851343838608,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 96.14423089527622,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 87.73673621303283,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA1",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 85.24001462668821,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 86.9669874561232,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 88.9831009809925,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 71.03099778754313,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 82.20339569405962,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 83.98407365298851,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 85.11622377333867,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 74.51963403627383,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 85.38501985770995,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 87.34317505067418,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 87.74032944382873,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 75.42296922286505,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 87.00622170508314,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 88.86874235147855,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 88.72565575442025,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 77.13685077912828,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 149.64531758453552,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 141.31421088276795,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 141.8488352321482,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(SE*PER)+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 106.91084572925445,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+SE",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 94.19076375582085,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 80.66500707723003,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 84.1535753901644,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 76.4943154897594,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 80.68068843632523,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 79.33979567023425,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 82.79498606321908,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 72.7528956789231,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 79.73106663009253,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 79.14908168294369,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 82.57778737659169,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 73.22969904775891,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 80.39596084677373,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 80.92912164558038,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 84.56953155151905,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 76.96535269005153,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 136.0446068744494,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 138.02949645910667,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 85.43974559283333,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 75.08385279241838,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+SE",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 74.71968185512264,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 76.27364195575774,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 76.66409893348032,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 73.47040241610807,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 75.67002867787141,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 77.65067470835288,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 78.82942088103027,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 72.61873286918035,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 75.04294360092672,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 76.97445587490574,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 77.75253719440911,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 73.66351361106331,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 76.53449856432485,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 78.27385083878016,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 78.6643241857405,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 75.47327055905885,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 117.4520479308054,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 115.06914164442082,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 116.85862798860819,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA1*PER)+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 79.22477546104892,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+SE",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 78.6259740567109,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 77.29420513293326,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 80.78035226907332,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 75.45790331320086,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+MA1",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 79.66180077651575,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 77.1663203098476,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 80.76709627966852,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 72.92608780901833,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 77.5312708034462,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 75.47601102433964,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 79.05846700058555,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 71.25719055478885,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 79.00659626053493,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 77.4467160513168,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 81.01424944259202,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 72.93896398620427,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 159.75732237584793,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 146.58535352364026,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 81.4823059070809,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 73.46332398219442,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+SE",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 79.23659240032907,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 80.98579013182052,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 81.15268499503418,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 71.25538829182722,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+MA1",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 83.64325377559862,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 85.36352250414552,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 87.46582078516235,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 70.99554015571357,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 79.75001729643623,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 81.72069166260667,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 82.3124069365731,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 72.38437250069,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 81.16928278771911,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 82.98703626184943,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 83.15428424749393,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 75.20517386228471,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 124.98167035729398,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 122.53802414840936,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 123.50773760841696,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA3*PER)+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 87.51952955026013,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+SE",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 87.6815565814876,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 84.08283825788476,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 87.58626882141607,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 73.81124983369205,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+MA1",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 87.29262719317012,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 84.35544465121757,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 87.9905847319726,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 74.51984531128119,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 86.13536623098094,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 82.76847622514401,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 86.37523958838801,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 72.98708040422775,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 89.38066740675868,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 84.3988317097685,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 87.93909475266082,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 74.46209105939488,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 88.92889733639436,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 85.40272109036471,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 88.84543457210509,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 75.12054560954448,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+SE",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 81.55002599319687,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 83.35567206178166,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 83.39404894486916,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 81.25712939790765,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+MA1",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 84.00002637349439,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 85.72330271918531,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 87.79951307828924,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 70.90389075946405,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 80.27856331021098,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 82.13728769711997,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 83.2671797192902,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 73.25875779034504,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 83.52466383809474,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 85.35591964520086,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 85.39433389203282,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 75.71624544872611,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 136.2734329632225,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 133.78303422908675,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 134.73631075002152,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(MA5*PER)+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 94.52375357663436,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+SE",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 86.91360259349312,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 85.38960192250556,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 88.91616634992988,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 75.50118614894996,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA1",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 92.25860674291675,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 90.72366741986662,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 93.19058998844207,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 96.95377867075126,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 84.90453866530652,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 84.95903176073921,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 88.34594251203839,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 74.74994517157756,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 85.69854480867934,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 84.49102521161353,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 87.84674233578949,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 74.54473861599922,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 91.66476594270921,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 86.93524748629488,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 90.38644412989424,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*LIN)+PER",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 76.95539586740415,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 79.25943320510555,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 80.9184737292785,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 81.21484600394069,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 78.5951002026593,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA1",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 85.17561337514871,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 86.89311425021265,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 89.01224081910414,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 72.92506821161601,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 79.99791939849365,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 81.96781028332089,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 83.09409098007768,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 74.03494040258397,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 79.82276064405642,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 81.77966555958437,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 82.46609249038465,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 74.92083128583954,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+LIN",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 131.91345617055595,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+LIN",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 128.4608561586242,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+LIN",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 130.22786447805106,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(RQ*PER)+LIN",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 87.689782415742,
+          "k": 15,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 95.4380615291027,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 97.35553589145002,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 96.97920952090067,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+SE",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 96.82745949287812,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA1",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 124.5222710542456,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA1",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 122.75748991145531,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA1",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 126.62123034761498,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA1",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 108.18193639009246,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA3",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 142.8138419934163,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA3",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 141.66405536269247,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA3",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 145.4401850181648,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA3",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 132.9363918204948,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA5",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 150.57020411636154,
+          "k": 9,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA5",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 148.63526463217727,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA5",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 152.34574157178645,
+          "k": 12,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+MA5",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 141.90009414030862,
+          "k": 14,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+RQ",
+          "mean_id": 1,
+          "mean": "Zero",
+          "aic": 97.40919304143802,
+          "k": 10,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+RQ",
+          "mean_id": 2,
+          "mean": "Constant",
+          "aic": 98.97979233628507,
+          "k": 11,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+RQ",
+          "mean_id": 3,
+          "mean": "Linear",
+          "aic": 99.98449973734012,
+          "k": 13,
+          "ok": true
+        },
+        {
+          "kernel": "(LIN*PER)+RQ",
+          "mean_id": 4,
+          "mean": "Quadratic",
+          "aic": 80.50783527065732,
+          "k": 15,
+          "ok": true
+        }
+      ]
+    }
+  },
+  "response_definition": "ln(qc / 1 MPa)",
+  "disclosure": "Full candidate scores are released after search completion; requests contained only visited scores."
+}

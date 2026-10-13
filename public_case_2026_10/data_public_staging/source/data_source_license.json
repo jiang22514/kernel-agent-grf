@@ -1,0 +1,61 @@
+{
+  "title": "Cone Penetration Test (CPT) dataset to study soil heterogeneity.",
+  "doi": "10.4121/uuid:0a9b77bc-3f6d-40e2-846c-ddb992dd78a6",
+  "citation": "de Gast, Tom; Hicks, Michael A.; Vardon, Philip (2020). Cone Penetration Test (CPT) dataset to study soil heterogeneity.. 4TU.ResearchData. Dataset. https://doi.org/10.4121/uuid:0a9b77bc-3f6d-40e2-846c-ddb992dd78a6",
+  "authors": [
+    {
+      "id": 9315701,
+      "full_name": "Tom de Gast",
+      "first_name": "Tom",
+      "last_name": "de Gast",
+      "is_active": true,
+      "url_name": "Tom_de_Gast",
+      "orcid_id": "0000-0002-1577-8742"
+    },
+    {
+      "id": 1318443,
+      "full_name": "Michael A. Hicks",
+      "first_name": "Michael A.",
+      "last_name": "Hicks",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 9124882,
+      "full_name": "Philip Vardon",
+      "first_name": "Philip",
+      "last_name": "Vardon",
+      "is_active": true,
+      "url_name": "Philip_Vardon",
+      "orcid_id": "0000-0001-5614-6592"
+    }
+  ],
+  "license": {
+    "value": 2,
+    "name": "CC0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "version": 1,
+  "published_date": "2020-09-28T06:58:22Z",
+  "url_public_html": "https://data.4tu.nl/articles/dataset/Cone_Penetration_Test_CPT_dataset_to_study_soil_heterogeneity_/12764387",
+  "url_public_api": "https://api.figshare.com/v2/articles/12764387",
+  "files": [
+    {
+      "id": 24153797,
+      "name": "data.zip",
+      "size": 32925310,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/24153797",
+      "supplied_md5": "f61826257245cb75973f05741f72eef2",
+      "computed_md5": "f61826257245cb75973f05741f72eef2",
+      "mimetype": "application/zip"
+    }
+  ],
+  "resource_title": "Assessment of soil spatial variability for linear infrastructure using cone penetration tests",
+  "resource_doi": "10.1680/jgeot.19.SiP.002",
+  "archived_metadata_source": "Original 4TU/Figshare metadata, archived 2026-10-09",
+  "archived_metadata_sha256": "c5a24b92b520b2d5c784ef6c2f5f153b5261f13a09968dc68cbd644902f02ed5",
+  "zip_report_license_page": 9,
+  "zip_report_license_declaration": "This data is provided under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication licence."
+}

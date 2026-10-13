@@ -1,0 +1,33 @@
+{
+  "response": "ln(qc / 1 MPa)",
+  "numerical_response_scale": "log",
+  "selected_before_model_fitting": true,
+  "offset_or_epsilon": null,
+  "data_payload_y": "raw qc in MPa; frozen",
+  "numerical_input_fields": [
+    "y_log",
+    "y_test_log"
+  ],
+  "rationale": "Positive cone resistance with right-skew and a broad physical range; no model-score-based raw/log selection",
+  "raw_log_model_selection_sensitivity": false,
+  "main_training_qc_mpa": {
+    "n": 696,
+    "minimum": 0.1,
+    "maximum": 2.78,
+    "mean": 0.3811288793103449,
+    "sample_sd": 0.33399715285377163,
+    "median": 0.26,
+    "q1": 0.2,
+    "q3": 0.434175
+  },
+  "frozen_case_sha256": {
+    "main_12.mat": "cf4f9728e68a64df83e2d09cd274498829c33951f32137c2e10051b40889242d",
+    "main_12.json": "8d43d5c8f5ec783e9bc00368bd9fdc94e42ca7eeff03b281d2a4df2d7d09e7d9",
+    "density_06.mat": "736c3aa230fab5dc76540c6828f103b57ed6c7c39259d2e41f9b130514406f19",
+    "density_06.json": "f4e1a976fec5ca0dfd719f1d04c37fcf7fcccb81c4571b72128bb5536369293a",
+    "density_18.mat": "7fe48ee9a645e757ac4feb4120ebcfb782ec70b6369d1e6a397fdc1ae2f42273",
+    "density_18.json": "04f64ee6e7708c921a907fe770fdfe833eb602e9d185adc983566cda29efd333",
+    "fine_12.mat": "6921a9475ffc3c7869a662ad90d814f8e3aa777ac3d904b44a4ad74304848ef1",
+    "fine_12.json": "d48b0ec02fc39c91e464c8e563010e26856e516b811707a05fd3e6ff33526bed"
+  }
+}

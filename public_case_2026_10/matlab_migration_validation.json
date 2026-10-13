@@ -1,0 +1,118 @@
+{
+  "schema_version": "delft_matlab_migration_validation_v1",
+  "status": "PASS",
+  "matlab_version": "25.2.0.3177638 (R2025b) Update 5",
+  "threads": 3,
+  "clean_default_path": true,
+  "original_project_paths_removed": true,
+  "source_prediction_index_sha256": "5a11bf3ade54dbaf730f1596f8161c044c75e1a032c1de0e0f402b3edc1de31e",
+  "package_manifest_sha256_before_validation": "27f20892709e819978e4f1424746e8d4a391a0c78ffb083e2065563b7a6a4a17",
+  "models_checked": 4,
+  "entries": [
+    {
+      "model_id": "k076_m4",
+      "n_test": 638,
+      "max_log_mean_error": 0,
+      "max_latent_variance_error": 0,
+      "max_observation_variance_error": 0,
+      "max_physical_summary_error": 0,
+      "n_field_query": 35,
+      "n_samples": 3,
+      "max_union_mean_error": 0,
+      "max_union_variance_error": 0,
+      "analytic_joint_covariance_relative_error": 8.164349308772175e-15,
+      "max_area_fraction_error": 1.1102230246251565e-16,
+      "spatial_integral_max_abs_error": 5.551115123125783e-17,
+      "conditioning_jitter": 0
+    },
+    {
+      "model_id": "k001_m4",
+      "n_test": 638,
+      "max_log_mean_error": 0,
+      "max_latent_variance_error": 0,
+      "max_observation_variance_error": 0,
+      "max_physical_summary_error": 0,
+      "n_field_query": 35,
+      "n_samples": 3,
+      "max_union_mean_error": 4.440892098500626e-16,
+      "max_union_variance_error": 6.938893903907228e-18,
+      "analytic_joint_covariance_relative_error": 3.2397863933863157e-14,
+      "max_area_fraction_error": 1.1102230246251565e-16,
+      "spatial_integral_max_abs_error": 0,
+      "conditioning_jitter": 0
+    },
+    {
+      "model_id": "k005_m4",
+      "n_test": 638,
+      "max_log_mean_error": 0,
+      "max_latent_variance_error": 0,
+      "max_observation_variance_error": 0,
+      "max_physical_summary_error": 0,
+      "n_field_query": 35,
+      "n_samples": 3,
+      "max_union_mean_error": 0,
+      "max_union_variance_error": 0,
+      "analytic_joint_covariance_relative_error": 4.953564716933664e-14,
+      "max_area_fraction_error": 1.1102230246251565e-16,
+      "spatial_integral_max_abs_error": 1.1102230246251565e-16,
+      "conditioning_jitter": 0
+    },
+    {
+      "model_id": "k002_m4",
+      "n_test": 638,
+      "max_log_mean_error": 0,
+      "max_latent_variance_error": 0,
+      "max_observation_variance_error": 0,
+      "max_physical_summary_error": 0,
+      "n_field_query": 35,
+      "n_samples": 3,
+      "max_union_mean_error": 0,
+      "max_union_variance_error": 0,
+      "analytic_joint_covariance_relative_error": 2.824301820311006e-15,
+      "max_area_fraction_error": 1.1102230246251565e-16,
+      "spatial_integral_max_abs_error": 5.551115123125783e-17,
+      "conditioning_jitter": 0
+    }
+  ],
+  "resolved_functions": [
+    {
+      "function_name": "matlab_load_delft",
+      "package_relative_path": "code/matlab/matlab_load_delft.m"
+    },
+    {
+      "function_name": "matlab_predict_delft",
+      "package_relative_path": "code/matlab/matlab_predict_delft.m"
+    },
+    {
+      "function_name": "matlab_union_delft",
+      "package_relative_path": "code/matlab/matlab_union_delft.m"
+    },
+    {
+      "function_name": "predict_gp_v2",
+      "package_relative_path": "code/matlab/selection/lin_offset_v2/predict_gp_v2.m"
+    },
+    {
+      "function_name": "union_gp_fields_v2",
+      "package_relative_path": "code/matlab/selection/lin_offset_v2/union_gp_fields_v2.m"
+    },
+    {
+      "function_name": "build_covfunc_v2",
+      "package_relative_path": "code/matlab/selection/lin_offset_v2/build_covfunc_v2.m"
+    },
+    {
+      "function_name": "eval_geometry_v2",
+      "package_relative_path": "code/matlab/selection/lin_offset_v2/eval_geometry_v2.m"
+    },
+    {
+      "function_name": "gp",
+      "package_relative_path": "third_party/gpml/gp.m"
+    },
+    {
+      "function_name": "sq_dist",
+      "package_relative_path": "third_party/gpml/util/sq_dist.m"
+    }
+  ],
+  "elapsed_seconds": 1.061244,
+  "refits_performed": 0,
+  "scope": "All saved-model held-out predictions plus 3 conditional draws on a 5-by-7 grid per model; no optimizer or full field/timing rerun"
+}

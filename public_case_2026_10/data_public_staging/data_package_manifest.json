@@ -1,0 +1,80 @@
+{
+  "schema": "public_cpt_data_package_v1",
+  "source_doi": "10.4121/uuid:0a9b77bc-3f6d-40e2-846c-ddb992dd78a6",
+  "source_license": "CC0-1.0",
+  "source_archive_sha256": "432d0b747d68c2141249d76895157ed0b61f4b1b0545770d9a209c1576216865",
+  "frozen_originals_unchanged": true,
+  "model_fitting_performed": false,
+  "reference_policy": "Four NPZs are unchanged public frozen-case arrays; verify MAT/NPZ values, not regenerated container bytes.",
+  "adaptations": [
+    "Portable source/output/config CLI paths",
+    "Plotting imports deferred to the optional diagnostic entry point",
+    "Manifest records source filename without a project-specific path"
+  ],
+  "files": {
+    "data_preparation_config.json": {
+      "sha256": "23ba182f371f75ac9a172607baa619035d39b190da4386e54dc12dc2b096f824",
+      "bytes": 8377
+    },
+    "data_profiles.py": {
+      "sha256": "d377142cc56f5e210e71523fb497f4f02c206db21e4623390b3082a6de4635f0",
+      "bytes": 9424
+    },
+    "data_README.md": {
+      "sha256": "c5cff23fc3ea20b7358cf3bc6287e1044e4da3745b5dadc3410e54f080c8e74a",
+      "bytes": 6628
+    },
+    "data_rebuild.py": {
+      "sha256": "ed64a134f478238e1d61805da51705928cf0de2f0a2be46d2e602639acf33348",
+      "bytes": 12554
+    },
+    "data_requirements.txt": {
+      "sha256": "6bd31e587c06276bf231cec25395b5d4a0b1e38c4d2b00813b2dd96aad14f17a",
+      "bytes": 24
+    },
+    "data_response_decision.json": {
+      "sha256": "469925914fdda24d5ffcdf1d7d41a6294081fbab96125159b6261b638e26772a",
+      "bytes": 1413
+    },
+    "data_verify.py": {
+      "sha256": "3050ce0c852bf61a65d85d4f9e1c32dcf29841db7bd19f33a4c610aa86ae3c30",
+      "bytes": 3718
+    },
+    "original_sources/freeze_splits.py": {
+      "sha256": "dd16ee50962077fa04309097ac0eb841d0b4eb89a46c45af46febbb5defc5f32",
+      "bytes": 3395
+    },
+    "original_sources/inspect_full_profiles.py": {
+      "sha256": "d2fe02d91e77d1f175224e2b395f207745a5e0d9bdadd07badd14c7f08e5e057",
+      "bytes": 9311
+    },
+    "original_sources/prepare_data.py": {
+      "sha256": "b7379b357de609c9eab18dcef04f93f8e6c7e658221dae204200f205567da31c",
+      "bytes": 11601
+    },
+    "reference/density_06.npz": {
+      "sha256": "5989bf73d8e8f77684cd293136a9035d872e9467ab2c253575097c54270d65c9",
+      "bytes": 20407
+    },
+    "reference/density_18.npz": {
+      "sha256": "82d9e7f6cd52403405cfe88cacedeaea2e111d7d2cc6a864de8b488594912dbb",
+      "bytes": 29373
+    },
+    "reference/fine_12.npz": {
+      "sha256": "d7d977564be757822eff014d74191895c5c7abd069db184eb8a5c6e18ec3cb59",
+      "bytes": 41026
+    },
+    "reference/main_12.npz": {
+      "sha256": "7101c95a5c05134756113fcae75bc137ee3263708c522030d7b742f912898cf4",
+      "bytes": 24640
+    },
+    "source/data.zip": {
+      "sha256": "432d0b747d68c2141249d76895157ed0b61f4b1b0545770d9a209c1576216865",
+      "bytes": 32925310
+    },
+    "source/data_source_license.json": {
+      "sha256": "bcee1395052324b7e45093a1ff570ca6aed2450d93b06c4f4bf2c8113f09390e",
+      "bytes": 2361
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": "delft_portable_models_v1",
+  "status": "COMPLETE",
+  "case_name": "main_12",
+  "response_scale": "log",
+  "data_file": "data/main_12.mat",
+  "data_sha256": "cf4f9728e68a64df83e2d09cd274498829c33951f32137c2e10051b40889242d",
+  "training_array_sha256": "cf6b820775857a6910624c04b3b67840a99d9588b6f6320be6f74a7de1ff07e1",
+  "source_application_sha256": "a3541c629edec77829caeb69bdb1ee3647775e9d49a0f35bb43bbc3e8bd3bc79",
+  "numerical_identity_sha256": "1e450b09475068506b58887ebefa233eab256688e5f496faed73802f57ab1219",
+  "roles": {
+    "astra_r1": {
+      "model_id": "k076_m4",
+      "selection_source": "delft__main_12__astra__control__r1",
+      "training_aic": 70.903890759464048
+    },
+    "fable_r1": {
+      "model_id": "k076_m4",
+      "selection_source": "delft__main_12__fable51__strategy__r1",
+      "training_aic": 70.903890759464048
+    },
+    "se_best": {
+      "model_id": "k001_m4",
+      "selection_source": "frozen_training_score_table",
+      "training_aic": 149.89561323808653
+    },
+    "rq_best": {
+      "model_id": "k005_m4",
+      "selection_source": "frozen_training_score_table",
+      "training_aic": 104.78171360614215
+    },
+    "matern16_best": {
+      "model_id": "k002_m4",
+      "selection_source": "frozen_training_score_table",
+      "training_aic": 104.22707117732307
+    },
+    "library_best": {
+      "model_id": "k076_m4",
+      "selection_source": "frozen_training_score_table",
+      "training_aic": 70.903890759464048
+    }
+  },
+  "prediction_model_ids": [
+    "k076_m4",
+    "k001_m4",
+    "k005_m4",
+    "k002_m4"
+  ],
+  "field_model_ids": [
+    "k076_m4",
+    "k001_m4",
+    "k005_m4"
+  ],
+  "models": [
+    {
+      "model_id": "k076_m4",
+      "kernel": "(MA5*PER)+MA1",
+      "mean_id": 4,
+      "model_file": "models/matlab_model_k076_m4.mat",
+      "sha256": "575295f42a18260edf664261f86b8ff589dd312208b15ba4f53ffd23060f9b53",
+      "source_checkpoint_sha256": "5f1b36d6ec5c3f9364ba2d2ddfcc1503b522bd3da5497f77826d7aabd17cc262",
+      "roles": [
+        "astra_r1",
+        "fable_r1",
+        "library_best"
+      ]
+    },
+    {
+      "model_id": "k001_m4",
+      "kernel": "SE",
+      "mean_id": 4,
+      "model_file": "models/matlab_model_k001_m4.mat",
+      "sha256": "4fc2f633664ee6869d344105d9442670d65b05bf92bd1737301f2ac08dd91e96",
+      "source_checkpoint_sha256": "adf66d36868090c954493c694398ad0a6b38d85b01b99f3cedfed9f118e99f84",
+      "roles": [
+        "se_best"
+      ]
+    },
+    {
+      "model_id": "k005_m4",
+      "kernel": "RQ",
+      "mean_id": 4,
+      "model_file": "models/matlab_model_k005_m4.mat",
+      "sha256": "639e15c3d5bf6a55da65c61e17cebeaed64f831822fa6435dd822c3b9de7a5e8",
+      "source_checkpoint_sha256": "aa2bddf7215ee1901d95610d8b98fd3525f84551e83f10dfd2376f685d62983e",
+      "roles": [
+        "rq_best"
+      ]
+    },
+    {
+      "model_id": "k002_m4",
+      "kernel": "MA1",
+      "mean_id": 4,
+      "model_file": "models/matlab_model_k002_m4.mat",
+      "sha256": "ededb97826acbccdda80b8bfe58361fe72592dc2791a828b1daba688e7669cd8",
+      "source_checkpoint_sha256": "5b0a54d1d5dab365859eb89e90b8f21f5e27ba71ed937be5a59d8559d9f3f3e2",
+      "roles": [
+        "matern16_best"
+      ]
+    }
+  ],
+  "query_file": "data/fields_201x115.mat",
+  "query_sha256": "480fa8864d875a214f696eb691cd3c6e3aa9d0ec6b484a46392401be0f568df6"
+}

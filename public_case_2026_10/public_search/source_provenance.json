@@ -1,0 +1,24 @@
+{
+  "source/prompt_core.py": {
+    "original_source": "output/lin_offset_revision_2026-10-06/lin_v2_agent/live/base/core.py",
+    "original_file_sha256": "8dd4a068f2a4e08924d0a2b8e2f7503e65a09e529c4b96b43df1edb9677f5d08",
+    "unchanged_definition_utf8_sha256": {
+      "MEANS": "e8aa4adf24871eba875327b63e8fa5c38564ec980fcd37093593a077c6b91b2f",
+      "PRIMITIVES": "5a0cc508fa6686531c8ecce44220ca0f1bce630caa72a9486aa647ad6c6ab159",
+      "canonical": "d37c18a4c3b461f221dacd9d0e79b0debef119a7543cd5fac20e4c637a7cb30b",
+      "parse": "0584f24bdf02a71c499799e4548d3ea4f7227de8aa815f11eabaf270a38f9f13",
+      "accepted": "61543d018c95fa84eb0b4d99a478b3fb9166fac269c718be84f76cc59165c215",
+      "features": "616b17402b2d8870029a12533934515a56f10be5d0b587a39aaead62f7c10607",
+      "neighbor": "d32373c37098c9914ea0321865c45cfc520b77f0560b406114f68e2cc63c2f04",
+      "structured_prompt": "a303f16224b19f41ad06eca86333cec1d0cc8abe7230bea0dc79defd26f99d1d"
+    }
+  },
+  "source/strategy_core.py": {
+    "original_source": "output/agent_search_development_2026-10-08/experiment.py",
+    "original_file_sha256": "c7f5d539ded30a83fb322b2ac7b8aaf5724a81853ef2fb17c50d976c822582d0",
+    "unchanged_definition_utf8_sha256": {
+      "accepted": "b2113fe41ec7089ebbfcf7c371be821a9d38adcd8b58e42b51352f3b08220f30",
+      "strategy_prompt": "7459f080dc2111cc83e58500490330371caf2726189b774a78c6bc75bceaf00b"
+    }
+  }
+}

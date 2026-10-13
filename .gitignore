@@ -13,3 +13,11 @@ Thumbs.db
 
 # data not for redistribution
 samedata.mat
+
+# Local replay and optional diagram rebuilds
+recomputed/
+__pycache__/
+public_case_2026_10/figures/current_workflows/figures/
+public_case_2026_10/figures/current_workflows/flowchart_bw/
+public_case_2026_10/figures/current_workflows/figure_qa.json
+public_case_2026_10/figures/current_workflows/figure_text.txt

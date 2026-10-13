@@ -1,0 +1,263 @@
+{
+  "run_id": "delft__main_12__astra__control__r2",
+  "case": "main_12",
+  "model_label": "astra",
+  "model": "openai/gpt-6-astra",
+  "method": "control",
+  "repeat": 2,
+  "reasoning_effort": "medium",
+  "initial_pairs": [],
+  "state": "complete",
+  "n_evals": 20,
+  "regret": 0.0916493962495224,
+  "hit": false,
+  "near_optimal": true,
+  "regret_trajectory": [
+    57.880679574300984,
+    57.880679574300984,
+    57.880679574300984,
+    33.32318041785902,
+    33.32318041785902,
+    33.32318041785902,
+    33.32318041785902,
+    33.32318041785902,
+    7.629111473353987,
+    6.807308855646397,
+    5.67977576863268,
+    5.67977576863268,
+    5.67977576863268,
+    4.179962032954336,
+    4.179962032954336,
+    4.179962032954336,
+    1.8490049194590483,
+    1.714842109716301,
+    0.0916493962495224,
+    0.0916493962495224
+  ],
+  "api_requests": 4,
+  "cost_usd": 0.180312,
+  "visited": [
+    {
+      "kernel": "MA3",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 128.78457033376503,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA3",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 158.83594463946122,
+      "k": 5,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "SE",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 149.89561323808653,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "MA1",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 104.22707117732307,
+      "k": 9,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "RQ*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 108.40566422178858,
+      "k": 12,
+      "ok": true,
+      "round": 1
+    },
+    {
+      "kernel": "RQ",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 104.78171360614215,
+      "k": 10,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA1*LIN",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 106.80021287387888,
+      "k": 11,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA1",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 136.662769614843,
+      "k": 5,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA1+RQ",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 78.53300223281803,
+      "k": 13,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA1+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 77.71119961511044,
+      "k": 12,
+      "ok": true,
+      "round": 2
+    },
+    {
+      "kernel": "MA1+MA3",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 76.58366652809673,
+      "k": 12,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "RQ+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 80.55625986000325,
+      "k": 13,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "MA1+PER",
+      "mean_id": 2,
+      "mean": "Constant",
+      "aic": 130.87053164511133,
+      "k": 8,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "(MA1*LIN)+PER",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 75.08385279241838,
+      "k": 14,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "(MA1*PER)+RQ",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 75.47327055905885,
+      "k": 15,
+      "ok": true,
+      "round": 3
+    },
+    {
+      "kernel": "(MA1*LIN)+RQ",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 76.96535269005153,
+      "k": 15,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(MA1*LIN)+MA3",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 72.7528956789231,
+      "k": 14,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(MA1*PER)+MA3",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 72.61873286918035,
+      "k": 14,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "(MA3*PER)+MA1",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 70.99554015571357,
+      "k": 14,
+      "ok": true,
+      "round": 4
+    },
+    {
+      "kernel": "SE+MA1",
+      "mean_id": 4,
+      "mean": "Quadratic",
+      "aic": 80.11122541286977,
+      "k": 12,
+      "ok": true,
+      "round": 4
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "source": "llm",
+      "new_evals": 5,
+      "rejected": [],
+      "cost_usd": 0.027047,
+      "elapsed_seconds": 11.745038509368896,
+      "replayed_locally": false,
+      "decision_summary": "The strong quadratic OLS fit motivates quadratic means, but covariance could also explain the trend. Start with a controlled constant-versus-quadratic MA3 comparison, contrast rough and smooth stationary kernels, and explore multiscale covariance with input-dependent amplitude. Periodicity remains unresolved rather than excluded by the semivariogram."
+    },
+    {
+      "round": 2,
+      "source": "llm",
+      "new_evals": 5,
+      "rejected": [],
+      "cost_usd": 0.04518,
+      "elapsed_seconds": 8.164358377456665,
+      "replayed_locally": false,
+      "decision_summary": "Quadratic MA1 leads; RQ*LIN is close, while smoother stationary kernels trail. Quadratic improves MA3 substantially, but its benefit for MA1 remains untested. Compare MA1 means, remove LIN from RQ*LIN, and substitute MA1 within the modulation structure. Explore additive multiscale and periodic components without assuming either is excluded by the semivariogram."
+    },
+    {
+      "round": 3,
+      "source": "llm",
+      "new_evals": 5,
+      "rejected": [],
+      "cost_usd": 0.049505,
+      "elapsed_seconds": 9.018348217010498,
+      "replayed_locally": false,
+      "decision_summary": "MA1+PER and MA1+RQ are nearly tied and substantially outperform single components. Quadratic improves MA1 and MA3, while LIN modulation does not improve standalone MA1 or RQ. Its value within mixtures remains unresolved. Test component substitutions and mean sensitivity around the leaders, then explore modulation within additive structures."
+    },
+    {
+      "round": 4,
+      "source": "llm",
+      "new_evals": 5,
+      "rejected": [],
+      "cost_usd": 0.05858,
+      "elapsed_seconds": 11.522064447402954,
+      "replayed_locally": false,
+      "decision_summary": "Quadratic mixtures dominate single kernels. LIN-modulated MA1 plus PER leads, but four models lie within 2.7 AIC, leaving modulation benefits uncertain. Test matched LIN-versus-PER modulation with RQ and MA3 companions. Explore periodic modulation of the smoother component and an unmodulated SE+MA1 mixture; poor standalone SE does not establish its value in mixtures."
+    }
+  ]
+}

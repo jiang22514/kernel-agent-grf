@@ -1,0 +1,171 @@
+{
+  "version": "delft_public_2d_v1",
+  "date": "2026-10-11",
+  "main_claim": "LLM-directed joint kernel and mean selection with numerical feedback, followed by covariance-preserving conditional simulation",
+  "site": "Leendert de Boerspolder, crest line 7, 29 CPTs",
+  "response": {
+    "field": "y_log",
+    "definition": "ln(qc / 1 MPa)",
+    "choice": "fixed before candidate ranking, based on positive right-skewed resistance",
+    "observation_noise": "fitted in log units"
+  },
+  "coordinates": [
+    "local along-crest x in m",
+    "elevation in m NAP"
+  ],
+  "elevation_window_m": [
+    -12.0,
+    -0.6
+  ],
+  "main_vertical_spacing_m": 0.2,
+  "main_train_ids": [
+    44,
+    34,
+    39,
+    76,
+    36,
+    72,
+    85,
+    43,
+    81,
+    70,
+    74,
+    37
+  ],
+  "test_ids": [
+    78,
+    77,
+    41,
+    75,
+    84,
+    83,
+    73,
+    38,
+    79,
+    71,
+    35
+  ],
+  "n_train": 696,
+  "n_test": 638,
+  "test_role": "fixed whole-CPT interpolation evaluation; no outcome enters model search or data summary",
+  "fitting": {
+    "library_kernels": 94,
+    "means": 4,
+    "restarts": 15,
+    "evaluations_per_restart": 200,
+    "best_point_refinement": 500,
+    "free_noise": true,
+    "main_initialization": "neutral starts plus feasible same-kernel fitted parent means",
+    "density_and_resolution_initialization": "neutral starts, same 15x200+500 budget"
+  },
+  "search": {
+    "candidate_access_budget": 20,
+    "repetitions_per_model_procedure": 3,
+    "procedures": {
+      "Astra": "structured, 4 rounds x 5 accepted proposals",
+      "Fable51": "competing-structure, 5 rounds x 4 accepted proposals"
+    },
+    "prompts": "unchanged from independent synthetic study",
+    "primary_application_model": "lowest training AIC accessed in the first Astra repetition",
+    "secondary_application_model": "lowest training AIC accessed in the first Fable repetition",
+    "selection_rule": "representative repetitions fixed before API outputs and test metrics; all six repetitions reported"
+  },
+  "search_references": [
+    "uniform random 20 distinct accesses, exact finite-library probabilities",
+    "existing fixed greedy search, 20 accesses",
+    "fully fitted 376-model reference minimum"
+  ],
+  "prediction_models": [
+    "first Astra selected model",
+    "first Fable selected model",
+    "best SE mean by training AIC",
+    "best RQ mean by training AIC",
+    "best 16-model Matern-family reference by training AIC",
+    "best full-library model by training AIC"
+  ],
+  "prediction_metrics": {
+    "primary": [
+      "RMSE in MPa using predictive observation mean",
+      "NLPD in MPa including lognormal Jacobian",
+      "90% predictive interval coverage"
+    ],
+    "support": [
+      "MAE in MPa",
+      "mean interval width in MPa",
+      "per-CPT results"
+    ],
+    "replicate_unit": "CPT, not independent point observations"
+  },
+  "density": {
+    "train_counts": [
+      6,
+      12,
+      18
+    ],
+    "test": "same 11 CPTs and same 638 points",
+    "models": [
+      "first Astra selected structure",
+      "best SE structure",
+      "best RQ structure"
+    ],
+    "meaning": "fixed kernel and mean forms selected using main 12-CPT training set; refit continuous parameters for each count, no repeated LLM selection"
+  },
+  "resolution": {
+    "fine_spacing_m": 0.1,
+    "fine_train_count": 12,
+    "fine_train_points": 1380,
+    "fine_test_points": 1265,
+    "models": [
+      "first Astra selected structure",
+      "best SE structure",
+      "best RQ structure"
+    ],
+    "meaning": "fixed-structure sensitivity to vertical sampling, same physical window"
+  },
+  "random_fields": {
+    "models": [
+      "first Astra selected model",
+      "best SE model",
+      "best RQ model"
+    ],
+    "query_grid": [
+      201,
+      115
+    ],
+    "query_count": 23115,
+    "realizations_per_model": 500,
+    "latent_field": true,
+    "physical_transform": "exp(each joint log-field realization)",
+    "low_resistance_threshold_MPa": 0.2,
+    "threshold_sensitivity_MPa": [
+      0.1,
+      0.3,
+      0.5
+    ],
+    "area_definition": "fraction of cross-sectional area with latent qc below threshold, trapezoidal spatial weights",
+    "interpretation": "low-resistance extent descriptor; not a failure probability or a universal soil-strength boundary"
+  },
+  "matched_timing": {
+    "model": "first Astra selected model",
+    "grid": [
+      101,
+      115
+    ],
+    "query_count": 11615,
+    "realizations": 500,
+    "routes": [
+      "coordinate union",
+      "dense posterior Cholesky"
+    ],
+    "repetitions": 3,
+    "statistic": "median total time including preparation",
+    "threads_each": 3,
+    "run_conditions": "same machine, serial after main fit workers finish"
+  },
+  "scope_exclusions": [
+    "3D extension",
+    "sequential borehole placement optimization",
+    "mechanical finite-element analysis",
+    "new synthetic data generation"
+  ]
+}

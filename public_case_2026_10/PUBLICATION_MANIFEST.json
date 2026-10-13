@@ -1,0 +1,707 @@
+{
+  "schema": "current_public_cpt_release_v1",
+  "source_doi": "10.4121/uuid:0a9b77bc-3f6d-40e2-846c-ddb992dd78a6",
+  "source_license": "CC0-1.0",
+  "files": {
+    ".gitattributes": {
+      "sha256": "9423ee5712919a75e06ec4841305b3a0eb8164fa2daad15e58849eb85f67fad6",
+      "bytes": 87
+    },
+    "data_public_staging/data_package_manifest.json": {
+      "sha256": "6a190dd0472f6dfee68dcf3c7273965fe6b14df10769db5a19427eec8bee7bfb",
+      "bytes": 3078
+    },
+    "data_public_staging/data_preparation_config.json": {
+      "sha256": "23ba182f371f75ac9a172607baa619035d39b190da4386e54dc12dc2b096f824",
+      "bytes": 8377
+    },
+    "data_public_staging/data_profiles.py": {
+      "sha256": "d377142cc56f5e210e71523fb497f4f02c206db21e4623390b3082a6de4635f0",
+      "bytes": 9424
+    },
+    "data_public_staging/data_README.md": {
+      "sha256": "c5cff23fc3ea20b7358cf3bc6287e1044e4da3745b5dadc3410e54f080c8e74a",
+      "bytes": 6628
+    },
+    "data_public_staging/data_rebuild.py": {
+      "sha256": "ed64a134f478238e1d61805da51705928cf0de2f0a2be46d2e602639acf33348",
+      "bytes": 12554
+    },
+    "data_public_staging/data_requirements.txt": {
+      "sha256": "6bd31e587c06276bf231cec25395b5d4a0b1e38c4d2b00813b2dd96aad14f17a",
+      "bytes": 24
+    },
+    "data_public_staging/data_response_decision.json": {
+      "sha256": "469925914fdda24d5ffcdf1d7d41a6294081fbab96125159b6261b638e26772a",
+      "bytes": 1413
+    },
+    "data_public_staging/data_verify.py": {
+      "sha256": "3050ce0c852bf61a65d85d4f9e1c32dcf29841db7bd19f33a4c610aa86ae3c30",
+      "bytes": 3718
+    },
+    "data_public_staging/original_sources/freeze_splits.py": {
+      "sha256": "dd16ee50962077fa04309097ac0eb841d0b4eb89a46c45af46febbb5defc5f32",
+      "bytes": 3395
+    },
+    "data_public_staging/original_sources/inspect_full_profiles.py": {
+      "sha256": "d2fe02d91e77d1f175224e2b395f207745a5e0d9bdadd07badd14c7f08e5e057",
+      "bytes": 9311
+    },
+    "data_public_staging/original_sources/prepare_data.py": {
+      "sha256": "b7379b357de609c9eab18dcef04f93f8e6c7e658221dae204200f205567da31c",
+      "bytes": 11601
+    },
+    "data_public_staging/reference/density_06.npz": {
+      "sha256": "5989bf73d8e8f77684cd293136a9035d872e9467ab2c253575097c54270d65c9",
+      "bytes": 20407
+    },
+    "data_public_staging/reference/density_18.npz": {
+      "sha256": "82d9e7f6cd52403405cfe88cacedeaea2e111d7d2cc6a864de8b488594912dbb",
+      "bytes": 29373
+    },
+    "data_public_staging/reference/fine_12.npz": {
+      "sha256": "d7d977564be757822eff014d74191895c5c7abd069db184eb8a5c6e18ec3cb59",
+      "bytes": 41026
+    },
+    "data_public_staging/reference/main_12.npz": {
+      "sha256": "7101c95a5c05134756113fcae75bc137ee3263708c522030d7b742f912898cf4",
+      "bytes": 24640
+    },
+    "data_public_staging/source/data.zip": {
+      "sha256": "432d0b747d68c2141249d76895157ed0b61f4b1b0545770d9a209c1576216865",
+      "bytes": 32925310
+    },
+    "data_public_staging/source/data_source_license.json": {
+      "sha256": "bcee1395052324b7e45093a1ff570ca6aed2450d93b06c4f4bf2c8113f09390e",
+      "bytes": 2361
+    },
+    "figures/agent_framework/draw_agent_framework.py": {
+      "sha256": "8f65fa67befa6718c41f245b32eac89a002fb58b96f6431f150f3139794b4cd3",
+      "bytes": 7424
+    },
+    "figures/agent_framework/figures/overall_framework_b7.pdf": {
+      "sha256": "be4cda53749dc16d68fc2b461c391cbefeb80890dde2162af94f27d5fcc7b3d2",
+      "bytes": 55797
+    },
+    "figures/conditional_field_map_source.csv": {
+      "sha256": "94e5eec1bc114257c2340e5b5ccf482569708f2685a70e8ebbad459fa0c0e53d",
+      "bytes": 10719318
+    },
+    "figures/conditional_low_qc_descriptive_statistics.csv": {
+      "sha256": "e96bcb3034d8a78152f0ff3fd25bff1798043b50e896b224bb1b78d2e564eb3d",
+      "bytes": 1952
+    },
+    "figures/conditional_low_qc_ecdf_source.csv": {
+      "sha256": "c97faa1c4e379fee8d98439def824abf1c9768e62932e1536bef2affb8b67a09",
+      "bytes": 56453
+    },
+    "figures/conditional_low_qc_per_field.csv": {
+      "sha256": "3f2b2c673c7bb32cfea0578892658310a9d3e41e8f362e0b1fd9e7257f7b77e1",
+      "bytes": 282061
+    },
+    "figures/conditional_low_qc_threshold_summary.csv": {
+      "sha256": "725c904a3a821d5231f59c75f950a7474adee501f069740fefe6899cbd769134",
+      "bytes": 839
+    },
+    "figures/current_workflows/draw_flowchart_bw.py": {
+      "sha256": "470789f75049a03d3c49f8e52f79a7b3b074889b3120ff660c2fd3c38b892364",
+      "bytes": 4103
+    },
+    "figures/current_workflows/draw_framework_bw.py": {
+      "sha256": "6a6c059f88a4b095c539e34d2237724b931ab3e37f3d7fe45f3f2f75bcfb97d3",
+      "bytes": 7498
+    },
+    "figures/current_workflows/grid_conditioning_union_b7.pdf": {
+      "sha256": "0b0d500ccafd744fe673c128f725f8a13d7a02f3c6679be116ae2502808deab7",
+      "bytes": 67851
+    },
+    "figures/current_workflows/overall_framework_b7.pdf": {
+      "sha256": "44ee72859fc56e2bd53bc2a29b7d4685d16b9291953f7d42171e0561ff7da134",
+      "bytes": 54767
+    },
+    "figures/current_workflows/README.md": {
+      "sha256": "8ee84bdf8c47fd11cf09742f80b153f7fb066e9d14e578197a9f107c915027c8",
+      "bytes": 952
+    },
+    "figures/current_workflows/workflow_layout_bw.py": {
+      "sha256": "e512ef7c2303a80ef43d2933196c15adb6936170743a19f53174dab44d3a1338",
+      "bytes": 11717
+    },
+    "figures/public_agent_reference_curves.csv": {
+      "sha256": "72360428c8949be72178cb1c265e32eb7c6935ad3b20eecb5bb2a844b65c6f64",
+      "bytes": 1613
+    },
+    "figures/public_agent_round_best.csv": {
+      "sha256": "674d9bad4809c1e49496d74bc525dedddd02b6216a8512495579e0891f45fba1",
+      "bytes": 2412
+    },
+    "figures/public_agent_search.pdf": {
+      "sha256": "7562d49185ea91ef1b30cc6513a133dfa1a4ed1d270417f344236e69a3a61bed",
+      "bytes": 44181
+    },
+    "figures/public_agent_search_source.csv": {
+      "sha256": "940ff7a8cd6309a50418926c64a8f8dae9b2d9cdf2836778ad084e9014478fa0",
+      "bytes": 7089
+    },
+    "figures/public_cpt_case.pdf": {
+      "sha256": "04ca44e99d562ef41a2179ab46081aca92060278f8bc1c5355370d103e219951",
+      "bytes": 62664
+    },
+    "figures/public_cpt_location_source.csv": {
+      "sha256": "131a9a7c3b493138fb226780c345d3b356b1be8aa8463a672977b5edc390e1a0",
+      "bytes": 1589
+    },
+    "figures/public_cpt_observed_quantiles.csv": {
+      "sha256": "bd891bb30123ec38351d48ae4d2693843f5be14a53cf5f20d0122e6a72ada778",
+      "bytes": 5036
+    },
+    "figures/public_cpt_point_source.csv": {
+      "sha256": "c9d67005392b3a05be884267b6f90ff522a7403520ee0ad4d1a746036c0da886",
+      "bytes": 174244
+    },
+    "figures/public_low_qc_area.pdf": {
+      "sha256": "5d2d44857dabf6542f7bba2da74cbb45b7360176505b701c0fedea74cc297d55",
+      "bytes": 59982
+    },
+    "figures/public_main_model_fields.pdf": {
+      "sha256": "d912a2a1b28fa95222b9855905e8e6bdf5a58ce08cfd6a007bbbdedc013c9626",
+      "bytes": 138920
+    },
+    "figures/public_prediction_metrics.csv": {
+      "sha256": "9e804ccf1be09643e1f49ec4c6592e251a416b20ef12a3afcf157609c49df28e",
+      "bytes": 2553
+    },
+    "figures/public_prediction_per_cpt.csv": {
+      "sha256": "f1808b05c96b9138736dc70610121efe5f253e652b36cc04dea9f295e1b11268",
+      "bytes": 21758
+    },
+    "figures/public_training_density.pdf": {
+      "sha256": "6f863064684a3572e7fbde2b6da53a5e9820c6207e86646d7279a83418f618bd",
+      "bytes": 46202
+    },
+    "matlab_migration_validation.json": {
+      "sha256": "e881b9c976dc6bd98f2a8093db6d0e0a96a36be5761d54a0cc26958373d2231b",
+      "bytes": 4125
+    },
+    "matlab_public_package/BUILD_COMPLETED": {
+      "sha256": "b831eec2170011e3fccb5184c41004db6895d4d4ebeab2f9d0515c2abd7aba1a",
+      "bytes": 84
+    },
+    "matlab_public_package/code/matlab/matlab_load_delft.m": {
+      "sha256": "ed3f1b02291a5cb713a84e52307cf236cdaf3b8c0df2b7ade1c888110e9311f6",
+      "bytes": 1636
+    },
+    "matlab_public_package/code/matlab/matlab_predict_delft.m": {
+      "sha256": "dd465c27f401cb63b3f1908849ba00f96032695c652085679d3cdb2f250915e6",
+      "bytes": 733
+    },
+    "matlab_public_package/code/matlab/matlab_refit_delft.m": {
+      "sha256": "1b57768e1e1f53cc34e51bbae886752748df414145c136cc2014f38c84bb27af",
+      "bytes": 4927
+    },
+    "matlab_public_package/code/matlab/matlab_setup_delft.m": {
+      "sha256": "72a72e27ccc51ee2fc2491baa8e9bce7db00266d823454a2606d5c317113130e",
+      "bytes": 2049
+    },
+    "matlab_public_package/code/matlab/matlab_union_delft.m": {
+      "sha256": "0c849f8faa446d6da18031694beedfa6cb9cc7d3891f6c7ac159ca8f1a38f864",
+      "bytes": 2596
+    },
+    "matlab_public_package/code/matlab/selection/init_cov_hyp_v1.m": {
+      "sha256": "f0b229da91dce468147d986cb89c566848f683edc0d144fbf86c1e87dba8244e",
+      "bytes": 4644
+    },
+    "matlab_public_package/code/matlab/selection/kernel_grammar.m": {
+      "sha256": "df1bad3264d9f0cb8b2d99f4a4ebc3490fa631a7434ba928d65c73f3ca845003",
+      "bytes": 6067
+    },
+    "matlab_public_package/code/matlab/selection/kernels_v1/build_covfunc_v1.m": {
+      "sha256": "2ba58cc8a542043a6084fc1eccf556c7b704c9b57aabe712141a08df34004244",
+      "bytes": 4674
+    },
+    "matlab_public_package/code/matlab/selection/kernels_v1/covMatProdU.m": {
+      "sha256": "f7fe1e73d450a7e01f5b0ae6d14cb8efcc1ed32187e008107dc32495ad7af69a",
+      "bytes": 3084
+    },
+    "matlab_public_package/code/matlab/selection/kernels_v1/covPERu.m": {
+      "sha256": "63d271965f77629686faeceec469a636985e25ea22261f0e70737a39581f9a05",
+      "bytes": 1995
+    },
+    "matlab_public_package/code/matlab/selection/kernels_v1/covRQprod.m": {
+      "sha256": "ecb1953c862b2503d684dcc539ac99ff1cb8a51bb0bd7f02d4d7efed9a8a99f8",
+      "bytes": 2252
+    },
+    "matlab_public_package/code/matlab/selection/kernels_v1/covRQprodU.m": {
+      "sha256": "ec9609e1df833224fe672cdb360ec293b29b4cf411df6d5f007866d39f95882d",
+      "bytes": 1522
+    },
+    "matlab_public_package/code/matlab/selection/kernels_v1/covSEu.m": {
+      "sha256": "216899d18c242d6fd06d61b26dd828a9c2845ea33458cac6f5d179aa370a559a",
+      "bytes": 2038
+    },
+    "matlab_public_package/code/matlab/selection/kernels_v1/kernel_primitive_cell_v1.m": {
+      "sha256": "37f8716652570c117ec7005f82ddd4aa1ae2f5c3fe2f75bbbc726830cab746d1",
+      "bytes": 1397
+    },
+    "matlab_public_package/code/matlab/selection/lin_offset_v2/build_covfunc_v2.m": {
+      "sha256": "4b19a10e452496081da1565afc958634b87e1c125c589239c3786195d590bd62",
+      "bytes": 799
+    },
+    "matlab_public_package/code/matlab/selection/lin_offset_v2/covFixedShiftV2.m": {
+      "sha256": "9e8e3cabbeeb3029c57b2f57e80f54fb8550df98a1f3a05e76166a3bbf738217",
+      "bytes": 327
+    },
+    "matlab_public_package/code/matlab/selection/lin_offset_v2/covLINhOffset.m": {
+      "sha256": "475d33e40ea7b5884e33dc35b9887adaf2a48ccc6535b7f3bc2700ba20f01d58",
+      "bytes": 1023
+    },
+    "matlab_public_package/code/matlab/selection/lin_offset_v2/covRQprodV2.m": {
+      "sha256": "a126ebef557c5173e3ffa02e2fdf08ca23f50f31bd630abad58e0df244b7aec2",
+      "bytes": 451
+    },
+    "matlab_public_package/code/matlab/selection/lin_offset_v2/eval_geometry_v2.m": {
+      "sha256": "b480a450bedfa564e4fc8aee7786b3e3e5e3810d59a7e2f999c118e4f18acfbf",
+      "bytes": 717
+    },
+    "matlab_public_package/code/matlab/selection/lin_offset_v2/evaluate_expr_aic_v2.m": {
+      "sha256": "fec9dc02d1dedb2bd65a2cd69fe8368702b58629beb2aa1f1390823839a89c60",
+      "bytes": 13163
+    },
+    "matlab_public_package/code/matlab/selection/lin_offset_v2/expand_expr_terms_v2.m": {
+      "sha256": "1fab1799ab594b27d5be4691ecc5ca8056a38e95e4b3eba3cc5c8ab7aeff4de5",
+      "bytes": 730
+    },
+    "matlab_public_package/code/matlab/selection/lin_offset_v2/init_cov_hyp_v2.m": {
+      "sha256": "50a0d66efe649d35e850bf7d4a6c0c2de812b65d8b04313bd6dba05bf6eaff54",
+      "bytes": 258
+    },
+    "matlab_public_package/code/matlab/selection/lin_offset_v2/polish_fit_v2.m": {
+      "sha256": "e3df385ec760e237429b8f66d63140d6118e2d96a2f1fdf72ec5f5a16de95039",
+      "bytes": 2295
+    },
+    "matlab_public_package/code/matlab/selection/lin_offset_v2/predict_gp_v2.m": {
+      "sha256": "39430ab63e9951965a0759efc183731a9ef05f981045851b2a7594b093be6772",
+      "bytes": 1059
+    },
+    "matlab_public_package/code/matlab/selection/lin_offset_v2/union_gp_fields_v2.m": {
+      "sha256": "e3852931ec763a69f274fd3c4b9a7cfebbec969133b2e1adfacdc9d96893c29e",
+      "bytes": 10768
+    },
+    "matlab_public_package/code/matlab/simulation/checked_psd_sqrt_union.m": {
+      "sha256": "385e18bae7f66da00110253cf91e297285b07d94d6bfb80229e681c129b71200",
+      "bytes": 1826
+    },
+    "matlab_public_package/code/matlab/simulation/covMatern1dStable_v1.m": {
+      "sha256": "79497ee5a5ac1ee43554a46037b206b429ab324ab11aba4c0ecae09781a5ef3c",
+      "bytes": 1669
+    },
+    "matlab_public_package/code/matlab/simulation/expand_expr_terms.m": {
+      "sha256": "7726516af69332e444cdea08207405c3411c68becaf3cdfbb9856e459e36d19f",
+      "bytes": 8513
+    },
+    "matlab_public_package/code/matlab/simulation/expand_expr_terms_v1.m": {
+      "sha256": "e95ed26bb38960c7d6f7f5943bfd06464f1c3ffae8ea01beb500355f62c29843",
+      "bytes": 6815
+    },
+    "matlab_public_package/code/matlab/simulation/kron_mvm.m": {
+      "sha256": "339947dcc7aac6a34963407f8da7f4678aefa5a60801aaea8d697c57871f0d44",
+      "bytes": 703
+    },
+    "matlab_public_package/code/matlab/simulation/parse_expr_str.m": {
+      "sha256": "e781c0b08979707d08e33f33fb71e13146ab2750bd8cd21b1e833863a5d793cb",
+      "bytes": 2018
+    },
+    "matlab_public_package/code/matlab/simulation/stable_union_matern_terms_v1.m": {
+      "sha256": "8bcf1e9eea54a70eb43ec2f898f1140e64a26185270bb21a00c92856db530f70",
+      "bytes": 1940
+    },
+    "matlab_public_package/data/fields_201x115.mat": {
+      "sha256": "480fa8864d875a214f696eb691cd3c6e3aa9d0ec6b484a46392401be0f568df6",
+      "bytes": 17371
+    },
+    "matlab_public_package/data/main_12.mat": {
+      "sha256": "cf4f9728e68a64df83e2d09cd274498829c33951f32137c2e10051b40889242d",
+      "bytes": 16186
+    },
+    "matlab_public_package/data/source_license.json": {
+      "sha256": "f83e31e8e277853306469e346c8204efc4eb3a84833c69f5005a1f09983db934",
+      "bytes": 628
+    },
+    "matlab_public_package/LICENSE": {
+      "sha256": "8d8d0dbd216bb5957f14c027bd510e9f6ed9280f07d31752773f0896839a0923",
+      "bytes": 1182
+    },
+    "matlab_public_package/matlab_manifest.json": {
+      "sha256": "27f20892709e819978e4f1424746e8d4a391a0c78ffb083e2065563b7a6a4a17",
+      "bytes": 17429
+    },
+    "matlab_public_package/matlab_verify_package.py": {
+      "sha256": "80f0721cfe61633d3bb2591edf19cc7eb298e1892a526636271cbcb2e00f8382",
+      "bytes": 1486
+    },
+    "matlab_public_package/models/matlab_model_k001_m4.mat": {
+      "sha256": "4fc2f633664ee6869d344105d9442670d65b05bf92bd1737301f2ac08dd91e96",
+      "bytes": 920
+    },
+    "matlab_public_package/models/matlab_model_k002_m4.mat": {
+      "sha256": "ededb97826acbccdda80b8bfe58361fe72592dc2791a828b1daba688e7669cd8",
+      "bytes": 929
+    },
+    "matlab_public_package/models/matlab_model_k005_m4.mat": {
+      "sha256": "639e15c3d5bf6a55da65c61e17cebeaed64f831822fa6435dd822c3b9de7a5e8",
+      "bytes": 934
+    },
+    "matlab_public_package/models/matlab_model_k076_m4.mat": {
+      "sha256": "575295f42a18260edf664261f86b8ff589dd312208b15ba4f53ffd23060f9b53",
+      "bytes": 1023
+    },
+    "matlab_public_package/models/matlab_models.json": {
+      "sha256": "0ce899fa3a26d4f5ee3830041c217dd3bb5a50646f8962c4daa9f1e7c7492257",
+      "bytes": 3339
+    },
+    "matlab_public_package/README.md": {
+      "sha256": "086b51fb435757e8c749c888d19f4410104f9e895b0334eb45e8a57484b6120a",
+      "bytes": 8901
+    },
+    "matlab_public_package/third_party/gpml/Copyright": {
+      "sha256": "cc06cf3cf9b3022697b9ecd6f841f2716f1603f6a234bb870b3fc26bcf70c194",
+      "bytes": 1837
+    },
+    "matlab_public_package/third_party/gpml/cov/apx.m": {
+      "sha256": "99c1360c68d15d8ba698aaf15738bf02c7c1b49857bf3fb750e93d6fb7387119",
+      "bytes": 39160
+    },
+    "matlab_public_package/third_party/gpml/cov/covConst.m": {
+      "sha256": "7acb72864ed49718c8c39b6434f30b42f75e87da3aee6e38a1f3c3ab479e4ec4",
+      "bytes": 549
+    },
+    "matlab_public_package/third_party/gpml/cov/covDot.m": {
+      "sha256": "fcc26d77d9d237130238582cd23627edf4d9917a109c74013a846f60e9f713ee",
+      "bytes": 4125
+    },
+    "matlab_public_package/third_party/gpml/cov/covLIN.m": {
+      "sha256": "fbad669ba9f264c8c74e5e443fe02b06fe0c162da8db2e44a58c6867be53e7c0",
+      "bytes": 882
+    },
+    "matlab_public_package/third_party/gpml/cov/covLINard.m": {
+      "sha256": "9cb3a106ac8fb7813835aedf30a752955195b917b73c6da8e5894f0cdcd9cdd0",
+      "bytes": 722
+    },
+    "matlab_public_package/third_party/gpml/cov/covLINiso.m": {
+      "sha256": "88264b3962a3ab58276230236e936ddbb789d5b6ecd6aecbacc462c6914c7ad7",
+      "bytes": 596
+    },
+    "matlab_public_package/third_party/gpml/cov/covMaha.m": {
+      "sha256": "d3ede634092a4b252f979929948f5fe2451ca4e17bbe7a9b3bb1de038b4d9302",
+      "bytes": 9398
+    },
+    "matlab_public_package/third_party/gpml/cov/covMatern.m": {
+      "sha256": "0fcd7d29bbea48be252bf9aaf31a4882fdc6c247f65b50ae295bd3c5452e1126",
+      "bytes": 3068
+    },
+    "matlab_public_package/third_party/gpml/cov/covMaterniso.m": {
+      "sha256": "610d620ae242b312e98a50c1aee98f53a6e6020499f0c4b5f6c902d4a7de1ad1",
+      "bytes": 843
+    },
+    "matlab_public_package/third_party/gpml/cov/covPER.m": {
+      "sha256": "c1f349a6cc28e8a820b1100b8e965cfb182c3a07c26c0209cde1f16f5ab105c0",
+      "bytes": 2825
+    },
+    "matlab_public_package/third_party/gpml/cov/covProd.m": {
+      "sha256": "033e06e44ad7694b3214e82a5d9c849422047bb48732981563198e2c0146c381",
+      "bytes": 3136
+    },
+    "matlab_public_package/third_party/gpml/cov/covRQ.m": {
+      "sha256": "e4d87763332f96e3edd01ce52392bbc3ff87eaf6dcbf372c72f27ea2e7b9e8e9",
+      "bytes": 1181
+    },
+    "matlab_public_package/third_party/gpml/cov/covRQiso.m": {
+      "sha256": "9f8002d1b5b77f281e0c0e6f5d31591976f689190f224580916a8bddfb53d880",
+      "bytes": 1165
+    },
+    "matlab_public_package/third_party/gpml/cov/covScale.m": {
+      "sha256": "0ba28321ed8bdd86cf8fafe9689a842a3349c720546000ad022e23b1e5b15358",
+      "bytes": 3216
+    },
+    "matlab_public_package/third_party/gpml/cov/covSE.m": {
+      "sha256": "70f141572226d35486585ecac5a641c904a25eb90361ef046d712ddf66e8990d",
+      "bytes": 1761
+    },
+    "matlab_public_package/third_party/gpml/cov/covSEard.m": {
+      "sha256": "cf10a4a6d9a96805bb4b1887ae6f790d1e0f188567cce6ed8a04355e891a6f75",
+      "bytes": 801
+    },
+    "matlab_public_package/third_party/gpml/cov/covSEiso.m": {
+      "sha256": "ce076ea95047ca0a54c72b38c7c6d6f0e8eb179870bc78e1dfab16f809e8486f",
+      "bytes": 708
+    },
+    "matlab_public_package/third_party/gpml/cov/covSum.m": {
+      "sha256": "609516f4d1b50f6656c8dbb4056d9f1ab89b9f82760e16c3935b321072ee3caf",
+      "bytes": 2619
+    },
+    "matlab_public_package/third_party/gpml/gp.m": {
+      "sha256": "fe5100a06f94dff06563336be5aa38b3cc7c977dc9749556988aa6e583e0b381",
+      "bytes": 10560
+    },
+    "matlab_public_package/third_party/gpml/inf/infGaussLik.m": {
+      "sha256": "dcc54bddd158e517079a4c49655309a483e4382b1ddcf001ef27bb050fd62381",
+      "bytes": 1842
+    },
+    "matlab_public_package/third_party/gpml/lik/likGauss.m": {
+      "sha256": "69164bb1ed2123eb9d900a79fed59bde54de03a396eb23f0e9228ef8cdb6c70f",
+      "bytes": 3481
+    },
+    "matlab_public_package/third_party/gpml/mean/meanConst.m": {
+      "sha256": "3a18f7675b91ca1a9c6f9dda49172395cb608736e8f9e7fab954996f30befbdb",
+      "bytes": 585
+    },
+    "matlab_public_package/third_party/gpml/mean/meanLinear.m": {
+      "sha256": "cc406183eda83526219e727ce059032dc7f89cc84fcb19b7ce2551f99237a70e",
+      "bytes": 656
+    },
+    "matlab_public_package/third_party/gpml/mean/meanPoly.m": {
+      "sha256": "7d785bf81cec0b100aa6ac5bf8ba30fd6e7cfe56c6b5a1e9ad64a7af17f49a76",
+      "bytes": 1143
+    },
+    "matlab_public_package/third_party/gpml/mean/meanSum.m": {
+      "sha256": "bf911cb0b29a91be15701088c285b83a7de7138286e96e73726c967c258b6f67",
+      "bytes": 1543
+    },
+    "matlab_public_package/third_party/gpml/mean/meanZero.m": {
+      "sha256": "204e35a7e5937df6690f265bf8f1ae11fbf686a14a257463089124afa110aa21",
+      "bytes": 787
+    },
+    "matlab_public_package/third_party/gpml/util/minimize.m": {
+      "sha256": "f60535b91cf307fa144d262a491c81290681e0d494d3c6ee4ad46b5c331461d5",
+      "bytes": 11308
+    },
+    "matlab_public_package/third_party/gpml/util/solve_chol.m": {
+      "sha256": "11895f25937a3cb30ae5dc6cc5450d8fb3aecb492a29d9610f252e5faac68237",
+      "bytes": 994
+    },
+    "matlab_public_package/third_party/gpml/util/sq_dist.m": {
+      "sha256": "8303ebfb9f601ae11275befac1de6d0239e4e51cc9c13661eaf5871c70d1ed4b",
+      "bytes": 1967
+    },
+    "matlab_public_package/third_party/GPML_Copyright.txt": {
+      "sha256": "cc06cf3cf9b3022697b9ecd6f841f2716f1603f6a234bb870b3fc26bcf70c194",
+      "bytes": 1837
+    },
+    "matlab_public_package/third_party/GPML_dependencies.json": {
+      "sha256": "5d0006810a93e5d6c4f57cf40b0a42c776721ea3189e4c4a76d0f5ee71294eab",
+      "bytes": 4808
+    },
+    "public_search/.gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    "public_search/assets.json": {
+      "sha256": "9c0ea2439e8ce603fb34c88994a4c81f8454c8117c47a936dc3f51bc2e53b6c7",
+      "bytes": 71404
+    },
+    "public_search/ledger.json": {
+      "sha256": "fb45c9a1c27ce3709b9f644b0f60792f4dedf575359450d11b841c6a3906970c",
+      "bytes": 11384
+    },
+    "public_search/manifest.json": {
+      "sha256": "e3d4477e8f50d25197675806b83ec7d55ca9de3880954f1a039b0bfc0492aca5",
+      "bytes": 5757
+    },
+    "public_search/model_catalog.json": {
+      "sha256": "c6ae2c1905e50a63e74996fdedd9606715600c85186dd773a8cfcb4391dccace",
+      "bytes": 2159
+    },
+    "public_search/plan.json": {
+      "sha256": "7104aa0bf6cda0c333337f395960372f4359e8b53b8fc2180f591a62a770a72f",
+      "bytes": 2470
+    },
+    "public_search/prompts/control.txt": {
+      "sha256": "bbd2d7ddcfc0b4061bc8b87aa536f7c64c7b6d0aa68f4bb2ec7b1975b99d838a",
+      "bytes": 2963
+    },
+    "public_search/prompts/strategy.txt": {
+      "sha256": "462b1e6ef761f678cdb06aa24da870b386bb76211099f232c575670c315fb869",
+      "bytes": 3368
+    },
+    "public_search/protocol.json": {
+      "sha256": "826c766d34b4082bc6fbf5f23343ca14ca5d72f850cb64793c31ca8e46ec6930",
+      "bytes": 4890
+    },
+    "public_search/README.md": {
+      "sha256": "3dcb610d010adccd286a524cb45635f82d401569a2fd58d409abdff3e20886c8",
+      "bytes": 4889
+    },
+    "public_search/replay_output/access_history.csv": {
+      "sha256": "a46109069cf29ac59a0b18263def181d44ccc5d40b85ac4b0411c7de516af746",
+      "bytes": 13892
+    },
+    "public_search/replay_output/round_best_so_far.csv": {
+      "sha256": "674d9bad4809c1e49496d74bc525dedddd02b6216a8512495579e0891f45fba1",
+      "bytes": 2412
+    },
+    "public_search/replay_output/runs.csv": {
+      "sha256": "b2f4b2661c374058085721fdb8a639bc8e78a759aa0669ca8e6a4fe18febd146",
+      "bytes": 898
+    },
+    "public_search/replay_output/summary.json": {
+      "sha256": "cbdd0a43f53ec6ef4c6203845d2f6118b699a11aca5dea8ac7a3b8a5c941c21b",
+      "bytes": 770
+    },
+    "public_search/replay_output/usage.csv": {
+      "sha256": "85e42cedcfd9d72e641ec2cd1ff4e3b98311c385b109bcbca90c4331b248216c",
+      "bytes": 1738
+    },
+    "public_search/runs/delft__main_12__astra__control__r1/result.json": {
+      "sha256": "dc45245cbe12b6af44b3f3de682e38994b316685c8902267722ab16ab17cba8c",
+      "bytes": 6692
+    },
+    "public_search/runs/delft__main_12__astra__control__r1/round_1.json": {
+      "sha256": "23260f3f480824aae9e61a6b7e22b924ff2c9824d737e42bc3f87e7108ddd914",
+      "bytes": 7408
+    },
+    "public_search/runs/delft__main_12__astra__control__r1/round_2.json": {
+      "sha256": "40332b4299b984acf8841fcaa242481e77cf3ecb3c6865f1b8a7ef01a5fd7dd1",
+      "bytes": 8442
+    },
+    "public_search/runs/delft__main_12__astra__control__r1/round_3.json": {
+      "sha256": "28d7aa3e95485f11c4aa8d1da8e5d8de2c20d2af474dbad603280a2122efec78",
+      "bytes": 9020
+    },
+    "public_search/runs/delft__main_12__astra__control__r1/round_4.json": {
+      "sha256": "9741a3f3b3b5d2792d06d4211f792f2bba1e6a908690e9a91262dbbc042d3483",
+      "bytes": 9096
+    },
+    "public_search/runs/delft__main_12__astra__control__r2/result.json": {
+      "sha256": "8ad6b6aa5493f9e8e188d627fb16c65009fff3b189188db28d611f904528bbc2",
+      "bytes": 6646
+    },
+    "public_search/runs/delft__main_12__astra__control__r2/round_1.json": {
+      "sha256": "a3c6723772613b2642efe5bfea8ae5c3f2f5ceac894122687bef599f17e383bc",
+      "bytes": 7434
+    },
+    "public_search/runs/delft__main_12__astra__control__r2/round_2.json": {
+      "sha256": "5086a3c56e03e7d0ff661bd5b8f885e0a6b49d3d9ce6a7942cce2f6bfe021dde",
+      "bytes": 8272
+    },
+    "public_search/runs/delft__main_12__astra__control__r2/round_3.json": {
+      "sha256": "73406a403bbe2de97d6153549612b1d55f65dc0568062b260194f1118bd656c7",
+      "bytes": 8609
+    },
+    "public_search/runs/delft__main_12__astra__control__r2/round_4.json": {
+      "sha256": "bf10b1e4892a8749fb8751aa71aa4ff853a7639e9610f8bed27c80631c979960",
+      "bytes": 9344
+    },
+    "public_search/runs/delft__main_12__astra__control__r3/result.json": {
+      "sha256": "87a1c56ed20ceecfab09eb5613ab052acd2c58c3808e942e37de96b36509d095",
+      "bytes": 6815
+    },
+    "public_search/runs/delft__main_12__astra__control__r3/round_1.json": {
+      "sha256": "e84c8c86ef87404f96ba380918805e22393a502fdce4c7d585e84c0d2e451c62",
+      "bytes": 7421
+    },
+    "public_search/runs/delft__main_12__astra__control__r3/round_2.json": {
+      "sha256": "1bf308ded7066337559d3108dd19f20d896857197c315c66a305d9c70c7d8073",
+      "bytes": 8395
+    },
+    "public_search/runs/delft__main_12__astra__control__r3/round_3.json": {
+      "sha256": "90bb32eb1c80946454c77588a738a4a1713da6be0e910124ee13983936e28cc8",
+      "bytes": 8979
+    },
+    "public_search/runs/delft__main_12__astra__control__r3/round_4.json": {
+      "sha256": "9a493570ee2dfda7642ddf3abdf36c17a40b46c97ba8932860027f71cd62fcc2",
+      "bytes": 9452
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r1/result.json": {
+      "sha256": "369c383e1bf4729774cc1687c3b918b32a6cf9b493336d3f1686ef9d2b7484a3",
+      "bytes": 7307
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r1/round_1.json": {
+      "sha256": "5c05f5bd2b4e9ab30c59edb18c9fdad609c031aeb6c5d28457bd9b6a5e7c9f6c",
+      "bytes": 7574
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r1/round_2.json": {
+      "sha256": "ea223170e559731d4b1a6136fd46691030b3621eed828507c295ee5cf988d47e",
+      "bytes": 8645
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r1/round_3.json": {
+      "sha256": "54e0c91c962b333188838e150afeef620a36b7e6289dbfb502aca52c15766bd0",
+      "bytes": 8972
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r1/round_4.json": {
+      "sha256": "59025d06dea24f22306f144870b4b8c492c32e808ac1eee7da36e6d32ea7a480",
+      "bytes": 9165
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r1/round_5.json": {
+      "sha256": "ed634a5d5c3d1bb58bb08cc7cd401e3655c73be8b1bb2ca76c9b9dd5c8d97ff2",
+      "bytes": 9450
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r2/result.json": {
+      "sha256": "64ceeb1e7444de20ebf3ddd66c78094a8b91de5f5505e57f3318a9e0fdf91058",
+      "bytes": 7171
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r2/round_1.json": {
+      "sha256": "aa775af61d8ac95ca55fe43bda31ef16408c1bd4d3555f8e6d6f0396451fcf66",
+      "bytes": 7563
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r2/round_2.json": {
+      "sha256": "71745fd7019de0ce13a690f88ecae94934ce46bb076d3a75086ab8f8c90e7d91",
+      "bytes": 8525
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r2/round_3.json": {
+      "sha256": "50ad8bc758331bd3559c436e5e98357a406e54b219e8aee051718e28e2b64a67",
+      "bytes": 8742
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r2/round_4.json": {
+      "sha256": "2dc18f12562f247359f915e4e63c1f0167342e25b28231692bc39a997a2d2bf7",
+      "bytes": 9033
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r2/round_5.json": {
+      "sha256": "c0c53e7c4c6632971322ad0ee55368ba12effbca9441d1de292ac34e1c8ee7e6",
+      "bytes": 9375
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r3/result.json": {
+      "sha256": "37db4b73faeb904c438d28840856b04e97c1374f33f638673721ae2991033d4c",
+      "bytes": 7227
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r3/round_1.json": {
+      "sha256": "b4a9afe03ddfb30b1789f004261336e6574da326462ab28581c6be46457235ac",
+      "bytes": 7679
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r3/round_2.json": {
+      "sha256": "525209c89939d4b7448192b19b7508e8c5bbdb43da9ca9efc4644e8cbdea0746",
+      "bytes": 8598
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r3/round_3.json": {
+      "sha256": "6a37f8b65a954c1039aa6a036aeb29976294d97f1e2c95e1e643c09dff182dd5",
+      "bytes": 8709
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r3/round_4.json": {
+      "sha256": "6a3d456e21e16233b611c4be5639d5a2ef9e4c8a9ceb90ca32179b94fadc2b28",
+      "bytes": 9054
+    },
+    "public_search/runs/delft__main_12__fable51__strategy__r3/round_5.json": {
+      "sha256": "affa1cf8bc79a7a994c9d20e3a1d36b6785d1210cad70257daf307488099d710",
+      "bytes": 9337
+    },
+    "public_search/source/prompt_core.py": {
+      "sha256": "031b2b145617dcadfac13b216ae54b898e133100035eb163b1f8b3e2d4be8a35",
+      "bytes": 4089
+    },
+    "public_search/source/strategy_core.py": {
+      "sha256": "7bad7ad3acc4371a84896a07dbccbb07ac9e6540f7a0b4ac267ea18a6e77d602",
+      "bytes": 2744
+    },
+    "public_search/source_provenance.json": {
+      "sha256": "ce28ab9628ddaafcb91a02416f7953fa94437233c332f319ea59fde0955c222c",
+      "bytes": 1409
+    },
+    "public_search/verify_public_search.py": {
+      "sha256": "5264820cf7ad38c006b4a889149d758ad111f8429113f83b4c1cf01b76297aa4",
+      "bytes": 10881
+    },
+    "README.md": {
+      "sha256": "03b55e60c7d63ce924a8405b28811eac1713f802d1c19b64d1da876e14d24b27",
+      "bytes": 3106
+    }
+  }
+}

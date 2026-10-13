@@ -1,0 +1,7 @@
+run_id,model_label,method,repeat,accesses,best_kernel,best_mean_id,best_aic,aic_gap,champion,near_optimal,api_requests,cost_usd
+delft__main_12__fable51__strategy__r3,fable51,strategy,3,20,(MA3*PER)+SE,4,71.25538829182722,0.35149753236316883,False,True,5,0.32665
+delft__main_12__astra__control__r1,astra,control,1,20,(MA5*PER)+MA1,4,70.90389075946405,0.0,True,True,4,0.20243250000000002
+delft__main_12__astra__control__r2,astra,control,2,20,(MA3*PER)+MA1,4,70.99554015571357,0.0916493962495224,False,True,4,0.180312
+delft__main_12__astra__control__r3,astra,control,3,20,(MA1*PER)+MA3,4,72.61873286918035,1.714842109716301,False,True,4,0.188312
+delft__main_12__fable51__strategy__r1,fable51,strategy,1,20,(MA5*PER)+MA1,4,70.90389075946405,0.0,True,True,5,0.30935
+delft__main_12__fable51__strategy__r2,fable51,strategy,2,20,(MA3*PER)+MA5,4,72.38437250069,1.480481741225958,False,True,5,0.30222

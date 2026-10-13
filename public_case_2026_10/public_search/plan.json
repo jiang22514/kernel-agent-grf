@@ -1,0 +1,92 @@
+{
+  "candidate_cap": 20,
+  "max_requests": 27,
+  "max_output_tokens_per_request": 8192,
+  "batches": {
+    "control": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "strategy": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "ordering_seed": 2026101107,
+  "case_order": [
+    "main_12"
+  ],
+  "schema": "delft_public_search_plan_v1",
+  "runs": [
+    {
+      "run_id": "delft__main_12__fable51__strategy__r3",
+      "case": "main_12",
+      "model_label": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "method": "strategy",
+      "repeat": 3,
+      "reasoning_effort": "medium",
+      "initial_pairs": []
+    },
+    {
+      "run_id": "delft__main_12__astra__control__r1",
+      "case": "main_12",
+      "model_label": "astra",
+      "model": "openai/gpt-6-astra",
+      "method": "control",
+      "repeat": 1,
+      "reasoning_effort": "medium",
+      "initial_pairs": []
+    },
+    {
+      "run_id": "delft__main_12__astra__control__r2",
+      "case": "main_12",
+      "model_label": "astra",
+      "model": "openai/gpt-6-astra",
+      "method": "control",
+      "repeat": 2,
+      "reasoning_effort": "medium",
+      "initial_pairs": []
+    },
+    {
+      "run_id": "delft__main_12__astra__control__r3",
+      "case": "main_12",
+      "model_label": "astra",
+      "model": "openai/gpt-6-astra",
+      "method": "control",
+      "repeat": 3,
+      "reasoning_effort": "medium",
+      "initial_pairs": []
+    },
+    {
+      "run_id": "delft__main_12__fable51__strategy__r1",
+      "case": "main_12",
+      "model_label": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "method": "strategy",
+      "repeat": 1,
+      "reasoning_effort": "medium",
+      "initial_pairs": []
+    },
+    {
+      "run_id": "delft__main_12__fable51__strategy__r2",
+      "case": "main_12",
+      "model_label": "fable51",
+      "model": "anthropic/claude-fable-5.1",
+      "method": "strategy",
+      "repeat": 2,
+      "reasoning_effort": "medium",
+      "initial_pairs": []
+    }
+  ],
+  "original_plan_sha256": "2cc79931b933c39cfe8652c5aeb46b4fe6a81c7247dfce0b2db9361c4b0f030b",
+  "original_assets_sha256": "f7068cae3daf505ad9db311475b7a72e07aba329a77ba593ad59ebe9428e01b5",
+  "original_score_table_sha256": "d1d5a58501a315abeace8139002ca6d808119aed57883136fa0bc9ffec1ae5de",
+  "search_unit": "One stochastic 20-access search of the frozen training score table.",
+  "scope": "Three repetitions per model/procedure on one public-site training set."
+}

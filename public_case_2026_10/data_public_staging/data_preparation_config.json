@@ -1,0 +1,352 @@
+{
+  "archive_sha256": "432d0b747d68c2141249d76895157ed0b61f4b1b0545770d9a209c1576216865",
+  "date": "2026-10-11",
+  "physical_window_reason": "Full dyke-crest profile in the shared original-GEF qc domain, rounded inward to a NAP-anchored 0.2 m grid; no model scores used",
+  "qc_policy": "Original GEF point measurement; -9999 becomes NaN only in clean fields; retain negative values and explicit flags in source and common-domain exports; no smoothing, averaging, interpolation or imputation",
+  "response_policy": "Export both raw qc (MPa) and natural log(qc / 1 MPa); no response-driven sample filter",
+  "sampling": "Nearest original point on grid anchored at NAP 0 m; exact grid matches in this dataset; a tie would use the shallower raw row",
+  "grids": [
+    {
+      "step_m": 0.2,
+      "z_min_m": -12.0,
+      "z_max_m": -0.6,
+      "purpose": "main and training-density comparison"
+    },
+    {
+      "step_m": 0.1,
+      "z_min_m": -12.0,
+      "z_max_m": -0.6,
+      "purpose": "same-window vertical-resolution sensitivity"
+    }
+  ],
+  "test_x_ranks_1based": [
+    2,
+    4,
+    7,
+    9,
+    12,
+    14,
+    17,
+    19,
+    22,
+    24,
+    27
+  ],
+  "test_ids_in_x_order": [
+    78,
+    77,
+    41,
+    75,
+    84,
+    83,
+    73,
+    38,
+    79,
+    71,
+    35
+  ],
+  "training_pool_ids_in_x_order": [
+    44,
+    43,
+    42,
+    76,
+    86,
+    85,
+    40,
+    74,
+    39,
+    82,
+    81,
+    80,
+    72,
+    37,
+    36,
+    70,
+    69,
+    34
+  ],
+  "nested_training_selection_order": [
+    44,
+    34,
+    39,
+    76,
+    36,
+    72,
+    85,
+    43,
+    81,
+    70,
+    74,
+    37,
+    42,
+    69,
+    86,
+    40,
+    80,
+    82
+  ],
+  "nested_training_selection_trace": [
+    {
+      "selection_order": 1,
+      "cpt_id": 44,
+      "x_local_m": 0.0,
+      "rule": "leftmost training-pool CPT"
+    },
+    {
+      "selection_order": 2,
+      "cpt_id": 34,
+      "x_local_m": 49.993907628797416,
+      "rule": "rightmost training-pool CPT"
+    },
+    {
+      "selection_order": 3,
+      "cpt_id": 39,
+      "x_local_m": 25.02458918170259,
+      "nearest_previously_selected_distance_m": 24.969318447094825,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 4,
+      "cpt_id": 76,
+      "x_local_m": 12.465982947895242,
+      "nearest_previously_selected_distance_m": 12.465982947895242,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 5,
+      "cpt_id": 36,
+      "x_local_m": 39.99387315038302,
+      "nearest_previously_selected_distance_m": 10.000034478414399,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 6,
+      "cpt_id": 72,
+      "x_local_m": 32.53384416508099,
+      "nearest_previously_selected_distance_m": 7.460028985302024,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 7,
+      "cpt_id": 85,
+      "x_local_m": 18.72396546691427,
+      "nearest_previously_selected_distance_m": 6.257982519019027,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 8,
+      "cpt_id": 43,
+      "x_local_m": 5.005953962582851,
+      "nearest_previously_selected_distance_m": 5.005953962582851,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 9,
+      "cpt_id": 81,
+      "x_local_m": 28.814354954867113,
+      "nearest_previously_selected_distance_m": 3.7194892102138795,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 10,
+      "cpt_id": 70,
+      "x_local_m": 42.53949132739284,
+      "nearest_previously_selected_distance_m": 2.545618177009821,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 11,
+      "cpt_id": 74,
+      "x_local_m": 22.492896701495887,
+      "nearest_previously_selected_distance_m": 2.5316924802067042,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 12,
+      "cpt_id": 37,
+      "x_local_m": 35.01577058141615,
+      "nearest_previously_selected_distance_m": 2.481926416335156,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 13,
+      "cpt_id": 42,
+      "x_local_m": 9.998198254654575,
+      "nearest_previously_selected_distance_m": 2.4677846932406666,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 14,
+      "cpt_id": 69,
+      "x_local_m": 47.53940055346441,
+      "nearest_previously_selected_distance_m": 2.454507075333005,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 15,
+      "cpt_id": 86,
+      "x_local_m": 16.26999845735633,
+      "nearest_previously_selected_distance_m": 2.453967009557939,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 16,
+      "cpt_id": 40,
+      "x_local_m": 20.003629390664692,
+      "nearest_previously_selected_distance_m": 1.279663923750423,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 17,
+      "cpt_id": 80,
+      "x_local_m": 31.275122793115553,
+      "nearest_previously_selected_distance_m": 1.2587213719654393,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    },
+    {
+      "selection_order": 18,
+      "cpt_id": 82,
+      "x_local_m": 26.27596965917199,
+      "nearest_previously_selected_distance_m": 1.2513804774694002,
+      "rule": "maximize minimum local-X distance; tie uses smaller X"
+    }
+  ],
+  "splits": [
+    {
+      "name": "main_12",
+      "train_ids": [
+        44,
+        34,
+        39,
+        76,
+        36,
+        72,
+        85,
+        43,
+        81,
+        70,
+        74,
+        37
+      ],
+      "test_ids": [
+        78,
+        77,
+        41,
+        75,
+        84,
+        83,
+        73,
+        38,
+        79,
+        71,
+        35
+      ],
+      "grids": [
+        "0p20m"
+      ],
+      "description": "12 nested whole-CPT training profiles selected by coordinate-only farthest coverage; same 11 fixed whole-CPT test profiles"
+    },
+    {
+      "name": "density_06",
+      "train_ids": [
+        44,
+        34,
+        39,
+        76,
+        36,
+        72
+      ],
+      "test_ids": [
+        78,
+        77,
+        41,
+        75,
+        84,
+        83,
+        73,
+        38,
+        79,
+        71,
+        35
+      ],
+      "grids": [
+        "0p20m"
+      ],
+      "description": "6 nested whole-CPT training profiles selected by coordinate-only farthest coverage; same 11 fixed whole-CPT test profiles"
+    },
+    {
+      "name": "density_18",
+      "train_ids": [
+        44,
+        34,
+        39,
+        76,
+        36,
+        72,
+        85,
+        43,
+        81,
+        70,
+        74,
+        37,
+        42,
+        69,
+        86,
+        40,
+        80,
+        82
+      ],
+      "test_ids": [
+        78,
+        77,
+        41,
+        75,
+        84,
+        83,
+        73,
+        38,
+        79,
+        71,
+        35
+      ],
+      "grids": [
+        "0p20m"
+      ],
+      "description": "18 nested whole-CPT training profiles selected by coordinate-only farthest coverage; same 11 fixed whole-CPT test profiles"
+    },
+    {
+      "name": "fine_12",
+      "train_ids": [
+        44,
+        34,
+        39,
+        76,
+        36,
+        72,
+        85,
+        43,
+        81,
+        70,
+        74,
+        37
+      ],
+      "test_ids": [
+        78,
+        77,
+        41,
+        75,
+        84,
+        83,
+        73,
+        38,
+        79,
+        71,
+        35
+      ],
+      "grids": [
+        "0p10m"
+      ],
+      "description": "12 nested whole-CPT training profiles selected by coordinate-only farthest coverage; same 11 fixed whole-CPT test profiles"
+    }
+  ]
+}

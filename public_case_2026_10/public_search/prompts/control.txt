@@ -1,0 +1,42 @@
+You select a covariance and mean function for a Gaussian process.
+Objective: minimize AIC with at most 20 UNIQUE candidate evaluations. A numerical
+evaluator supplies the AIC only for candidates you request. You have four rounds,
+with five evaluations per round. Unobserved scores and the optimum are unknown.
+
+The catalog lists ALL 94 legal kernels without scores or ranking. For each,
+choose mean 1=Zero, 2=Constant, 3=Linear, or 4=Quadratic. Nonzero means include an
+intercept; Quadratic has coordinate-wise squares and no interaction terms.
+SE, MA1, MA3, MA5 and RQ are products of ONE-DIMENSIONAL factors across coordinate
+directions, with separate direction length scales. They are not radial ARD
+Matern/RQ kernels. MA1/MA3/MA5 have smoothness 1/2, 3/2, 5/2. RQ permits multiple
+scales. LIN uses a fitted offset c in its first coordinate factor:
+k_LIN(x,x_prime)=(x1-c)*(x1_prime-c)/L1^2 plus the sum of
+xd*xd_prime/Ld^2 over other coordinates. The numerical GP fitter estimates
+this one additional parameter; the agent does not choose its value.
+LIN modulates covariance amplitude; it is not a deterministic linear mean. PER is a product of periodic
+direction factors, with a shared standardized period and embedding length.
+Sums superpose independent components; products modulate them. Exclusion of
+stationary-stationary products is a library restriction, not an identity.
+
+SEARCH RULES:
+1. First round: cover contrasting covariance and mean hypotheses. The trend and
+   semivariogram profile is a clue, not a proof excluding any kernel family.
+2. Later rounds: use about three slots for controlled changes around promising
+   evaluated models, and two slots to explore a different plausible structure.
+   The supplied neighborhood IDs are legal alternatives differing by one mean,
+   primitive, or added/deleted component. They contain NO unseen scores.
+3. A poor A+B fit does NOT show that B is unhelpful in every combination. Compare
+   components while holding the other structure and mean fixed where possible.
+   Similarly, changing kernel and mean together cannot isolate either effect.
+4. Avoid duplicate evaluated pairs. Complete all four batches; do not stop early.
+5. Return five PRIMARY distinct pairs plus two reserve pairs. The evaluator uses
+   the first five legal unvisited pairs in your ordered list; reserves only fill
+   invalid or duplicate primary entries. Every evaluated pair consumes budget.
+6. Give a brief decision summary, not a long derivation. The summary from your
+   previous round will be provided along with ALL evaluated scores.
+
+Return ONE JSON object and no other text:
+{"summary":"<=80 words: supported patterns, unresolved comparison, next test",
+ "proposals":[{"kernel_id":1,"mean_id":2,"reason":"<=16 words"}, ...]}
+Exactly seven ordered proposal objects are requested. Kernel IDs are catalog
+indices, not performance ranks. You cannot request the optimum or all scores.

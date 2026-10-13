@@ -1,0 +1,155 @@
+{
+  "schema_version": "delft_gpml_dependencies_v1",
+  "license": "FreeBSD (see GPML_Copyright.txt)",
+  "upstream": "http://gaussianprocess.org/gpml/code/",
+  "directory_label": "gpml-matlab-v4.2-2018-06-11",
+  "version_note": "Local Copyright says 4.2; gp.m and infGaussLik.m headers say 2022-04-04. File SHA-256, not the directory label, defines the actual dependency.",
+  "scope": "Exact Gaussian regression, selected-structure refit, prediction, and coordinate-union sampling only.",
+  "files": [
+    {
+      "path": "gp.m",
+      "sha256": "fe5100a06f94dff06563336be5aa38b3cc7c977dc9749556988aa6e583e0b381",
+      "bytes": 10560
+    },
+    {
+      "path": "cov/apx.m",
+      "sha256": "99c1360c68d15d8ba698aaf15738bf02c7c1b49857bf3fb750e93d6fb7387119",
+      "bytes": 39160
+    },
+    {
+      "path": "inf/infGaussLik.m",
+      "sha256": "dcc54bddd158e517079a4c49655309a483e4382b1ddcf001ef27bb050fd62381",
+      "bytes": 1842
+    },
+    {
+      "path": "lik/likGauss.m",
+      "sha256": "69164bb1ed2123eb9d900a79fed59bde54de03a396eb23f0e9228ef8cdb6c70f",
+      "bytes": 3481
+    },
+    {
+      "path": "util/minimize.m",
+      "sha256": "f60535b91cf307fa144d262a491c81290681e0d494d3c6ee4ad46b5c331461d5",
+      "bytes": 11308
+    },
+    {
+      "path": "util/solve_chol.m",
+      "sha256": "11895f25937a3cb30ae5dc6cc5450d8fb3aecb492a29d9610f252e5faac68237",
+      "bytes": 994
+    },
+    {
+      "path": "util/sq_dist.m",
+      "sha256": "8303ebfb9f601ae11275befac1de6d0239e4e51cc9c13661eaf5871c70d1ed4b",
+      "bytes": 1967
+    },
+    {
+      "path": "mean/meanZero.m",
+      "sha256": "204e35a7e5937df6690f265bf8f1ae11fbf686a14a257463089124afa110aa21",
+      "bytes": 787
+    },
+    {
+      "path": "mean/meanConst.m",
+      "sha256": "3a18f7675b91ca1a9c6f9dda49172395cb608736e8f9e7fab954996f30befbdb",
+      "bytes": 585
+    },
+    {
+      "path": "mean/meanLinear.m",
+      "sha256": "cc406183eda83526219e727ce059032dc7f89cc84fcb19b7ce2551f99237a70e",
+      "bytes": 656
+    },
+    {
+      "path": "mean/meanPoly.m",
+      "sha256": "7d785bf81cec0b100aa6ac5bf8ba30fd6e7cfe56c6b5a1e9ad64a7af17f49a76",
+      "bytes": 1143
+    },
+    {
+      "path": "mean/meanSum.m",
+      "sha256": "bf911cb0b29a91be15701088c285b83a7de7138286e96e73726c967c258b6f67",
+      "bytes": 1543
+    },
+    {
+      "path": "cov/covSum.m",
+      "sha256": "609516f4d1b50f6656c8dbb4056d9f1ab89b9f82760e16c3935b321072ee3caf",
+      "bytes": 2619
+    },
+    {
+      "path": "cov/covProd.m",
+      "sha256": "033e06e44ad7694b3214e82a5d9c849422047bb48732981563198e2c0146c381",
+      "bytes": 3136
+    },
+    {
+      "path": "cov/covScale.m",
+      "sha256": "0ba28321ed8bdd86cf8fafe9689a842a3349c720546000ad022e23b1e5b15358",
+      "bytes": 3216
+    },
+    {
+      "path": "cov/covSEard.m",
+      "sha256": "cf10a4a6d9a96805bb4b1887ae6f790d1e0f188567cce6ed8a04355e891a6f75",
+      "bytes": 801
+    },
+    {
+      "path": "cov/covSEiso.m",
+      "sha256": "ce076ea95047ca0a54c72b38c7c6d6f0e8eb179870bc78e1dfab16f809e8486f",
+      "bytes": 708
+    },
+    {
+      "path": "cov/covSE.m",
+      "sha256": "70f141572226d35486585ecac5a641c904a25eb90361ef046d712ddf66e8990d",
+      "bytes": 1761
+    },
+    {
+      "path": "cov/covLINard.m",
+      "sha256": "9cb3a106ac8fb7813835aedf30a752955195b917b73c6da8e5894f0cdcd9cdd0",
+      "bytes": 722
+    },
+    {
+      "path": "cov/covLINiso.m",
+      "sha256": "88264b3962a3ab58276230236e936ddbb789d5b6ecd6aecbacc462c6914c7ad7",
+      "bytes": 596
+    },
+    {
+      "path": "cov/covLIN.m",
+      "sha256": "fbad669ba9f264c8c74e5e443fe02b06fe0c162da8db2e44a58c6867be53e7c0",
+      "bytes": 882
+    },
+    {
+      "path": "cov/covDot.m",
+      "sha256": "fcc26d77d9d237130238582cd23627edf4d9917a109c74013a846f60e9f713ee",
+      "bytes": 4125
+    },
+    {
+      "path": "cov/covPER.m",
+      "sha256": "c1f349a6cc28e8a820b1100b8e965cfb182c3a07c26c0209cde1f16f5ab105c0",
+      "bytes": 2825
+    },
+    {
+      "path": "cov/covRQiso.m",
+      "sha256": "9f8002d1b5b77f281e0c0e6f5d31591976f689190f224580916a8bddfb53d880",
+      "bytes": 1165
+    },
+    {
+      "path": "cov/covRQ.m",
+      "sha256": "e4d87763332f96e3edd01ce52392bbc3ff87eaf6dcbf372c72f27ea2e7b9e8e9",
+      "bytes": 1181
+    },
+    {
+      "path": "cov/covMaha.m",
+      "sha256": "d3ede634092a4b252f979929948f5fe2451ca4e17bbe7a9b3bb1de038b4d9302",
+      "bytes": 9398
+    },
+    {
+      "path": "cov/covConst.m",
+      "sha256": "7acb72864ed49718c8c39b6434f30b42f75e87da3aee6e38a1f3c3ab479e4ec4",
+      "bytes": 549
+    },
+    {
+      "path": "cov/covMaterniso.m",
+      "sha256": "610d620ae242b312e98a50c1aee98f53a6e6020499f0c4b5f6c902d4a7de1ad1",
+      "bytes": 843
+    },
+    {
+      "path": "cov/covMatern.m",
+      "sha256": "0fcd7d29bbea48be252bf9aaf31a4882fdc6c247f65b50ae295bd3c5452e1126",
+      "bytes": 3068
+    }
+  ]
+}

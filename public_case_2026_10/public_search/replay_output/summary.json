@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "verified_searches": 6,
+  "verified_requests": 27,
+  "training_library_minimum_aic": 70.90389075946405,
+  "model_summary": {
+    "astra": {
+      "searches": 3,
+      "champions": 1,
+      "near_optimal": 3,
+      "mean_aic_gap": 0.6021638353219411
+    },
+    "fable51": {
+      "searches": 3,
+      "champions": 1,
+      "near_optimal": 3,
+      "mean_aic_gap": 0.6106597578630423
+    }
+  },
+  "experiment_cost_usd": 1.5092765,
+  "returned_models": {
+    "anthropic/claude-fable-5.1": 15,
+    "openai/gpt-6-astra": 12
+  },
+  "providers": {
+    "Anthropic": 15,
+    "OpenAI": 12
+  },
+  "network_calls": 0,
+  "gp_fits": 0,
+  "scope": "Three stochastic searches per procedure on one fixed public-site training set."
+}
